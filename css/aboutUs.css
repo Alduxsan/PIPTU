@@ -1,0 +1,129 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  background: no-repeat url(../media/liquid-cheese.svg);
+  background-size: cover;
+
+}
+
+body {
+  font-family: sans-serif;
+  font-size: 16px;
+}
+
+.content {
+  width: 100%;
+  padding: 2%;
+  background-color: rgba(240, 255, 240, 0.144);
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
+}
+
+.img {
+  width: 100%;
+  border-radius: 6px;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.507);
+}
+
+.title {
+  background-color: rgba(0, 0, 0, 0.151);
+  text-align: center;
+  font-family: "Cabin Sketch", cursive;
+  font-size: 5rem;
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 2px 2px rgb(0, 0, 0);
+  padding: 1%;
+  -webkit-backdrop-filter: blur(3px);
+  backdrop-filter: blur(3px);
+}
+
+.subtitle {
+  text-align: center;
+  font-family: "Cabin Sketch", cursive;
+  font-size: 4rem;
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 2px 2px rgb(0, 0, 0);
+  padding: 1%;
+}
+
+.sublink_container {
+  display: flex;
+  justify-content: center;
+  height: 100;
+  padding: 10px;
+}
+
+.link_card{
+  margin: auto;
+  text-align: center;
+}
+
+.link_card img{
+  height: 50%;
+}
+  
+.sublink {
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  text-decoration: none;
+  margin: 15px;
+  color: rgb(0, 0, 0);
+  font-size: 2rem;
+  transition: color 0.5s;
+  
+}
+
+.link_card:hover{
+border-bottom: 1px solid black;
+
+}
+.sublink:hover{
+  color: aliceblue;
+}
+
+/* 
+QUIENES SOMOS CONTENT STYLE
+*/
+.quehacemos{
+  justify-content: center;
+  margin: auto;
+  text-align: justify;
+  width: 90%;
+  margin: auto;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+.intro{
+  font-size: 1.2rem;
+  background-color: rgba(255, 255, 255, 0.103);
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(1px);
+  padding: 1%;
+  border-radius: 6px;
+}
+
+.links_container{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.colabLink{
+  margin: 10px;
+}
+
+.colabLink img{
+  width: 300px;
+}
+
+/*end content style */
+
+
+@media only screen and (max-width: 500px) {
+  .title {
+    font-size: 2rem;
+  }
+}
