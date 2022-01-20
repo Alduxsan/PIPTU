@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@200;700&display=swap');
+* {
+
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  
+  html {
+    background: no-repeat url(../media/liquid-cheese.svg);
+    background-size: cover;
+  }
+  
+  body {
+    font-family: sans-serif;
+    font-size: 16px;
+  }
+
+  .content {
+    width: 80%;
+    padding: 2%;
+    background-color: rgba(240, 255, 240, 0.144);
+    -webkit-backdrop-filter: blur(2px);
+    backdrop-filter: blur(2px);
+    margin: auto;
+    margin-bottom: 10px;
+    border-radius: 6px;
+  }
+  
+  .img {
+    width: 100%;
+    border-radius: 6px;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.507);
+  }
+  
+  .title {
+    background-color: rgba(0, 0, 0, 0.151);
+    text-align: center;
+    font-family: "Cabin Sketch", cursive;
+    font-size: 5rem;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+    padding: 1%;
+    -webkit-backdrop-filter: blur(3px);
+    backdrop-filter: blur(3px);
+  }
+  
+  .subtitle {
+    text-align: center;
+    font-family: "Cabin Sketch", cursive;
+    font-size: 4rem;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+    padding: 1%;
+  }
+  
+  
+  .sublink_container {
+    display: flex;
+    height: 100px;
+    padding: 10px;
+    margin: auto;
+    width: min-content; 
+  }
+  
+  .link_card{
+    margin: auto;
+    text-align: center;
+    width: max-content;
+  }
+  
+  .link_card img{
+    height: 50%;
+  }
+    
+  .sublink {
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    text-decoration: none;
+    margin: 15px;
+    color: rgb(0, 0, 0);
+    font-size: 2rem;
+    transition: color 0.5s;
+  }
+  
+  .link_card:hover{
+  border-bottom: 1px solid black;
+  }
+
+  .sublink:hover{
+    color: aliceblue;
+  }
+  
+  
+  .intro{
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-size: 1.2rem;
+    background-color: rgba(255, 255, 255, 0.103);
+    -webkit-backdrop-filter: blur(2px);
+    backdrop-filter: blur(1px);
+    padding: 1%;
+    border-radius: 6px;
+    text-align: justify;
+  }
+
+  .maps iframe{
+    border-radius: 6px;
+  }
