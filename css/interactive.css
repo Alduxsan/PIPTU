@@ -51,59 +51,51 @@
     font-family: 'M PLUS Rounded 1c', sans-serif;
     color: rgba(56, 20, 0);
   }
-  
+
+
   .sublink_container {
     display: flex;
-    justify-content: center;
-    height: 100;
-    padding: 10px;
+    height: 300px;
+    margin: auto;
+    width: 100%;
   }
+  
+  .link_card{
+    margin: auto;
+    text-align: center;
+    width: max-content;
+  }
+
+  .iconContainer{
+    height: 50%;
+    margin: auto;
+  }
+  
+  .link_card img{
+    height: 100%;
+  }
+    
+  .sublink {
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    text-decoration: none;
+    margin: 15px;
+    color: rgb(0, 0, 0);
+    font-size: 150%;
+    transition: color 0.5s;
+  }
+  
+  .link_card:hover{
+  border-bottom: 1px solid black;
+  }
+
+  .sublink:hover{
+    color: aliceblue;
+  }
+  
 
 /*3D iframes styles*/
 
-.sketchfab-embed-wrapper{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-self: center;
-}
 
-iframe{
-    border-radius: 6px;
-    width: 80%;
-    margin: auto;
-    margin-bottom: 15px;
-    
-  }
-
-  .artifactTitle{
-    justify-content: center;
-    align-self: center;
-    font-size: 13px; 
-    font-weight: normal; 
-    margin: 5px; 
-    color: #000000;
-  }
-
-  .artifactTitle a{
-    font-weight: bold; 
-    color: #000000; 
-    font-family: 'M PLUS Rounded 1c', sans-serif;
-    text-decoration: none;
-    text-align: center;
-    font-size: 2rem;
-  }
-
-  .sketchfab-embed-wrapper{
-    text-align: center;
-  }
-
-  .textFooter{
-    font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;
-  }
-  .textFooter a{
-    font-weight: bold; color: #000000; 
-  }
   /*---------------------------*/
 
   .intro{
