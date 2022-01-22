@@ -15,6 +15,10 @@ body {
   font-size: 16px;
 }
 
+.styckyActive{
+  margin-top:400px
+}
+
 .content {
   width: 100%;
   padding: 2%;
@@ -79,6 +83,7 @@ body {
   color: rgb(0, 0, 0);
   font-size: 150%;
   transition: color 0.5s;
+  
 }
 
 .link_card:hover{
