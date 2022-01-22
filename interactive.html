@@ -1,98 +1,125 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script type="module" src="./index.js" defer></script>
     <link rel="stylesheet" href="./css/interactive.css" />
-    <title> LIPTU - Prehistoria Interactiva</title>
-</head>
-<body>
-
+    <title>LIPTU - Prehistoria Interactiva</title>
+  </head>
+  <body>
     <nav-bar atribute="interactive"></nav-bar>
     <div id="general">
-    <div class="title">
-        <p>
-          PREHISTORIA INTERACTIVA
-        </p>
+      <div class="title">
+        <p>PREHISTORIA INTERACTIVA</p>
       </div>
       <div class="sublink_container">
+        <div class="link_card">
+          <div class="iconContainer">
+            <img src="media/icons/3d.png" alt="" />
+          </div>
+          <div><a class="sublink" href="#models3d">MODELOS 3D</a></div>
+        </div>
 
         <div class="link_card">
           <div class="iconContainer">
-          <img src="media/icons/3d.png" alt="">
+            <img src="media/icons/ostrich.png" alt="" />
+          </div>
+          <div><a class="sublink" href="#sites">FAUNA</a></div>
         </div>
-          <div><a class="sublink" href="#models3d">MODELOS 3D</a></div>         
-        </div>
-        
+
         <div class="link_card">
           <div class="iconContainer">
-          <img src="media/icons/ostrich.png" alt="">
+            <img src="media/icons/map.png" alt="" />
+          </div>
+          <div>
+            <a class="sublink" href="#sites">MAPA DE SITIOS</a>
+          </div>
         </div>
-         <div><a class="sublink" href="#sites">FAUNA</a></div>
-        </div>
-         
-         <div class="link_card">
+
+        <div class="link_card">
           <div class="iconContainer">
-            <img src="media/icons/map.png" alt="">
+            <img src="media/icons/tools.png" alt="" />
           </div>
-           <div>
-             <a class="sublink" href="#sites">MAPA DE SITIOS</a>
-            </div>
+          <div>
+            <a class="sublink" href="#sites">PUNTAS DE PROYECTIL </a>
           </div>
-            
-            <div class="link_card">
-              <div class="iconContainer">
-              <img src="media/icons/tools.png" alt="">
-            </div>
-              <div>
-               <a class="sublink" href="#sites">PUNTAS DE PROYECTIL </a>
-              </div>              
-          </div>       
+        </div>
       </div>
 
-    <div class="content">
-    <div class="intro">
-      <div id="models3d" class="subtitle">
-        <a href="https://sketchfab.com/Flavia_Barcelo">MODELOS 3D</a>
+      <div class="content">
+        <div class="intro">
+          <div id="models3d" class="subtitle">
+            <a href="https://sketchfab.com/Flavia_Barcelo">MODELOS 3D</a>
+          </div>
+
+          <div class="models3D">
+            <artifact-3d
+              href_src="https://sketchfab.com/3d-models/dalton-projectile-point-4dad0c5679724ec79b0a622b2114f404?utm_medium=embed&utm_campaign=share-popup&utm_content=4dad0c5679724ec79b0a622b2114f404"
+              iframe_src="https://sketchfab.com/models/4dad0c5679724ec79b0a622b2114f404/embed"
+              iframe_title="Dalton Projectile Point"
+            ></artifact-3d>
+
+            <artifact-3d
+              href_src="https://sketchfab.com/3d-models/fishtail-projectile-point-741094b62328417383b1255fa323bdb6?utm_medium=embed&utm_campaign=share-popup&utm_content=741094b62328417383b1255fa323bdb6"
+              iframe_src="https://sketchfab.com/models/741094b62328417383b1255fa323bdb6/embed"
+              iframe_title="Fishtail Projectile Point"
+            ></artifact-3d>
+
+            <artifact-3d
+              href_src="https://sketchfab.com/3d-models/tigre-projectile-point-74c513f9bd614bb78badaa4b77756d33?utm_medium=embed&utm_campaign=share-popup&utm_content=74c513f9bd614bb78badaa4b77756d33"
+              iframe_src="https://sketchfab.com/models/74c513f9bd614bb78badaa4b77756d33/embed"
+              iframe_title="Tigre Projectile Point"
+            ></artifact-3d>
+
+            <artifact-3d
+              href_src="https://sketchfab.com/3d-models/recipiente-ceramico-sitio-tigre-k87-5289f4b399b9456780540b7e230c5246?utm_medium=embed&utm_campaign=share-popup&utm_content=5289f4b399b9456780540b7e230c5246"
+              iframe_src="https://sketchfab.com/models/5289f4b399b9456780540b7e230c5246/embed"
+              iframe_title="Recipiente cerámico - Sitio Tigre (K87)"
+            ></artifact-3d>
+
+            <artifact-3d
+              href_src="https://sketchfab.com/3d-models/recipiente-ceramico-sitio-tigre-k87-1af9c5f56d0b4f93bcad1e05fcf8c2e4?utm_medium=embed&utm_campaign=share-popup&utm_content=1af9c5f56d0b4f93bcad1e05fcf8c2e4"
+              iframe_src="https://sketchfab.com/models/1af9c5f56d0b4f93bcad1e05fcf8c2e4/embed"
+              iframe_title="Recipiente cerámico (2) - Sitio Tigre (K87)"
+            ></artifact-3d>
+
+            <div style="text-align: center" class="Articles3D-footer">
+              by
+              <a
+                href="https://sketchfab.com/Flavia_Barcelo?utm_medium=embed&utm_campaign=share-popup&utm_content=74c513f9bd614bb78badaa4b77756d33"
+                target="_blank"
+                style="font-weight: bold; color: #000000"
+              >
+                Flavia Barceló
+              </a>
+              on
+              <a
+                href="https://sketchfab.com?utm_medium=embed&utm_campaign=share-popup&utm_content=74c513f9bd614bb78badaa4b77756d33"
+                target="_blank"
+                style="font-weight: bold; color: #000000"
+                >Sketchfab</a
+              >
+            </div>
+          </div>
+          <br />
+        </div>
       </div>
-      
-<div class="models3D">
-<artifact-3d 
-  href_src="https://sketchfab.com/3d-models/dalton-projectile-point-4dad0c5679724ec79b0a622b2114f404?utm_medium=embed&utm_campaign=share-popup&utm_content=4dad0c5679724ec79b0a622b2114f404" 
-  iframe_src="https://sketchfab.com/models/4dad0c5679724ec79b0a622b2114f404/embed"
-  iframe_title="Dalton Projectile Point"
-  ></artifact-3d>
-
-  <artifact-3d 
-  href_src="https://sketchfab.com/3d-models/fishtail-projectile-point-741094b62328417383b1255fa323bdb6?utm_medium=embed&utm_campaign=share-popup&utm_content=741094b62328417383b1255fa323bdb6" 
-  iframe_src="https://sketchfab.com/models/741094b62328417383b1255fa323bdb6/embed"
-  iframe_title="Fishtail Projectile Point"
-  ></artifact-3d>
-
-  <artifact-3d 
-  href_src="https://sketchfab.com/3d-models/tigre-projectile-point-74c513f9bd614bb78badaa4b77756d33?utm_medium=embed&utm_campaign=share-popup&utm_content=74c513f9bd614bb78badaa4b77756d33" 
-  iframe_src="https://sketchfab.com/models/74c513f9bd614bb78badaa4b77756d33/embed"
-  iframe_title="Tigre Projectile Point"
-  ></artifact-3d>
-
-  <artifact-3d 
-  href_src="https://sketchfab.com/3d-models/recipiente-ceramico-sitio-tigre-k87-5289f4b399b9456780540b7e230c5246?utm_medium=embed&utm_campaign=share-popup&utm_content=5289f4b399b9456780540b7e230c5246"  
-  iframe_src="https://sketchfab.com/models/5289f4b399b9456780540b7e230c5246/embed"
-  iframe_title="Recipiente cerámico - Sitio Tigre (K87)"
-  ></artifact-3d>
-
-  <artifact-3d 
-  href_src="https://sketchfab.com/3d-models/recipiente-ceramico-sitio-tigre-k87-1af9c5f56d0b4f93bcad1e05fcf8c2e4?utm_medium=embed&utm_campaign=share-popup&utm_content=1af9c5f56d0b4f93bcad1e05fcf8c2e4"  
-  iframe_src="https://sketchfab.com/models/1af9c5f56d0b4f93bcad1e05fcf8c2e4/embed"
-  iframe_title="Recipiente cerámico (2) - Sitio Tigre (K87)"
-  ></artifact-3d>
-
-  <div style="text-align: center;" class="Articles3D-footer">
-  by <a href="https://sketchfab.com/Flavia_Barcelo?utm_medium=embed&utm_campaign=share-popup&utm_content=74c513f9bd614bb78badaa4b77756d33" target="_blank" style="font-weight: bold; color: #000000;"> Flavia Barceló </a> on <a href="https://sketchfab.com?utm_medium=embed&utm_campaign=share-popup&utm_content=74c513f9bd614bb78badaa4b77756d33" target="_blank" style="font-weight: bold; color: #000000;">Sketchfab</a></div>
-        </div> <br>
+      <div class="content">
+        <div class="intro">
+        <div class="subtitle">
+          <p id="map">MAPA DE SITIOS ARQUEOLÓGICOS</p>
+        </div>
+        <div class="maps">
+          <iframe
+            width="100%"
+            height="576"
+            src="https://maphub.net/embed/173834?legend=1&panel=1"
+            frameborder="0"
+          ></iframe>
+        </div>
+      </div>
     </div>
-  </div>
     </div>
-      </body>
+  </body>
 </html>

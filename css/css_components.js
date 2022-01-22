@@ -19,7 +19,6 @@ justify-content: center;
 align-items: center;
 text-align: center;
 font-size: 2.6rem;
-font-weight: bold;
 font-family: "Cabin Sketch", cursive;
 }
 
@@ -35,7 +34,7 @@ display: flex;
 height: 100%;
 justify-content: center;
 align-items: center;
-margin: 20px;
+margin: 8px;
 
 }
 .link_container a {
@@ -62,8 +61,6 @@ border-radius: 6px;
 display:none;
  }
 
-
-
 @media screen and (max-width: 1100px) {
 .topnav {
   position: relative;
@@ -80,6 +77,17 @@ display:none;
   text-align: left;
   align-items: center;
   text-align: center;
+}
+
+.link_container{
+  width: 100%;
+
+}
+
+.link_container a{
+  width: 100%;
+  justify-content: center;
+
 }
 }
 `;
