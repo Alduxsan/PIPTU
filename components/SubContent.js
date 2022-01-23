@@ -9,11 +9,14 @@ class SubContent extends HTMLElement {
     return SubContent_css;
   }
 
-
-  set_img(img) {
-    return img && img.match(/.(jpg|jpeg|png|gif)$/i) ? `<div class="imgContainer" 
+  imgStyle(url) {
+    return `
     style="
-    background-image: url(${img});
+    background-image: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)
+    ), url(${url});
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -24,9 +27,15 @@ class SubContent extends HTMLElement {
     margin-top: 3%;
     margin-bottom: 3%;
   }
-    ">
-  </div>  `: "<div></div>"
-     
+    "
+    `;
+  }
+
+  set_img(img) {
+    return img && img.match(/.(jpg|jpeg|png|gif)$/i)
+      ? `<div class="imgContainer" ${this.imgStyle(img)}>
+  </div>  `
+      : "<div></div>";
   }
 
   getSubcontent(section) {
@@ -48,7 +57,9 @@ class SubContent extends HTMLElement {
           <div class="subsection">
             <h2 class="subsection_title">${data.subsection_title}</h2>
             ${this.set_img(data.img)}           
-            <div><p class="subsection_content">${data.subsection_content}</p></div>            
+            <div><p class="subsection_content">${
+              data.subsection_content
+            }</p></div>            
           </div>
           <br>
       <style>
