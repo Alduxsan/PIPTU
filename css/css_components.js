@@ -94,71 +94,92 @@ display:none;
 const Profiles_css = `
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@200;700&display=swap');
 
+.hidden{
+  display: none
+}
+
 .profile_card{
   display: flex;
   justify-content: center;
-  width: 80%;
   margin: auto;
+  width:90%;
   margin-bottom: 10px;
   padding-bottom: 10px;
   border-bottom: 1px dotted rgba(56, 20, 0, 0.856);
-  }
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+}
 
 .imgNameContainer{
   width: 300px;
+  margin-right: 10px;
+  background-color: rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(1px);
+  height: auto;
+  padding: 0 20px 0 20px;
+  border-radius: 8px;
+
 }
 
 .nameContainer{
   display: flex;
   font-size: 2rem;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
   text-align: center;
-
+  justify-content: center;
 }
-
 .nameContainer p{
   font-weight: bolder;
   color:rgb(0, 0, 0);
   font-weight: bold;
   font-family: 'M PLUS Rounded 1c', sans-serif;
   text-align: center;
+  margin: auto;
 }
 
-.imgContainer{
-  margin: auto;
-  width: 80%;
-  text-align: center;
-  justify-content: center;
-  height: fit-content;
-}
 .imgContainer img{
   width: 100%;
-  overflow: hidden;
-  border-radius: 50%;
+  border-radius: 8px;
   box-shadow: 1px 2px 3px black;
-}
+  cursor: pointer;
+  margin-top: 25px
 
+}
 .bioContainer{
-  justify-content: center;
-  text-align: justify;
   width: 90%;
-  margin-left: 1%;
-  font-family: 'M PLUS Rounded 1c', sans-serif;
-  line-height: 2;
-
+  background-color: rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(1px);
+  border-radius: 8px;
+ 
 }
-.bioContainer a{
+.bio{
+  text-align: justify;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  line-height: 1.5;
+  font-size: 1.3rem;
+  column-count: 2;
+  padding: 0 2% 0 2%;
+}
+.bio a{
   text-decoration: none;
   color: rgb(255, 255, 255);
   cursor: pointer;
 }
 
+.bio a:hover{
+  color: green;
+  cursor: pointer;
+}
 @media screen and (max-width: 1100px) {
   .profile_card{
     display: block;
   }
+
+  .imgNameContainer{
+    margin: auto;
+  }
+
   .imgContainer{
     width: fit-content;
     margin: auto;
@@ -167,8 +188,10 @@ const Profiles_css = `
     height: fit-content;
     margin-bottom: 10px;
   }
-
   }
+
+  
+  
 `;
 
 const SubContent_css = `
@@ -179,12 +202,11 @@ const SubContent_css = `
   text-align: justify;
 }
 
-.subsection_title{
-  font-size: 2rem;
-  text-align: center;
+.imgContainer{
+  font-size: 3rem;
   color: rgb(255, 255, 255);
   text-shadow: 1px 1px 1px rgb(0, 0, 0);
-  margin-top: 2%
+  padding: 1%
 }
 
 .subsection_content::first-letter{

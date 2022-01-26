@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@200;700&display=swap');
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -7,13 +9,14 @@
 html {
   background: no-repeat url(../media/liquid-cheese.svg);
   background-size: cover;
-
+  background-color: rgba(255, 255, 255, 0.2);
 
 }
 
 body {
   font-family: sans-serif;
   font-size: 16px;
+  margin: auto;
 }
 
 .styckyActive{
@@ -21,11 +24,13 @@ body {
 }
 
 .content {
+margin: auto;
   width: 100%;
-  padding: 2%;
   background-color: rgba(240, 255, 240, 0.144);
   -webkit-backdrop-filter: blur(2px);
   backdrop-filter: blur(2px);
+  border-radius: 8px;
+
 }
 
 .img {
@@ -71,6 +76,7 @@ body {
 .iconContainer{
   height: 50%;
   margin: auto;
+  margin-bottom: 15px
 }
 
 .link_card img{
@@ -93,6 +99,10 @@ border-bottom: 1px solid black;
 
 .sublink:hover{
   color: aliceblue;
+}
+
+.hidden{
+  display:none;
 }
 
 /* 
