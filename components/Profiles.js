@@ -11,11 +11,12 @@ class Profiles extends HTMLElement {
 
   data = profiles;
  
-
   profileTemplate(data){
     const template = document.createElement('template');
     return template.innerHTML = `  
-      <div class="profile_card">
+      
+        <details>
+      <summary><div class="profile_card">
       <div class="imgNameContainer">
       <div class="imgContainer">
             <img src="${data.img}" alt="">
@@ -23,11 +24,13 @@ class Profiles extends HTMLElement {
         <div class="nameContainer">
           <p>${data.name}</p>
         </div>
-        </div>   
+        </div></summary>   
         <div class="bioContainer">
             <p class="bio">${data.bio}</p>
         </div>
     </div>
+    </details>
+
     `
   }
 

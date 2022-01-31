@@ -81,14 +81,13 @@ display:none;
 
 .link_container{
   width: 100%;
-
 }
 
 .link_container a{
   width: 100%;
   justify-content: center;
-
 }
+
 }
 `;
 const Profiles_css = `
@@ -105,8 +104,19 @@ const Profiles_css = `
   width:90%;
   margin-bottom: 10px;
   padding-bottom: 10px;
-  border-bottom: 1px dotted rgba(56, 20, 0, 0.856);
   font-family: 'M PLUS Rounded 1c', sans-serif;
+
+}
+
+summary{
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+}
+
+details{
+  display: flex;
+  justify-content: center;
 }
 
 .imgNameContainer{
@@ -141,16 +151,16 @@ const Profiles_css = `
   width: 100%;
   border-radius: 8px;
   box-shadow: 1px 2px 3px black;
-  cursor: pointer;
   margin-top: 25px
-
 }
+
 .bioContainer{
   width: 90%;
   background-color: rgba(255, 255, 255, 0.2);
   -webkit-backdrop-filter: blur(2px);
   backdrop-filter: blur(1px);
   border-radius: 8px;
+  margin: auto;
  
 }
 .bio{
@@ -159,7 +169,8 @@ const Profiles_css = `
   line-height: 1.5;
   font-size: 1.3rem;
   column-count: 2;
-  padding: 0 2% 0 2%;
+  padding: 40px;
+  margin-top: 0px;
 }
 .bio a{
   text-decoration: none;
@@ -171,6 +182,9 @@ const Profiles_css = `
   color: green;
   cursor: pointer;
 }
+
+
+
 @media screen and (max-width: 1100px) {
   .profile_card{
     display: block;
@@ -216,11 +230,34 @@ const SubContent_css = `
 
 .subsection_content{
   margin-top: 10px;
-  font-size: 1.2rem;
+  line-height: 1.5;
+  font-size: 1.3rem;
   column-count: 2;
   column-rule:1px dotted silver ;
   column-gap:2rem;
-  line-height: 2;
+}
+
+.projectsList{
+  color: rgba(56, 20, 0);
+  line-height: 1.5;
+  font-size: 1.3rem;
+  justify-content: center;
+  margin: auto;
+  text-align: justify;
+  background-color: rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(1px);
+  border-radius: 8px;
+  padding: 50px;
+}
+
+.projectsList h3{
+  font-size: 2rem;
+}
+
+.projectsList li{
+  color: black;
+  margin: 10px;
 }
 `
 
@@ -270,6 +307,22 @@ iframe{
 }
 `
 
+const ProjectListItem_css = `
+
+  .link-container a{
+    text-decoration: none;
+    color: rgb(231, 231, 231);
+    transition: 0.3s all;
+    }
+    
+    .link_container :hover {
+    background-color: rgb(41, 14, 0);
+    transition: 1.0s all;
+    display: flex;
+    height: 100%;
+    border-radius: 6px;
+     }
+`
 
 
-export { Navbar_css, Profiles_css, SubContent_css, Artifact3D_css };
+export { Navbar_css, Profiles_css, SubContent_css, Artifact3D_css, ProjectListItem_css };

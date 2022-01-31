@@ -2,6 +2,7 @@ import "./components/Navbar.js";
 import "./components/Profiles.js";
 import "./components/SubContent.js";
 import "./components/artifacts3d.js";
+import "./components/ProjectListItem.js";
 
 window.onscroll = function () {
   setSticky();

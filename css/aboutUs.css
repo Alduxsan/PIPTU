@@ -101,10 +101,6 @@ border-bottom: 1px solid black;
   color: aliceblue;
 }
 
-.hidden{
-  display:none;
-}
-
 /* 
 QUIENES SOMOS CONTENT STYLE
 */
@@ -118,7 +114,7 @@ QUIENES SOMOS CONTENT STYLE
 }
 
 .intro{
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   background-color: rgba(255, 255, 255, 0.103);
   -webkit-backdrop-filter: blur(2px);
   backdrop-filter: blur(1px);
@@ -142,6 +138,14 @@ QUIENES SOMOS CONTENT STYLE
 
 /*end content style */
 
+.list-container{
+  width: 80%;
+  margin: auto;
+}
+
+.list-container h3{
+  font-size: 2rem;
+}
 
 @media only screen and (max-width: 500px) {
   .title {

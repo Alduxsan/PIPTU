@@ -1,91 +1,178 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script type="module" src="./index.js" defer></script>
     <link rel="stylesheet" href="./css/aboutUs.css" />
-    <title> LIPTU - About us</title>
-</head>
+    <title>LIPTU - About us</title>
+  </head>
 
-<body>
+  <body>
     <nav-bar atribute="aboutUs"></nav-bar>
     <div id="general">
-    <div class="title">
-        <p>
-          SOBRE NOSOTROS
-        </p>
+      <div class="title">
+        <p>SOBRE NOSOTROS</p>
       </div>
       <div class="sublink_container">
-
         <div class="link_card">
           <div class="iconContainer">
-            <img src="media/hat.svg" alt="">
+            <img src="media/hat.svg" alt="" />
           </div>
           <div>
             <a class="sublink" href="#quienes">QUIENES SOMOS</a>
           </div>
-          </div> 
+        </div>
 
         <div class="link_card">
           <div class="iconContainer">
-          <img src="media/shovel.png" alt="">
+            <img src="media/shovel.png" alt="" />
+          </div>
+          <div>
+            <a class="sublink" href="#quehacemos">QUE HACEMOS</a>
+          </div>
         </div>
-         <div>
-           <a class="sublink" href="#quehacemos">QUE HACEMOS</a>
-          </div>
-          </div>
 
         <div class="link_card">
           <div class="iconContainer">
-          <img src="media/colab.png" alt="">
+            <img src="media/colab.png" alt="" />
+          </div>
+          <div>
+            <a class="sublink" href="#colaboraciones">COLABORACIONES</a>
+          </div>
         </div>
-          <div><a class="sublink" href="#colaboraciones">COLABORACIONES</a>
       </div>
-      
-    </div>
-    </div>
-    <div class="content">
-      <div id="quienes" class="subtitle">
-        <p>
-          QUIENES SOMOS
-        </p>
+      <div class="content">
+        <div id="quienes" class="subtitle">
+          <p>QUIENES SOMOS</p>
+        </div>
+
+        <div class="profile_card">
+          <div class="imgNameContainer">
+          <div class="imgContainer">
+                <img src="${data.img}" alt="">
+              </div>
+            <div class="nameContainer">
+              <p>${data.name}</p>
+            </div>
+            </div>
+            <details>
+          <summary>BIO</summary>   
+            <div class="bioContainer">
+                <p class="bio">${data.bio}</p>
+            </div>
+            </details>
+        </div>
+
+        <div class="profiles_wrapper">
+          <profile-box></profile-box>
+        </div>
+        <div id="quehacemos" class="subtitle">
+          <p>QUE HACEMOS</p>
+        </div>
+        <div class="quehacemos">
+          <div class="intro">
+            La investigación prehistórica que realizamos se orienta a generar
+            conocimiento sobre los primeros humanos que exploraron las planicies
+            de Uruguay durante el final de la edad de Hielo. Investigamos en
+            diferentes regiones (escala local, regional y extra-regional) donde
+            la unidad básica de investigación son diferentes tipos de sitios
+            arqueológicos: 1) campamentos bases o residenciales, 2) aleros
+            rocosos y cuevas, y 3) canteras-talleres de aprovisionamiento de
+            materias primas. Éstos sitios arqueológicos conforman parte de un
+            patrón de asentamiento planificado realizado por los
+            cazadores-recolectores tempranos, que se orientó hacia la obtención
+            de diversos recursos para la supervivencia. Desarrollamos varias
+            líneas de investigación que incluyen: movilidad y utilización del
+            espacio, innovaciones tecnológicas y respuesta de los
+            cazadores-recolectores al cambio climático, prestigio
+            social/individual entre los grupos tempranos, tecnología lítica,
+            arqueología experimental.
+          </div>
+          <br />
+
+          <sub-content section="projects"></sub-content>
+
+          <div class="list-container">
+            <div class="list_sectionTitle"><h3>EN DESARROLLO</h3></div>
+
+              <project-listitem
+                src = ""
+                name='2021-actual. “Evolución paleoambiental, explotación de recursos faunísticos y respuestas tecnológicas de los cazadores-recolectores al cambio climático durante el final del Pleistoceno en Uruguay”. Financiado CSIC I+D 2020. FHCE-Udelar.'></project-listitem>
+              
+
+              <project-listitem
+              src="https://www.csic.edu.uy/content/poblamiento-movilidad-y-reorganizaci%C3%B3n-cultural-explorando-la-inicial-dispersi%C3%B3n-humana-en"
+              name='“The Paleoamerican exploration of the Uruguay middle river during the late Pleistocene” (Post PhD grant # 9978). Financiado CSIC I + D 2016. FHCE.'
+              /></project-listitem>
+
+            <div class="list_sectionTitle"><h3>FINALIZADOS</h3></div>
+              <project-listitem
+              src="https://www.csic.edu.uy/content/poblamiento-movilidad-y-reorganizaci%C3%B3n-cultural-explorando-la-inicial-dispersi%C3%B3n-humana-en"
+              name='2013-2015.  “El poblamiento temprano del río Uruguay medio: variabilidad cultural durante la transición Pleistoceno Holoceno hace 13,000-10,200 años cal. AP”.  Financiado por CSIC -  I + D 2012. FHCE.'
+              /></project-listitem>
+
+              <project-listitem
+              src='https://www.fhuce.edu.uy/index.php/noticias/193-upc-2/proyectos-aprobados/proyectos-de-investigacion-en-ejecucion/3584-el-poblamiento-temprano-del-rio-uruguay-medio-variabilidad-cultural-durante-la-transicion-pleistoceno-holoceno-hace-13-000-10-200-anos-cal-ap-csic-i-d'
+              name='2013-2015. “El poblamiento temprano del río Uruguay medio: variabilidad cultural durante la transición Pleistoceno Holoceno hace 13,000-10,200 años cal. AP”.  Financiado por CSIC -  I + D 2012. FHCE.'/></project-listitem>
+              
+              <project-listitem
+              src='https://www.fhuce.edu.uy/index.php/ciencias-antropologicas/departamento-de-arqueologia/proyectos/poblamiento-temprano-en-el-norte-de-uruguay/publicaciones/4565-suarez-rafael-2011-arqueologia-durante-la-transicion-pleistoceno-holoceno-componentes-paleoindios-organizacion-de-la-tecnologia-y-movilidad-de-los-primeros-americanos-en-uruguay'
+              name='2011-2013. “Arqueología y paleoambientes durante la transición Pleistoceno Holoceno en el Norte de Uruguay” (FCE_2009_1_2453). Financiado por ANII-Fondo Clemente Estable / FHCE-Depto. Arqueología.'/></project-listitem>
+
+              <project-listitem
+              src='https://www.fhuce.edu.uy/index.php/ciencias-antropologicas/departamento-de-arqueologia/proyectos/poblamiento-temprano-en-el-norte-de-uruguay/proyectos'
+              name='2011-2012 “Clovis and Fishtail: Technology of Late Pleistocene Peoples and their settlement of the Americas”. Financiado por la British Academy - University of Exeter (Inglaterra).'/></project-listitem>
+
+              <project-listitem
+              src='https://cir.cenieh.es/bitstream/20.500.12136/676/1/Excavaciones%20en%20Zanja%20del%20Tigre%20%28Uruguay%29.%20Primeras%20ocupaciones%20humanas%20de%20Am%C3%A9rica_Mateos%20Cachotto_et_al_2012.pdf'
+              name='2010-2011 “Excavaciones en Zanja del Tigre (Uruguay). Primeras ocupaciones humanas de América”. Financiado por el Ministerio de Cultura de España.'/></project-listitem>
+              
+              <project-listitem
+              src=''
+              name='2008-2009 “Paleoindian adaptations at the subtropical landscape during Pleistocene-Holocene Transition in Uruguay”. Financiado por The Wenner-Gren Foundation for Anthropological Research, New York-USA, grant Nº 7864-08. '/></project-listitem>
+
+              <project-listitem
+              src=''
+              name='2005-2007 “Archaeology of the first Americans, survival of Pleistocene fauna and paleoenvironmental change at the Pleistocene-Holocene transition in Uruguay”. Financiado por National Geographic Society.'/></project-listitem>
+        </div>
+          
+          <div id="colaboraciones" class="subtitle">
+              <p>COLABORACIONES</p>
+              <div class="links_container">
+              <a class="colabLink" href="https://www.fhuce.edu.uy/"
+                ><img src="media/colab-icons/fhce.png" alt=""
+              /></a>
+              <a class="colabLink" href="https://www.fcien.edu.uy/"
+                ><img src="media/colab-icons/fcien.png" alt=""
+              /></a>
+              <a class="colabLink" href="https://www.mna.gub.uy/"
+                ><img src="media/colab-icons/mna.png" alt=""
+              /></a>
+              <a class="colabLink" href="http://www.museohistorico.gub.uy/"
+                ><img src="media/colab-icons/mh.gif" alt=""
+              /></a>
+              <a class="colabLink" href="https://www.exeter.ac.uk/"
+                ><img src="media/colab-icons/exter.png" alt=""
+              /></a>
+              <a class="colabLink" href="http://www.uesc.br/"
+                ><img src="media/colab-icons/uesc.png" alt=""
+              /></a>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="profiles_wrapper">
-      <profile-box></profile-box>
     </div>
-      <div id="quehacemos" class="subtitle">
-        <p>
-          QUE HACEMOS
-        </p>
+  </body>
+
+  <footer>
+    <div>
+      Icons made by
+      <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons"
+        >Smashicons</a
+      >
+      from
+      <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
     </div>
-    <div class="quehacemos">
-
-      <div class="intro">
-      La investigación prehistórica que realizamos se orienta a generar conocimiento sobre los primeros humanos que exploraron las planicies de Uruguay durante el final de la edad de Hielo. Investigamos en diferentes regiones (escala local, regional y extra-regional) donde la unidad básica de investigación son diferentes tipos de sitios arqueológicos: 1) campamentos bases o residenciales, 2) aleros rocosos y cuevas, y 3) canteras-talleres de aprovisionamiento de materias primas. Éstos sitios arqueológicos conforman parte de un patrón de asentamiento planificado realizado por los cazadores-recolectores tempranos, que se orientó hacia la obtención de diversos recursos para la supervivencia. Desarrollamos varias líneas de investigación que incluyen: movilidad y utilización del espacio, innovaciones tecnológicas y respuesta de los cazadores-recolectores al cambio climático, prestigio social/individual entre los grupos tempranos, tecnología lítica, arqueología experimental. 
-        </div> <br>
-
-        <sub-content section="projects"></sub-content>
-
-    <div id="colaboraciones" class="subtitle">
-      <p>
-        COLABORACIONES
-      </p>
-      <div class="links_container">
-        <a class="colabLink" href="https://www.fhuce.edu.uy/"><img src="media/colab-icons/fhce.png" alt=""></a>
-        <a class="colabLink" href="https://www.fcien.edu.uy/"><img src="media/colab-icons/fcien.png" alt=""></a>
-        <a class="colabLink" href="https://www.mna.gub.uy/"><img src="media/colab-icons/mna.png" alt=""></a>
-        <a class="colabLink" href="http://www.museohistorico.gub.uy/"><img src="media/colab-icons/mh.gif" alt=""></a>
-        <a class="colabLink" href="https://www.exeter.ac.uk/"><img src="media/colab-icons/exter.png" alt=""></a>
-        <a class="colabLink" href="http://www.uesc.br/"><img src="media/colab-icons/uesc.png" alt=""></a>
-      </div>
-    </div>
-  </div>
-</div>
-    </div>
-</body>
-
-<footer>
-  <div>Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
-</footer>
+  </footer>
 </html>
