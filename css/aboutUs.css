@@ -45,7 +45,7 @@ margin: auto;
   font-size: 5rem;
   color: rgb(255, 255, 255);
   text-shadow: 2px 2px 2px rgb(0, 0, 0);
-  padding: 1%;
+  padding: 3%;
   -webkit-backdrop-filter: blur(3px);
   backdrop-filter: blur(3px);
 }
