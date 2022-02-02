@@ -93,9 +93,6 @@ display:none;
 const Profiles_css = `
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@200;700&display=swap');
 
-.hidden{
-  display: none
-}
 
 .profile_card{
   display: flex;
@@ -105,18 +102,23 @@ const Profiles_css = `
   margin-bottom: 10px;
   padding-bottom: 10px;
   font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+details{
+  justify-content: center;
+  width: 100%;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(1px);
+  padding: 20px;
 
 }
 
 summary{
+  list-style: none;
   cursor: pointer;
-  display: flex;
-  justify-content: center;
-}
-
-details{
-  display: flex;
-  justify-content: center;
+  left: 0;  
 }
 
 .imgNameContainer{
@@ -126,24 +128,17 @@ details{
   -webkit-backdrop-filter: blur(2px);
   backdrop-filter: blur(1px);
   height: auto;
-  padding: 0 20px 0 20px;
+  padding: 20px;
   border-radius: 8px;
 
 }
 
-.nameContainer{
-  display: flex;
-  font-size: 2rem;
-  align-items: center;
-  text-align: center;
-  justify-content: center;
-}
 .nameContainer p{
+  font-size: 2rem;
   font-weight: bolder;
   color:rgb(0, 0, 0);
   font-weight: bold;
   font-family: 'M PLUS Rounded 1c', sans-serif;
-  text-align: center;
   margin: auto;
 }
 
@@ -151,14 +146,9 @@ details{
   width: 100%;
   border-radius: 8px;
   box-shadow: 1px 2px 3px black;
-  margin-top: 25px
 }
 
 .bioContainer{
-  width: 90%;
-  background-color: rgba(255, 255, 255, 0.2);
-  -webkit-backdrop-filter: blur(2px);
-  backdrop-filter: blur(1px);
   border-radius: 8px;
   margin: auto;
  
@@ -170,7 +160,6 @@ details{
   font-size: 1.3rem;
   column-count: 2;
   padding: 40px;
-  margin-top: 0px;
 }
 .bio a{
   text-decoration: none;

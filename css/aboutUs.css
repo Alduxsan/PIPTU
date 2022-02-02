@@ -19,9 +19,11 @@ body {
   margin: auto;
 }
 
+
 .styckyActive{
   margin-top:400px
 }
+
 
 .content {
 margin: auto;
@@ -30,7 +32,6 @@ margin: auto;
   -webkit-backdrop-filter: blur(2px);
   backdrop-filter: blur(2px);
   border-radius: 8px;
-
 }
 
 .img {
@@ -82,7 +83,12 @@ margin: auto;
 .link_card img{
   height: 100%;
 }
-  
+
+
+.profiles_wrapper{
+  display: block
+}
+
 .sublink {
   font-family: 'M PLUS Rounded 1c', sans-serif;
   text-decoration: none;
@@ -101,9 +107,7 @@ border-bottom: 1px solid black;
   color: aliceblue;
 }
 
-/* 
-QUIENES SOMOS CONTENT STYLE
-*/
+
 .quehacemos{
   justify-content: center;
   margin: auto;
@@ -128,15 +132,6 @@ QUIENES SOMOS CONTENT STYLE
   flex-direction: column;
 }
 
-.colabLink{
-  margin: 10px;
-}
-
-.colabLink img{
-  width: 300px;
-}
-
-/*end content style */
 
 .list-container{
   width: 80%;
@@ -146,6 +141,17 @@ QUIENES SOMOS CONTENT STYLE
 .list-container h3{
   font-size: 2rem;
 }
+
+
+/* footer */
+.colabLink{
+  margin: 10px;
+}
+
+.colabLink img{
+  width: 300px;
+}
+
 
 @media only screen and (max-width: 500px) {
   .title {

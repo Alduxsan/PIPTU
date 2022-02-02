@@ -14,23 +14,26 @@ class Profiles extends HTMLElement {
   profileTemplate(data){
     const template = document.createElement('template');
     return template.innerHTML = `  
-      
-        <details>
-      <summary><div class="profile_card">
-      <div class="imgNameContainer">
-      <div class="imgContainer">
-            <img src="${data.img}" alt="">
-          </div>
-        <div class="nameContainer">
-          <p>${data.name}</p>
-        </div>
-        </div></summary>   
-        <div class="bioContainer">
-            <p class="bio">${data.bio}</p>
-        </div>
-    </div>
-    </details>
 
+    <div class="profile_card">
+    
+        <div class="imgNameContainer">
+          <div class="imgContainer">
+              <img src="${data.img}" alt="">
+          </div>         
+        </div>
+        
+        <details>
+        <summary>
+          <div class="nameContainer">
+              <p>${data.name}</p>
+          </div>
+        </summary>   
+          <div class="bioContainer">
+              <p class="bio">${data.bio}</p>
+          </div>
+        </details>
+    </div>
     `
   }
 
