@@ -100,7 +100,7 @@ const Profiles_css = `
   margin: auto;
   width:90%;
   margin-bottom: 10px;
-  padding-bottom: 10px;
+  padding-bottSom: 10px;
   font-family: 'M PLUS Rounded 1c', sans-serif;
 }
 
@@ -112,6 +112,7 @@ details{
   -webkit-backdrop-filter: blur(2px);
   backdrop-filter: blur(1px);
   padding: 20px;
+  height: min-content;
 
 }
 
@@ -140,6 +141,7 @@ summary{
   font-weight: bold;
   font-family: 'M PLUS Rounded 1c', sans-serif;
   margin: auto;
+  text-align: center;
 }
 
 .imgContainer img{
@@ -159,7 +161,6 @@ summary{
   line-height: 1.5;
   font-size: 1.3rem;
   column-count: 2;
-  padding: 40px;
 }
 .bio a{
   text-decoration: none;
