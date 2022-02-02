@@ -96,7 +96,6 @@ const Profiles_css = `
 
 .profile_card{
   display: flex;
-  justify-content: center;
   margin: auto;
   width:90%;
   margin-bottom: 10px;
@@ -106,7 +105,7 @@ const Profiles_css = `
 
 details{
   justify-content: center;
-  width: 100%;
+  width: fit-content;
   border-radius: 8px;
   background-color: rgba(255, 255, 255, 0.2);
   -webkit-backdrop-filter: blur(2px);
@@ -123,7 +122,6 @@ summary{
 }
 
 .imgNameContainer{
-  width: 300px;
   margin-right: 10px;
   background-color: rgba(255, 255, 255, 0.2);
   -webkit-backdrop-filter: blur(2px);
