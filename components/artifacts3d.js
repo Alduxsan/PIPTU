@@ -22,6 +22,7 @@ class Artifact3D extends HTMLElement {
   render(parameters) {
     this.innerHTML = 
     ` 
+    <div class="artifactWrapper">
       <div class="sketchfab-embed-wrapper">
       <p class="artifactTitle">
           <a href=${parameters.href_src} target="_blank">${parameters.iframe_title}</a> </p>

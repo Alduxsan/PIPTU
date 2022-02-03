@@ -254,11 +254,15 @@ const SubContent_css = `
 `
 
 const Artifact3D_css = `
-.sketchfab-embed-wrapper{
+
+.artifactWrapper{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-self: center;
+  margin: 20px;
+  border-radius: 8px;
+  padding: 2%;
 }
 
 iframe{
@@ -266,6 +270,11 @@ iframe{
   width: 80%;
   margin: auto;
   margin-bottom: 15px;
+  margin-top: 20px;
+  box-shadow:
+    0px 3px 5px -1px rgba(0, 0, 0, 0.2),
+    0px 6px 10px 0px rgba(0, 0, 0, 0.70),
+    0px 1px 18px 0px rgba(0,0,0,.12);
   
 }
 

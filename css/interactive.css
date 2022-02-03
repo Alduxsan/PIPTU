@@ -82,7 +82,7 @@
   .sublink {
     font-family: 'M PLUS Rounded 1c', sans-serif;
     text-decoration: none;
-    margin: 15px;
+    margin: auto;
     color: rgb(0, 0, 0);
     font-size: 150%;
     transition: color 0.5s;
