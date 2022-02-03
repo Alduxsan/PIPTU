@@ -25,8 +25,8 @@ class Profiles extends HTMLElement {
         
         <details>
         <summary>
-          <div class="nameContainer">
-              <p>${data.name}</p>
+          <div id="name" class="nameContainer">
+              <p id="name">${data.name}</p>
           </div>
         </summary>   
           <div class="bioContainer">

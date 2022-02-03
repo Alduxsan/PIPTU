@@ -8,7 +8,7 @@ bio: 'Doctor en Antropología por la University of Cambridge, England. Es un inv
 img: "media/rafa.jpeg"},
 ,
 { 
-    name : "FLORENCIA",
+    name : "FLORENCIA BARCELÓ",
     bio : 'Nació en el seno de una familia de clase media acomodada polaca. Hijo de Lucjan Malinowski, un eslavista especializado en el dialecto polaco de Silesia. Durante su niñez sufrió de los achaques de una salud frágil. En 1897 su madre viajó con él por los países del sur europeo, por cuestiones de salud. En 1903 comienza a estudiar filosofía en la Universidad de Cracovia, doctorándose en 1908, especializándose en física y matemáticas. Se traslada a Leipzig (Alemania) para profundizar sus conocimientos en psicología y economía bajo la dirección de C. G. Seligman. La lectura de The Golden Bough (La rama dorada) de James Frazer volcó su interés hacia la Antropología Social lo que le llevó a Inglaterra para formarse en esta disciplina, obteniendo su grado en la London School of Economics en 1910. Fue profesor en esta Universidad desde 1913, y allí se doctoró en 1916. En 1914 viajó a Papúa (actual Papúa Nueva Guinea), donde llevó adelante un trabajo de campo en Mailu y en las islas Trobriand. Como súbdito del Imperio austrohúngaro en territorio bajo jurisdicción británica, la declaración de la Primera Guerra Mundial lo obligó a aceptar el destierro en las islas Trobriand hasta que acabase la guerra. Aquí es donde realizó su trabajo de campo acerca del kula y comenzó a ',
     img : "media/flor.jpeg"
 },

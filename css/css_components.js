@@ -104,7 +104,6 @@ const Profiles_css = `
 }
 
 details{
-  justify-content: center;
   width: fit-content;
   border-radius: 8px;
   background-color: rgba(255, 255, 255, 0.2);
@@ -115,10 +114,24 @@ details{
 
 }
 
+.nameContainer p{
+  font-size: 2rem;
+  font-weight: bolder;
+  color:rgb(0, 0, 0);
+  font-weight: bold;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  margin: auto;
+}
+
 summary{
   list-style: none;
-  cursor: pointer;
-  left: 0;  
+  cursor: pointer; 
+}
+
+
+#name:hover{
+  color: rgb(255, 255, 255);
+  width: 600px;
 }
 
 .imgNameContainer{
@@ -132,15 +145,6 @@ summary{
 
 }
 
-.nameContainer p{
-  font-size: 2rem;
-  font-weight: bolder;
-  color:rgb(0, 0, 0);
-  font-weight: bold;
-  font-family: 'M PLUS Rounded 1c', sans-serif;
-  margin: auto;
-  text-align: center;
-}
 
 .imgContainer img{
   width: 100%;
