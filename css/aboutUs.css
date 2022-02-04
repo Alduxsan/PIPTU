@@ -90,7 +90,7 @@ margin: auto;
   color: rgb(0, 0, 0);
   font-size: 150%;
   transition: color 0.5s;
-  
+  text-align: center;
 }
 
 .link_card:hover{

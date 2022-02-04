@@ -86,6 +86,7 @@ body {
   transition: color 0.5s;
 }
 
+
 .link_card:hover {
   border-bottom: 1px solid black;
 }
@@ -100,7 +101,7 @@ body {
   background-color: rgba(255, 255, 255, 0.103);
   -webkit-backdrop-filter: blur(2px);
   backdrop-filter: blur(1px);
-  padding: 1%;
+  padding: 3%;
   border-radius: 6px;
   text-align: justify;
 }
@@ -109,9 +110,14 @@ body {
   display: flex;
   justify-content: center;
   margin: auto;
+  cursor: pointer;
+
 }
 
 .maps iframe{
   border-radius: 6px;
-  
+  box-shadow:
+  0px 3px 10px 0px rgba(0, 0, 0, 0.8),
+  0px 3px 10px 0px rgba(0, 0, 0, 0.8),
+  0px 3px 10px 0px rgba(0,0,0,.8);
 }

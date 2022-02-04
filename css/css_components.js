@@ -45,6 +45,7 @@ display: flex;
 list-style: none;
 text-shadow: 1.5px 1.5px 1px rgb(0, 0, 0);
 padding: 8px;
+transition: transform 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
 .link_container :hover {
@@ -55,7 +56,7 @@ height: 100%;
 justify-content: center;
 align-items: center;
 border-radius: 6px;
- }
+}
 
 .active {
 display:none;
@@ -111,7 +112,6 @@ details{
   backdrop-filter: blur(1px);
   padding: 20px;
   height: min-content;
-
 }
 
 .nameContainer p{
@@ -120,7 +120,6 @@ details{
   color:rgb(0, 0, 0);
   font-weight: bold;
   font-family: 'M PLUS Rounded 1c', sans-serif;
-  margin: auto;
 }
 
 summary{
@@ -128,7 +127,9 @@ summary{
   cursor: pointer; 
 }
 
-
+#name{
+  width: 400px
+}
 #name:hover{
   color: rgb(255, 255, 255);
   width: 600px;
@@ -144,7 +145,6 @@ summary{
   border-radius: 8px;
 
 }
-
 
 .imgContainer img{
   width: 100%;
@@ -195,9 +195,6 @@ summary{
     margin-bottom: 10px;
   }
   }
-
-  
-  
 `;
 
 const SubContent_css = `
@@ -212,7 +209,11 @@ const SubContent_css = `
   font-size: 3rem;
   color: rgb(255, 255, 255);
   text-shadow: 1px 1px 1px rgb(0, 0, 0);
-  padding: 1%
+  padding: 1%;
+  box-shadow:
+  0px 3px 10px 0px rgba(0, 0, 0, 0.8),
+  0px 3px 10px 0px rgba(0, 0, 0, 0.8),
+  0px 3px 10px 0px rgba(0,0,0,.8);
 }
 
 .subsection_content::first-letter{
@@ -275,7 +276,14 @@ iframe{
     0px 3px 5px -1px rgba(0, 0, 0, 0.2),
     0px 6px 10px 0px rgba(0, 0, 0, 0.70),
     0px 1px 18px 0px rgba(0,0,0,.12);
-  
+    transition: box-shadow .5s;
+}
+
+iframe:hover{
+  box-shadow:
+    0px 3px 5px -1px rgba(0, 0, 0, 0.9),
+    0px 6px 10px 0px rgba(0, 0, 0, 0.9),
+    0px 1px 18px 0px rgba(0,0,0,.9);
 }
 
 .artifactTitle{
