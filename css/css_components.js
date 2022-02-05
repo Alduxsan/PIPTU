@@ -318,19 +318,32 @@ iframe:hover{
 
 const ProjectListItem_css = `
 
-  .link-container a{
+    .link-container{
+      transition: .5s all;
+      padding: 15px;
+    }
+
+    .link-container:hover {
+      color: black;
+      background-color: rgba(240, 255, 240, 0.144);
+      backdrop-filter: blur(2px);
+      border-radius: 6px;
+      color: black;
+    }
+
+    .link-container a{
     text-decoration: none;
     color: rgb(231, 231, 231);
-    transition: 0.3s all;
+    font-size: 1.3rem;
     }
-    
-    .link_container :hover {
-    background-color: rgb(41, 14, 0);
-    transition: 1.0s all;
-    display: flex;
-    height: 100%;
-    border-radius: 6px;
-     }
+    .link-container:hover a{
+      color: black;
+      }
+
+    #date{
+      color: rgba(56, 20, 0);
+      font-weight: bolder;
+    }
 `
 
 

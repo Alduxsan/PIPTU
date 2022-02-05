@@ -10,7 +10,6 @@ html {
   background: no-repeat url(../media/liquid-cheese.svg);
   background-size: cover;
   background-color: rgba(255, 255, 255, 0.2);
-
 }
 
 body {
@@ -128,12 +127,13 @@ border-bottom: 1px solid black;
 
 
 .list-container{
-  width: 80%;
+  width: 100%;
   margin: auto;
 }
 
 .list-container h3{
   font-size: 2rem;
+  margin-top: 20px;
 }
 
 

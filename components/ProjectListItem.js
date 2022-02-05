@@ -24,9 +24,10 @@ class ProjectListItem extends HTMLElement {
 
     let name = this.getAtt("name")
     let src = this.getAtt("src")
+    let date = this.getAtt("date")
 
     this.shadowRoot.innerHTML = 
-    `<div class="link-container"><a href=${src}>${name}</a></div>
+    `<div class="link-container"><a href=${src}><span id="date">${date}</span>${name}</a></div>
     
     <style>
     ${ProjectListItem.styles}
