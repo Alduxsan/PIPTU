@@ -222,12 +222,12 @@ const SubContent_css = `
   }
 
 .subsection_content{
-  margin-top: 10px;
   line-height: 1.5;
   font-size: 1.3rem;
   column-count: 2;
   column-rule:1px dotted silver ;
   column-gap:2rem;
+  padding: 4%;
 }
 
 .projectsList{
@@ -346,5 +346,65 @@ const ProjectListItem_css = `
     }
 `
 
+const FaunaItem_css = `
+    .card{
+      width: fit-content;
+      margin: 20px;
+      justify-content: center;
+      transition: box-shadow .5s;
+      border-radius: 8px;
+    }
 
-export { Navbar_css, Profiles_css, SubContent_css, Artifact3D_css, ProjectListItem_css };
+    .card:hover{
+      box-shadow:
+    2px 2px 2px 1px rgba(0, 0, 0, 0.5),
+    2px 4px 4px 1px rgba(0, 0, 0, 0.5)
+    }
+
+    details{
+      cursor: pointer;
+      border-radius: 8px;
+      list-style: none;
+      width: min-content;
+      background-color: rgba(255, 255, 255, 0.5);
+      -webkit-backdrop-filter: blur(2px);
+      backdrop-filter: blur(1px);
+      border-radius: 8px;
+      padding: 20px;
+    }
+    
+    summary{
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      gap: 0;
+    }
+
+    #imgNameContainer{
+      position:relative;
+      width: 300px;
+      height: 300px;
+      text-align: center;
+    }
+
+    #itemImg{
+      width: 100%
+    }
+
+    #name p{
+      font-size: 2rem;
+      text-align: center;
+      margin: 0;
+    }
+
+    #detailsContent{
+      text-align: justify;
+      padding: 10px;
+    }
+
+
+
+`
+
+
+export { Navbar_css, Profiles_css, SubContent_css, Artifact3D_css, ProjectListItem_css, FaunaItem_css };

@@ -44,10 +44,12 @@
   .subtitle {
     text-align: center;
     font-family: "Cabin Sketch", cursive;
-    font-size: 4rem;
+    font-size: 4.5rem;
     color: rgb(255, 255, 255);
     text-shadow: 2px 2px 2px rgb(0, 0, 0);
-    padding: 1%;
+    padding: 4%;
+    background-color: rgba(56, 20, 0,0.9);
+    border-radius: 8px;
   }
 
   .subtitle a{
@@ -103,12 +105,21 @@
   .intro{
     font-family: 'M PLUS Rounded 1c', sans-serif;
     font-size: 1.2rem;
-    background-color: rgba(255, 255, 255, 0.103);
-    -webkit-backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(1px);
     backdrop-filter: blur(1px);
     padding: 1%;
     border-radius: 6px;
     text-align: justify;
+    margin-bottom: 15px;
+  }
+
+  .fauna_gallery{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+    justify-content: center;
+    
   }
 
   .maps{
@@ -118,9 +129,11 @@
   }
 
   .maps iframe{
-    border-radius: 6px;
-    
+    border-radius: 6px;  
   }
+
+
+
   
   @media only screen and (max-width: 500px) {
     .title {
