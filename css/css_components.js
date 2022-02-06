@@ -371,6 +371,7 @@ const FaunaItem_css = `
       backdrop-filter: blur(1px);
       border-radius: 8px;
       padding: 20px;
+      border: 1px solid rgba(0, 0, 0, 0.3)
     }
     
     summary{
