@@ -120,6 +120,7 @@ details{
   color:rgb(0, 0, 0);
   font-weight: bold;
   font-family: 'M PLUS Rounded 1c', sans-serif;
+  margin: auto;
 }
 
 summary{
@@ -128,7 +129,9 @@ summary{
 }
 
 #name{
-  width: 400px
+  width: 400px;
+  text-align: center;
+  margin: auto;
 }
 #name:hover{
   color: rgb(255, 255, 255);
@@ -228,6 +231,9 @@ const SubContent_css = `
   column-rule:1px dotted silver ;
   column-gap:2rem;
   padding: 4%;
+  background-color: rgba(56, 20, 0,.8);
+  color: rgba(255, 255, 255,1);
+  border-radius: 8px;
 }
 
 .projectsList{
