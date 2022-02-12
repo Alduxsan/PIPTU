@@ -4,6 +4,7 @@ import "./components/SubContent.js";
 import "./components/artifacts3d.js";
 import "./components/ProjectListItem.js";
 import "./components/FaunaItem.js";
+import "./components/Subtitle.js"
 
 window.onscroll = function () {
   setSticky();

@@ -347,8 +347,13 @@ const ProjectListItem_css = `
       }
 
     #date{
-      color: rgba(56, 20, 0);
+      margin: 0;
+      width: fit-content;
+      color: white;
       font-weight: bolder;
+      padding: 6px 100px 6px 6px;
+      border-radius: 6px;
+      background-color: rgba(56, 20, 0, 0.7);
     }
 `
 
@@ -413,5 +418,15 @@ const FaunaItem_css = `
 
 `
 
+const Subtitle_css = `
+.subtitle {
+  text-align: center;
+  font-family: "Cabin Sketch", cursive;
+  font-size: 4rem;
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 2px 2px rgb(0, 0, 0);
+  padding: 2%;
+}
+`
 
-export { Navbar_css, Profiles_css, SubContent_css, Artifact3D_css, ProjectListItem_css, FaunaItem_css };
+export { Navbar_css, Profiles_css, SubContent_css, Artifact3D_css, ProjectListItem_css, FaunaItem_css, Subtitle_css };

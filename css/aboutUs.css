@@ -48,15 +48,6 @@ margin: auto;
   backdrop-filter: blur(3px);
 }
 
-.subtitle {
-  text-align: center;
-  font-family: "Cabin Sketch", cursive;
-  font-size: 4rem;
-  color: rgb(255, 255, 255);
-  text-shadow: 2px 2px 2px rgb(0, 0, 0);
-  padding: 2%;
-}
-
 .sublink_container {
   display: flex;
   height: 300px;
@@ -133,17 +124,40 @@ border-bottom: 1px solid black;
 .list-container h3{
   font-size: 2rem;
   margin-top: 20px;
+  margin-bottom: 10px;
 }
 
 
 /* footer */
+
+.links_container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
 .colabLink{
   margin: 10px;
+  width: 300px;
 }
 
 .colabLink img{
-  width: 300px;
+  width: 100%;
 }
+
+.list_sectionTitle{
+  width: 50%;
+  margin: auto;
+}
+
+.list_sectionTitle h3{
+  text-align: center;
+  padding: 5px;
+  background-color: rgba(240, 255, 240, 0.144);
+  border-radius: 6px;
+}
+
+
 
 
 @media only screen and (max-width: 500px) {
