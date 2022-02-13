@@ -1,12 +1,80 @@
-<!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="module" src="./index.js" defer></script>
+    <link rel="stylesheet" href="./css/investigations.css" />
+    <title>LIPTU - Difusión</title>
+  </head>
+  <body>
+    <nav-bar atribute="difusion"></nav-bar>
+    <div id="general">
+    <div class="title">
+      <p>DIFUSIÓN</p>
+    </div>
+    <div class="sublink_container">
+
+      <div class="link_card">
+        <div>
+          <a class="sublink" href="#articles"> <div class="iconContainer">
+            <img src="media/icons/scientificArticles.png" alt="" />
+          </div><p>ARTÍCULOS CIENTÍFICOS</p></a>
+        </div>
+      </div>
+
+      <div class="link_card">
+        <div><a class="sublink" href="#books">
+          <div class="iconContainer"><img src="media/icons/books.png" alt="" /></div>
+          <p>LIBROS</p></a></div>
+      </div>
     
-</body>
+
+    <div class="link_card">
+        <div><a class="sublink" href="#press">
+          <div class="iconContainer"><img src="media/icons/press.png" alt="" /></div>
+          <p>PRENSA</p></a></div>
+      </div>
+
+    <div class="link_card">
+        <div><a class="sublink" href="#networks">
+          <div class="iconContainer"><img src="media/icons/network.png" alt="" /></div>
+          <p>REDES SOCIALES</p></a></div>
+      </div>
+    </div>
+</div>
+    <div class="content">
+      <sub-title id="articles">
+        <p slot="title">ARTÍCULOS CIENTÍFICOS</p>
+      </sub-title>
+      
+
+      <sub-title id="books">
+        <p slot="title">LIBROS</p>
+      </sub-title>
+
+      <sub-title id="press">
+        <p slot="title">PRENSA</p>
+      </sub-title>
+      
+      <sub-title id="networks">
+        <p slot="title">REDES SOCIALES</p>
+      </sub-title>
+      </div>
+
+    </div>
+    
+  </body>
+
+  <footer style="text-align: center; padding: 10px;">
+    <div>
+      Icons made by
+      <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons"
+        style="text-decoration: none; color: black;">Smashicons</a
+      >
+      from
+      <a href="https://www.flaticon.com/" title="Flaticon" style="text-decoration: none; color: black;">www.flaticon.com</a>
+    </div>
+  </footer>
+</html>
 </html>

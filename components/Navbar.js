@@ -28,6 +28,7 @@ class Navbar extends HTMLElement {
       <div class="link_container ${this.checkActive("investigations",atribute)}"><a href="/investigations.html">INVESTIGACIÓN</a></div>
       <div class="link_container ${this.checkActive("interactive",atribute)}"><a href="/interactive.html">PREHISTORIA<br>INTERACTIVA</a></div>
       <div class="link_container ${this.checkActive("difusion",atribute)}"><a href="/difusion.html">DIFUSIÓN</a></div>
+      <div class="link_container ${this.checkActive("gallery",atribute)}"><a href="/difusion.html">GALERÍA<br>DE FOTOS</a></div>
     </div>
    
     <style>
