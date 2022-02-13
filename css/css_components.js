@@ -15,7 +15,7 @@ width: 100%;
 height: 130px;
 color: rgb(0, 0, 0);
 display: flex;
-justify-content: center;
+justify-content: space-around;
 align-items: center;
 text-align: center;
 font-size: 2.6rem;
@@ -30,28 +30,30 @@ font-family: "Cabin Sketch", cursive;
 }
 
 .link_container{
-display: flex;
-height: 100%;
-justify-content: center;
-align-items: center;
-margin: 8px;
+  width: 100%;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 
 }
+
 .link_container a {
+width: 100%;
 text-decoration: none;
 color: rgb(231, 231, 231);
 transition: 0.3s all;
 display: flex;
 list-style: none;
 text-shadow: 1.5px 1.5px 1px rgb(0, 0, 0);
-padding: 8px;
 transition: transform 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+justify-content: center;
 }
 
 .link_container :hover {
 background-color: rgb(41, 14, 0);
 transition: 1.0s all;
-display: flex;
 height: 100%;
 justify-content: center;
 align-items: center;
