@@ -38,17 +38,6 @@
     -webkit-backdrop-filter: blur(3px);
     backdrop-filter: blur(3px);
   }
-  
-  .subtitle {
-    text-align: center;
-    font-family: "Cabin Sketch", cursive;
-    font-size: 4.5rem;
-    color: rgb(255, 255, 255);
-    text-shadow: 2px 2px 2px rgb(0, 0, 0);
-    padding: 4%;
-    background-color: rgba(56, 20, 0,0.9);
-    border-radius: 8px;
-  }
 
   .subtitle a{
     text-decoration: none;
@@ -100,15 +89,23 @@
     margin-top:300px
   }
 
-  .intro{
-    font-family: 'M PLUS Rounded 1c', sans-serif;
-    font-size: 1.2rem;
-    -webkit-backdrop-filter: blur(1px);
+  .intro {
+    width: 95%;
+    margin:auto;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-size: 1.3rem;
+    background-color: rgba(255, 255, 255, 0.103);
+    -webkit-backdrop-filter: blur(2px);
     backdrop-filter: blur(1px);
-    padding: 1%;
+    padding: 3%;
     border-radius: 6px;
     text-align: justify;
-    margin-bottom: 15px;
+    text-justify: distribute;
+    hyphens: auto 
+  }
+
+  .resume{
+    color: aliceblue;
   }
 
   .fauna_gallery{
@@ -130,9 +127,51 @@
     border-radius: 6px;  
   }
 
+  .infoContainer{
+    padding: 1%;
+    margin: auto;
+    margin-top: 1%;
+    width: 95%;
+    display: flex;
+    flex-wrap: wrap;
+    color: rgb(0, 0, 0);
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    background-color: rgba(255, 255, 255, 0.24);
+    -webkit-backdrop-filter: blur(2px);
+    backdrop-filter: blur(1px);
+    border-radius: 6px;
+    justify-content:space-around ;
+  }
+
+  .infoContainer article{
+    display: flex;
+    width: fit-content;
+  }
+
+  .titleAndInfo{
+    width: 300px;
+    padding: 2%;
+    text-align: justify;
+    text-justify: distribute;
+    hyphens: auto 
+  }
+
+  .titleAndInfo h2{
+    text-align: right;
+  }
+
+  .infoContainer img{
+    width: 300px;
+    height: 300px;
+    border-radius: 6px;
+  }
+
+  .center{
+    width: 90%;
+    margin: auto
+  }
 
 
-  
   @media only screen and (max-width: 500px) {
     .title {
       font-size: 2rem;

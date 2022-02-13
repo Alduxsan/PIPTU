@@ -75,7 +75,6 @@ display:none;
 .topnav.responsive a {
   float: none;
   display: block;
-  text-align: left;
   align-items: center;
   text-align: center;
 }
@@ -161,11 +160,13 @@ summary{
  
 }
 .bio{
-  text-align: justify;
   font-family: 'M PLUS Rounded 1c', sans-serif;
   line-height: 1.5;
   font-size: 1.3rem;
   column-count: 2;
+  text-align: justify;
+  text-justify: distribute;
+  hyphens: auto 
 }
 .bio a{
   text-decoration: none;
@@ -206,6 +207,8 @@ const SubContent_css = `
   justify-content: center;
   margin: auto;
   text-align: justify;
+  text-justify: distribute;
+  hyphens: auto 
 }
 
 .imgContainer{
@@ -242,12 +245,14 @@ const SubContent_css = `
   font-size: 1.3rem;
   justify-content: center;
   margin: auto;
-  text-align: justify;
   background-color: rgba(255, 255, 255, 0.2);
   -webkit-backdrop-filter: blur(2px);
   backdrop-filter: blur(1px);
   border-radius: 8px;
   padding: 50px;
+  text-align: justify;
+  text-justify: distribute;
+  hyphens: auto 
 }
 
 .projectsList h3{
@@ -358,7 +363,10 @@ const ProjectListItem_css = `
 `
 
 const FaunaItem_css = `
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@200;700&display=swap');
+
     .card{
+      font-family: "M PLUS Rounded 1c", sans-serif;
       width: fit-content;
       margin: 20px;
       justify-content: center;
@@ -386,6 +394,7 @@ const FaunaItem_css = `
     }
     
     summary{
+      height: 394px;
       display: flex;
       justify-content: center;
       flex-direction: column;
@@ -410,8 +419,10 @@ const FaunaItem_css = `
     }
 
     #detailsContent{
-      text-align: justify;
       padding: 10px;
+      text-align: justify;
+      text-justify: distribute;
+      hyphens: auto 
     }
 
 
