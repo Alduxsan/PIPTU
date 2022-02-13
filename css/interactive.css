@@ -153,7 +153,7 @@
     padding: 2%;
     text-align: justify;
     text-justify: distribute;
-    hyphens: auto 
+    hyphens: auto;
   }
 
   .titleAndInfo h2{
