@@ -429,6 +429,20 @@ const FaunaItem_css = `
 
 `
 
+const Title_css=`
+.title {
+  background-color: rgba(0, 0, 0, 0.151);
+  text-align: center;
+  font-family: "Cabin Sketch", cursive;
+  font-size: 6rem;
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 2px 2px rgb(0, 0, 0);
+  padding: 3%;
+  -webkit-backdrop-filter: blur(3px);
+  backdrop-filter: blur(3px);
+}
+`
+
 const Subtitle_css = `
 .subtitle {
   text-align: center;
@@ -440,4 +454,4 @@ const Subtitle_css = `
 }
 `
 
-export { Navbar_css, Profiles_css, SubContent_css, Artifact3D_css, ProjectListItem_css, FaunaItem_css, Subtitle_css };
+export { Navbar_css, Profiles_css, SubContent_css, Artifact3D_css, ProjectListItem_css, FaunaItem_css, Subtitle_css, Title_css };

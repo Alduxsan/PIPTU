@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@200;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@200;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@700&display=swap");
 * {
   box-sizing: border-box;
@@ -17,12 +17,12 @@ body {
   margin: auto;
 }
 
-.styckyActive{
-  margin-top:400px
+.styckyActive {
+  margin-top: 400px;
 }
 
 .content {
-margin: auto;
+  margin: auto;
   width: 100%;
   background-color: rgba(240, 255, 240, 0.144);
   -webkit-backdrop-filter: blur(2px);
@@ -36,18 +36,6 @@ margin: auto;
   box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.507);
 }
 
-.title {
-  background-color: rgba(0, 0, 0, 0.151);
-  text-align: center;
-  font-family: "Cabin Sketch", cursive;
-  font-size: 5rem;
-  color: rgb(255, 255, 255);
-  text-shadow: 2px 2px 2px rgb(0, 0, 0);
-  padding: 3%;
-  -webkit-backdrop-filter: blur(3px);
-  backdrop-filter: blur(3px);
-}
-
 .sublink_container {
   display: flex;
   height: 300px;
@@ -55,25 +43,24 @@ margin: auto;
   width: 100%;
 }
 
-.link_card{
+.link_card {
   margin: auto;
   text-align: center;
   width: max-content;
 }
 
-.iconContainer{
+.iconContainer {
   height: 50%;
   margin: auto;
-  margin-bottom: 15px
+  margin-bottom: 15px;
 }
 
-.link_card img{
+.link_card img {
   height: 100%;
 }
 
-
 .sublink {
-  font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-family: "M PLUS Rounded 1c", sans-serif;
   text-decoration: none;
   margin: 15px;
   color: rgb(0, 0, 0);
@@ -82,27 +69,26 @@ margin: auto;
   text-align: center;
 }
 
-.link_card:hover{
-border-bottom: 1px solid black;
+.link_card:hover {
+  border-bottom: 1px solid black;
 }
 
-.sublink:hover{
+.sublink:hover {
   color: aliceblue;
 }
 
-
-.quehacemos{
+.quehacemos {
   justify-content: center;
   margin: auto;
   text-align: justify;
   text-justify: distribute;
-  hyphens: auto; 
+  hyphens: auto;
   width: 90%;
   margin: auto;
-  font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-family: "M PLUS Rounded 1c", sans-serif;
 }
 
-.intro{
+.intro {
   font-size: 1.4rem;
   background-color: rgba(255, 255, 255, 0.103);
   -webkit-backdrop-filter: blur(2px);
@@ -111,59 +97,54 @@ border-bottom: 1px solid black;
   border-radius: 6px;
   text-align: justify;
   text-justify: distribute;
-  hyphens: auto 
+  hyphens: auto;
 }
 
-.links_container{
+.links_container {
   display: flex;
   justify-content: space-around;
   flex-direction: column;
 }
 
-
-.list-container{
+.list-container {
   width: 100%;
   margin: auto;
 }
 
-.list-container h3{
+.list-container h3 {
   font-size: 2rem;
   margin-top: 20px;
   margin-bottom: 10px;
 }
 
-
 /* footer */
 
-.links_container{
+.links_container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
 
-.colabLink{
+.colabLink {
   margin: 10px;
   width: 300px;
 }
 
-.colabLink img{
+.colabLink img {
   width: 100%;
 }
 
-.list_sectionTitle{
+.list_sectionTitle {
   width: 50%;
   margin: auto;
 }
 
-.list_sectionTitle h3{
+.list_sectionTitle h3 {
   text-align: center;
   padding: 5px;
   background-color: rgba(240, 255, 240, 0.144);
   border-radius: 6px;
 }
-
-
-
 
 @media only screen and (max-width: 500px) {
   .title {
