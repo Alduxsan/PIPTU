@@ -1,77 +1,86 @@
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@200;700&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Cabin+Sketch&display=swap");
 
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@200;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@700&display=swap");
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-  }
-  
-  html {
-    background: no-repeat url(../media/liquid-cheese.svg);
-    background-size: cover;
-  
-  }
-  
-  body {
-    font-family: sans-serif;
-    font-size: 16px;
-  }
-  
-  .content {
-    width: 100%;
-    padding: 1%;
-    background-color: rgba(240, 255, 240, 0.144);
-    -webkit-backdrop-filter: blur(2px);
-    backdrop-filter: blur(2px);
-    margin: auto;
-  }
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
 
-  .subtitle a{
-    text-decoration: none;
-    font-family:"Cabin Sketch", cursive;
-    color: rgb(255, 255, 255);
-  }
+html {
+  background: no-repeat url(../media/liquid-cheese.svg);
+  background-size: cover;
+}
 
-/* css for SUBLINKS  */
-  .sublink_container {
-    display: flex;
-    height: 300px;
-    margin: auto;
-    width: 100%;
-  }
-  
-  .link_card{
-    margin: auto;
-    text-align: center;
-    width: max-content;
-  }
+body {
+  font-family: sans-serif;
+  font-size: 16px;
+  margin: auto;
+}
 
-  .iconContainer{
-    height: 50%;
-    margin: auto;
-  }
+.styckyActive {
+  margin-top: 400px;
+}
+
+.content {
+  margin: auto;
+  width: 100%;
+  background-color: rgba(240, 255, 240, 0.144);
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
+  border-radius: 8px;
+}
+
+.img {
+  width: 100%;
+  border-radius: 6px;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.507);
+}
+
+.sublink_container {
+  display: flex;
+  height: 300px;
+  margin: auto;
+  width: 100%;
+}
+
+.link_card {
+  margin: auto;
+  text-align: center;
+  width: max-content;
   
-  .link_card img{
-    height: 100%;
-  }
-    
-  .sublink {
-    font-family: 'M PLUS Rounded 1c', sans-serif;
-    text-decoration: none;
-    margin: auto;
-    color: rgb(0, 0, 0);
-    font-size: 150%;
-    transition: color 0.5s;
-  }
-  
-  .link_card:hover{
+}
+
+.iconContainer {
+  height: 50%;
+  margin: auto;
+  margin-bottom: 15px;
+}
+
+.link_card img {
+  height: 100%;
+}
+
+.sublink {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  text-decoration: none;
+  margin: 15px;
+  color: rgb(0, 0, 0);
+  font-size: 150%;
+  transition: color 0.5s;
+  margin: auto;
+
+}
+
+.link_card:hover {
   border-bottom: 1px solid black;
-  }
+}
 
-  .sublink:hover{
-    color: aliceblue;
-  }
+.sublink:hover {
+  color: aliceblue;
+}
   
   .styckyActive{
     margin-top:300px

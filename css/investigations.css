@@ -34,6 +34,30 @@ body {
   box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.507);
 }
 
+.title {
+  background-color: rgba(0, 0, 0, 0.151);
+  text-align: center;
+  font-family: "Cabin Sketch", cursive;
+  font-size: 5rem;
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 2px 2px rgb(0, 0, 0);
+  padding: 1%;
+  -webkit-backdrop-filter: blur(3px);
+  backdrop-filter: blur(3px);
+}
+
+.subtitle {
+  text-align: center;
+  font-family: "Cabin Sketch", cursive;
+  font-size: 4.5rem;
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 2px 2px rgb(0, 0, 0);
+  padding: 4%;
+  background-color: rgba(56, 20, 0,0.9);
+  border-radius: 8px;
+  margin-bottom: 2%;
+
+}
 
 .sublink_container {
   display: flex;
