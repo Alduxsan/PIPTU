@@ -36,47 +36,6 @@ body {
   box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.507);
 }
 
-.sublink_container {
-  display: flex;
-  height: 300px;
-  margin: auto;
-  width: 100%;
-}
-
-.link_card {
-  margin: auto;
-  text-align: center;
-  width: max-content;
-}
-
-.iconContainer {
-  height: 50%;
-  margin: auto;
-  margin-bottom: 15px;
-}
-
-.link_card img {
-  height: 100%;
-}
-
-.sublink {
-  font-family: "M PLUS Rounded 1c", sans-serif;
-  text-decoration: none;
-  margin: 15px;
-  color: rgb(0, 0, 0);
-  font-size: 150%;
-  transition: color 0.5s;
-  text-align: center;
-}
-
-.link_card:hover {
-  border-bottom: 1px solid black;
-}
-
-.sublink:hover {
-  color: aliceblue;
-}
-
 .quehacemos {
   justify-content: center;
   margin: auto;
@@ -98,12 +57,6 @@ body {
   text-align: justify;
   text-justify: distribute;
   hyphens: auto;
-}
-
-.links_container {
-  display: flex;
-  justify-content: space-around;
-  flex-direction: column;
 }
 
 .list-container {

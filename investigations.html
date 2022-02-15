@@ -10,25 +10,25 @@
   <body>
     <nav-bar atribute="investigations"></nav-bar>
     <div id="general">
+      
       <section-title class="title">
         <p slot="title">INVESTIGACIONES</p>
       </section-title>
-    <div class="sublink_container">
-      <div class="link_card">
-       
-        <div>
-          <a class="sublink" href="#sites"> <div class="iconContainer">
-            <img src="media/icons/location.png" alt="" />
-          </div><p>SITIOS</p></a>
-        </div>
-      </div>
-      <div class="link_card">
+
+      <subnavbar-container>
+        <subnavbar-item
+        hrefId = "sites"
+        imgPath = "media/icons/location.png"
+        sectionName = "SITIOS"
+        ></subnavbar-item>
+
+        <subnavbar-item
+        hrefId = "map"
+        imgPath = "media/icons/map.png"
+        sectionName = "MAPA DE SITIOS ARQUEOLÓGICOS"
+        ></subnavbar-item>
         
-        <div><a class="sublink" href="#map">
-          <div class="iconContainer"><img src="media/icons/map.png" alt="" /></div>
-          <p>MAPA DE SITIOS ARQUEOLÓGICOS</p></a></div>
-      </div>
-    </div>
+      </subnavbar-container>
 
     <div class="content">
       <sub-title id="sites">

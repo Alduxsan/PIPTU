@@ -16,39 +16,27 @@
           <p slot="title">SOBRE NOSOTROS</p>
         </section-title>
         
-      <div class="sublink_container">
-        <div class="link_card">
-          
-          <div>
-            <a class="sublink" href="#quienes">
-              <div class="iconContainer">
-                <img src="media/hat.svg" alt="" />
-              </div><p>
-              QUIENES SOMOS</p></a>
-          </div>
-        </div>
+        <subnavbar-container>
 
-        <div class="link_card">
-          <div>
-            <a class="sublink" href="#quehacemos">
-              <div class="iconContainer">
-                <img src="media/shovel.png" alt="" />
-              </div><p>
-              QUE HACEMOS</p></a>
-          </div>
-        </div>
+        <subnavbar-item
+          hrefId = "quienes"
+          imgPath = "media/hat.svg"
+          sectionName = "QUIENES SOMOS"
+        ></subnavbar-item>
 
-        <div class="link_card">
-          
-          <div>
-            <a class="sublink" href="#colaboraciones">
-              <div class="iconContainer">
-                <img src="media/colab.png" alt="" />
-              </div><p>
-              COLABORACIONES</p></a>
-          </div>
-        </div>
-      </div>
+        <subnavbar-item
+          hrefId = "quehacemos"
+          imgPath = "media/shovel.png"
+          sectionName = "QUE HACEMOS"
+        ></subnavbar-item>
+        
+        <subnavbar-item
+          hrefId = "colaboraciones"
+          imgPath = "media/colab.png"
+          sectionName = "COLABORACIONES"
+        ></subnavbar-item>
+
+        </subnavbar-container>
       <div class="content">
         <sub-title id="quienes">
           <p slot="title">QUIENES SOMOS</p>

@@ -453,5 +453,56 @@ const Subtitle_css = `
   padding: 2%;
 }
 `
+const SubNavbarItem_css=`
+.link_card {
+  margin: 20px;
+  text-align: center;
+  width: max-content;
+  padding: 10px;
+}
 
-export { Navbar_css, Profiles_css, SubContent_css, Artifact3D_css, ProjectListItem_css, FaunaItem_css, Subtitle_css, Title_css };
+.iconContainer {
+  height: 50%;
+  margin: auto;
+  margin-bottom: 15px;
+}
+
+.link_card img {
+  height: 100%;
+}
+
+.sublink {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  text-decoration: none;
+  margin: 15px;
+  color: rgb(0, 0, 0);
+  font-size: 150%;
+  transition: color 0.5s;
+  text-align: center;
+  margin: auto;
+}
+
+.link_card:hover {
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+  
+}
+
+.sublink:hover {
+  color: aliceblue;
+}
+`
+
+const SubNavbarContainer_css=`
+.sublink_container {
+  align-items: center;
+  display: flex;
+  height: 200px;
+  width: fit-content;
+  justify-content: space-evenly;
+  padding: 2%;
+  margin:auto;
+}
+`
+
+export { Navbar_css, Profiles_css, SubContent_css, Artifact3D_css, ProjectListItem_css, FaunaItem_css, Subtitle_css, Title_css, SubNavbarItem_css, SubNavbarContainer_css };

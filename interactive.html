@@ -16,51 +16,33 @@
         <p slot="title">PREHISTORIA INTERACTIVA</p>
       </section-title>
 
-      <div class="sublink_container">
-        <div class="link_card">
-          <div>
-            <a class="sublink" href="#models3d">
-              <div class="iconContainer">
-                <img src="media/icons/3d.png" alt="" />
-              </div>
-              MODELOS 3D</a
-            >
-          </div>
-        </div>
+      <subnavbar-container>
 
-        <div class="link_card">
-          <div>
-            <a class="sublink" href="#fauna">
-              <div class="iconContainer">
-                <img src="media/icons/ostrich.png" alt="" />
-              </div>
-              FAUNA</a
-            >
-          </div>
-        </div>
+        <subnavbar-item
+          hrefId = "models3d"
+          imgPath = "media/icons/3d.png"
+          sectionName = "MODELOS 3D"
+        ></subnavbar-item>
 
-        <div class="link_card">
-          <div>
-            <a class="sublink" href="#sites">
-              <div class="iconContainer">
-                <img src="media/icons/map.png" alt="" />
-              </div>
-              MAPA DE SITIOS</a
-            >
-          </div>
-        </div>
+        <subnavbar-item
+          hrefId = "fauna"
+          imgPath = "media/icons/ostrich.png"
+          sectionName = "FAUNA"
+        ></subnavbar-item>
 
-        <div class="link_card">
-          <div>
-            <a class="sublink" href="#projectiles">
-              <div class="iconContainer">
-                <img src="media/icons/tools.png" alt="" />
-              </div>
-              PUNTAS DE PROYECTIL
-            </a>
-          </div>
-        </div>
-      </div>
+        <subnavbar-item
+          hrefId = "sites"
+          imgPath = "media/icons/map.png"
+          sectionName = " MAPA DE SITIOS"
+        ></subnavbar-item>
+
+        <subnavbar-item
+          hrefId = "projectiles"
+          imgPath = "media/icons/tools.png"
+          sectionName = "PUNTAS DE PROYECTIL"
+        ></subnavbar-item>
+      
+      </subnavbar-container>      
 
       <section class="content">
         <sub-title id="models3d">
