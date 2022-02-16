@@ -505,4 +505,8 @@ const SubNavbarContainer_css=`
 }
 `
 
-export { Navbar_css, Profiles_css, SubContent_css, Artifact3D_css, ProjectListItem_css, FaunaItem_css, Subtitle_css, Title_css, SubNavbarItem_css, SubNavbarContainer_css };
+const BookItem_css = `
+
+`
+
+export { Navbar_css, Profiles_css, SubContent_css, Artifact3D_css, ProjectListItem_css, FaunaItem_css, Subtitle_css, Title_css, SubNavbarItem_css, SubNavbarContainer_css, BookItem_css};
