@@ -48,8 +48,8 @@ body {
     width: 95%;
     margin:auto;
     font-family: "M PLUS Rounded 1c", sans-serif;
-    font-size: 1.3rem;
-    background-color: rgba(255, 255, 255, 0.103);
+    font-size: 1.4rem;
+    background-color: rgba(255, 255, 255, 0.24);
     -webkit-backdrop-filter: blur(2px);
     backdrop-filter: blur(1px);
     padding: 3%;
@@ -60,7 +60,7 @@ body {
   }
 
   .resume{
-    color: aliceblue;
+    color: black;
   }
 
   .fauna_gallery{
@@ -131,7 +131,6 @@ body {
   }
 
   .center{
-    width: 90%;
     margin: auto
   }
 
