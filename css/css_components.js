@@ -99,7 +99,6 @@ const Profiles_css = `
   margin: auto;
   width:90%;
   margin-bottom: 10px;
-  padding-bottSom: 10px;
   font-family: 'M PLUS Rounded 1c', sans-serif;
 }
 
@@ -485,11 +484,8 @@ const SubNavbarItem_css=`
 .link_card:hover {
   border-bottom: 1px solid black;
   border-top: 1px solid black;
+  filter: invert(1)
   
-}
-
-.sublink:hover {
-  color: aliceblue;
 }
 `
 
@@ -507,6 +503,45 @@ const SubNavbarContainer_css=`
 
 const BookItem_css = `
 
+  .book_item_container{
+    padding: 2%;
+  }
+
+  .sublink{
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+  }
+
+  .img_and_resume_container{
+    margin-top: 1%;
+    padding: 1%;
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    justify-content: center;
+    text-align: justify;
+    text-justify: distribute;
+    hyphens: auto 
+  }
+
+  .book_resume{
+    width: 65%;
+    margin-right: 2%;
+    font-size: 1.3rem
+  }
+
+  .bookImg{
+    max-height: 500px;
+    width: auto;
+  }
+
+  img{
+    width: 100%;
+    border-radius: 6px
+  }
 `
 
 export { Navbar_css, Profiles_css, SubContent_css, Artifact3D_css, ProjectListItem_css, FaunaItem_css, Subtitle_css, Title_css, SubNavbarItem_css, SubNavbarContainer_css, BookItem_css};

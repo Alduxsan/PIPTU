@@ -8,7 +8,7 @@ import "./components/Subtitle.js"
 import "./components/Title.js"
 import "./components/SubNavbarContainer.js"
 import "./components/SubNavbarItem.js"
-
+import "./components/BookItem.js"
 window.onscroll = function () {
   setSticky();
 };

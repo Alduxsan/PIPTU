@@ -22,14 +22,34 @@ class BookItem extends HTMLElement {
 
   render(){
 
-    let name = this.getAtt("name")
-    
+    let bookImgPath = this.getAtt("bookImgPath")
+    let bookLink = this.getAtt("bookLink")
+
     this.shadowRoot.innerHTML = 
     `
-    <div class="subtitle">
-    <slot name="title"></slot>
-    </div>
+    <div class="book_item_container">
+        <div class="book_title">
+            <a class="sublink" href="${bookLink}"> 
+                <slot name="book_title"></slot>
+            </a>      
+        </div>
 
+        <div class="img_and_resume_container">
+            <div class="book_resume">
+                <slot name="book_resume"></slot>
+            </div>
+            <div class="bookImg">
+                <img src="${bookImgPath}">
+            </div>
+        </div>
+
+        <div class="book_info">
+            <slot name="book_info"></slot>
+
+        </div>
+    </div>
+    
+    
     <style>
     ${BookItem.styles}
     </style>

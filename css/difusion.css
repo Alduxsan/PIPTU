@@ -23,7 +23,7 @@ body {
 
 .content {
   margin: auto;
-  width: 100%;
+  width: 95%;
   background-color: rgba(240, 255, 240, 0.144);
   -webkit-backdrop-filter: blur(2px);
   backdrop-filter: blur(2px);
