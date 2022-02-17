@@ -141,7 +141,7 @@ summary{
   background-color: rgba(255, 255, 255, 0.2);
   -webkit-backdrop-filter: blur(2px);
   backdrop-filter: blur(1px);
-  height: auto;
+  height: fit-content;
   padding: 20px;
   border-radius: 8px;
 
@@ -216,9 +216,8 @@ const SubContent_css = `
   text-shadow: 1px 1px 1px rgb(0, 0, 0);
   padding: 1%;
   box-shadow:
-  0px 3px 10px 0px rgba(0, 0, 0, 0.8),
-  0px 3px 10px 0px rgba(0, 0, 0, 0.8),
-  0px 3px 10px 0px rgba(0,0,0,.8);
+  2px 2px 2px 1px rgba(0, 0, 0, 0.5),
+  2px 4px 4px 1px rgba(0, 0, 0, 0.5)
 }
 
 .subsection_content::first-letter{
@@ -458,6 +457,7 @@ const SubNavbarItem_css=`
   text-align: center;
   width: max-content;
   padding: 10px;
+  transition: all 0.5s
 }
 
 .iconContainer {
@@ -484,6 +484,7 @@ const SubNavbarItem_css=`
 .link_card:hover {
   border-bottom: 1px solid black;
   border-top: 1px solid black;
+  border-radius: 6px;
   filter: invert(1)
   
 }
@@ -509,19 +510,16 @@ const BookItem_css = `
 
   .sublink{
     text-decoration: none;
-    text-align: center;
     color: black;
     text-transform: uppercase;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
 
   .img_and_resume_container{
     margin-top: 1%;
-    padding: 1%;
     display: flex;
     flex-direction: row;
     width: fit-content;
-    justify-content: center;
     text-align: justify;
     text-justify: distribute;
     hyphens: auto 
@@ -530,7 +528,7 @@ const BookItem_css = `
   .book_resume{
     width: 65%;
     margin-right: 2%;
-    font-size: 1.3rem
+    font-size: 1.2rem
   }
 
   .bookImg{
