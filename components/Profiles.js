@@ -1,4 +1,3 @@
-import profiles from "../db/profiles-data.js";
 import { Profiles_css } from "../css/css_components.js";
 
 
@@ -9,41 +8,39 @@ class Profiles extends HTMLElement {
     
   }
 
-  data = profiles;
- 
-  profileTemplate(data){
-    const template = document.createElement('template');
-    return template.innerHTML = `  
-
-    <div class="profile_card">
-    
-        <div class="imgNameContainer">
-          <div class="imgContainer">
-              <img src="${data.img}" alt="">
-          </div>         
-        </div>
-        
-        <details>
-        <summary>
-          <div id="name" class="nameContainer">
-              <p id="name">${data.name}</p>
-          </div>
-        </summary>   
-          <div class="bioContainer">
-              <p class="bio">${data.bio}</p>
-          </div>
-        </details>
-    </div>
-    `
-  }
-
   static get styles() {
     return Profiles_css;
   }
 
+  getAtt(attr){
+    let attribute = (this.attribute = this.getAttribute(attr))
+    return attribute
+  }
+
   render() {
+
+    let img = this.getAtt("img")
+
     this.shadowRoot.innerHTML = `
-        ${this.data.map(this.profileTemplate).join("")}  
+    <div class="profile_card">
+    
+    <div class="imgNameContainer">
+      <div class="imgContainer">
+          <img src="${img}" alt="">
+      </div>         
+    </div>
+    
+    <details>
+    <summary>
+      <div class="nameContainer">
+          <slot name="name"></slot>
+      </div>
+    </summary>   
+      <div class="bioContainer">
+          <slot name="bio"></slot>
+      </div>
+    </details>
+</div> 
       <style>
       ${Profiles.styles}
       </style>

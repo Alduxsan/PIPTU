@@ -106,19 +106,8 @@ details{
   width: fit-content;
   border-radius: 8px;
   background-color: rgba(255, 255, 255, 0.2);
-  -webkit-backdrop-filter: blur(2px);
-  backdrop-filter: blur(1px);
   padding: 20px;
   height: min-content;
-}
-
-.nameContainer p{
-  font-size: 2rem;
-  font-weight: bolder;
-  color:rgb(0, 0, 0);
-  font-weight: bold;
-  font-family: 'M PLUS Rounded 1c', sans-serif;
-  margin: auto;
 }
 
 summary{
@@ -126,12 +115,16 @@ summary{
   cursor: pointer; 
 }
 
-#name{
+slot[name=name]{
   width: 400px;
   text-align: center;
+  font-size: 2rem;
+  font-weight: bolder;
+  font-weight: bold;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
   margin: auto;
 }
-#name:hover{
+.nameContainer:hover{
   color: rgb(255, 255, 255);
   width: 600px;
 }
@@ -139,8 +132,6 @@ summary{
 .imgNameContainer{
   margin-right: 10px;
   background-color: rgba(255, 255, 255, 0.2);
-  -webkit-backdrop-filter: blur(2px);
-  backdrop-filter: blur(1px);
   height: fit-content;
   padding: 20px;
   border-radius: 8px;
@@ -158,7 +149,7 @@ summary{
   margin: auto;
  
 }
-.bio{
+slot[name=bio]{
   font-family: 'M PLUS Rounded 1c', sans-serif;
   line-height: 1.5;
   font-size: 1.3rem;
@@ -167,7 +158,7 @@ summary{
   text-justify: distribute;
   hyphens: auto 
 }
-.bio a{
+.bioContainer a{
   text-decoration: none;
   color: rgb(255, 255, 255);
   cursor: pointer;
@@ -178,7 +169,7 @@ summary{
   cursor: pointer;
 }
 
-
+#more {display: none;}
 
 @media screen and (max-width: 1100px) {
   .profile_card{
@@ -198,6 +189,8 @@ summary{
     margin-bottom: 10px;
   }
   }
+
+
 `;
 
 const SubContent_css = `
@@ -506,6 +499,8 @@ const BookItem_css = `
 
   .book_item_container{
     padding: 2%;
+    background-color: rgba(240, 255, 240, 0.144);
+    border-radius: 6px;
   }
 
   .sublink{

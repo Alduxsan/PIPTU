@@ -21,7 +21,7 @@ class BookItem extends HTMLElement {
   }
 
   render(){
-
+   
     let bookImgPath = this.getAtt("bookImgPath")
     let bookLink = this.getAtt("bookLink")
 
@@ -49,11 +49,10 @@ class BookItem extends HTMLElement {
         </div>
     </div>
     
-    
     <style>
     ${BookItem.styles}
     </style>
-    `;
+    `
 
   }
 }
