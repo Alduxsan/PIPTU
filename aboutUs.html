@@ -31,10 +31,16 @@
         ></subnavbar-item>
         
         <subnavbar-item
+          hrefId = "projectslist"
+          imgPath = "media/icons/article.png"
+          sectionName = "LISTA DE PROYECTOS"
+        ></subnavbar-item>
+
+        <subnavbar-item
           hrefId = "colaboraciones"
           imgPath = "media/colab.png"
           sectionName = "COLABORACIONES"
-        ></subnavbar-item>
+      ></subnavbar-item>
 
         </subnavbar-container>
       <div class="content">
@@ -99,8 +105,12 @@
 
           <sub-content section="projects"></sub-content>
 
+          <sub-title id="projectslist">
+            <p slot="title">LISTADO DE PROYECTOS</p>
+         </sub-title>
           <div class="list-container">
-            <div class="list_sectionTitle"><h3>EN DESARROLLO</h3></div>
+            
+            <div class="list_subsectionTitle"><h2>EN DESARROLLO</h2></div>
 
             <project-listitem
             date="2022 - actual"
@@ -118,7 +128,7 @@
                 name='“The Paleoamerican exploration of the Uruguay middle river during the late Pleistocene” (Post PhD grant # 9978). Financiado CSIC I + D 2016. FHCE.'
               /></project-listitem>
 
-            <div class="list_sectionTitle"><h3>FINALIZADOS</h3></div>
+            <div class="list_subsectionTitle"><h2>FINALIZADOS</h2></div>
               <project-listitem
               date="2013 - 2015"
               src="https://www.csic.edu.uy/content/poblamiento-movilidad-y-reorganizaci%C3%B3n-cultural-explorando-la-inicial-dispersi%C3%B3n-humana-en"

@@ -29,9 +29,9 @@ class ProjectListItem extends HTMLElement {
     this.shadowRoot.innerHTML = 
     `<div class="link-container">
       <a href=${src}>
-      <p id="date">
-        ${date}
-        </p>${name}</a>
+      
+        </p><p id="date">
+        ${date} <br> ${name}</a>
      </div>
     
     <style>

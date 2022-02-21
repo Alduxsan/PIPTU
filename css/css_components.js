@@ -192,7 +192,6 @@ const SubContent_css = `
   padding: 1%;
   box-shadow:
   2px 2px 2px 1px rgba(0, 0, 0, 0.5),
-  2px 4px 4px 1px rgba(0, 0, 0, 0.5)
 }
 
 .subsection_content::first-letter{
@@ -229,7 +228,7 @@ const SubContent_css = `
 }
 
 .projectsList h3{
-  font-size: 2rem;
+  font-size: 2.3rem;
 }
 
 .projectsList li{
@@ -304,14 +303,14 @@ const ProjectListItem_css = `
 
     .link-container{
       transition: .5s all;
-      padding: 15px;
+      border-bottom: 1px solid rgba(240, 255, 240, 0.8);
+      padding-bottom: 1%;     
     }
 
     .link-container:hover {
       color: black;
-      background-color: rgba(240, 255, 240, 0.144);
+      background-color: rgba(240, 255, 240, 0.8);
       backdrop-filter: blur(2px);
-      border-radius: 6px;
       color: black;
     }
 
@@ -320,6 +319,7 @@ const ProjectListItem_css = `
     color: rgb(231, 231, 231);
     font-size: 1.3rem;
     }
+
     .link-container:hover a{
       color: black;
       }
@@ -331,7 +331,6 @@ const ProjectListItem_css = `
       font-weight: bolder;
       padding: 6px 100px 6px 6px;
       border-radius: 6px;
-      background-color: rgba(56, 20, 0, 0.7);
     }
 `;
 
