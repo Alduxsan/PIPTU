@@ -30,10 +30,18 @@ body {
   border-radius: 8px;
 }
 
-.img {
-  width: 100%;
-  border-radius: 6px;
-  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.507);
+#ref {text-decoration: none; color:black;}
+#ref:hover{
+  color:green;
+}
+
+.profiles_wrapper{
+  display: flex;
+  width:100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  justify-content: center;
 }
 
 .quehacemos {

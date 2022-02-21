@@ -17,38 +17,49 @@ class Profiles extends HTMLElement {
     return attribute
   }
 
-  render() {
+  handleEvent(event) {
+    if (event.type === "click")
+      this.showInfo();
+  }
 
-    let img = this.getAtt("img")
-
-    this.shadowRoot.innerHTML = `
-    <div class="profile_card">
-    
-    <div class="imgNameContainer">
-      <div class="imgContainer">
-          <img src="${img}" alt="">
-      </div>         
-    </div>
-    
-    <details>
-    <summary>
-      <div class="nameContainer">
-          <slot name="name"></slot>
-      </div>
-    </summary>   
-      <div class="bioContainer">
-          <slot name="bio"></slot>
-      </div>
-    </details>
-</div> 
-      <style>
-      ${Profiles.styles}
-      </style>
-      `;
+  showInfo(){
+    this.info = this.shadowRoot.getElementById("detailsContent");
+    this.info.classList.toggle("hide");
   }
 
   connectedCallback() {
-    this.render();
+   
+    let img = this.getAtt("img")
+
+    
+    this.shadowRoot.innerHTML = `
+
+    <div id="card" class="profile_card">
+        
+        <div id="imgNameContainer">
+          <div class="imgContainer">
+            <img src="${img}">
+          </div>
+          <div id="name">
+            <slot name="name"></slot>
+          </div>
+        </div>
+        <div id="detailsContent" class="hide">
+          <slot name="bio"></slot>
+        </div>
+        
+    </div>
+
+      <style>
+      ${Profiles.styles}
+      </style>
+      `
+      this.card = this.shadowRoot.getElementById("card");
+      
+      
+      
+      this.card.addEventListener("click", this);
+      ;
   }
 
   

@@ -94,91 +94,73 @@ const Profiles_css = `
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@200;700&display=swap');
 
 
+.hide {display: none;}
+
 .profile_card{
+  min-width: 400px;
   display: flex;
-  margin: auto;
-  width:90%;
-  margin-bottom: 10px;
-  font-family: 'M PLUS Rounded 1c', sans-serif;
-}
-
-details{
-  width: fit-content;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  margin: 20px;
+  justify-content: center;
+  transition: box-shadow .5s;
   border-radius: 8px;
-  background-color: rgba(255, 255, 255, 0.2);
-  padding: 20px;
-  height: min-content;
+  cursor: pointer;
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.300);
+  vertical-align: middle;
+
 }
 
-summary{
-  list-style: none;
-  cursor: pointer; 
+.profile_card:hover{
+  box-shadow:
+2px 2px 2px 1px rgba(0, 0, 0, 0.5),
+2px 4px 4px 1px rgba(0, 0, 0, 0.5)
 }
 
-slot[name=name]{
-  width: 400px;
+
+#imgNameContainer{
+  min-width: 200px;
   text-align: center;
-  font-size: 2rem;
-  font-weight: bolder;
-  font-weight: bold;
-  font-family: 'M PLUS Rounded 1c', sans-serif;
+  border-radius: 6px;
+  margin: 10px;
+}
+
+.imgContainer{
   margin: auto;
-}
-.nameContainer:hover{
-  color: rgb(255, 255, 255);
-  width: 600px;
-}
-
-.imgNameContainer{
-  margin-right: 10px;
-  background-color: rgba(255, 255, 255, 0.2);
-  height: fit-content;
-  padding: 20px;
+  width: fit-content;
+  box-shadow:
+  2px 2px 2px 1px rgba(0, 0, 0);  
   border-radius: 8px;
-
 }
 
 .imgContainer img{
-  width: 100%;
-  border-radius: 8px;
-  box-shadow: 1px 2px 3px black;
+  border-radius: 8px;  
 }
 
-.bioContainer{
-  border-radius: 8px;
-  margin: auto;
- 
+#detailsContent{
+  margin: 10px;
 }
+
+slot[name=name]{
+  font-size: 2rem;
+  text-align: center;
+  margin: 0;
+}
+
+
 slot[name=bio]{
-  font-family: 'M PLUS Rounded 1c', sans-serif;
-  line-height: 1.5;
-  font-size: 1.3rem;
-  column-count: 2;
   text-align: justify;
   text-justify: distribute;
-  hyphens: auto 
-}
-.bioContainer a{
-  text-decoration: none;
-  color: rgb(255, 255, 255);
-  cursor: pointer;
+  hyphens: auto;
 }
 
-.bio a:hover{
-  color: green;
-  cursor: pointer;
-}
 
-#more {display: none;}
 
 @media screen and (max-width: 1100px) {
   .profile_card{
     display: block;
   }
 
-  .imgNameContainer{
-    margin: auto;
-  }
 
   .imgContainer{
     width: fit-content;
@@ -254,7 +236,7 @@ const SubContent_css = `
   color: black;
   margin: 10px;
 }
-`
+`;
 
 const Artifact3D_css = `
 
@@ -316,7 +298,7 @@ iframe:hover{
 .textFooter a{
   font-weight: bold; color: #000000; 
 }
-`
+`;
 
 const ProjectListItem_css = `
 
@@ -351,7 +333,7 @@ const ProjectListItem_css = `
       border-radius: 6px;
       background-color: rgba(56, 20, 0, 0.7);
     }
-`
+`;
 
 const FaunaItem_css = `
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@200;700&display=swap');
@@ -418,9 +400,9 @@ const FaunaItem_css = `
 
 
 
-`
+`;
 
-const Title_css=`
+const Title_css = `
 .title {
   background-color: rgba(0, 0, 0, 0.151);
   text-align: center;
@@ -432,7 +414,7 @@ const Title_css=`
   -webkit-backdrop-filter: blur(3px);
   backdrop-filter: blur(3px);
 }
-`
+`;
 
 const Subtitle_css = `
 .subtitle {
@@ -443,8 +425,8 @@ const Subtitle_css = `
   text-shadow: 2px 2px 2px rgb(0, 0, 0);
   padding: 2%;
 }
-`
-const SubNavbarItem_css=`
+`;
+const SubNavbarItem_css = `
 .link_card {
   margin: 20px;
   text-align: center;
@@ -481,9 +463,9 @@ const SubNavbarItem_css=`
   filter: invert(1)
   
 }
-`
+`;
 
-const SubNavbarContainer_css=`
+const SubNavbarContainer_css = `
 .sublink_container {
   align-items: center;
   display: flex;
@@ -493,7 +475,7 @@ const SubNavbarContainer_css=`
   padding: 2%;
   margin:auto;
 }
-`
+`;
 
 const BookItem_css = `
 
@@ -535,6 +517,18 @@ const BookItem_css = `
     width: 100%;
     border-radius: 6px
   }
-`
+`;
 
-export { Navbar_css, Profiles_css, SubContent_css, Artifact3D_css, ProjectListItem_css, FaunaItem_css, Subtitle_css, Title_css, SubNavbarItem_css, SubNavbarContainer_css, BookItem_css};
+export {
+  Navbar_css,
+  Profiles_css,
+  SubContent_css,
+  Artifact3D_css,
+  ProjectListItem_css,
+  FaunaItem_css,
+  Subtitle_css,
+  Title_css,
+  SubNavbarItem_css,
+  SubNavbarContainer_css,
+  BookItem_css,
+};
