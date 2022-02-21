@@ -18,6 +18,7 @@ class Profiles extends HTMLElement {
   }
 
   handleEvent(event) {
+    console.log(event)
     if (event.type === "click")
       this.showInfo();
   }
@@ -26,7 +27,7 @@ class Profiles extends HTMLElement {
     this.info = this.shadowRoot.getElementById("detailsContent");
     this.info.classList.toggle("hide");
   }
-
+  
   connectedCallback() {
    
     let img = this.getAtt("img")
@@ -48,18 +49,15 @@ class Profiles extends HTMLElement {
           <slot name="bio"></slot>
         </div>
         
+        
     </div>
 
       <style>
       ${Profiles.styles}
       </style>
       `
-      this.card = this.shadowRoot.getElementById("card");
-      
-      
-      
+      this.card = this.shadowRoot.getElementById("card");   
       this.card.addEventListener("click", this);
-      ;
   }
 
   

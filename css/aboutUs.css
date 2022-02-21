@@ -44,6 +44,9 @@ body {
   justify-content: center;
 }
 
+#more {display: none;}
+
+
 .quehacemos {
   justify-content: center;
   margin: auto;

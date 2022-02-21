@@ -93,7 +93,6 @@ display:none;
 const Profiles_css = `
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@200;700&display=swap');
 
-
 .hide {display: none;}
 
 .profile_card{
@@ -108,7 +107,6 @@ const Profiles_css = `
   padding: 15px;
   background: rgba(255, 255, 255, 0.300);
   vertical-align: middle;
-
 }
 
 .profile_card:hover{
@@ -141,6 +139,10 @@ const Profiles_css = `
   margin: 10px;
 }
 
+#name{
+  margin: 10px;
+}
+
 slot[name=name]{
   font-size: 2rem;
   text-align: center;
@@ -153,8 +155,6 @@ slot[name=bio]{
   text-justify: distribute;
   hyphens: auto;
 }
-
-
 
 @media screen and (max-width: 1100px) {
   .profile_card{
