@@ -106,11 +106,14 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+
+  border-radius: 6px;
 }
 
 .colabLink {
   margin: 10px;
   width: 300px;
+  
 }
 
 .colabLink img {
