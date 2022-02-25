@@ -11,8 +11,22 @@ class BookItem extends HTMLElement {
   }
 
   getAtt(attr){
-    let attribute = (this.attribute = this.getAttribute(attr))
+    let attribute = this.attribute = this.getAttribute(attr) ?? ""
     return attribute
+  }
+
+  setImgSection(img){
+    if (img !== ""){
+      return `
+      <div class="bookImg">
+        <img src="${img}">
+      </div>
+    `}else{
+      return `
+      <div></div>
+    `
+    }
+    
   }
 
   connectedCallback() {
@@ -21,12 +35,13 @@ class BookItem extends HTMLElement {
   }
 
   render(){
-   
+
     let bookImgPath = this.getAtt("bookImgPath")
     let bookLink = this.getAtt("bookLink")
 
     this.shadowRoot.innerHTML = 
     `
+    <article>
     <div class="book_item_container">
         <div class="book_title">
             <a class="sublink" href="${bookLink}"> 
@@ -38,9 +53,8 @@ class BookItem extends HTMLElement {
             <div class="book_resume">
                 <slot name="book_resume"></slot>
             </div>
-            <div class="bookImg">
-                <img src="${bookImgPath}">
-            </div>
+            ${this.setImgSection(bookImgPath)}
+            
         </div>
 
         <div class="book_info">
@@ -48,7 +62,7 @@ class BookItem extends HTMLElement {
 
         </div>
     </div>
-    
+    </article>
     <style>
     ${BookItem.styles}
     </style>

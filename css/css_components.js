@@ -191,7 +191,7 @@ const SubContent_css = `
   text-shadow: 1px 1px 1px rgb(0, 0, 0);
   padding: 1%;
   box-shadow:
-  2px 2px 2px 1px rgba(0, 0, 0, 0.5),
+  2px 2px 2px 1px rgba(0, 0, 0)
 }
 
 .subsection_content::first-letter{
@@ -502,19 +502,41 @@ const BookItem_css = `
   }
 
   .book_resume{
-    width: 65%;
     margin-right: 2%;
     font-size: 1.2rem
   }
 
   .bookImg{
-    max-height: 500px;
-    width: auto;
+   min-width: 35%;
   }
 
   img{
     width: 100%;
     border-radius: 6px
+  }
+`;
+
+const PressItem_css = `
+  .press_item_container{
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: flex-end;
+  }
+
+  .sublink{
+    color: white;
+    width: fit-content;
+    height: fit-content;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 100%;
+    padding: 2%;
+    background-color: rgba(0, 0, 0, 0.507);
+    backdrop-filter: blur(10px);
   }
 `;
 
@@ -529,5 +551,5 @@ export {
   Title_css,
   SubNavbarItem_css,
   SubNavbarContainer_css,
-  BookItem_css,
+  BookItem_css, PressItem_css
 };
