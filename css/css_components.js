@@ -517,6 +517,7 @@ const BookItem_css = `
 `;
 
 const PressItem_css = `
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
   article{
     overflow: hidden;
@@ -533,6 +534,8 @@ const PressItem_css = `
     background-size: cover;
     align-items: flex-end;
     transition: all 0.5s;
+    font-family: 'Roboto', sans-serif;
+
   }
 
   .sublink{
@@ -549,13 +552,9 @@ const PressItem_css = `
     text-align: center;
     transition: all 0.5s;
   }
-
-  .press_item_container:hover{
-    
-    transform: scale(103%)
+  .press_item_container:hover > .sublink { 
+    background-color: rgba(0, 0, 0);
   }
-
-  .press_item_container:hover > .sublink { background-color: rgba(0, 0, 0, 0.9); }
 `;
 
 export {
