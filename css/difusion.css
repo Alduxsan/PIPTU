@@ -4,7 +4,11 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  transition: all 0.5s
 }
+
+
+
 
 html {
   background: no-repeat url(../media/liquid-cheese.svg);
@@ -50,3 +54,22 @@ body {
 .item1 {
   grid-column: 1 / 3;
 }
+
+.item10 {
+  grid-column: 2/4;
+}
+
+#network_list{
+  display: flex;
+  padding: 4%;
+  justify-content: center;
+}
+
+.info_container img{
+  width: 100px;
+  margin: 20px;
+}
+
+
+
+

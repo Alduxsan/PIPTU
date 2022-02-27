@@ -35,6 +35,7 @@ class PressItem extends HTMLElement {
     `
     <article>
       <div id="background" class="press_item_container">
+      
           <a class="sublink" href="${articleLink}"> 
               <slot name="article_title"></slot>
           </a>
@@ -49,21 +50,3 @@ class PressItem extends HTMLElement {
 }
 
 customElements.define("press-item", PressItem);
-
-// document.getElementById('a').style.backgroundImage="url(images/img.jpg)"; // specify the image path here
-// `
-//     <article>
-//     <div class="press_item_container">
-//         <div class="press_title">
-
-//             <a class="sublink" href="${bookLink}"> 
-//                 <slot name="book_title"></slot>
-//             </a>
-//         </div>
-//         ${this.setImgSection(bookImgPath)}
-//     </div>
-//     </article>
-//     <style>
-//     ${PressItem.styles}
-//     </style>
-//     `

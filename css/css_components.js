@@ -127,7 +127,7 @@ const Profiles_css = `
   margin: auto;
   width: fit-content;
   box-shadow:
-  2px 2px 2px 1px rgba(0, 0, 0);  
+  2px 2px 2px 1px rgba(0, 0, 0, .7);  
   border-radius: 8px;
 }
 
@@ -517,6 +517,13 @@ const BookItem_css = `
 `;
 
 const PressItem_css = `
+
+  article{
+    overflow: hidden;
+    border-radius: 6px;
+  }
+  
+
   .press_item_container{
     border-radius: 6px;
     display: flex;
@@ -525,19 +532,30 @@ const PressItem_css = `
     background-repeat: no-repeat;
     background-size: cover;
     align-items: flex-end;
+    transition: all 0.5s;
   }
 
   .sublink{
     color: white;
-    width: fit-content;
+    width: 100%;
     height: fit-content;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 100%;
-    padding: 2%;
+    padding: 3%;
     background-color: rgba(0, 0, 0, 0.507);
     backdrop-filter: blur(10px);
+    border-radius: 0 0 6px 6px;
+    text-align: center;
+    transition: all 0.5s;
   }
+
+  .press_item_container:hover{
+    
+    transform: scale(103%)
+  }
+
+  .press_item_container:hover > .sublink { background-color: rgba(0, 0, 0, 0.9); }
 `;
 
 export {
@@ -551,5 +569,6 @@ export {
   Title_css,
   SubNavbarItem_css,
   SubNavbarContainer_css,
-  BookItem_css, PressItem_css
+  BookItem_css,
+  PressItem_css,
 };
