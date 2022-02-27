@@ -102,25 +102,34 @@ body {
 
 /* footer */
 
-.links_container {
+.container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
-
   border-radius: 6px;
+  padding: 2%;
+  justify-content: center;
+  background-color: white;
+  align-items: center;
 }
 
+
 .colabLink {
-  margin: 10px;
+  margin: 20px;
   width: 300px;
-  
 }
 
 .colabLink img {
   width: 100%;
 }
 
+#exter{
+  filter: invert(1);
+}
 
+#uesc{
+  width: 100%;
+}
 
 @media only screen and (max-width: 500px) {
   .title {
