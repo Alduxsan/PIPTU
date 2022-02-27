@@ -426,7 +426,10 @@ const Subtitle_css = `
 }
 `;
 const SubNavbarItem_css = `
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@200;700&display=swap');
+
 .link_card {
+  font-family: "M PLUS Rounded 1c", sans-serif;
   margin: 20px;
   text-align: center;
   width: max-content;
@@ -518,8 +521,10 @@ const BookItem_css = `
 
 const PressItem_css = `
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@200;700&display=swap');
 
   article{
+    font-family: "M PLUS Rounded 1c", sans-serif;
     overflow: hidden;
     border-radius: 6px;
   }
@@ -534,7 +539,6 @@ const PressItem_css = `
     background-size: cover;
     align-items: flex-end;
     transition: all 0.5s;
-    font-family: 'Roboto', sans-serif;
 
   }
 
