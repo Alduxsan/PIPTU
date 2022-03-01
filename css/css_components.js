@@ -422,7 +422,7 @@ const Subtitle_css = `
   font-size: 4rem;
   color: rgb(255, 255, 255);
   text-shadow: 2px 2px 2px rgb(0, 0, 0);
-  padding: 2%;
+  padding: 3%;
 }
 `;
 const SubNavbarItem_css = `
