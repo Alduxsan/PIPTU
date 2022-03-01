@@ -1,8 +1,8 @@
 const Navbar_css = `
 :host{
 }
-@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css")
 @import url("https://fonts.googleapis.com/css2?family=Cabin+Sketch&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@200;700&display=swap');
 
 body {
 margin: 0;
@@ -10,16 +10,17 @@ font-family: Arial, Helvetica, sans-serif;
 }
 
 .topnav {
-background-color: rgba(56, 20, 0);
+display: flex;
+flex-direction: row;
+background-color: rgb(38 14 0);
 width: 100%;
-height: 130px;
 color: rgb(0, 0, 0);
 display: flex;
 justify-content: center;
-align-items: center;
 text-align: center;
-font-size: 2.6rem;
-font-family: "Cabin Sketch", cursive;
+font-size: 1.4rem;
+font-family: "M PLUS Rounded 1c", sans-serif;
+align-items: center;
 }
 
 .sticky{
@@ -30,32 +31,24 @@ font-family: "Cabin Sketch", cursive;
 }
 
 .link_container{
-display: flex;
-height: 100%;
-justify-content: center;
-align-items: center;
-margin: 8px;
-
+  padding: 2%;
 }
+
 .link_container a {
 text-decoration: none;
 color: rgb(231, 231, 231);
 transition: 0.3s all;
-display: flex;
 list-style: none;
-text-shadow: 1.5px 1.5px 1px rgb(0, 0, 0);
-padding: 8px;
 transition: transform 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
-.link_container :hover {
-background-color: rgb(41, 14, 0);
-transition: 1.0s all;
-display: flex;
-height: 100%;
-justify-content: center;
-align-items: center;
-border-radius: 6px;
+.link_container:hover {
+  background-color: rgb(63, 22, 0);
+  transition: 1.0s all;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
 }
 
 .active {

@@ -24,11 +24,11 @@ class Navbar extends HTMLElement {
     this.innerHTML = `
     <div class="topnav" id="navbar">
       <div class="link_container ${this.checkActive("home",atribute)}"><a href="/index.html">INICIO</a></div>
-      <div class="link_container ${this.checkActive("aboutUs",atribute)}"><a href="/aboutUs.html">SOBRE<br>NOSOTROS</a></div>
-      <div class="link_container ${this.checkActive("investigations",atribute)}"><a href="/investigations.html">INVESTIGACIÓN</a></div>
-      <div class="link_container ${this.checkActive("interactive",atribute)}"><a href="/interactive.html">PREHISTORIA<br>INTERACTIVA</a></div>
+      <div class="link_container ${this.checkActive("aboutUs",atribute)}"><a href="/aboutUs.html">SOBRE NOSOTROS</a></div>
+      <div class="link_container ${this.checkActive("investigations",atribute)}"><a href="/investigations.html">INVESTIGACIONES</a></div>
+      <div class="link_container ${this.checkActive("interactive",atribute)}"><a href="/interactive.html">PREHISTORIA INTERACTIVA</a></div>
       <div class="link_container ${this.checkActive("difusion",atribute)}"><a href="/difusion.html">DIFUSIÓN</a></div>
-      <div class="link_container ${this.checkActive("gallery",atribute)}"><a href="/difusion.html">GALERÍA<br>DE FOTOS</a></div>
+      <div class="link_container ${this.checkActive("gallery",atribute)}"><a href="/difusion.html">GALERÍA DE FOTOS</a></div>
     </div>
    
     <style>
