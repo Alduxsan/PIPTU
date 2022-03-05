@@ -144,6 +144,7 @@ slot[name=name]{
 
 
 slot[name=bio]{
+  font-size: 1.3rem;
   text-align: justify;
   text-justify: distribute;
   hyphens: auto;

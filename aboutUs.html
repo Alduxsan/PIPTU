@@ -1,220 +1,291 @@
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script type="module" src="./index.js" defer></script>
-    <link rel="stylesheet" href="./css/aboutUs.css" />
-    <title>LIPTU - About us</title>
-  </head>
 
-  <body>
-    <nav-bar atribute="aboutUs"></nav-bar>
-    <div id="general">
-      
-        <section-title class="title">
-          <p slot="title">SOBRE NOSOTROS</p>
-        </section-title>
-        
-        <subnavbar-container>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script type="module" src="./index.js" defer></script>
+  <script type="module" src="js/stickyNabar.js"></script>
+  <link rel="stylesheet" href="./css/aboutUs.css" />
+  <title>LIPTU - About us</title>
+</head>
 
-        <subnavbar-item
-          hrefId = "quienes"
-          imgPath = "media/hat.svg"
-          sectionName = "QUIENES SOMOS"
-        ></subnavbar-item>
+<body>
+  <nav-bar atribute="aboutUs"></nav-bar>
+  <div id="general">
 
-        <subnavbar-item
-          hrefId = "quehacemos"
-          imgPath = "media/shovel.png"
-          sectionName = "QUE HACEMOS"
-        ></subnavbar-item>
-        
-        <subnavbar-item
-          hrefId = "projectslist"
-          imgPath = "media/icons/article.png"
-          sectionName = "LISTA DE PROYECTOS"
-        ></subnavbar-item>
+    <section-title class="title">
+      <p slot="title">SOBRE NOSOTROS</p>
+    </section-title>
 
-        <subnavbar-item
-          hrefId = "colaboraciones"
-          imgPath = "media/colab.png"
-          sectionName = "COLABORACIONES"
-      ></subnavbar-item>
+    <subnavbar-container>
 
-        </subnavbar-container>
-      <div class="content">
-        <sub-title id="quienes">
-          <p slot="title">QUIENES SOMOS</p>
-        </sub-title>
+      <subnavbar-item hrefId="quienes" imgPath="media/hat.svg" sectionName="QUIENES SOMOS"></subnavbar-item>
 
-        <div class="profiles_wrapper">
+      <subnavbar-item hrefId="quehacemos" imgPath="media/shovel.png" sectionName="QUE HACEMOS"></subnavbar-item>
 
-          <profile-box img="media/rafa.jpeg">
-            <p slot="name">RAFAEL SUÁREZ</p>
-            <p slot="bio">Dr. Rafael Suárez, Profesor Adjunto del Depto. de Arqueología del Instituto de Ciencias Antropológicas de la Facultad de Humanidades y Ciencias de la Educación. Coordinador y responsable del grupo de investigación: <a id="ref" href="https://formularios.csic.edu.uy/grupos/formulario/PrincipalAction.action?comando=ficha_completa&id=883045">“Los primeros americanos en Uruguay: arqueología prehistórica durante el final del Pleistoceno”</a> (CSIC 883045) (link del grupo). Investiga desde hace más de 20 años el poblamiento temprano en Uruguay, focalizándose en diferentes temáticas y líneas de investigación: tecnología lítica, movilidad y uso del espacio, innovaciones tecnológicas, cambio cultural, prestigio social/individual entre los grupos tempranos, fuentes de aprovisionamiento de materias primas, entre otros. Entre 2000-2006 fue responsable científico de las excavaciones en el sitio Pay Paso 1. Desde el año 2013 dirige los trabajos y excavaciones arqueológicas en el sitio Tigre (río Uruguay). Comenzó a partir del año 2017 la investigación de sitios en aleros y cuevas en el centro de Uruguay. Viene formando a la nueva generación de arqueólogas/os de Uruguay que se interesan por el tema del poblamiento temprano y tecnología lítica. Ha realizado una extensa serie de publicaciones en revistas internacionales, así como es editor del libro <a id="ref" href="https://uofupress.lib.utah.edu/people-and-culture-in-ice-age-americas/">“People and Culture in Ice Age Americas: New Dimensions in Paleoamerican Archaeology”</a> editado por Utah University Press</p>
-          </profile-box>
+      <subnavbar-item hrefId="projectslist" imgPath="media/icons/article.png" sectionName="PROYECTOS DE INVESTIGACIÓN">
+      </subnavbar-item>
 
-          <profile-box img="media/profiles/bradley.png">
-            <p slot="name">BRUCE BRADLEY</p>
-            <p slot="bio">Doctor en Antropología por la University of Cambridge, England. Es un investigador que se ha vuelto una leyenda de la arqueología mundial debido a su profundo y amplio conocimiento en relación a la tecnología lítica. Investiga desde hace más de 50 años el poblamiento de América, tiene un conocimiento profundo de la tecnología lítica, es un maestro de la talla donde ha desarrollado a niveles muy altos la arqueología experimental. Desarrolló un modelo sobre el poblamiento de América en su libro “Across Atlantic Ice”.</p>
-          </profile-box>
+      <subnavbar-item hrefId="colaboraciones" imgPath="media/colab.png" sectionName="COLABORACIONES"></subnavbar-item>
 
-          <profile-box img="media/tres.jpeg">
-            <p slot="name">TRES PERSONAS</p>
-            <p slot="bio">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae officiis hic, cupiditate reiciendis quae earum voluptatum iusto odit, beatae laborum, voluptatem explicabo. Minima nulla at cumque officia nisi eaque ad! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat distinctio corporis ut reprehenderit necessitatibus et ducimus, quo vitae, perferendis ab quas nihil? Cumque nulla temporibus veritatis impedit beatae consectetur eaque.</p>
-          </profile-box>
+    </subnavbar-container>
+    <div class="content">
+      <sub-title id="quienes">
+        <p slot="title">QUIENES SOMOS</p>
+      </sub-title>
 
-          <profile-box img="media/rafa.jpeg">
-            <p slot="name">FLORENCIA BARCELÓ</p>
-            <p slot="bio">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae officiis hic, cupiditate reiciendis quae earum voluptatum iusto odit, beatae laborum, voluptatem explicabo. Minima nulla at cumque officia nisi eaque ad! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat distinctio corporis ut reprehenderit necessitatibus et ducimus, quo vitae, perferendis ab quas nihil? Cumque nulla temporibus veritatis impedit beatae consectetur eaque.</p>
-          </profile-box>
+      <div class="profiles_wrapper">
 
-          <profile-box img="media/2.jpeg">
-            <p slot="name">MALINOWSKI</p>
-            <p slot="bio">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae officiis hic, cupiditate reiciendis quae earum voluptatum iusto odit, beatae laborum, voluptatem explicabo. Minima nulla at cumque officia nisi eaque ad! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat distinctio corporis ut reprehenderit necessitatibus et ducimus, quo vitae, perferendis ab quas nihil? Cumque nulla temporibus veritatis impedit beatae consectetur eaque.</p>
-          </profile-box>
+        <profile-box img="media/profiles/rafa.jpeg">
+          <p slot="name">RAFAEL SUÁREZ</p>
+          <p slot="bio">Dr. Rafael Suárez, Profesor Adjunto del Depto. de Arqueología del Instituto de Ciencias
+            Antropológicas de la Facultad de Humanidades y Ciencias de la Educación. Coordinador y responsable del grupo
+            de investigación: <a id="ref"
+              href="https://formularios.csic.edu.uy/grupos/formulario/PrincipalAction.action?comando=ficha_completa&id=883045">“Los
+              primeros americanos en Uruguay: arqueología prehistórica durante el final del Pleistoceno”</a> (CSIC
+            883045). Investiga desde hace más de 20 años el poblamiento temprano en Uruguay, focalizándose en diferentes
+            temáticas y líneas de investigación: tecnología lítica, movilidad y uso del espacio, innovaciones
+            tecnológicas, cambio cultural, prestigio social/individual entre los grupos tempranos, fuentes de
+            aprovisionamiento de materias primas, entre otros. Entre 2000-2006 fue responsable científico de las
+            excavaciones en el sitio Pay Paso 1. Desde el año 2013 dirige los trabajos y excavaciones arqueológicas en
+            el sitio Tigre (río Uruguay). Comenzó a partir del año 2017 la investigación de sitios en aleros y cuevas en
+            el centro de Uruguay. Viene formando a la nueva generación de arqueólogas/os de Uruguay que se interesan por
+            el tema del poblamiento temprano y tecnología lítica. Ha realizado una extensa serie de publicaciones en
+            revistas internacionales, así como es editor del libro <a id="ref"
+              href="https://uofupress.lib.utah.edu/people-and-culture-in-ice-age-americas/">“People and Culture in Ice
+              Age Americas: New Dimensions in Paleoamerican Archaeology”</a> editado por Utah University Press</p>
+        </profile-box>
 
+        <profile-box img="media/profiles/maria.jpeg">
+          <p slot="name">MARÍA JULIA MELIÁN</p>
+          <p slot="bio">Estudiante avanzada de la licenciatura en Ciencias Antropológicas opción Arqueología de la
+            Facultad de Humanidades y Ciencias de la Educación. Se unió al grupo de estudios de Poblamiento Temprano
+            liderado por Rafael Suárez en 2017 como colaboradora honoraria. Desde entonces ha participado de manera
+            activa en las investigaciones desarrolladas a través de distintos proyectos y cargos. Actualmente forma
+            parte del grupo de Investigación <a id="ref"
+              href="https://formularios.csic.edu.uy/grupos/formulario/PrincipalAction.action?comando=ficha_completa&id=883045">“Los
+              primeros americanos en Uruguay: arqueología prehistórica durante el final del Pleistoceno”</a> (CSIC
+            883045). Sus principales intereses incluyen la arqueología experimental y tecnología lítica. En este momento
+            su foco de investigación es la manufactura y secuencia de reducción de las puntas Tigre.</p>
+        </profile-box>
+
+        <profile-box img="media/profiles/bradley.png">
+          <p slot="name">BRUCE BRADLEY</p>
+          <p slot="bio">Doctor en Antropología por la University of Cambridge, England. Es un investigador que se ha
+            vuelto una leyenda de la arqueología mundial debido a su profundo y amplio conocimiento en relación a la
+            tecnología lítica. Investiga desde hace más de 50 años el poblamiento de América, tiene un conocimiento
+            profundo de la tecnología lítica, es un maestro de la talla donde ha desarrollado a niveles muy altos la
+            arqueología experimental. Desarrolló un modelo sobre el poblamiento de América en su libro “Across Atlantic
+            Ice”.</p>
+        </profile-box>
+
+        <profile-box img="media/profiles/flor.jpeg">
+          <p slot="name">FLORENCIA BARCELÓ</p>
+          <p slot="bio">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae officiis hic, cupiditate
+            reiciendis quae earum voluptatum iusto odit, beatae laborum, voluptatem explicabo. Minima nulla at cumque
+            officia nisi eaque ad! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat distinctio corporis
+            ut reprehenderit necessitatibus et ducimus, quo vitae, perferendis ab quas nihil? Cumque nulla temporibus
+            veritatis impedit beatae consectetur eaque.</p>
+        </profile-box>
+
+      </div>
+
+      <sub-title id="quehacemos">
+        <p slot="title">QUE HACEMOS</p>
+      </sub-title>
+
+
+      <div class="quehacemos">
+        <div class="intro">
+          La investigación prehistórica que realizamos se orienta a generar
+          conocimiento sobre los primeros humanos que exploraron las planicies
+          de Uruguay durante el final de la edad de Hielo. Investigamos en
+          diferentes regiones (escala local, regional y extra-regional) donde
+          la unidad básica de investigación son diferentes tipos de sitios
+          arqueológicos: 1) campamentos bases o residenciales, 2) aleros
+          rocosos y cuevas, y 3) canteras-talleres de aprovisionamiento de
+          materias primas. Éstos sitios arqueológicos conforman parte de un
+          patrón de asentamiento planificado realizado por los
+          cazadores-recolectores tempranos, que se orientó hacia la obtención
+          de diversos recursos para la supervivencia. Desarrollamos varias
+          líneas de investigación que incluyen: movilidad y utilización del
+          espacio, innovaciones tecnológicas y respuesta de los
+          cazadores-recolectores al cambio climático, prestigio
+          social/individual entre los grupos tempranos, tecnología lítica,
+          arqueología experimental.
         </div>
-        
-        <sub-title id="quehacemos">
-          <p slot="title">QUE HACEMOS</p>
+        <br />
+
+        <sub-content section="projects"></sub-content>
+
+        <sub-title id="projectslist">
+          <p slot="title">PROYECTOS DE INVESTIGACIÓN</p>
         </sub-title>
+        <div class="list-container">
 
-
-        <div class="quehacemos">
-          <div class="intro">
-            La investigación prehistórica que realizamos se orienta a generar
-            conocimiento sobre los primeros humanos que exploraron las planicies
-            de Uruguay durante el final de la edad de Hielo. Investigamos en
-            diferentes regiones (escala local, regional y extra-regional) donde
-            la unidad básica de investigación son diferentes tipos de sitios
-            arqueológicos: 1) campamentos bases o residenciales, 2) aleros
-            rocosos y cuevas, y 3) canteras-talleres de aprovisionamiento de
-            materias primas. Éstos sitios arqueológicos conforman parte de un
-            patrón de asentamiento planificado realizado por los
-            cazadores-recolectores tempranos, que se orientó hacia la obtención
-            de diversos recursos para la supervivencia. Desarrollamos varias
-            líneas de investigación que incluyen: movilidad y utilización del
-            espacio, innovaciones tecnológicas y respuesta de los
-            cazadores-recolectores al cambio climático, prestigio
-            social/individual entre los grupos tempranos, tecnología lítica,
-            arqueología experimental.
+          <div class="list_subsectionTitle">
+            <h2>EN DESARROLLO</h2>
           </div>
-          <br />
 
-          <sub-content section="projects"></sub-content>
+          <project-listitem date="2022-2024"
+            src="https://siteanii.anii.org.uy/upcms/files/llamados/informecierre/informe-final-de-evaluaci-n-fce-2021-vf-20211227.pdf"
+            name='“Movilidad, uso de espacio y diversidad cultural durante el poblamiento temprano de Uruguay: Investigación en cuevas y aleros rocosos”. (FCE_1_2021_1_166543). Financiado por ANII-Fondo Clemente Estable.'>
+          </project-listitem>
 
-          <sub-title id="projectslist">
-            <p slot="title">LISTA DE PROYECTOS</p>
-         </sub-title>
-          <div class="list-container">
-            
-            <div class="list_subsectionTitle"><h2>EN DESARROLLO</h2></div>
+          <project-listitem date="2021 - 2023"
+            src="https://www.csic.edu.uy/sites/csic/files/FINANCIADOS%20I%2BD%202020.pdf"
+            name='“Evolución paleoambiental, explotación de recursos faunísticos y respuestas tecnológicas de los cazadores-recolectores al cambio climático durante el final del Pleistoceno en Uruguay”. Financiado por el llamado CSIC I+D 2020.  FHCE-Universidad de la República'>
+          </project-listitem>
 
-            <project-listitem
-            date="2022 - actual"
-              src = ""
-              name='“Movilidad, uso de espacio y diversidad cultural durante el poblamiento temprano de Uruguay: Investigación en cuevas y aleros rocosos”. (FCE_1_2021_1_166543). Financiado por ANII-Fondo Clemente Estable.'></project-listitem>
+          <project-listitem date="2022- actual" src=""
+            name='“Investigación en cuevas y aleros, arqueología experimental y cambio cultural durante el poblamiento temprano de Uruguay”. Financiado por Comisión Central de Dedicación Total, Universidad de la República, Uruguay.'>
+          </project-listitem>
 
-              <project-listitem
-              date="2021 - actual"
-                src = ""
-                name='“Evolución paleoambiental, explotación de recursos faunísticos y respuestas tecnológicas de los cazadores-recolectores al cambio climático durante el final del Pleistoceno en Uruguay”. Financiado CSIC I+D 2020. FHCE-UDELAR.'></project-listitem>
+          <project-listitem date="2021- actual" src=""
+            name='“Uso del espacio durante el Poblamiento Temprano en Uruguay: investigación en aleros y cuevas en el depto. de Cerro Largo”. Aprobado por la Comisión de Patrimonio Cultural de la Nación. Co-responsable Lic. Flavia Barceló.'>
+          </project-listitem>
 
-              <project-listitem
-                date="2021 - actual"
-                src="https://www.csic.edu.uy/content/poblamiento-movilidad-y-reorganizaci%C3%B3n-cultural-explorando-la-inicial-dispersi%C3%B3n-humana-en"
-                name='“The Paleoamerican exploration of the Uruguay middle river during the late Pleistocene” (Post PhD grant # 9978). Financiado CSIC I + D 2016. FHCE.'
-              /></project-listitem>
+          <project-listitem date="2020 - 2021"
+            src="https://www.csic.edu.uy/content/poblamiento-movilidad-y-reorganizaci%C3%B3n-cultural-explorando-la-inicial-dispersi%C3%B3n-humana-en"
+            name='“The Paleoamerican exploration of the Uruguay middle river during the late Pleistocene” (Post PhD grant # 9978). Financiado por The Wenner-Gren Foundation for Anthropological Research, New York, Estados Unidos.' />
+          </project-listitem>
 
-            <div class="list_subsectionTitle"><h2>FINALIZADOS</h2></div>
-              <project-listitem
-              date="2013 - 2015"
-              src="https://www.csic.edu.uy/content/poblamiento-movilidad-y-reorganizaci%C3%B3n-cultural-explorando-la-inicial-dispersi%C3%B3n-humana-en"
-              name='“El poblamiento temprano del río Uruguay medio: variabilidad cultural durante la transición Pleistoceno Holoceno hace 13,000-10,200 años cal. AP”.  Financiado por CSIC -  I + D 2012. FHCE.'
-              /></project-listitem>
+          <div class="list_subsectionTitle">
+            <h2>FINALIZADOS</h2>
+          </div>
 
-              <project-listitem
-              date="2013 - 2015"
-              src='https://www.fhuce.edu.uy/index.php/noticias/193-upc-2/proyectos-aprobados/proyectos-de-investigacion-en-ejecucion/3584-el-poblamiento-temprano-del-rio-uruguay-medio-variabilidad-cultural-durante-la-transicion-pleistoceno-holoceno-hace-13-000-10-200-anos-cal-ap-csic-i-d'
-              name='“El poblamiento temprano del río Uruguay medio: variabilidad cultural durante la transición Pleistoceno Holoceno hace 13,000-10,200 años cal. AP”.  Financiado por CSIC -  I + D 2012. FHCE.'/></project-listitem>
-              
-              <project-listitem
-              date="2011 - 2013"
-              src='https://www.fhuce.edu.uy/index.php/ciencias-antropologicas/departamento-de-arqueologia/proyectos/poblamiento-temprano-en-el-norte-de-uruguay/publicaciones/4565-suarez-rafael-2011-arqueologia-durante-la-transicion-pleistoceno-holoceno-componentes-paleoindios-organizacion-de-la-tecnologia-y-movilidad-de-los-primeros-americanos-en-uruguay'
-              name='“Arqueología y paleoambientes durante la transición Pleistoceno Holoceno en el Norte de Uruguay” (FCE_2009_1_2453). Financiado por ANII-Fondo Clemente Estable / FHCE-Depto. Arqueología.'/></project-listitem>
+          <project-listitem date="2013 - 2015"
+            src='https://www.csic.edu.uy/content/el-poblamiento-temprano-del-r%C3%ADo-uruguay-medio-variabilidad-cultural-durante-la-transici%C3%B3n'
+            name='“El poblamiento temprano del río Uruguay medio: variabilidad cultural durante la transición Pleistoceno Holoceno hace 13,000-10,200 años cal. AP”.  Financiado por CSIC -  I + D 2012. FHCE.' />
+          </project-listitem>
 
-              <project-listitem
-              date="2011 - 2012 "
-              src='https://www.fhuce.edu.uy/index.php/ciencias-antropologicas/departamento-de-arqueologia/proyectos/poblamiento-temprano-en-el-norte-de-uruguay/proyectos'
-              name='“Clovis and Fishtail: Technology of Late Pleistocene Peoples and their settlement of the Americas”. Financiado por la British Academy - University of Exeter (Inglaterra).'/></project-listitem>
+          <project-listitem date="2011 - 2013"
+            src='https://www.fhuce.edu.uy/index.php/ciencias-antropologicas/departamento-de-arqueologia/proyectos/poblamiento-temprano-en-el-norte-de-uruguay/publicaciones/4565-suarez-rafael-2011-arqueologia-durante-la-transicion-pleistoceno-holoceno-componentes-paleoindios-organizacion-de-la-tecnologia-y-movilidad-de-los-primeros-americanos-en-uruguay'
+            name='“Arqueología y paleoambientes durante la transición Pleistoceno Holoceno en el Norte de Uruguay” (FCE_2009_1_2453). Financiado por ANII-Fondo Clemente Estable / FHCE-Depto. Arqueología.' />
+          </project-listitem>
 
-              <project-listitem
-              date="2010 - 2011"
-              src='https://cir.cenieh.es/bitstream/20.500.12136/676/1/Excavaciones%20en%20Zanja%20del%20Tigre%20%28Uruguay%29.%20Primeras%20ocupaciones%20humanas%20de%20Am%C3%A9rica_Mateos%20Cachotto_et_al_2012.pdf'
-              name='“Excavaciones en Zanja del Tigre (Uruguay). Primeras ocupaciones humanas de América”. Financiado por el Ministerio de Cultura de España.'/></project-listitem>
-              
-              <project-listitem
-              date="2008 - 2009"
-              src=''
-              name='“Paleoindian adaptations at the subtropical landscape during Pleistocene-Holocene Transition in Uruguay”. Financiado por The Wenner-Gren Foundation for Anthropological Research, New York-USA, grant Nº 7864-08. '/></project-listitem>
+          <project-listitem date="2011 - 2012 "
+            src='https://www.fhuce.edu.uy/index.php/ciencias-antropologicas/departamento-de-arqueologia/proyectos/poblamiento-temprano-en-el-norte-de-uruguay/proyectos'
+            name='“Clovis and Fishtail: Technology of Late Pleistocene Peoples and their settlement of the Americas”. Financiado por la British Academy - University of Exeter (Inglaterra).' />
+          </project-listitem>
 
-              <project-listitem
-              date="2005 - 2007"
-              src=''
-              name='“Archaeology of the first Americans, survival of Pleistocene fauna and paleoenvironmental change at the Pleistocene-Holocene transition in Uruguay”. Financiado por National Geographic Society.'/></project-listitem>
+          <project-listitem date="2010 - 2011"
+            src='https://cir.cenieh.es/bitstream/20.500.12136/676/1/Excavaciones%20en%20Zanja%20del%20Tigre%20%28Uruguay%29.%20Primeras%20ocupaciones%20humanas%20de%20Am%C3%A9rica_Mateos%20Cachotto_et_al_2012.pdf'
+            name='“Excavaciones en Zanja del Tigre (Uruguay). Primeras ocupaciones humanas de América”. Financiado por el Ministerio de Cultura de España.' />
+          </project-listitem>
+
+          <project-listitem date="2008 - 2009" src=''
+            name='“Paleoindian adaptations at the subtropical landscape during Pleistocene-Holocene Transition in Uruguay”. Financiado por The Wenner-Gren Foundation for Anthropological Research, New York-USA, grant Nº 7864-08. ' />
+          </project-listitem>
+
+          <project-listitem date="2005 - 2007" src=''
+            name='“Archaeology of the first Americans, survival of Pleistocene fauna and paleoenvironmental change at the Pleistocene-Holocene transition in Uruguay”. Financiado por National Geographic Society.' />
+          </project-listitem>
+
+
+
+          <project-listitem date="2019 - 2021" src=""
+            name='“Diversidad cultural durante el poblamiento temprano y movilidad de los primeros americanos en las planicies de Uruguay entre 14,000 - 10,000 años de antigüedad”. Comisión Central de Dedicación Total, Universidad de la República, Uruguay.' />
+          </project-listitem>
+
+          <project-listitem date="2018 - 2022" src=""
+            name='“Los primeros pobladores del sureste de América del Sur: un enfoque integrador de los datos arqueológicos del Sur de Brasil-Uruguay” Financiado Dirección General de Relaciones y Cooperación-Programa ECOS–Udelar. Proyecto de cooperación científica entre Uruguay y Francia. Responsable científico contraparte uruguaya R. Suárez, responsable científico contraparte Francia Dr. A. Lourdeau (Musée de l´ Homme, Dépt. Préhistorie, París).' />
+          </project-listitem>
+
+          <project-listitem date="2017 – 2019" src=""
+            name='“Poblamiento, movilidad y reorganización cultural: explorando la inicial dispersión humana en la cuenca del Río Uruguay Medio entre 14,000 y 10,000 años calendario AP”. Financiado CSIC I + D 2016. FHCE. Universidad de la República, Uruguay.' />
+          </project-listitem>
+
+          <project-listitem date="2013 - 2015" src=""
+            name='“El poblamiento temprano del río Uruguay medio: variabilidad cultural durante la transición Pleistoceno Holoceno hace 13,000-10,200 años cal. AP”.  Financiado por CSIC -  I + D 2012. FHCE, Universidad de la República, Uruguay.' />
+          </project-listitem>
+
+          <project-listitem date="2011 - 2013" src=""
+            name='“Arqueología y paleoambientes durante la transición Pleistoceno Holoceno en el Norte de Uruguay” (FCE_2009_1_2453). Financiado por ANII-Fondo Clemente Estable / FHCE.' />
+          </project-listitem>
+
+          <project-listitem date="2011 – 2012" src=""
+            name='“Clovis and Fishtail: Technology of Late Pleistocene Peoples and their settlement of the Americas”. Proyecto aprobado y financiado por British Academy (abril 2011) Visiting Scholars 2011, University of Exeter (Inglaterra).' />
+          </project-listitem>
+
+          <project-listitem date="2010 – 2011" src=""
+            name='“Excavaciones en Zanja del Tigre (Uruguay). Primeras ocupaciones humanas de América”. Responsable científico del proyecto, co-dirigido por Dr. Rafael Suárez y Dra. Ana Mateos (Centro Nacional de Investigación sobre Evolución Humana CENIEH, Atapuerca España). Financiado por el Ministerio de Cultura de España.' />
+          </project-listitem>
+
+          <project-listitem date="2008 – 2009" src="" name='“Paleoindian adaptations at the subtropical landscape during Pleistocene-Holocene Transition in Uruguay”. Financiado por The Wenner-Gren Foundation for Anthropological Research, New York-USA, PhD grant Nº 7864-08.  
+  http://www.wennergren.org/grantees/suarez-rafael' />
+          </project-listitem>
+
+          <project-listitem date="2005 - 2007" src=""
+            name='“Archaeology of the first Americans, survival of Pleistocene fauna and paleoenvironmental change at the Pleistocene-Holocene transition in Uruguay”. Financiado por National Geographic Society (Committee for Research and Exploration). Estados Unidos.' />
+          </project-listitem>
+
+          <project-listitem date="2007" src=""
+            name='“Chronology, technology, and ecology of Paleoindian cultures: cross-cultural comparison of the 30 to 36 degree Northern and Southern Atlantic latitudes (South Carolina and Uruguay)”. Co-director con J. Christopher Gillam y Tommy Charles (University of South Carolina). Financiado por R. L. Stephenson Archaeological Research Fund, South Carolina Institute of Archaeology and Anthropology. University of South Carolina, Estados Unidos.' />
+          </project-listitem>
+
+          <project-listitem date="2000 – 2002" src=""
+            name='“Estratigrafía y cronología de los sitios prehistóricos del Arroyo Catalán Chico y Río Cuareim”. Financiado por CONICYT / Fondo Clemente Estable, proyecto 5093, Uruguay.' />
+          </project-listitem>
         </div>
-          
+
         <sub-title id="colaboraciones">
-           <p slot="title">COLABORACIONES</p>
+          <p slot="title">COLABORACIONES</p>
         </sub-title>
-              <div class="container">
+        <div class="container">
 
-              <a href="https://www.fhuce.edu.uy/">
-                <div class="colabLink">
-                  <img src="media/colab-icons/fhce.png" alt=""/>
-                </div></a>
-
-              <a href="https://www.fcien.edu.uy/">
-                <div class="colabLink">
-                  <img src="media/colab-icons/fcien.png" alt=""/>
-                </div></a>
-              
-              <a href="https://www.mna.gub.uy/">
-                <div class="colabLink">
-                  <img src="media/colab-icons/mna.png" alt=""/>
-                </div></a>  
-              
-              <a href="http://www.museohistorico.gub.uy/">
-                <div class="colabLink">
-                  <img src="media/colab-icons/mh.gif" alt=""/>
-                </div></a>
-              
-              <a href="https://www.exeter.ac.uk/">
-                <div class="colabLink">
-                  <img id="exter" src="media/colab-icons/exter.png" alt=""/>
-                </div></a>
-              
-              <a href="http://www.uesc.br/">
-              <div id="uesc" class="colabLink">
-                <img  src="media/colab-icons/uesc.png" alt=""/>
-              </div></a>
+          <a href="https://www.fhuce.edu.uy/">
+            <div class="colabLink">
+              <img src="media/colab-icons/fhce.png" alt="" />
             </div>
-          </div>
+          </a>
+
+          <a href="https://www.fcien.edu.uy/">
+            <div class="colabLink">
+              <img src="media/colab-icons/fcien.png" alt="" />
+            </div>
+          </a>
+
+          <a href="https://www.mna.gub.uy/">
+            <div class="colabLink">
+              <img src="media/colab-icons/mna.png" alt="" />
+            </div>
+          </a>
+
+          <a href="http://www.museohistorico.gub.uy/">
+            <div class="colabLink">
+              <img src="media/colab-icons/mh.gif" alt="" />
+            </div>
+          </a>
+
+          <a href="https://www.exeter.ac.uk/">
+            <div class="colabLink">
+              <img id="exter" src="media/colab-icons/exter.png" alt="" />
+            </div>
+          </a>
+
+          <a href="http://www.uesc.br/">
+            <div id="uesc" class="colabLink">
+              <img src="media/colab-icons/uesc.png" alt="" />
+            </div>
+          </a>
         </div>
       </div>
     </div>
-  </body>
+  </div>
+  </div>
+</body>
 
-  <footer style="text-align: center; padding: 10px;">
-    <div>
-      Icons made by
-      <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons"
-        style="text-decoration: none; color: black;">Smashicons</a
-      >
-      from
-      <a href="https://www.flaticon.com/" title="Flaticon" style="text-decoration: none; color: black;">www.flaticon.com</a>
-    </div>
-  </footer>
+<footer style="text-align: center; padding: 10px;">
+  <div>
+    Icons made by
+    <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons"
+      style="text-decoration: none; color: black;">Smashicons</a>
+    from
+    <a href="https://www.flaticon.com/" title="Flaticon"
+      style="text-decoration: none; color: black;">www.flaticon.com</a>
+  </div>
+</footer>
+
 </html>
