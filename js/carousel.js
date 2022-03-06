@@ -1,16 +1,23 @@
-//carousel in home 
-const images = ["media/portada.JPG","media/portada2.JPG", "media/portada3.jpg"]
+//carousel in home
+const images = [
+  "https://i.ibb.co/rcj9YHF/1.jpg",
+  "https://i.ibb.co/XbXMSvh/2.jpg",
+  "https://i.ibb.co/17J5KYS/4.jpg",
+  "https://i.ibb.co/tBNT1Lp/5.jpg",
+  "https://i.ibb.co/rbVXGZy/6.jpg",
+  "https://i.ibb.co/zGP56ST/7.jpg",
+];
 
 const carousel = document.querySelector(".carousel");
-const interval = setInterval(function(){
-    startCarousel();
+const interval = setInterval(function () {
+  startCarousel();
 }, 6000);
 var index = 1;
 
-function startCarousel(){
-    carousel.style.backgroundImage = `url(${images[index++]})`
-    carousel.classList.remove("fade");
-    void carousel.offsetWidth;
-    carousel.classList.add("fade");
-    if (index > images.length - 1) index = 0;
+function startCarousel() {
+  carousel.style.backgroundImage = `url(${images[index++]})`;
+  carousel.classList.remove("fade");
+  void carousel.offsetWidth;
+  carousel.classList.add("fade");
+  if (index > images.length - 1) index = 0;
 }

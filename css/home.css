@@ -8,11 +8,10 @@
   margin: 0;
 }
 
-html{
+html {
   background: no-repeat url(../media/liquid-cheese.svg);
   background-size: cover;
-  
-  }
+}
 
 body {
   font-family: sans-serif;
@@ -21,22 +20,27 @@ body {
 
 .carousel {
   width: 100%;
+  height: 100vh;
   background-size: cover;
   background-image: url(../media/portada.JPG);
   background-repeat: no-repeat;
 }
-.fade{
+.fade {
   -webkit-animation: 1.5s fade;
   animation: 1.5s fade;
 }
 
-@-webkit-keyframes fade{
-  from{opacity: 0.4;}
-  to {opacity: 1}
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
-@keyframes fade{
-  from{
+@keyframes fade {
+  from {
     opacity: 0.4;
   }
   to {
@@ -47,7 +51,7 @@ body {
 .container {
   height: 500px;
   display: flex;
-  align-items:flex-end;
+  align-items: flex-end;
 }
 
 .title {
@@ -61,18 +65,14 @@ body {
   border-radius: 0 6px 0 0;
 }
 
-.img{
+.img {
   width: 100%;
   border-radius: 6px;
   box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.507);
-
 }
-
-
 
 @media only screen and (max-width: 500px) {
   .title {
     font-size: 2rem;
   }
 }
-
