@@ -10,33 +10,31 @@ class PressItem extends HTMLElement {
     return PressItem_css;
   }
 
-  getAtt(attr){
-    let attribute = this.attribute = this.getAttribute(attr) ?? ""
-    return attribute
+  getAtt(attr) {
+    let attribute = (this.attribute = this.getAttribute(attr) ?? "");
+    return attribute;
   }
 
-  setBackgroundImg(imgPath){
+  setBackgroundImg(imgPath) {
     this.container = this.shadowRoot.getElementById("background");
     this.container.style.backgroundImage = `url(${imgPath})`;
   }
 
   connectedCallback() {
-    let articleImgPath = this.getAtt("articleImgPath")
+    let articleImgPath = this.getAtt("articleImgPath");
 
     this.render();
-    this.setBackgroundImg(articleImgPath)
+    this.setBackgroundImg(articleImgPath);
   }
 
-  render(){
+  render() {
+    let articleLink = this.getAtt("articleLink");
 
-    let articleLink = this.getAtt("articleLink")
-
-    this.shadowRoot.innerHTML = 
-    `
+    this.shadowRoot.innerHTML = `
     <article>
       <div id="background" class="press_item_container">
       
-          <a class="sublink" href="${articleLink}"> 
+          <a class="sublink" target="_blank" href="${articleLink}"> 
               <slot name="article_title"></slot>
           </a>
       </div>
@@ -44,9 +42,8 @@ class PressItem extends HTMLElement {
     <style>
     ${PressItem.styles}
     </style>
-    `
+    `;
   }
-  
 }
 
 customElements.define("press-item", PressItem);
