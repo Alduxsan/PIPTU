@@ -49,20 +49,21 @@ body {
 }
 
 .container {
-  height: 500px;
+  height: 95vh;
+
   display: flex;
   align-items: flex-end;
 }
 
 .title {
   font-family: "Cabin Sketch", cursive;
-  font-size: 3rem;
+  font-size: 3.5rem;
   color: rgb(255, 255, 255);
   text-shadow: 2px 2px 2px rgb(0, 0, 0);
   position: absolute;
-  background-color: rgba(56, 20, 0, 0.856);
+  background-color: rgba(56, 20, 0, 0.8);
   padding: 2%;
-  border-radius: 0 6px 0 0;
+  border-radius: 0 6px 6px 0;
 }
 
 .img {
