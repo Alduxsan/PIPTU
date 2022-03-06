@@ -22,14 +22,17 @@ class ActivitiesItem extends HTMLElement {
   }
 
   render() {
+    let title = this.getAtt("title");
+    let text = this.getAtt("text");
+
     this.shadowRoot.innerHTML = `
     <article>
     <div class="activities_item_container">
         <div class="imgContainer" id="img-container">
-          <slot name="activity_title"></slot>
+          <p id="activity-title">${title}</p>
         </div>
         <div class="activity_text_container">
-            <slot name="activity_text"></slot>            
+            <p>${text}</p>            
         </div>
     </div>
     </article>

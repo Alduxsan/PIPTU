@@ -571,10 +571,22 @@ const ActivitiesItem_css = `
     align-items: center;
   }
 
+  #activity-title{
+    font-size: 3rem;
+    color: white;
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.1);
+    width: 100%;
+    backdrop-filter: blur(5px);
+    padding: 2%;
+  }
+
   .activity_text_container{
     padding: 4%;
     font-size: 1.3rem;
     column-count: 2;
+    column-gap: 3%;
     text-align: justify;
     text-justify: distribute;
     hyphens: auto;
@@ -583,11 +595,6 @@ const ActivitiesItem_css = `
     margin-top: 1%;
   }
 
-  slot[name = activity_title]{
-    
-    width: 100%;
-    text-align: center;
-  }
 `;
 
 export {

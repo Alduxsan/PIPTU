@@ -54,11 +54,7 @@ body {
 .quehacemos {
   justify-content: center;
   margin: auto;
-  text-align: justify;
-  text-justify: distribute;
-  hyphens: auto;
   width: 90%;
-  margin: auto;
   font-family: "M PLUS Rounded 1c", sans-serif;
 }
 
