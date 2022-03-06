@@ -1,222 +1,203 @@
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script type="module" src="./index.js" defer></script>
-    <script type="module" src="js/stickyNabar.js"></script>
-    <link rel="stylesheet" href="./css/interactive.css" />
-    <title>LIPTU - Prehistoria Interactiva</title>
-  </head>
-  <body>
-    <nav-bar atribute="interactive"></nav-bar>
-    
-    <div id="general">
-      
-      <section-title class="title">
-        <p slot="title">PREHISTORIA INTERACTIVA</p>
-      </section-title>
 
-      <subnavbar-container>
-      
-      <subnavbar-item
-        hrefId = "projectiles"
-        imgPath = "media/icons/tools.png"
-        sectionName = "PUNTAS DE PROYECTIL">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script type="module" src="./index.js" defer></script>
+  <script type="module" src="js/stickyNabar.js"></script>
+  <link rel="stylesheet" href="./css/interactive.css" />
+  <title>LIPTU - Prehistoria Interactiva</title>
+</head>
+
+<body>
+  <nav-bar atribute="interactive"></nav-bar>
+
+  <div id="general">
+
+    <section-title class="title">
+      <p slot="title">PREHISTORIA INTERACTIVA</p>
+    </section-title>
+
+    <subnavbar-container>
+      <subnavbar-item hrefId="fauna" imgPath="media/fauna/mamut.png" sectionName="FAUNA"></subnavbar-item>
+      <subnavbar-item hrefId="projectiles" imgPath="media/icons/tools.png" sectionName="PUNTAS DE PROYECTIL">
       </subnavbar-item>
 
-      <subnavbar-item
-        hrefId = "models3d"
-        imgPath = "media/icons/3d.png"
-        sectionName = "MODELOS 3D"
-      ></subnavbar-item>
+      <subnavbar-item hrefId="models3d" imgPath="media/icons/3d.png" sectionName="MODELOS 3D"></subnavbar-item>
 
-        <subnavbar-item
-          hrefId = "fauna"
-          imgPath = "media/fauna/mamut.png"
-          sectionName = "FAUNA"
-        ></subnavbar-item>
 
-        <subnavbar-item
-          hrefId = "sites"
-          imgPath = "media/icons/map.png"
-          sectionName = " MAPA DE SITIOS"
-        ></subnavbar-item>
 
-      </subnavbar-container>      
+    </subnavbar-container>
 
-      <sub-title>
-        <p slot="title">PUNTAS DE PROYECTIL PALEOAMERICANAS DE URUGUAY</p>
-     </sub-title>
+    <sub-title>
+      <p slot="title">PUNTAS DE PROYECTIL PALEOAMERICANAS DE URUGUAY</p>
+    </sub-title>
 
-     <section class="">
-     <div class="intro">
-      <p class="resume">A lo largo de toda la prehistoria ha existido una importante diversidad de grupos culturales que estaban ocupando distintas regiones durante diferentes periodos de tiempo, por lo que existen diferentes tipos de puntas de proyectil, las cuales son consideradas como marcadores culturales de diferentes grupos humanos dado que existen variantes en lo que respecta a su morfología. <br><br>
-      En lo que respecta a Uruguay la gran mayoría de las puntas de proyectil han sido halladas en contextos arqueológicos superficiales, destacándose solo unas pocas las encontradas en estratigrafía [puntas Tigre en el sitio Tigre (K87), sitio Pay Paso y sitio Laguna Canosa, puntas Cola de Pescado en el sitio Urupez y sitio Tigre (K87), puntas Pay Paso en el sitio Pay Paso y sitio Tigre (K87)].</p>
-    </div>
-
-    <div class="infoContainer" id="projectiles">
-    <article>
-      <div class="titleAndInfo">
-      <h2>COLA DE PESCADO</h2>
-      <p>Los grupos tempranos del cono sur para el período comprendido entre el Pleistoceno Final y Holoceno Temprano habrían tenido en común el uso de las llamadas puntas de proyectil Fell o Cola de Pescado, las cuales durante largo tiempo han sido consideradas como objetos indicadores del poblamiento temprano y sobre todo de la transición Pleistoceno/Holoceno.</p>
-    </div>
-      <div class="infoImg">
-        <img src="media/projectiles/cola-pescado.png" alt="">
+    <section class="">
+      <div class="intro">
+        <p class="resume">A lo largo de toda la prehistoria ha existido una importante diversidad de grupos culturales
+          que estaban ocupando distintas regiones durante diferentes periodos de tiempo, por lo que existen diferentes
+          tipos de puntas de proyectil, las cuales son consideradas como marcadores culturales de diferentes grupos
+          humanos dado que existen variantes en lo que respecta a su morfología. <br><br>
+          En lo que respecta a Uruguay la gran mayoría de las puntas de proyectil han sido halladas en contextos
+          arqueológicos superficiales, destacándose solo unas pocas las encontradas en estratigrafía [puntas Tigre en el
+          sitio Tigre (K87), sitio Pay Paso y sitio Laguna Canosa, puntas Cola de Pescado en el sitio Urupez y sitio
+          Tigre (K87), puntas Pay Paso en el sitio Pay Paso y sitio Tigre (K87)].</p>
       </div>
-    </article>
-    
-    <article>
-      <div class="titleAndInfo">
-      <h2>PAY PASO</h2>
-      <p>Las puntas Pay Paso llevan ese nombre porque fue en éste sitio donde se recuperaron en estratigrafía y dataron su contexto por primera vez, tienen una edad de entre 11,000 - 10,300 cal AP.</p>
-    </div>
-      <div class="infoImg">
-        <img src="media/projectiles/paypaso.png" alt="">
-      </div>
-    </article>
-    
-    <article>
-      <div class="titleAndInfo">
-      <h2>TIGRE</h2>
-      <p>Las puntas Pay Paso llevan ese nombre porque fue en éste sitio donde se recuperaron en estratigrafía y dataron su contexto por primera vez, tienen una edad de entre 11,000 - 10,300 cal AP.</p>
-    </div>
-      <div class="infoImg">
-        <img src="media/projectiles/tigre.png" alt="">
-      </div>
-    </article>
 
-    <article>
-      <div class="titleAndInfo">
-      <h2>TRIANGULARES</h2>
-      <p>Las puntas Pay Paso llevan ese nombre porque fue en éste sitio donde se recuperaron en estratigrafía y dataron su contexto por primera vez, tienen una edad de entre 11,000 - 10,300 cal AP.</p>
-    </div>
-      <div class="infoImg">
-        <img src="media/projectiles/triangulares.png" alt="">
+      <div class="infoContainer" id="projectiles">
+        <article>
+          <div class="titleAndInfo">
+            <h2>COLA DE PESCADO</h2>
+            <p>Los grupos tempranos del cono sur para el período comprendido entre el Pleistoceno Final y Holoceno
+              Temprano habrían tenido en común el uso de las llamadas puntas de proyectil Fell o Cola de Pescado, las
+              cuales durante largo tiempo han sido consideradas como objetos indicadores del poblamiento temprano y
+              sobre todo de la transición Pleistoceno/Holoceno.</p>
+          </div>
+          <div class="infoImg">
+            <img src="media/projectiles/cola-pescado.png" alt="">
+          </div>
+        </article>
+
+        <article>
+          <div class="titleAndInfo">
+            <h2>PAY PASO</h2>
+            <p>Las puntas Pay Paso llevan ese nombre porque fue en éste sitio donde se recuperaron en estratigrafía y
+              dataron su contexto por primera vez, tienen una edad de entre 11,000 - 10,300 cal AP.</p>
+          </div>
+          <div class="infoImg">
+            <img src="media/projectiles/paypaso.png" alt="">
+          </div>
+        </article>
+
+        <article>
+          <div class="titleAndInfo">
+            <h2>TIGRE</h2>
+            <p>Las puntas Pay Paso llevan ese nombre porque fue en éste sitio donde se recuperaron en estratigrafía y
+              dataron su contexto por primera vez, tienen una edad de entre 11,000 - 10,300 cal AP.</p>
+          </div>
+          <div class="infoImg">
+            <img src="media/projectiles/tigre.png" alt="">
+          </div>
+        </article>
+
+        <article>
+          <div class="titleAndInfo">
+            <h2>TRIANGULARES</h2>
+            <p>Las puntas Pay Paso llevan ese nombre porque fue en éste sitio donde se recuperaron en estratigrafía y
+              dataron su contexto por primera vez, tienen una edad de entre 11,000 - 10,300 cal AP.</p>
+          </div>
+          <div class="infoImg">
+            <img src="media/projectiles/triangulares.png" alt="">
+          </div>
+        </article>
       </div>
-    </article>
-    </div>
-      
+
+    </section>
+
+    <section class="content">
+      <sub-title id="models3d">
+        <p slot="title">MODELOS 3D</p>
+      </sub-title>
+      <div class="intro">
+
+        <div class="models3D">
+
+          <artifact-3d
+            href_src="https://sketchfab.com/3d-models/dalton-projectile-point-4dad0c5679724ec79b0a622b2114f404?utm_medium=embed&utm_campaign=share-popup&utm_content=4dad0c5679724ec79b0a622b2114f404"
+            iframe_src="https://sketchfab.com/models/4dad0c5679724ec79b0a622b2114f404/embed"
+            iframe_title="DALTON PROJECTILE POINT"></artifact-3d>
+
+          <artifact-3d
+            href_src="https://sketchfab.com/3d-models/fishtail-projectile-point-741094b62328417383b1255fa323bdb6?utm_medium=embed&utm_campaign=share-popup&utm_content=741094b62328417383b1255fa323bdb6"
+            iframe_src="https://sketchfab.com/models/741094b62328417383b1255fa323bdb6/embed"
+            iframe_title="FISHTAIL PROJECTILE POINT"></artifact-3d>
+
+          <artifact-3d
+            href_src="https://sketchfab.com/3d-models/tigre-projectile-point-74c513f9bd614bb78badaa4b77756d33?utm_medium=embed&utm_campaign=share-popup&utm_content=74c513f9bd614bb78badaa4b77756d33"
+            iframe_src="https://sketchfab.com/models/74c513f9bd614bb78badaa4b77756d33/embed"
+            iframe_title="TIGRE PROJECTILE POINT"></artifact-3d>
+
+          <div style="text-align: center" class="Articles3D-footer">
+            by
+            <a href="https://sketchfab.com/Flavia_Barcelo?utm_medium=embed&utm_campaign=share-popup&utm_content=74c513f9bd614bb78badaa4b77756d33"
+              target="_blank" style="font-weight: bold; color: #000000; text-decoration: none">
+              Flavia Barceló
+            </a>
+            on
+            <a href="https://sketchfab.com?utm_medium=embed&utm_campaign=share-popup&utm_content=74c513f9bd614bb78badaa4b77756d33"
+              target="_blank" style="font-weight: bold; color: #000000; text-decoration: none">Sketchfab</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <section class="faunaSection center content">
+      <sub-title id="fauna">
+        <p slot="title">FAUNA</p>
+      </sub-title>
+
+      <p class="resume">En el sitio Pay Paso 1, en los componentes 1 y 3 se recuperaron restos óseos de fauna extinta y
+        actual en asociación directa con material lítico. Estos permitieron la identificación de 5 diferentes taxones,
+        dos de las especies identificadas corresponden a dos mamíferos del Pleistoceno, hoy extintos: Equus (diente
+        superior de raíz de la serie premolo-molar superior izquierda) y Glyptodon sp. (plaqueta fracturada en dos
+        partes y 8 osteodermos), y tres pertenecen a registros de fauna actual de peces Leporinus sp. (boga), de ave
+        Rhea americana (Ñandú) y de un mamífero de mediano porte Myocastor (nutria). La presencia de especies vinculadas
+        a ambientes acuáticos permite inferir una estrategia generalizada de subsistencia no solo basada en la caza,
+        sino también en la pesca.
+      </p>
+
+      <div class="fauna_gallery">
+
+        <fauna-item imgSrc="media/fauna/mamut.png" name="NUTRIA"
+          info="loremIpsum peludos y extintos por cambios climáticos y explotación excesiva por parte de homininos y neanderthales">
+        </fauna-item>
+
+        <fauna-item imgSrc="media/fauna/mamut.png" name="ÑANDÚ"
+          info="loremIpsum peludos y extintos por cambios climáticos y explotación excesiva por parte de homininos y neanderthales">
+        </fauna-item>
+
+        <fauna-item imgSrc="media/fauna/mamut.png" name="BOGA"
+          info="loremIpsum peludos y extintos por cambios climáticos y explotación excesiva por parte de homininos y neanderthales">
+        </fauna-item>
+
+        <fauna-item imgSrc="media/fauna/mamut.png" name="CABALLO PREHISTÓRICO"
+          info="loremIpsum peludos y extintos por cambios climáticos y explotación excesiva por parte de homininos y neanderthales">
+        </fauna-item>
+
+        <fauna-item imgSrc="media/fauna/mamut.png" name="GLIPTODONTE"
+          info="loremIpsum peludos y extintos por cambios climáticos y explotación excesiva por parte de homininos y neanderthales">
+        </fauna-item>
+
+        <fauna-item imgSrc="media/fauna/mamut.png" name="HUEVO DE ÑANDÚ"
+          info="loremIpsum peludos y extintos por cambios climáticos y explotación excesiva por parte de homininos y neanderthales">
+        </fauna-item>
+
+      </div>
+    </section>
+
+  </div>
+  <section class="content">
   </section>
 
-      <section class="content">
-        <sub-title id="models3d">
-          <p slot="title">MODELOS 3D</p>
-        </sub-title>
-        <div class="intro">
 
-          <div class="models3D">
+  </div>
+</body>
 
-            <artifact-3d
-              href_src="https://sketchfab.com/3d-models/dalton-projectile-point-4dad0c5679724ec79b0a622b2114f404?utm_medium=embed&utm_campaign=share-popup&utm_content=4dad0c5679724ec79b0a622b2114f404"
-              iframe_src="https://sketchfab.com/models/4dad0c5679724ec79b0a622b2114f404/embed"
-              iframe_title="DALTON PROJECTILE POINT"
-            ></artifact-3d>
+<footer style="text-align: center; padding: 10px;">
+  <div>
+    Icons made by
+    <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons"
+      style="text-decoration: none; color: black;">Smashicons</a>
+    from
+    <a href="https://www.flaticon.com/" title="Flaticon"
+      style="text-decoration: none; color: black;">www.flaticon.com</a>
+  </div>
+</footer>
 
-            <artifact-3d
-              href_src="https://sketchfab.com/3d-models/fishtail-projectile-point-741094b62328417383b1255fa323bdb6?utm_medium=embed&utm_campaign=share-popup&utm_content=741094b62328417383b1255fa323bdb6"
-              iframe_src="https://sketchfab.com/models/741094b62328417383b1255fa323bdb6/embed"
-              iframe_title="FISHTAIL PROJECTILE POINT"
-            ></artifact-3d>
-
-            <artifact-3d
-              href_src="https://sketchfab.com/3d-models/tigre-projectile-point-74c513f9bd614bb78badaa4b77756d33?utm_medium=embed&utm_campaign=share-popup&utm_content=74c513f9bd614bb78badaa4b77756d33"
-              iframe_src="https://sketchfab.com/models/74c513f9bd614bb78badaa4b77756d33/embed"
-              iframe_title="TIGRE PROJECTILE POINT"
-            ></artifact-3d>
-
-            <div style="text-align: center" class="Articles3D-footer">
-              by
-              <a
-                href="https://sketchfab.com/Flavia_Barcelo?utm_medium=embed&utm_campaign=share-popup&utm_content=74c513f9bd614bb78badaa4b77756d33"
-                target="_blank"
-                style="font-weight: bold; color: #000000; text-decoration: none"
-              >
-                Flavia Barceló
-              </a>
-              on
-              <a
-                href="https://sketchfab.com?utm_medium=embed&utm_campaign=share-popup&utm_content=74c513f9bd614bb78badaa4b77756d33"
-                target="_blank"
-                style="font-weight: bold; color: #000000; text-decoration: none"
-                >Sketchfab</a
-              >
-            </div>
-          </div>
-        </div>
-      </section>
-
-
-
-      <section class="faunaSection center content">
-        <sub-title id="fauna">
-          <p slot="title">FAUNA</p>
-       </sub-title>
-
-          <p class="resume">En el sitio Pay Paso 1, en los componentes 1 y 3 se recuperaron restos óseos de fauna extinta y actual en asociación directa con material lítico. Estos permitieron la identificación de 5  diferentes taxones, dos de las especies identificadas corresponden a dos mamíferos del Pleistoceno, hoy extintos: Equus (diente superior de raíz de la serie premolo-molar superior izquierda) y  Glyptodon sp. (plaqueta fracturada en dos partes y 8 osteodermos), y tres pertenecen a registros de fauna actual de peces Leporinus sp. (boga), de ave Rhea americana (Ñandú) y de un mamífero de mediano porte Myocastor (nutria). La presencia de especies vinculadas a ambientes acuáticos permite inferir una estrategia generalizada de subsistencia no solo basada en la caza, sino también en la pesca. 
-          </p>
-
-          <div class="fauna_gallery">
-
-              <fauna-item               
-              imgSrc="media/fauna/mamut.png"
-              name="NUTRIA"
-              info="loremIpsum peludos y extintos por cambios climáticos y explotación excesiva por parte de homininos y neanderthales"></fauna-item>
-
-              <fauna-item               
-              imgSrc="media/fauna/mamut.png"
-              name="ÑANDÚ"
-              info="loremIpsum peludos y extintos por cambios climáticos y explotación excesiva por parte de homininos y neanderthales"></fauna-item>
-
-              <fauna-item               
-              imgSrc="media/fauna/mamut.png"
-              name="BOGA"
-              info="loremIpsum peludos y extintos por cambios climáticos y explotación excesiva por parte de homininos y neanderthales"></fauna-item>
-
-              <fauna-item               
-              imgSrc="media/fauna/mamut.png"
-              name="CABALLO PREHISTÓRICO"
-              info="loremIpsum peludos y extintos por cambios climáticos y explotación excesiva por parte de homininos y neanderthales"></fauna-item>
-
-              <fauna-item               
-              imgSrc="media/fauna/mamut.png"
-              name="GLIPTODONTE"
-              info="loremIpsum peludos y extintos por cambios climáticos y explotación excesiva por parte de homininos y neanderthales"></fauna-item>
-
-              <fauna-item               
-              imgSrc="media/fauna/mamut.png"
-              name="HUEVO DE ÑANDÚ "
-              info="loremIpsum peludos y extintos por cambios climáticos y explotación excesiva por parte de homininos y neanderthales"></fauna-item>
-
-          </div>
-        </section>
-        
-      </div>
-      <section class="content">
-        <sub-title id="sites">
-          <p slot="title"> MAPA DE RELACIÓN FAUNA - SITIOS</p>
-       </sub-title>
-        <div class="intro">
-          
-          <div class="maps">
-            <img src="media/difusion/mapaFauna.jpg" alt="mapa de fauna">
-          </div>
-        </div>
-      </section>
-
-      
-    </div>
-  </body>
-
-  <footer style="text-align: center; padding: 10px;">
-    <div>
-      Icons made by
-      <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons"
-        style="text-decoration: none; color: black;">Smashicons</a
-      >
-      from
-      <a href="https://www.flaticon.com/" title="Flaticon" style="text-decoration: none; color: black;">www.flaticon.com</a>
-    </div>
-  </footer>
 </html>
+
 </html>

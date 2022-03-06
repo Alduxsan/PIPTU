@@ -555,6 +555,41 @@ const PressItem_css = `
   }
 `;
 
+const ActivitiesItem_css = `
+  .activities_item_container{
+    margin-bottom: 3%
+  }
+
+  .imgContainer{
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    background-attachment: fixed;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .activity_text_container{
+    padding: 4%;
+    font-size: 1.3rem;
+    column-count: 2;
+    text-align: justify;
+    text-justify: distribute;
+    hyphens: auto;
+    background: rgba(255, 255, 255, 0.5); 
+    border-radius: 6px;
+    margin-top: 1%;
+  }
+
+  slot[name = activity_title]{
+    
+    width: 100%;
+    text-align: center;
+  }
+`;
+
 export {
   Navbar_css,
   Profiles_css,
@@ -568,4 +603,5 @@ export {
   SubNavbarContainer_css,
   BookItem_css,
   PressItem_css,
+  ActivitiesItem_css,
 };
