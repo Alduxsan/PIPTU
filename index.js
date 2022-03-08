@@ -11,3 +11,4 @@ import "./components/SubNavbarItem.js";
 import "./components/BookItem.js";
 import "./components/PressItem.js";
 import "./components/ActivitiesItem.js";
+import "./components/SciArticle.js";

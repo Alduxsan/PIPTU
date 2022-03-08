@@ -597,6 +597,70 @@ const ActivitiesItem_css = `
 
 `;
 
+const SciArticle_css = `
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+article{
+  font-family: 'Roboto', sans-serif;
+  margin: 1%;
+  border-radius: 6px;
+}
+
+article:hover {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+
+.art_head_container{
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 1%;
+  align-items: center;
+}
+
+#ArtTitle{
+  border-right: 1px solid black;
+  padding: 2%
+}
+
+details summary { 
+  width: 100%;
+  cursor: pointer;
+  display: flex;
+}
+
+#abstract{
+  margin: 0;
+}
+
+.artAbastract{
+  column-count: 2;
+  text-align: justify;
+  text-justify: distribute;
+  hyphens: auto;
+}
+
+.artLink{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: end;
+  text-decoration: none;
+  color: black;
+}
+.artLink:hover{
+  filter: invert(1)
+}
+
+.iconContainer img{
+  width: 40px;
+  margin-left: 10px;
+}
+
+`;
+
 export {
   Navbar_css,
   Profiles_css,
@@ -611,4 +675,5 @@ export {
   BookItem_css,
   PressItem_css,
   ActivitiesItem_css,
+  SciArticle_css,
 };
