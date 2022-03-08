@@ -34,35 +34,30 @@ body {
   box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.507);
 }
 
-
 .intro {
-  
   background-color: rgba(255, 255, 255, 0.103);
   padding: 5%;
   border-radius: 6px;
-   }
+  margin: 1%;
+}
 
-  .IntroResume{
-    font-family: "M PLUS Rounded 1c", sans-serif;
-    font-size: 1.5rem;
-    text-align: justify;
-    text-justify: distribute;
-    hyphens: auto;
-  }
-  
+.IntroResume {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-size: 1.5rem;
+  text-align: justify;
+  text-justify: distribute;
+  hyphens: auto;
+}
 
-.maps{
+.maps {
   display: flex;
   justify-content: center;
   margin: auto;
   cursor: pointer;
-
 }
 
-.maps iframe{
+.maps iframe {
   border-radius: 6px;
-  box-shadow:
-  0px 3px 10px 0px rgba(0, 0, 0, 0.8),
-  0px 3px 10px 0px rgba(0, 0, 0, 0.8),
-  0px 3px 10px 0px rgba(0,0,0,.8);
+  box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.8),
+    0px 3px 10px 0px rgba(0, 0, 0, 0.8), 0px 3px 10px 0px rgba(0, 0, 0, 0.8);
 }

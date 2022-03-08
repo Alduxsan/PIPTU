@@ -101,15 +101,12 @@ body {
 }
 
 .infoContainer article {
-  display: flex;
-  align-items: center;
   width: fit-content;
   padding: 1%;
   transition: all 0.5s;
 }
 
 .titleAndInfo {
-  width: 300px;
   padding: 2%;
   text-align: justify;
   text-justify: distribute;
