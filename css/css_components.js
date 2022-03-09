@@ -475,6 +475,10 @@ const SubNavbarContainer_css = `
 
 const BookItem_css = `
 
+  article{
+    margin: 2%;
+  }
+
   .book_item_container{
     padding: 2%;
     background-color: rgba(240, 255, 240, 0.144);
@@ -499,16 +503,17 @@ const BookItem_css = `
   }
 
   .book_resume{
-    margin-right: 2%;
+    margin-left: 2%;
     font-size: 1.2rem
   }
 
   .bookImg{
-   min-width: 35%;
+   width: 300px;
   }
 
   img{
-    width: 100%;
+    width: 300px;
+
     border-radius: 6px
   }
 `;

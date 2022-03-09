@@ -10,51 +10,48 @@ class BookItem extends HTMLElement {
     return BookItem_css;
   }
 
-  getAtt(attr){
-    let attribute = this.attribute = this.getAttribute(attr) ?? ""
-    return attribute
+  getAtt(attr) {
+    let attribute = (this.attribute = this.getAttribute(attr) ?? "");
+    return attribute;
   }
 
-  setImgSection(img){
-    if (img !== ""){
+  setImgSection(img) {
+    if (img !== "") {
       return `
       <div class="bookImg">
         <img src="${img}">
       </div>
-    `}else{
+    `;
+    } else {
       return `
       <div></div>
-    `
+    `;
     }
-    
   }
 
   connectedCallback() {
-    
     this.render();
   }
 
-  render(){
-
-    let bookImgPath = this.getAtt("bookImgPath")
-    let bookLink = this.getAtt("bookLink")
-
-    this.shadowRoot.innerHTML = 
-    `
+  render() {
+    let bookImgPath = this.getAtt("bookImgPath");
+    let bookLink = this.getAtt("bookLink");
+    let editorial_info = this.getAtt("editorial_info");
+    this.shadowRoot.innerHTML = `
     <article>
     <div class="book_item_container">
         <div class="book_title">
-            <a class="sublink" href="${bookLink}"> 
+            <a class="sublink" target="_blank" href="${bookLink}"> 
                 <slot name="book_title"></slot>
-            </a>      
+            </a> 
+            <h5>${editorial_info}</h5>    
         </div>
 
         <div class="img_and_resume_container">
+        ${this.setImgSection(bookImgPath)}
             <div class="book_resume">
                 <slot name="book_resume"></slot>
-            </div>
-            ${this.setImgSection(bookImgPath)}
-            
+            </div>            
         </div>
 
         <div class="book_info">
@@ -66,8 +63,7 @@ class BookItem extends HTMLElement {
     <style>
     ${BookItem.styles}
     </style>
-    `
-
+    `;
   }
 }
 
