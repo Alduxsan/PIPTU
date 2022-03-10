@@ -12,3 +12,4 @@ import "./components/BookItem.js";
 import "./components/PressItem.js";
 import "./components/ActivitiesItem.js";
 import "./components/SciArticle.js";
+import "./components/BookChapter.js";

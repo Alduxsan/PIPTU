@@ -474,8 +474,10 @@ const SubNavbarContainer_css = `
 `;
 
 const BookItem_css = `
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 
   article{
+    font-family: 'Roboto', sans-serif;
     margin: 2%;
   }
 
@@ -666,6 +668,43 @@ details summary {
 
 `;
 
+const BookChapter_css = `
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+article{
+  width: fit-content;
+  font-family: 'Roboto', sans-serif;
+  margin: 1%;
+  border-radius: 6px;
+}
+
+article:hover {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+
+.artLink{
+  text-decoration: none; 
+  color: black;
+  width: fit-content;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 1%;
+  align-items: center;
+}
+
+#ArtTitle{
+  border-right: 1px solid black;
+  padding: 2%
+}
+
+#author_editorial_info{
+  width: fit-content;
+}
+
+`;
+
 export {
   Navbar_css,
   Profiles_css,
@@ -681,4 +720,5 @@ export {
   PressItem_css,
   ActivitiesItem_css,
   SciArticle_css,
+  BookChapter_css,
 };

@@ -109,7 +109,8 @@ body {
   text-align: justify;
   text-justify: distribute;
   hyphens: auto;
-  color: aliceblue;
+  color: rgb(0, 0, 0);
+  padding: 2%;
 }
 
 .titleAndInfo h2 {
@@ -135,7 +136,7 @@ body {
 }
 
 .infoContainer article:hover {
-  background-color: rgba(0, 0, 0, 0.456);
+  background-color: rgba(255, 255, 255, 0.767);
   border-radius: 6px;
 }
 
