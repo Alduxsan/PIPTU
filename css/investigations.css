@@ -42,9 +42,33 @@ body {
   margin: 1%;
 }
 
+.intro p {
+  column-count: 2;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.4rem;
+  text-align: justify;
+  text-justify: distribute;
+  hyphens: auto;
+}
+
+#modelImg {
+  float: right;
+  margin: 2% 0 2% 2%;
+  width: 300px;
+}
+#modelImg2 {
+  float: left;
+  margin: 2% 2% 2% 0;
+  width: 100%;
+}
+
+#modelImg3 {
+  margin: 2%;
+  width: 100%;
+}
 .IntroResume {
   font-family: "M PLUS Rounded 1c", sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   text-align: justify;
   text-justify: distribute;
   hyphens: auto;
