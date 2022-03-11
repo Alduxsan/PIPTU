@@ -1,5 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@200;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@200;700&display=swap");
+
+
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -55,16 +59,25 @@ body {
   justify-content: center;
   margin: auto;
   width: 90%;
-  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .intro {
-  font-size: 1.4rem;
   background-color: rgba(255, 255, 255, 0.103);
   -webkit-backdrop-filter: blur(2px);
   backdrop-filter: blur(1px);
   padding: 3%;
+  margin: auto;
+  margin-bottom: 3%;
   border-radius: 6px;
+
+  width: 90%;
+}
+
+.intro p {
+  column-count: 2;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
   text-align: justify;
   text-justify: distribute;
   hyphens: auto;

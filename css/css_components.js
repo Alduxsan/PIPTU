@@ -110,7 +110,6 @@ const Profiles_css = `
 
 
 #imgNameContainer{
-  min-width: 200px;
   text-align: center;
   border-radius: 6px;
   margin: 10px;
@@ -167,68 +166,6 @@ slot[name=bio]{
   }
 
 
-`;
-
-const SubContent_css = `
-.subsection{
-  font-family: 'M PLUS Rounded 1c', sans-serif;
-  justify-content: center;
-  margin: auto;
-  text-align: justify;
-  text-justify: distribute;
-  hyphens: auto 
-}
-
-.imgContainer{
-  font-size: 3rem;
-  color: rgb(255, 255, 255);
-  text-shadow: 1px 1px 1px rgb(0, 0, 0);
-  padding: 1%;
-  box-shadow:
-  2px 2px 2px 1px rgba(0, 0, 0)
-}
-
-.subsection_content::first-letter{
-    font-size:3em;
-    line-height: 1;
-  }
-
-.subsection_content{
-  line-height: 1.5;
-  font-size: 1.3rem;
-  column-count: 2;
-  column-rule:1px dotted silver ;
-  column-gap:2rem;
-  padding: 4%;
-  background-color: rgba(56, 20, 0,.8);
-  color: rgba(255, 255, 255,1);
-  border-radius: 8px;
-}
-
-.projectsList{
-  color: rgba(56, 20, 0);
-  line-height: 1.5;
-  font-size: 1.3rem;
-  justify-content: center;
-  margin: auto;
-  background-color: rgba(255, 255, 255, 0.2);
-  -webkit-backdrop-filter: blur(2px);
-  backdrop-filter: blur(1px);
-  border-radius: 8px;
-  padding: 50px;
-  text-align: justify;
-  text-justify: distribute;
-  hyphens: auto 
-}
-
-.projectsList h3{
-  font-size: 2.3rem;
-}
-
-.projectsList li{
-  color: black;
-  margin: 10px;
-}
 `;
 
 const Artifact3D_css = `
@@ -511,6 +448,7 @@ const BookItem_css = `
 
   .bookImg{
    width: 300px;
+   float: left
   }
 
   img{
@@ -563,6 +501,7 @@ const PressItem_css = `
 `;
 
 const ActivitiesItem_css = `
+
   .activities_item_container{
     margin-bottom: 3%
   }
@@ -579,11 +518,12 @@ const ActivitiesItem_css = `
   }
 
   #activity-title{
-    font-size: 3rem;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-size: 2.5rem;
     color: white;
     text-shadow: 1px 1px 1px rgb(0, 0, 0);
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.3);
     width: 100%;
     backdrop-filter: blur(5px);
     padding: 2%;
@@ -591,17 +531,20 @@ const ActivitiesItem_css = `
 
   .activity_text_container{
     padding: 4%;
+    
+    background: rgba(255, 255, 255, 0.5); 
+    border-radius: 6px;
+    margin-top: 1%;
+  }
+
+  .activity_text_container p{
     font-size: 1.3rem;
     column-count: 2;
     column-gap: 3%;
     text-align: justify;
     text-justify: distribute;
     hyphens: auto;
-    background: rgba(255, 255, 255, 0.5); 
-    border-radius: 6px;
-    margin-top: 1%;
   }
-
 `;
 
 const SciArticle_css = `
@@ -708,7 +651,6 @@ article:hover {
 export {
   Navbar_css,
   Profiles_css,
-  SubContent_css,
   Artifact3D_css,
   ProjectListItem_css,
   FaunaItem_css,
