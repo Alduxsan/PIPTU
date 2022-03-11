@@ -403,7 +403,6 @@ const SubNavbarContainer_css = `
   align-items: center;
   display: flex;
   height: 200px;
-  width: fit-content;
   justify-content: space-evenly;
   padding: 2%;
   margin:auto;
