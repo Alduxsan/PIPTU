@@ -9,9 +9,9 @@ class SubNavbarItem extends HTMLElement {
     return SubNavbarItem_css;
   }
 
-  getAtt(attr){
-    let attribute = (this.attribute = this.getAttribute(attr))
-    return attribute
+  getAtt(attr) {
+    let attribute = (this.attribute = this.getAttribute(attr));
+    return attribute;
   }
 
   connectedCallback() {
@@ -19,12 +19,12 @@ class SubNavbarItem extends HTMLElement {
   }
 
   render() {
-    let hrefId = this.getAtt("hrefId")
-    let imgPath = this.getAtt("imgPath")
-    let sectionName = this.getAtt("sectionName")
+    let hrefId = this.getAtt("hrefId");
+    let imgPath = this.getAtt("imgPath");
+    let sectionName = this.getAtt("sectionName");
 
     this.innerHTML = `
-    <div class="link_card">
+    <div class="sublink_container">    
         <a class="sublink" href="#${hrefId}"> 
             <div class="iconContainer">
                 <img src="${imgPath}" alt="" />
@@ -32,8 +32,6 @@ class SubNavbarItem extends HTMLElement {
             <p>${sectionName.toUpperCase()}</p>
         </a>
     </div>
-
-   
     <style>
     ${SubNavbarItem.styles}
     </style>

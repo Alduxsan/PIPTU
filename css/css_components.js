@@ -359,37 +359,33 @@ const Subtitle_css = `
 const SubNavbarItem_css = `
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@200;700&display=swap');
 
-.link_card {
-  font-family: "M PLUS Rounded 1c", sans-serif;
-  margin: 20px;
-  text-align: center;
-  width: max-content;
-  padding: 10px;
-  transition: all 0.5s
-}
 
-.iconContainer {
-  height: 50%;
-  margin: auto;
-  margin-bottom: 15px;
-}
-
-.link_card img {
-  height: 100%;
+.sublink_container{
+  margin: 40px;
+  padding: 10px
 }
 
 .sublink {
   font-family: "M PLUS Rounded 1c", sans-serif;
   text-decoration: none;
-  margin: 15px;
   color: rgb(0, 0, 0);
-  font-size: 150%;
+  font-size: 1.2rem;
   transition: color 0.5s;
   text-align: center;
-  margin: auto;
+  transition: all 0.5s
 }
 
-.link_card:hover {
+.iconContainer {
+  height:100px;
+  width: fit-content;
+  margin: auto;
+  margin-bottom: 15px;
+}
+.iconContainer img{
+  height: 100%;
+}
+
+.sublink_container:hover {
   border-bottom: 1px solid black;
   border-top: 1px solid black;
   border-radius: 6px;
@@ -402,11 +398,18 @@ const SubNavbarContainer_css = `
 .sublink_container {
   align-items: center;
   display: flex;
-  height: 200px;
-  justify-content: space-evenly;
-  padding: 2%;
-  margin:auto;
+  flex-wrap: wrap;
+  justify-content: center;
 }
+
+@media screen and (max-width: 1100px) {
+  
+  .sublink_container{
+    
+  }
+
+ 
+  }
 `;
 
 const BookItem_css = `
@@ -433,26 +436,24 @@ const BookItem_css = `
   .img_and_resume_container{
     margin-top: 1%;
     display: flex;
-    flex-direction: row;
-    width: fit-content;
+
     text-align: justify;
     text-justify: distribute;
     hyphens: auto 
   }
 
   .book_resume{
-    margin-left: 2%;
-    font-size: 1.2rem
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3rem;
   }
 
   .bookImg{
-   width: 300px;
-   float: left
+    margin-right: 2%; 
+    height:300px;
+    float: left;
   }
-
   img{
-    width: 300px;
-
+    height: 100%;
     border-radius: 6px
   }
 `;
@@ -553,11 +554,13 @@ article{
   font-family: 'Roboto', sans-serif;
   margin: 1%;
   border-radius: 6px;
+  padding: 1%;
 }
 
 article:hover {
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
+  border-top: 1px solid rgba(0,0,0, 0.3);
+  border-bottom: 1px solid rgba(0,0,0, 0.3);
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 
@@ -599,13 +602,15 @@ details summary {
   text-decoration: none;
   color: black;
 }
-.artLink:hover{
-  filter: invert(1)
-}
 
 .iconContainer img{
   width: 40px;
   margin-left: 10px;
+}
+
+.artLink:hover{
+  font-size: 1.3rem
+  
 }
 
 `;

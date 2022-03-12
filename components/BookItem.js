@@ -48,8 +48,9 @@ class BookItem extends HTMLElement {
         </div>
 
         <div class="img_and_resume_container">
-        ${this.setImgSection(bookImgPath)}
+       
             <div class="book_resume">
+            ${this.setImgSection(bookImgPath)}
                 <slot name="book_resume"></slot>
             </div>            
         </div>
