@@ -1,5 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@200;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Cabin+Sketch&display=swap");
+@font-face {
+  font-family: quicksand;
+  src: url("../fonts/Quicksand/Quicksand-VariableFont_wght.ttf");
+}
 
 * {
   box-sizing: border-box;
@@ -25,10 +27,6 @@ body {
 .content {
   margin: auto;
   width: 100%;
-  background-color: rgba(240, 255, 240, 0.144);
-  -webkit-backdrop-filter: blur(2px);
-  backdrop-filter: blur(2px);
-  border-radius: 8px;
   padding: 1%;
 }
 
@@ -53,10 +51,10 @@ body {
 
 .resume {
   color: rgb(0, 0, 0);
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.3);
   padding: 3%;
   border-radius: 6px;
-  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-family: quicksand, sans-serif;
   font-size: 1.4rem;
   text-align: justify;
   text-justify: distribute;
@@ -92,7 +90,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   color: rgb(0, 0, 0);
-  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-family: quicksand, sans-serif;
   background-color: rgba(255, 255, 255, 0.24);
   -webkit-backdrop-filter: blur(2px);
   backdrop-filter: blur(1px);

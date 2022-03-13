@@ -1,25 +1,20 @@
 const Navbar_css = `
 :host{
 }
-@import url("https://fonts.googleapis.com/css2?family=Cabin+Sketch&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@200;700&display=swap');
-
-body {
-margin: 0;
-font-family: Arial, Helvetica, sans-serif;
-}
 
 .topnav {
+font-size: 1.4rem;
+font-family: quicksand, sans-serif;
+font-weight: bold;
+color: rgb(0, 0, 0);
+text-align: center;
+
 display: flex;
 flex-direction: row;
 background-color: rgb(38 14 0);
 width: 100%;
-color: rgb(0, 0, 0);
 display: flex;
 justify-content: center;
-text-align: center;
-font-size: 1.4rem;
-font-family: "M PLUS Rounded 1c", sans-serif;
 align-items: center;
 }
 
@@ -84,14 +79,13 @@ display:none;
 }
 `;
 const Profiles_css = `
-@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@200;700&display=swap');
 
 .hide {display: none;}
 
 .profile_card{
   min-width: 400px;
   display: flex;
-  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-family: quicksand, sans-serif;
   margin: 20px;
   justify-content: center;
   transition: box-shadow .5s;
@@ -212,7 +206,7 @@ iframe:hover{
 .artifactTitle a{
   font-weight: bold; 
   color: #000000; 
-  font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-family: quicksand, sans-serif;
   text-decoration: none;
   text-align: center;
   font-size: 2rem;
@@ -266,10 +260,9 @@ const ProjectListItem_css = `
 `;
 
 const FaunaItem_css = `
-@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@200;700&display=swap');
 
     .card{
-      font-family: "M PLUS Rounded 1c", sans-serif;
+      font-family: quicksand, sans-serif;
       width: fit-content;
       margin: 20px;
       justify-content: center;
@@ -333,32 +326,50 @@ const FaunaItem_css = `
 `;
 
 const Title_css = `
+@font-face {
+  font-family: "Cabin Sketch";
+  src: url("../fonts/Cabin_Sketch/CabinSketch-Bold.ttf");
+}
+
 .title {
   background-color: rgba(0, 0, 0, 0.151);
-  text-align: center;
-  font-family: "Cabin Sketch", cursive;
-  font-size: 6rem;
-  color: rgb(255, 255, 255);
-  text-shadow: 2px 2px 2px rgb(0, 0, 0);
   padding: 3%;
   -webkit-backdrop-filter: blur(3px);
   backdrop-filter: blur(3px);
 }
+
+slot[name="title"] { 
+  font-family: "Cabin Sketch", sans-serif;
+  font-weight: 700;
+  font-size: 6rem;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  text-shadow: 2px 2px 2px rgb(0, 0, 0);
+}
 `;
 
 const Subtitle_css = `
-.subtitle {
+
+@font-face {
+  font-family: "Cabin Sketch";
+  src: url("../fonts/Cabin_Sketch/CabinSketch-Bold.ttf");
+}
+
+.subtitle { 
+  margin: 3%;
+}
+
+slot[name="title"] { 
   text-align: center;
-  font-family: "Cabin Sketch", cursive;
-  font-size: 4rem;
+  font-weight: 700;
+
+  font-family: "Cabin Sketch", sans-serif;
+  font-size: 4.5rem;
   color: rgb(255, 255, 255);
   text-shadow: 2px 2px 2px rgb(0, 0, 0);
-  padding: 3%;
 }
 `;
 const SubNavbarItem_css = `
-@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@200;700&display=swap');
-
 
 .sublink_container{
   margin: 40px;
@@ -366,7 +377,7 @@ const SubNavbarItem_css = `
 }
 
 .sublink {
-  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-family: quicksand, sans-serif;
   text-decoration: none;
   color: rgb(0, 0, 0);
   font-size: 1.2rem;
@@ -459,11 +470,9 @@ const BookItem_css = `
 `;
 
 const PressItem_css = `
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@200;700&display=swap');
 
   article{
-    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-family: quicksand, sans-serif;
     overflow: hidden;
     border-radius: 6px;
   }
@@ -518,8 +527,9 @@ const ActivitiesItem_css = `
   }
 
   #activity-title{
-    font-family: "M PLUS Rounded 1c", sans-serif;
-    font-size: 2.5rem;
+    font-family: "quicksand", sans-serif;
+    font-size: 3.5rem;
+    font-weight: bolder;
     color: white;
     text-shadow: 1px 1px 1px rgb(0, 0, 0);
     text-align: center;
@@ -531,14 +541,16 @@ const ActivitiesItem_css = `
 
   .activity_text_container{
     padding: 4%;
-    
     background: rgba(255, 255, 255, 0.5); 
     border-radius: 6px;
     margin-top: 1%;
   }
 
   .activity_text_container p{
+    font-family: quicksand, sans-serif;
+
     font-size: 1.3rem;
+    font-weight: 200;
     column-count: 2;
     column-gap: 3%;
     text-align: justify;

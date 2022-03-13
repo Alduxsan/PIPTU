@@ -1,5 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@700&display=swap");
+@font-face {
+  font-family: quicksand;
+  src: url("../fonts/Quicksand/Quicksand-VariableFont_wght.ttf");
+}
 
 * {
   box-sizing: border-box;
@@ -24,7 +26,8 @@ body {
 }
 
 .content {
-  font-family: "Roboto", sans-serif;
+  font-family: quicksand, sans-serif;
+
   margin: auto;
   padding: 1%;
   width: 95%;

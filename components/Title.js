@@ -8,7 +8,7 @@ class Title extends HTMLElement {
 
   static get styles() {
     return Title_css;
-  }
+  } 
 
   getAtt(attr){
     let attribute = (this.attribute = this.getAttribute(attr))

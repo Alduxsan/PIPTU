@@ -1,8 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@200;700&display=swap");
-
-
+@font-face {
+  font-family: quicksand;
+  src: url("../fonts/Quicksand/Quicksand-VariableFont_wght.ttf");
+}
 
 * {
   box-sizing: border-box;
@@ -26,12 +25,9 @@ body {
 }
 
 .content {
+  padding: 2%;
   margin: auto;
   width: 100%;
-  background-color: rgba(240, 255, 240, 0.144);
-  -webkit-backdrop-filter: blur(2px);
-  backdrop-filter: blur(2px);
-  border-radius: 8px;
 }
 
 #ref {
@@ -59,11 +55,11 @@ body {
   justify-content: center;
   margin: auto;
   width: 90%;
-  font-family: "Roboto", sans-serif;
+  font-family: quicksand, sans-serif;
 }
 
 .intro {
-  background-color: rgba(255, 255, 255, 0.103);
+  background-color: rgba(255, 255, 255, 0.3);
   -webkit-backdrop-filter: blur(2px);
   backdrop-filter: blur(1px);
   padding: 3%;
@@ -75,8 +71,7 @@ body {
 }
 
 .intro p {
-  column-count: 2;
-  font-family: "Roboto", sans-serif;
+  font-family: quicksand, sans-serif;
   font-size: 1.5rem;
   text-align: justify;
   text-justify: distribute;
