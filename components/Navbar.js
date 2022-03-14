@@ -7,7 +7,9 @@ class Navbar extends HTMLElement {
 
   checkActive(section, atribute) {
     if (section === atribute) {
-      return "active";
+      return 'class="hide"';
+    } else {
+      return 'class="show"';
     }
   }
 
@@ -23,32 +25,40 @@ class Navbar extends HTMLElement {
 
   render(atribute) {
     this.innerHTML = `
-    <div class="topnav" id="navbar">
-      <div class="link_container ${this.checkActive(
-        "home",
-        atribute
-      )}"><a href="/index.html">INICIO</a></div>
-      <div class="link_container ${this.checkActive(
-        "aboutUs",
-        atribute
-      )}"><a href="/aboutUs.html">SOBRE NOSOTROS</a></div>
-      <div class="link_container ${this.checkActive(
-        "investigations",
-        atribute
-      )}"><a href="/investigations.html">INVESTIGACIONES</a></div>
-      <div class="link_container ${this.checkActive(
-        "interactive",
-        atribute
-      )}"><a href="/interactive.html">PREHISTORIA INTERACTIVA</a></div>
-      <div class="link_container ${this.checkActive(
-        "difusion",
-        atribute
-      )}"><a href="/publications.html">PUBLICACIONES</a></div>
-      <div class="link_container ${this.checkActive(
-        "gallery",
-        atribute
-      )}"><a href="/difusion.html">GALERÍA DE FOTOS</a></div>
+    <nav>
+    <div class="nav-content">
+      <div class="logo">
+        <a href="#">LIPTU logo</a>
+      </div>
+      <div class="nav-links">
+        <div ${this.checkActive(
+          "home",
+          atribute
+        )}><a href="/index.html">INICIO</a></div>
+        <div ${this.checkActive(
+          "aboutUs",
+          atribute
+        )}><a href="/aboutUs.html">SOBRE NOSOTROS</a></div>
+        <div ${this.checkActive(
+          "investigations",
+          atribute
+        )}><a href="/investigations.html">INVESTIGACIONES</a></div>
+        <div ${this.checkActive(
+          "interactive",
+          atribute
+        )}><a href="/interactive.html">PREHISTORIA INTERACTIVA</a></div>
+        <div ${this.checkActive(
+          "difusion",
+          atribute
+        )}><a href="/publications.html">PUBLICACIONES</a></div>
+        <div ${this.checkActive(
+          "gallery",
+          atribute
+        )}><a href="/difusion.html">GALERÍA DE FOTOS</a></div>
+      </div>
     </div>
+  </nav>
+    <div class="topnav" id="navbar">
    
     <style>
     ${Navbar.styles}

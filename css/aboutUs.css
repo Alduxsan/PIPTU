@@ -20,9 +20,9 @@ body {
   margin: auto;
 }
 
-.styckyActive {
+/* .styckyActive {
   margin-top: 400px;
-}
+} */
 
 .content {
   padding: 2%;
@@ -139,4 +139,7 @@ body {
   .title {
     font-size: 2rem;
   }
+}
+
+#general {
 }
