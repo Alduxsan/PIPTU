@@ -5,12 +5,11 @@ const Navbar_css = `
 }
 
 nav {
-  height: 100px;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  padding: 20px;
+  padding: 10px;
   transition: all 0.4s ease;
   z-index: 1;
   background-color: rgb(38 14 0);
@@ -18,6 +17,7 @@ nav {
 }
 
 nav .nav-content {
+  text-align: center;
   height: 100%;
   margin: auto;
   display: flex;
@@ -29,11 +29,13 @@ nav .logo a {
   font-weight: 500;
   font-size: 35px;
   color: white;
+  padding: 5px;
 }
 nav.sticky .logo a {
   color: white;
 }
 .nav-content .nav-links {
+  align-items: center;
   display: flex;
   justify-content: space-around;
 }

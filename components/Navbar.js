@@ -28,7 +28,7 @@ class Navbar extends HTMLElement {
     <nav>
     <div class="nav-content">
       <div class="logo">
-        <a href="#">LIPTU logo</a>
+        <a href="#">LIPTU</a>
       </div>
       <div class="nav-links">
         <div ${this.checkActive(
