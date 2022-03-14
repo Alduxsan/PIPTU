@@ -2,7 +2,10 @@
   font-family: quicksand;
   src: url("../fonts/Quicksand/Quicksand-VariableFont_wght.ttf");
 }
-
+@font-face {
+  font-family: "Cabin Sketch";
+  src: url("../fonts/Cabin_Sketch/CabinSketch-Bold.ttf");
+}
 * {
   box-sizing: border-box;
   padding: 0;
@@ -139,7 +142,4 @@ body {
   .title {
     font-size: 2rem;
   }
-}
-
-#general {
 }
