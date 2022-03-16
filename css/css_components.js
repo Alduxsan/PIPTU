@@ -5,15 +5,14 @@ const Navbar_css = `
 }
 
 nav {
+  font-family: quicksand;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  padding: 10px;
   transition: all 0.4s ease;
   z-index: 1;
   background-color: rgb(38 14 0);
-
 }
 
 nav .nav-content {
@@ -23,6 +22,7 @@ nav .nav-content {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 10px;
 }
 nav .logo a {
   text-decoration: none;
@@ -72,22 +72,53 @@ nav.sticky {
 display:none;
  }
 
+ .responsive_navbar{
+   display: none
+ }
+
+.icon{
+  width: 80px;
+  height: fit-content;
+  cursor: pointer;
+}
+
+.icon img{
+  width: 100%;
+  filter: invert(1)
+}
 @media screen and (max-width: 1100px) {
-.nav .nav-content {
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  height:auto;
+
+
+  .responsive_navbar{
+    display:flex;
   }
 
-  .nav-content .nav-links {
-    flex-direction: column;
+  nav .nav-content {
+    display: none;
+  }
+  
+  .responsive_navbar .nav-links {
+        flex-direction: column;
+        font-family: quicksand;
+  }
+  .responsive_navbar .nav-links a{
+    font-size: 1rem;
+  }
+    
+  nav .responsive_navbar{
+    align-items: center;
+    height:auto;
+    padding:4%;
+    align-items: center;
+    justify-content: space-around;
   }
 
-  nav{
-    height: fit-content;
+  .link_container{
+    margin-bottom: 10px;
   }
 }
+
+.
 `;
 const Profiles_css = `
 

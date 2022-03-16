@@ -11,7 +11,7 @@ const images = [
 const carousel = document.querySelector(".carousel");
 const interval = setInterval(function () {
   startCarousel();
-}, 6000);
+}, 7000);
 var index = 1;
 
 function startCarousel() {
