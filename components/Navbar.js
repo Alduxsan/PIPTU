@@ -22,8 +22,11 @@ class Navbar extends HTMLElement {
     if (event.type === "click") this.showMenu();
   }
   showMenu() {
+    this.toggler = this.shadowRoot.getElementById("toggler");
     this.responsive = this.shadowRoot.getElementById("responsive_nav-links");
+
     this.responsive.classList.toggle("hide");
+    this.toggler.classList.toggle("rotate");
   }
 
   connectedCallback() {

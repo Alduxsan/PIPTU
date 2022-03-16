@@ -77,17 +77,31 @@ display:none;
  }
 
 .icon{
-  width: 80px;
+  width: 50px;
   height: fit-content;
   cursor: pointer;
+  translation: all 2s;
 }
 
 .icon img{
   width: 100%;
   filter: invert(1)
 }
-@media screen and (max-width: 1100px) {
 
+.rotate{
+  animation: rotation .5s;
+  animation-fill-mode: forwards
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(90deg);
+  }
+}
+@media screen and (max-width: 1100px) {
 
   .responsive_navbar{
     display:flex;
@@ -101,6 +115,7 @@ display:none;
         flex-direction: column;
         font-family: quicksand;
   }
+  
   .responsive_navbar .nav-links a{
     font-size: 1rem;
   }
@@ -108,7 +123,7 @@ display:none;
   nav .responsive_navbar{
     align-items: center;
     height:auto;
-    padding:4%;
+    padding:2%;
     align-items: center;
     justify-content: space-around;
   }
@@ -415,7 +430,8 @@ slot[name="title"] {
 const SubNavbarItem_css = `
 
 .sublink_container{
-  margin: 40px;
+  margin: 15px;
+  margin-top: 50px;
   padding: 10px
 }
 
