@@ -73,7 +73,7 @@ display:none;
  }
 
  .responsive_navbar{
-   display: none
+   display: none;
  }
 
 .icon{

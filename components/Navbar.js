@@ -40,27 +40,27 @@ class Navbar extends HTMLElement {
         <a href="#">PIPTU</a>
       </div>
       <div class="nav-links">
-        <div class"${this.checkActive(
+        <div class" ${this.checkActive(
           "home",
           atribute
         )}"><a href="/index.html">INICIO</a></div>
-        <div class="${this.checkActive(
+        <div class=" ${this.checkActive(
           "aboutUs",
           atribute
         )}"><a href="/aboutUs.html">SOBRE NOSOTROS</a></div>
-        <div class="${this.checkActive(
+        <div class=" ${this.checkActive(
           "investigations",
           atribute
         )}"><a href="/investigations.html">INVESTIGACIONES</a></div>
-        <div class="${this.checkActive(
+        <div class=" ${this.checkActive(
           "interactive",
           atribute
         )}"><a href="/interactive.html">PREHISTORIA INTERACTIVA</a></div>
-        <div class"${this.checkActive(
-          "difusion",
+        <div class=" ${this.checkActive(
+          "publications",
           atribute
         )}"><a href="/publications.html">PUBLICACIONES</a></div>
-        <div class="${this.checkActive(
+        <div class=" ${this.checkActive(
           "gallery",
           atribute
         )}"><a href="/difusion.html">GALERÍA DE FOTOS</a></div>
