@@ -58,10 +58,6 @@ nav.sticky .logo a {
 
 }
 
-nav.sticky {
-  background: #4070f4;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-}
 .hide {
 display:none;
  }
@@ -81,8 +77,12 @@ display:none;
   font-size: 1rem;
 }
 
+.nav-links div a{
+  font-size: 1rem;
+}
+
 .icon{
-  width: 50px;
+  width: 40px;
   height: fit-content;
   cursor: pointer;
 }
@@ -391,11 +391,6 @@ const FaunaItem_css = `
 `;
 
 const Title_css = `
-@font-face {
-  font-family: "Cabin Sketch";
-  src: url("../fonts/Cabin_Sketch/CabinSketch-Bold.ttf");
-}
-
 .title {
   margin-top: 100px;
   background-color: rgba(0, 0, 0, 0.151);
