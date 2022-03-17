@@ -21,10 +21,10 @@ body {
 }
 
 .carousel {
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   background-size: cover;
-  background-image: url(../media/portada.JPG);
+  background-image: url(https://i.ibb.co/zGP56ST/7.jpg);
   background-repeat: no-repeat;
 }
 .fade {
@@ -51,7 +51,7 @@ body {
 }
 
 .container {
-  height: 95vh;
+  height: 100vh;
   display: flex;
   align-items: flex-end;
 }
@@ -77,5 +77,12 @@ body {
 @media only screen and (max-width: 500px) {
   .title {
     font-size: 2rem;
+  }
+
+  .carousel {
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
   }
 }

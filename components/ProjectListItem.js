@@ -10,26 +10,22 @@ class ProjectListItem extends HTMLElement {
     return ProjectListItem_css;
   }
 
-  getAtt(attr){
-    let attribute = (this.attribute = this.getAttribute(attr))
-    return attribute
+  getAtt(attr) {
+    let attribute = (this.attribute = this.getAttribute(attr));
+    return attribute;
   }
 
   connectedCallback() {
-    
     this.render();
   }
 
-  render(){
+  render() {
+    let name = this.getAtt("name");
+    let src = this.getAtt("src");
+    let date = this.getAtt("date");
 
-    let name = this.getAtt("name")
-    let src = this.getAtt("src")
-    let date = this.getAtt("date")
-
-    this.shadowRoot.innerHTML = 
-    `<div class="link-container">
+    this.shadowRoot.innerHTML = `<div class="link-container">
       <a href=${src}>
-      
         </p><p id="date">
         ${date} <br> ${name}</a>
      </div>
@@ -38,7 +34,6 @@ class ProjectListItem extends HTMLElement {
     ${ProjectListItem.styles}
     </style>
     `;
-
   }
 }
 

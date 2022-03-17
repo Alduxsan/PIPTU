@@ -5,7 +5,6 @@ const Navbar_css = `
 }
 
 nav {
-  font-family: quicksand;
   position: fixed;
   top: 0;
   left: 0;
@@ -26,7 +25,6 @@ nav .nav-content {
 }
 nav .logo a {
   text-decoration: none;
-  font-weight: 500;
   font-size: 35px;
   color: white;
   padding: 5px;
@@ -50,18 +48,14 @@ nav.sticky .logo a {
   text-decoration: none;
   color: white;
   font-size: 1.4rem;
-  font-weight: 900;
+  font-weight: 100;
   transition: all 0.3s ease;
 }
 
 .nav-links div a:hover {
-  transition: .3s all;
+  transition: .2s all;
   color: #ab8400;
-}
 
-nav.sticky .nav-links div a {
-  color: #fff;
-  transition: all 0.4s ease;
 }
 
 nav.sticky {
@@ -74,13 +68,23 @@ display:none;
 
  .responsive_navbar{
    display: none;
+   align-items: center;
+   height:auto;
+   padding:2%;
+   justify-content: space-around;
  }
+
+ .responsive_navbar .nav-links {
+  flex-direction: column;
+  font-family: quicksand;
+  text-align: center;
+  font-size: 1rem;
+}
 
 .icon{
   width: 50px;
   height: fit-content;
   cursor: pointer;
-  translation: all 2s;
 }
 
 .icon img{
@@ -96,13 +100,15 @@ display:none;
 @keyframes rotation {
   from {
     transform: rotate(0deg);
+    opacity: 0;
   }
   to {
     transform: rotate(90deg);
+    opacity: 1;
   }
 }
 @media screen and (max-width: 1100px) {
-
+  
   .responsive_navbar{
     display:flex;
   }
@@ -111,23 +117,6 @@ display:none;
     display: none;
   }
   
-  .responsive_navbar .nav-links {
-        flex-direction: column;
-        font-family: quicksand;
-  }
-  
-  .responsive_navbar .nav-links a{
-    font-size: 1rem;
-  }
-    
-  nav .responsive_navbar{
-    align-items: center;
-    height:auto;
-    padding:2%;
-    align-items: center;
-    justify-content: space-around;
-  }
-
   .link_container{
     margin-bottom: 10px;
   }
@@ -203,8 +192,8 @@ slot[name=bio]{
 @media screen and (max-width: 1100px) {
   .profile_card{
     display: block;
+    min-width: 300px;
   }
-
 
   .imgContainer{
     width: fit-content;
@@ -213,6 +202,16 @@ slot[name=bio]{
     justify-content: center;
     height: fit-content;
     margin-bottom: 10px;
+  }
+
+  slot[name=bio]{
+    font-size: 1.3rem;
+    text-align: left;
+    word-break: normal;
+    hyphens: auto;
+  }
+  #detailsContent{
+    width:100%
   }
   }
 
@@ -297,9 +296,10 @@ const ProjectListItem_css = `
     }
 
     .link-container a{
-    text-decoration: none;
-    color: rgb(231, 231, 231);
-    font-size: 1.3rem;
+      word-break: break-all;
+      text-decoration: none;
+      color: rgb(231, 231, 231);
+      font-size: 1.3rem;
     }
 
     .link-container:hover a{
@@ -313,6 +313,14 @@ const ProjectListItem_css = `
       font-weight: bolder;
       padding: 6px 100px 6px 6px;
       border-radius: 6px;
+    }
+
+    @media screen and (max-width: 1100px) {
+      #date{
+        font-weight: 100;
+        padding: 1%
+      }
+    
     }
 `;
 
@@ -404,6 +412,13 @@ slot[name="title"] {
   text-align: center;
   text-shadow: 2px 2px 2px rgb(0, 0, 0);
 }
+
+@media screen and (max-width: 1100px) {
+  slot[name="title"] {
+    font-size: 17vw;
+  }
+  }
+}
 `;
 
 const Subtitle_css = `
@@ -420,12 +435,17 @@ const Subtitle_css = `
 slot[name="title"] { 
   text-align: center;
   font-weight: 700;
-
   font-family: "Cabin Sketch", sans-serif;
   font-size: 4.5rem;
   color: rgb(255, 255, 255);
   text-shadow: 2px 2px 2px rgb(0, 0, 0);
 }
+
+@media screen and (max-width: 1100px) {
+  slot[name="title"] { 
+    font-size: 10vw;
+  }
+  }
 `;
 const SubNavbarItem_css = `
 
@@ -571,7 +591,7 @@ const PressItem_css = `
 const ActivitiesItem_css = `
 
   .activities_item_container{
-    margin-bottom: 3%
+    margin-bottom: 20px
   }
 
   .imgContainer{
@@ -602,12 +622,11 @@ const ActivitiesItem_css = `
     padding: 4%;
     background: rgba(255, 255, 255, 0.5); 
     border-radius: 6px;
-    margin-top: 1%;
+    margin-top: 10px;
   }
 
   .activity_text_container p{
     font-family: quicksand, sans-serif;
-
     font-size: 1.3rem;
     font-weight: 200;
     column-count: 2;
@@ -616,6 +635,18 @@ const ActivitiesItem_css = `
     text-justify: distribute;
     hyphens: auto;
   }
+
+  @media screen and (max-width: 1100px) {
+    #activity-title{
+      font-size: 2rem;
+    }
+
+  .activity_text_container p{
+    text-align: left;
+    word-break: normal;
+    column-count: 1
+  }
+    }
 `;
 
 const SciArticle_css = `

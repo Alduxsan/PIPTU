@@ -65,7 +65,6 @@ body {
   margin: auto;
   margin-bottom: 3%;
   border-radius: 6px;
-
   width: 90%;
 }
 
@@ -120,6 +119,10 @@ body {
   align-items: center;
 }
 
+.link {
+  width: 100%;
+}
+
 .colabLink {
   margin: 20px;
   width: 300px;
@@ -134,72 +137,31 @@ body {
   margin: auto;
 }
 
-@media only screen and (max-width: 500px) {
-  .title {
-    font-size: 2rem;
+@media screen and (max-width: 1100px) {
+  .quehacemos {
+    width: 100%;
   }
-}
 
-.topnav {
-  overflow: hidden;
-  background-color: #333;
-}
-
-.topnav a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-.topnav a.active {
-  background-color: #04aa6d;
-  color: white;
-}
-
-.topnav .icon {
-  display: none;
-}
-
-@media screen and (max-width: 600px) {
-  .topnav a:not(:first-child) {
-    display: none;
+  .colabLink {
+    margin: 20px;
+    width: 150px;
   }
-  .topnav a.icon {
-    float: right;
-    display: block;
+  .link {
+    width: fit-content;
   }
-}
 
-@media screen and (max-width: 600px) {
-  .topnav.responsive {
-    position: relative;
+  .content {
+    padding: 0;
+    width: 100%;
   }
-  .topnav.responsive .icon {
-    position: absolute;
-    right: 0;
-    top: 0;
+
+  .intro {
+    width: 100%;
   }
-  .topnav.responsive a {
-    float: none;
-    display: block;
+
+  .intro p {
+    font-size: 1.2rem;
     text-align: left;
+    word-break: normal;
   }
-}
-
-.icon {
-  width: 30px;
-  height: 30px;
-}
-
-.icon i img {
-  width: 100%;
 }
