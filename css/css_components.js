@@ -85,6 +85,8 @@ display:none;
   width: 40px;
   height: fit-content;
   cursor: pointer;
+  animation: fadeIn .5s;
+  animation-fill-mode: forwards
 }
 
 .icon img{
@@ -105,6 +107,15 @@ display:none;
   to {
     transform: rotate(90deg);
     opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    transform: translate(2000px);
+  }
+  to {
+    transform: translate(0);
   }
 }
 @media screen and (max-width: 1100px) {
@@ -192,8 +203,8 @@ slot[name=bio]{
 @media screen and (max-width: 1100px) {
   .profile_card{
     display: block;
-    min-width: 300px;
-    max-width: 300px;
+    min-width: 350px;
+    max-width: 350px;
   }
 
   .imgContainer{
