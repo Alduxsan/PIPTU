@@ -423,7 +423,9 @@ slot[name="title"] {
 @media screen and (max-width: 1100px) {
 
   .title{
-    width: fit-content;
+    width: 350px;
+    margin: auto;
+    margin-top: 100px
   }
 
   slot[name="title"] {
@@ -562,6 +564,17 @@ const BookItem_css = `
     height: 100%;
     border-radius: 6px
   }
+
+  @media screen and (max-width: 1100px) {
+    .bookImg{
+      margin-right: 0; 
+      height:300px;
+      float: none;
+      width: fit-content;
+      margin: auto;
+    }
+
+  
 `;
 
 const PressItem_css = `
@@ -602,6 +615,14 @@ const PressItem_css = `
   .press_item_container:hover > .sublink { 
     background-color: rgba(0, 0, 0);
   }
+
+  @media screen and (max-width: 1100px) {
+    .press_item_container{
+      width: 350px;
+    }
+  }
+  
+  
 `;
 
 const ActivitiesItem_css = `
@@ -733,7 +754,11 @@ details summary {
   font-size: 1.3rem
   
 }
-
+@media screen and (max-width: 1100px) {
+  summary {
+    word-break: break-all;
+  }
+}
 `;
 
 const BookChapter_css = `
