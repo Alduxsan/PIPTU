@@ -605,7 +605,10 @@ const PressItem_css = `
 `;
 
 const ActivitiesItem_css = `
-
+@font-face {
+  font-family: quicksand;
+  src: url("../fonts/Quicksand/Quicksand-VariableFont_wght.ttf");
+}
   .activities_item_container{
     margin-bottom: 20px
   }

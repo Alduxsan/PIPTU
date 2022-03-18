@@ -11,11 +11,11 @@
 
 <body>
   <nav-bar atribute="investigations"></nav-bar>
-  <div id="general">
 
-    <section-title class="title">
-      <p slot="title">INVESTIGACIONES</p>
-    </section-title>
+  <section-title class="title">
+    <p slot="title">INVESTIGACIONES</p>
+  </section-title>
+  <div id="general">
 
     <subnavbar-container>
 
@@ -34,10 +34,12 @@
 
     </subnavbar-container>
 
+    <sub-title id="investigationPaths">
+      <p slot="title">LÍNEAS DE INVESTIGACIÓN</p>
+    </sub-title>
+
+
     <div class="content">
-      <sub-title id="investigationPaths">
-        <p slot="title">LÍNEAS DE INVESTIGACIÓN</p>
-      </sub-title>
 
       <activities-item imgPath="https://i.ibb.co/LtkP7WW/1-MOVILIDAD.jpg"
         title="MOVILIDAD Y UTILIZACIÓN DEL ESPACIO DURANTE LA PREHISTORIA MÁS ANTIGUA"
@@ -64,10 +66,12 @@
             sapiente sed. Inventore cum consequatur necessitatibus maxime deserunt!">
       </activities-item>
 
-      <sub-title id="poulationModel">
-        <p slot="title">MODELO DE POBLAMIENTO</p>
-      </sub-title>
+    </div>
 
+    <sub-title id="poulationModel">
+      <p slot="title">MODELO DE POBLAMIENTO</p>
+    </sub-title>
+    <div class="content">
       <div class="intro">
         <p>A partir de esta serie de evidencias hemos propuesto un modelo de poblamiento para Uruguay y el Sureste de
           América del Sur que ha sido publicado en revistas científicas y sintetizamos a continuación. El ingreso de los
@@ -132,11 +136,11 @@
         </p>
 
       </div>
-
-      <sub-title id="sites">
-        <p slot="title">SITIOS</p>
-      </sub-title>
-
+    </div>
+    <sub-title id="sites">
+      <p slot="title">SITIOS</p>
+    </sub-title>
+    <div class="content">
       <div id="sites" class="intro">
         <p class="intro_resume">
           Hemos identificado la fuente de dos recursos líticos utilizados por los grupos tempranos. O sea, distinguimos
@@ -182,16 +186,18 @@
         </activities-item>
       </div>
     </div>
-    <div class="content">
-      <sub-title id="map">
-        <p slot="title">MAPA DE SITIOS ARQUEOLÓGICOS</p>
-      </sub-title>
+  </div>
 
-      <div class="maps">
-        <iframe width="100%" height="576" src="https://maphub.net/embed/173834?legend=1&panel=1"
-          frameborder="0"></iframe>
-      </div>
+  <sub-title id="map">
+    <p slot="title">MAPA DE SITIOS ARQUEOLÓGICOS</p>
+  </sub-title>
+
+  <div class="content">
+
+    <div class="maps">
+      <iframe width="100%" height="576" src="https://maphub.net/embed/173834?legend=1&panel=1" frameborder="0"></iframe>
     </div>
+  </div>
   </div>
 </body>
 
