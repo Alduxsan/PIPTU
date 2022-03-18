@@ -480,9 +480,13 @@ const SubNavbarItem_css = `
   border-bottom: 1px solid black;
   border-top: 1px solid black;
   border-radius: 6px;
-  filter: invert(1)
-  
+  filter: invert(1) 
 }
+
+@media screen and (max-width: 1100px) {
+  
+  }
+
 `;
 
 const SubNavbarContainer_css = `
@@ -496,7 +500,7 @@ const SubNavbarContainer_css = `
 @media screen and (max-width: 1100px) {
   
   .sublink_container{
-    
+    display: block;
   }
 
  
