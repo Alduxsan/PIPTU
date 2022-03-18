@@ -193,6 +193,7 @@ slot[name=bio]{
   .profile_card{
     display: block;
     min-width: 300px;
+    max-width: 300px;
   }
 
   .imgContainer{
@@ -211,7 +212,7 @@ slot[name=bio]{
     hyphens: auto;
   }
   #detailsContent{
-    width:100%
+    width:300px
   }
   }
 
@@ -409,8 +410,13 @@ slot[name="title"] {
 }
 
 @media screen and (max-width: 1100px) {
+
+  .title{
+    width: fit-content;
+  }
+
   slot[name="title"] {
-    font-size: 17vw;
+    font-size: 3rem;
   }
   }
 }
