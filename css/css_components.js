@@ -647,7 +647,7 @@ const ActivitiesItem_css = `
 
   #activity-title{
     font-family: "quicksand", sans-serif;
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     font-weight: bolder;
     color: white;
     text-shadow: 1px 1px 1px rgb(0, 0, 0);
@@ -756,7 +756,23 @@ details summary {
 }
 @media screen and (max-width: 1100px) {
   summary {
-    word-break: break-all;
+  }
+
+  details summary { 
+    display: block;
+  }
+  
+  .art_head_container{
+    display: block;
+  }
+  
+  .artAbastract{
+    column-count: 1;
+  }
+
+  #ArtTitle{
+    border: none;
+    padding: 0%
   }
 }
 `;
