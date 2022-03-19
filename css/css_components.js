@@ -308,7 +308,7 @@ const ProjectListItem_css = `
     }
 
     .link-container a{
-      word-break: break-all;
+      word-break: break;
       text-decoration: none;
       color: rgb(231, 231, 231);
       font-size: 1.3rem;
@@ -323,7 +323,7 @@ const ProjectListItem_css = `
       width: fit-content;
       color: white;
       font-weight: bolder;
-      padding: 6px 100px 6px 6px;
+      padding: 2%;
       border-radius: 6px;
     }
 
