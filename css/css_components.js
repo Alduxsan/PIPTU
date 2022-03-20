@@ -496,6 +496,35 @@ const SubNavbarItem_css = `
   filter: invert(1) 
 }
 
+
+.fromRight{
+  animation: fromRight .5s;
+  animation-fill-mode: forwards
+}
+
+.fromLeft{
+  animation: fromLeft .5s;
+  animation-fill-mode: forwards
+}
+
+@keyframes fromRight {
+  from {
+    transform: translate(2000px);
+  }
+  to {
+    transform: translate(0);
+  }
+}
+
+@keyframes fromLeft {
+  from {
+    transform: translate(-2000px);
+  }
+  to {
+    transform: translate(0);
+  }
+}
+
 @media screen and (max-width: 1100px) {
   
   }
@@ -812,6 +841,27 @@ article:hover {
   width: fit-content;
 }
 
+@media screen and (max-width: 1100px) {
+
+  .artLink{
+    display: block;
+    width: 100%
+  }
+
+  #ArtTitle{
+    padding: 0
+  }
+
+  article{
+    margin: auto;
+    padding: 2%
+  }
+}
+
+`;
+
+const ProjectNews_css = `
+
 `;
 
 export {
@@ -829,4 +879,5 @@ export {
   ActivitiesItem_css,
   SciArticle_css,
   BookChapter_css,
+  ProjectNews_css,
 };

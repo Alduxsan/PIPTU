@@ -66,7 +66,7 @@ class Navbar extends HTMLElement {
         <div class=" ${this.checkActive(
           "gallery",
           atribute
-        )}"><a href="/difusion.html">GALERÍA DE FOTOS</a></div>
+        )}"><a href="/gallery.html">GALERÍA DE FOTOS</a></div>
       </div>
     </div>
 
@@ -98,7 +98,7 @@ class Navbar extends HTMLElement {
       <div class="link_container ${this.checkActive(
         "gallery",
         atribute
-      )}"><a href="/difusion.html">GALERÍA DE FOTOS</a></div>
+      )}"><a href="/gallery.html">GALERÍA DE FOTOS</a></div>
     </div>
     <i id="toggler" class="icon"><img src="media/icons/square.png"></i>
   </div>

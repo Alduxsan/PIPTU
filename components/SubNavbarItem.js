@@ -22,9 +22,10 @@ class SubNavbarItem extends HTMLElement {
     let hrefId = this.getAtt("hrefId");
     let imgPath = this.getAtt("imgPath");
     let sectionName = this.getAtt("sectionName");
+    let animation = this.getAtt("animation");
 
     this.innerHTML = `
-    <div class="sublink_container">    
+    <div class="sublink_container ${animation}">    
         <a class="sublink" href="#${hrefId}"> 
             <div class="iconContainer">
                 <img src="${imgPath}" alt="" />
