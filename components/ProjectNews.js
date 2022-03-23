@@ -43,7 +43,7 @@ class ProjectNews extends HTMLElement {
         <p id="title">${title}</p>
       </div>
     </div>
-    <div id="info" class="news_content hide">
+    <div id="info" class="news_content hide fromRight">
     <p class="content">
     ${content}
     </p>

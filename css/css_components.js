@@ -868,6 +868,11 @@ const ProjectNews_css = `
   height: 500px;
   border-radius: 6px;
   cursor: pointer;
+  box-shadow: 2px 1px 2px black;
+  transition: all 0.3s
+}
+.news_container:hover{
+  box-shadow: 1px 4px 3px black;
 
 }
 
@@ -876,16 +881,16 @@ const ProjectNews_css = `
   position: absolute;
   top: 0;
   right: 0;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.4);
   color: black;
   padding-left: 20px;
   padding-right: 20px;
-  backdrop-filter: blur(5px);
   border-radius: 0 6px 0 6px;
 }
 
 #title{
-  font-size: 1.5rem
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
 #date{
@@ -908,6 +913,22 @@ img{
     width: 100%;
     border-radius: 6px;
 
+  }
+
+  .fromRight{
+    animation: fromRight .3s;
+    animation-fill-mode: forwards
+  }
+
+  @keyframes fromRight {
+    from {
+      transform: translateY(2000px);
+      opacity: 0
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1
+    }
   }
 
   @media screen and (max-width: 500px) {
