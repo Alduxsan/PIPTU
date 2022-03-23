@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -23,6 +24,74 @@
       </div>
     </div>
   </div>
+
+  <sub-title id="news">
+    <p slot="title">NOTICIAS RECIENTES</p>
+  </sub-title>
+  <div class="background_color">
+    <div class="slideshow-container">
+
+      <div class="mySlides fade">
+        <project-news date="21 / 03 / 2022" imgPath="https://i.ibb.co/ydPKWSM/cuevas.jpg"
+          title="inspeccion exploratoria en el cerro Arequita / Minas"
+          content="El valiente grupo de arqueólogos del PIPTU explorará por primera vez el interior del cerro Arequita, donde esperan hallar restos fósiles que demuestren que el primer homínido era Uruguayo">
+        </project-news>
+      </div>
+
+      <div class="mySlides fade">
+        <project-news date="25 / 05 / 2022"
+          imgPath="https://foodie-woman.com/wp-content/uploads/2021/11/MG_0129-1-scaled-1-840x473.jpg"
+          title="Artefactos más de 1.500.000 de años de antiguedad"
+          content="El grupo de investigadores del PIPTU (Programa de Investigación en Poblamiento Temprano de Uruguay) halló artefactos más de 1.500.000 de años de antiguedad. Tras varias pruebas de laboratorio se cree que sería un conjunto de mate, termo y bombilla de piedra creados por los primeros homininos que poblaron estas tierras">
+        </project-news>
+      </div>
+
+      <div class="mySlides fade">
+        <project-news date="21 / 03 / 2022" imgPath="https://i.ibb.co/ydPKWSM/cuevas.jpg"
+          title="inspeccion exploratoria en el cerro Arequita / Minas"
+          content="El valiente grupo de arqueólogos del PIPTU explorará por primera vez el interior del cerro Arequita, donde esperan hallar restos fósiles que demuestren que el primer homínido era Uruguayo">
+        </project-news>
+      </div>
+
+      <div class="mySlides fade">
+        <project-news date="25 / 05 / 2022"
+          imgPath="https://foodie-woman.com/wp-content/uploads/2021/11/MG_0129-1-scaled-1-840x473.jpg"
+          title="Artefactos más de 1.500.000 de años de antiguedad"
+          content="El grupo de investigadores del PIPTU (Programa de Investigación en Poblamiento Temprano de Uruguay) halló artefactos más de 1.500.000 de años de antiguedad. Tras varias pruebas de laboratorio se cree que sería un conjunto de mate, termo y bombilla de piedra creados por los primeros homininos que poblaron estas tierras">
+        </project-news>
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    </div>
+  </div>
+  <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      if (n > slides.length) { slideIndex = 1 }
+      if (n < 1) { slideIndex = slides.length }
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+
+      slides[slideIndex - 1].style.display = "block";
+    }
+  </script>
+
+
 </body>
 
 </html>

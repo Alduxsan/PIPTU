@@ -443,7 +443,8 @@ const Subtitle_css = `
 }
 
 .subtitle { 
-  margin: 3%;
+  margin-top: 6%;
+  margin-bottom: 6%
 }
 
 slot[name="title"] { 
@@ -861,8 +862,74 @@ article:hover {
 `;
 
 const ProjectNews_css = `
+.news_container{
+  margin: auto;
+  width: 100%;
+  height: 500px;
+  border-radius: 6px;
+  cursor: pointer;
 
+}
+
+.text-block {
+  font-family: quicksand;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.5);
+  color: black;
+  padding-left: 20px;
+  padding-right: 20px;
+  backdrop-filter: blur(5px);
+  border-radius: 0 6px 0 6px;
+}
+
+#title{
+  font-size: 1.5rem
+}
+
+#date{
+  text-align: right;
+}
+
+.hide{
+  display: none
+}
+
+.content{
+  margin-top: 5px;
+  font-size: 1.5rem;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 6px 6px 6px 6px;
+}
+
+img{
+    width: 100%;
+    border-radius: 6px;
+
+  }
+
+  @media screen and (max-width: 500px) {
+    .text-block {
+      border-radius: 6px 6px 0 0;
+    }
+    #date{
+      text-align: left;
+    }
+
+    #title{
+      font-size: 1rem
+    }
+
+    .content{
+      font-size: 1rem;
+    }
+  }
 `;
+
+const Collection_container_css = ``;
+const Photo_item_css = ``;
 
 export {
   Navbar_css,
@@ -880,4 +947,6 @@ export {
   SciArticle_css,
   BookChapter_css,
   ProjectNews_css,
+  Collection_container_css,
+  Photo_item_css,
 };
