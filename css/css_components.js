@@ -4,8 +4,13 @@ const Navbar_css = `
   src: url("../fonts/Quicksand/Quicksand-VariableFont_wght.ttf");
 }
 
-nav {
+.sticky{
   position: fixed;
+  animation: fromTop 1s;
+  animation-fill-mode: forwards
+}
+
+nav {
   top: 0;
   left: 0;
   width: 100%;
@@ -133,6 +138,16 @@ display:none;
   }
 }
 
+@keyframes fromTop {
+  from {
+    transform: translateY(-2000px);
+    opacity: 0;
+  }
+  to {
+    transform: translate(0);
+    opacity: 1
+  }
+}
 .
 `;
 const Profiles_css = `

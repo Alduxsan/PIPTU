@@ -15,7 +15,9 @@ const interval = setInterval(function () {
 var index = 1;
 
 function startCarousel() {
-  carousel.style.backgroundImage = `url(${images[index++]})`;
+  document.getElementById("carouselImage").src = `${images[index++]}`;
+
+  // carousel.style.backgroundImage = `url(${images[index++]})`;
   carousel.classList.remove("fade");
   void carousel.offsetWidth;
   carousel.classList.add("fade");

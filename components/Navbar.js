@@ -37,7 +37,7 @@ class Navbar extends HTMLElement {
 
   render(atribute) {
     this.shadowRoot.innerHTML = `
-    <nav>
+    <nav id="navBar">
     <div class="nav-content">
       <div class="logo">
         <a href="#">PIPTU</a>
@@ -111,10 +111,18 @@ class Navbar extends HTMLElement {
     `;
     this.button = this.shadowRoot.getElementById("toggler");
     this.button.addEventListener("click", this);
+
+    this.nav = this.shadowRoot.getElementById("navBar");
+    this.sticky = this.nav.offsetTop;
+
+    window.onscroll = () => {
+      if (window.scrollY > this.sticky) {
+        this.nav.classList.add("sticky");
+      } else {
+        this.nav.classList.remove("sticky");
+      }
+    };
   }
 }
 
 customElements.define("nav-bar", Navbar);
-{
-  /* <a href="#home" class="active">${this.atributo}</a> */
-}
