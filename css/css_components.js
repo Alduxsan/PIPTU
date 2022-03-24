@@ -511,31 +511,69 @@ const SubNavbarItem_css = `
 }
 
 
-.fromRight{
-  animation: fromRight .5s;
+.fromLeft{
+  animation: fromLeft .3s;
   animation-fill-mode: forwards
 }
 
-.fromLeft{
-  animation: fromLeft .5s;
+.fromTop{
+  animation: fromTop .5s;
   animation-fill-mode: forwards
+}
+
+.fromBottom{
+  animation: fromBottom .9s;
+  animation-fill-mode: forwards
+}
+
+.fromRight{
+  animation: fromRight 1s;
+  animation-fill-mode: forwards
+}
+
+
+
+@keyframes fromTop {
+  from {
+    transform: translateY(2000px);
+    opacity: 0
+  }
+  to {
+    transform: translate(0);
+    opacity: 1
+  }
+}
+
+@keyframes fromBottom {
+  from {
+    transform: translateY(-2000px);
+    opacity: 0
+  }
+  to {
+    transform: translate(0);
+    opacity: 1
+  }
 }
 
 @keyframes fromRight {
   from {
     transform: translate(2000px);
+    opacity: 0
   }
   to {
     transform: translate(0);
+    opacity: 1
   }
 }
 
 @keyframes fromLeft {
   from {
     transform: translate(-2000px);
+    opacity: 0
   }
   to {
     transform: translate(0);
+    opacity: 1
   }
 }
 

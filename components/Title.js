@@ -8,24 +8,19 @@ class Title extends HTMLElement {
 
   static get styles() {
     return Title_css;
-  } 
+  }
 
-  getAtt(attr){
-    let attribute = (this.attribute = this.getAttribute(attr))
-    return attribute
+  getAtt(attr) {
+    let attribute = (this.attribute = this.getAttribute(attr));
+    return attribute;
   }
 
   connectedCallback() {
-    
     this.render();
   }
 
-  render(){
-
-    let name = this.getAtt("name")
-    
-    this.shadowRoot.innerHTML = 
-    `
+  render() {
+    this.shadowRoot.innerHTML = `
     <div class="title">
     <slot name="title"></slot>
     </div>
@@ -34,7 +29,6 @@ class Title extends HTMLElement {
     ${Title.styles}
     </style>
     `;
-
   }
 }
 

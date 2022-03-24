@@ -6,6 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <script type="module" src="./index.js" defer></script>
+
+  <script src="components/Test.js"></script>
   <link rel="stylesheet" href="./css/aboutUs.css" />
   <title>PIPTU - Sobre Nosotros</title>
 </head>
@@ -24,23 +26,26 @@
 
     <subnavbar-container>
 
-      <subnavbar-item hrefId="sites" imgPath="media/icons/map.png" sectionName="SITIOS"></subnavbar-item>
+      <subnavbar-item hrefId="sites" imgPath="media/icons/map.png" sectionName="SITIOS" animation="fromLeft">
+      </subnavbar-item>
 
-      <subnavbar-item hrefId="excavations" imgPath="media/shovel.png" sectionName="EXCAVACIONES"></subnavbar-item>
+      <subnavbar-item hrefId="excavations" imgPath="media/shovel.png" sectionName="EXCAVACIONES" animation="fromTop">
+      </subnavbar-item>
 
       <subnavbar-item hrefId="labWork" imgPath="media/icons/chemistry.png"
-        sectionName="TRABAJO DE GABINETE <br> Y CONSERVACIÓN">
+        sectionName="TRABAJO DE GABINETE <br> Y CONSERVACIÓN" animation="fromBottom">
       </subnavbar-item>
 
-      <subnavbar-item hrefId="difusion" imgPath="media/icons/teacher.png" sectionName="DIFUSIÓN Y <br> DOCENCIA">
+      <subnavbar-item hrefId="difusion" imgPath="media/icons/teacher.png" sectionName="DIFUSIÓN Y <br> DOCENCIA"
+        animation="fromRight">
       </subnavbar-item>
 
-      <subnavbar-item hrefId="materials" imgPath="media/icons/materials.png" sectionName="MATERIALES"></subnavbar-item>
+      <subnavbar-item hrefId="materials" imgPath="media/icons/materials.png" sectionName="MATERIALES"
+        animation="fromLeft"></subnavbar-item>
 
     </subnavbar-container>
 
-    
-
+    <test-test></test-test>
 </body>
 
 <footer style="text-align: center; padding: 10px;">
