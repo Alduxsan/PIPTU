@@ -21,7 +21,6 @@ nav {
 
 nav .nav-content {
   text-align: center;
-  height: 100%;
   margin: auto;
   display: flex;
   align-items: center;
@@ -419,7 +418,6 @@ const FaunaItem_css = `
 
 const Title_css = `
 .title {
-  margin-top: 100px;
   background-color: rgba(0, 0, 0, 0.151);
   padding: 3%;
   -webkit-backdrop-filter: blur(3px);
