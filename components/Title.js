@@ -21,8 +21,8 @@ class Title extends HTMLElement {
 
   render() {
     this.shadowRoot.innerHTML = `
-    <div class="title">
-    <slot name="title"></slot>
+    <div class="${this.getAtt("type")}">
+    <p>${this.getAtt("title")}</p>
     </div>
 
     <style>

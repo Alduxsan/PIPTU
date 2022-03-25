@@ -418,49 +418,29 @@ const FaunaItem_css = `
 
 const Title_css = `
 .title {
-  background-color: rgba(0, 0, 0, 0.151);
-  padding: 3%;
-  -webkit-backdrop-filter: blur(3px);
-  backdrop-filter: blur(3px);
+  padding: 2%
+
 }
 
-slot[name="title"] { 
+.title p {
+  margin-top: 0;
   font-family: "Cabin Sketch", sans-serif;
   font-weight: 700;
-  font-size: 6rem;
+  font-size: 7rem;
   color: rgb(255, 255, 255);
   text-align: center;
   text-shadow: 2px 2px 2px rgb(0, 0, 0);
-}
-
-@media screen and (max-width: 1100px) {
-
-  .title{
-    width: 350px;
-    margin: auto;
-    margin-top: 100px
-  }
-
-  slot[name="title"] {
-    font-size: 3rem;
-  }
-  }
-}
-`;
-
-const Subtitle_css = `
-
-@font-face {
-  font-family: "Cabin Sketch";
-  src: url("../fonts/Cabin_Sketch/CabinSketch-Bold.ttf");
+  margin-bottom: 0;
 }
 
 .subtitle { 
   margin-top: 6%;
-  margin-bottom: 6%
+  margin-bottom: 6%;
+  padding-right: 1%;
+  padding-left: 1%
 }
 
-slot[name="title"] { 
+.subtitle p { 
   text-align: center;
   font-weight: 700;
   font-family: "Cabin Sketch", sans-serif;
@@ -470,11 +450,24 @@ slot[name="title"] {
 }
 
 @media screen and (max-width: 1100px) {
-  slot[name="title"] { 
-    font-size: 10vw;
+
+  .subtitle p { 
+    font-size: 3rem;
   }
+
+  .title{
+    width: fit-content;
+    margin: auto;
+    margin-top: 50px
   }
+
+ .title p {
+    font-size: 4rem;
+  }
+  
+}
 `;
+
 const SubNavbarItem_css = `
 
 .sublink_container{
@@ -531,8 +524,6 @@ const SubNavbarItem_css = `
   animation-fill-mode: forwards
 }
 
-
-
 @keyframes fromTop {
   from {
     transform: translateY(2000px);
@@ -578,7 +569,7 @@ const SubNavbarItem_css = `
 }
 
 @media screen and (max-width: 1100px) {
-  
+
   }
 
 `;
@@ -1009,7 +1000,6 @@ export {
   Artifact3D_css,
   ProjectListItem_css,
   FaunaItem_css,
-  Subtitle_css,
   Title_css,
   SubNavbarItem_css,
   SubNavbarContainer_css,
