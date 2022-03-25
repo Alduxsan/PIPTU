@@ -35,13 +35,6 @@ body {
   width: 100%;
 }
 
-.container {
-  width: 100%;
-  position: absolute;
-  top: 60%;
-  left: 0;
-}
-
 .fade {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1.5s;
@@ -74,9 +67,11 @@ body {
   color: rgb(255, 255, 255);
   text-shadow: 2px 2px 2px rgb(0, 0, 0);
   position: absolute;
-  background-color: rgba(56, 20, 0, 0.8);
+  background-color: rgba(56, 20, 0, 0.6);
   padding: 2%;
   border-radius: 0 6px 6px 0;
+  top: 60%;
+  left: 0;
 }
 
 .img {
@@ -126,14 +121,16 @@ body {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 1100px) {
   .title {
-    font-size: 2rem;
+    font-size: 1.5rem;
+    position: absolute;
+    top: 150px;
+    border-radius: 0;
   }
 
   .carousel {
-    width: 100vw;
-    height: 100vh;
+    height: fit-content;
     background-size: cover;
     background-position: center;
   }

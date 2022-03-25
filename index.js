@@ -4,7 +4,6 @@ import "./components/artifacts3d.js";
 import "./components/ProjectListItem.js";
 import "./components/FaunaItem.js";
 import "./components/Title.js";
-import "./components/SubNavbarContainer.js";
 import "./components/SubNavbarItem.js";
 import "./components/BookItem.js";
 import "./components/PressItem.js";
