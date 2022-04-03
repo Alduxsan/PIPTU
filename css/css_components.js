@@ -176,7 +176,7 @@ const Profiles_css = `
 
 #imgNameContainer{
   text-align: center;
-  border-radius: 6px;
+  border-radius: 4px;
   margin: 10px;
 }
 
@@ -257,7 +257,7 @@ const Artifact3D_css = `
 }
 
 iframe{
-  border-radius: 6px;
+  border-radius: 4px;
   width: 80%;
   margin: auto;
   margin-bottom: 15px;
@@ -338,7 +338,7 @@ const ProjectListItem_css = `
       color: white;
       font-weight: bolder;
       padding: 2%;
-      border-radius: 6px;
+      border-radius: 4px;
     }
 
     @media screen and (max-width: 1100px) {
@@ -499,7 +499,7 @@ const SubNavbarItem_css = `
 .sublink_container:hover {
   border-bottom: 1px solid black;
   border-top: 1px solid black;
-  border-radius: 6px;
+  border-radius: 4px;
   filter: invert(1) 
 }
 
@@ -603,7 +603,7 @@ const BookItem_css = `
   .book_item_container{
     padding: 2%;
     background-color: rgba(240, 255, 240, 0.144);
-    border-radius: 6px;
+    border-radius: 4px;
   }
 
   .sublink{
@@ -634,7 +634,7 @@ const BookItem_css = `
   }
   img{
     height: 100%;
-    border-radius: 6px
+    border-radius: 4px
   }
 
   @media screen and (max-width: 1100px) {
@@ -654,12 +654,12 @@ const PressItem_css = `
   article{
     font-family: quicksand, sans-serif;
     overflow: hidden;
-    border-radius: 6px;
+    border-radius: 4px;
   }
   
 
   .press_item_container{
-    border-radius: 6px;
+    border-radius: 4px;
     display: flex;
     justify-content: center;
     height: 300px;
@@ -711,7 +711,7 @@ const ActivitiesItem_css = `
     height: 400px;
     background-size: cover;
     background-attachment: fixed;
-    border-radius: 6px;
+    border-radius: 4px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -733,7 +733,7 @@ const ActivitiesItem_css = `
   .activity_text_container{
     padding: 4%;
     background: rgba(255, 255, 255, 0.5); 
-    border-radius: 6px;
+    border-radius: 4px;
     margin-top: 10px;
   }
 
@@ -767,7 +767,7 @@ const SciArticle_css = `
 article{
   font-family: 'Roboto', sans-serif;
   margin: 1%;
-  border-radius: 6px;
+  border-radius: 4px;
   padding: 1%;
 }
 
@@ -856,7 +856,7 @@ article{
   width: fit-content;
   font-family: 'Roboto', sans-serif;
   margin: 1%;
-  border-radius: 6px;
+  border-radius: 4px;
 }
 
 article:hover {
@@ -908,7 +908,7 @@ const ProjectNews_css = `
   margin: auto;
   width: 100%;
   height: 500px;
-  border-radius: 6px;
+  border-radius: 4px;
   cursor: pointer;
   box-shadow: 2px 1px 2px black;
   transition: all 0.3s
@@ -948,12 +948,12 @@ const ProjectNews_css = `
   font-size: 1.5rem;
   padding: 10px;
   background-color: rgba(255, 255, 255, 0.5);
-  border-radius: 6px 6px 6px 6px;
+  border-radius: 4px 6px 6px 6px;
 }
 
 img{
     width: 100%;
-    border-radius: 6px;
+    border-radius: 4px;
 
   }
 
@@ -975,7 +975,7 @@ img{
 
   @media screen and (max-width: 500px) {
     .text-block {
-      border-radius: 6px 6px 0 0;
+      border-radius: 4px 6px 0 0;
     }
     #date{
       text-align: left;
@@ -991,8 +991,21 @@ img{
   }
 `;
 
-const Collection_container_css = ``;
-const Photo_item_css = ``;
+const Collection_container_css = `
+
+#imgContainer{
+ height: fit-content
+}
+
+#imgContainer img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  border-radius: 5px;
+}
+
+
+`;
 
 export {
   Navbar_css,
@@ -1010,5 +1023,4 @@ export {
   BookChapter_css,
   ProjectNews_css,
   Collection_container_css,
-  Photo_item_css,
 };

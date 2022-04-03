@@ -11,5 +11,4 @@ import "./components/ActivitiesItem.js";
 import "./components/SciArticle.js";
 import "./components/BookChapter.js";
 import "./components/ProjectNews.js";
-import "./components/Collection_container.js";
-import "./components/Photo_item.js";
+import "./components/Collection_and_photos.js";

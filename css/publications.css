@@ -46,7 +46,7 @@ body {
   -webkit-backdrop-filter: blur(2px);
   backdrop-filter: blur(1px);
   padding: 2%;
-  border-radius: 6px;
+  border-radius: 4px;
   text-align: justify;
   text-justify: distribute;
   hyphens: auto;
@@ -63,7 +63,7 @@ body {
 
 .img {
   width: 100%;
-  border-radius: 6px;
+  border-radius: 4px;
   box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.507);
 }
 
@@ -76,7 +76,7 @@ body {
   background-color: rgba(240, 255, 240, 0.384);
   padding: 20px;
   align-items: center;
-  border-radius: 6px;
+  border-radius: 4px;
   gap: 20px;
 }
 
