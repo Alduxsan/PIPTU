@@ -435,7 +435,6 @@ const Title_css = `
 
 .subtitle { 
   margin-top: 6%;
-  margin-bottom: 6%;
   padding-right: 1%;
   padding-left: 1%
 }
@@ -503,68 +502,41 @@ const SubNavbarItem_css = `
   filter: invert(1) 
 }
 
-
-.fromLeft{
-  animation: fromLeft .3s;
+.fadeIn5{
+  animation: fadeIn .4s;
   animation-fill-mode: forwards
 }
 
-.fromTop{
-  animation: fromTop .5s;
+.fadeIn4{
+  animation: fadeIn .6s;
   animation-fill-mode: forwards
 }
 
-.fromBottom{
-  animation: fromBottom .9s;
+.fadeIn3{
+  animation: fadeIn .8s;
   animation-fill-mode: forwards
 }
 
-.fromRight{
-  animation: fromRight 1s;
+.fadeIn2{
+  animation: fadeIn 1s;
   animation-fill-mode: forwards
 }
 
-@keyframes fromTop {
-  from {
-    transform: translateY(2000px);
-    opacity: 0
-  }
-  to {
-    transform: translate(0);
-    opacity: 1
-  }
+.fadeIn1{
+  animation: fadeIn 1.2s;
+  animation-fill-mode: forwards
 }
 
-@keyframes fromBottom {
-  from {
-    transform: translateY(-2000px);
-    opacity: 0
-  }
-  to {
-    transform: translate(0);
-    opacity: 1
-  }
-}
 
-@keyframes fromRight {
-  from {
-    transform: translate(2000px);
-    opacity: 0
+@keyframes fadeIn {
+  0% {
+    opacity: 0%;
   }
-  to {
-    transform: translate(0);
-    opacity: 1
+  50% {
+    opacity: 40%;
   }
-}
-
-@keyframes fromLeft {
-  from {
-    transform: translate(-2000px);
-    opacity: 0
-  }
-  to {
-    transform: translate(0);
-    opacity: 1
+  100% {
+    opacity: 100%;
   }
 }
 

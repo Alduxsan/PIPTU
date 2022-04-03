@@ -22,9 +22,7 @@ class CollectionLayout extends HTMLElement {
     btn.classList.toggle("less"); //to rotate the arrow
 
     if (!btn.classList.contains("less")) {
-      document
-        .getElementById("title")
-        .scrollIntoView({ block: "end", behavior: "smooth" });
+      document.getElementById("title").scrollIntoView(true);
     }
   }
 
