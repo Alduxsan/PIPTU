@@ -1,6 +1,6 @@
 import { Collection_container_css } from "../css/css_components.js";
 
-class Collection_container extends HTMLElement {
+class CollectionLayout extends HTMLElement {
   constructor() {
     super();
     this.attachShadow({ mode: "open" });
@@ -10,11 +10,22 @@ class Collection_container extends HTMLElement {
     return Collection_container_css;
   }
 
-  display_more() {
-    document.getElementById("gallery_id").classList.toggle("collapsed");
+  handleEvent(event) {
+    console.log(event);
+    if (event.type === "click") this.display_more();
+  }
 
-    let toggler = document.getElementById("toggler_img");
-    toggler.classList.toggle("less");
+  display_more() {
+    let btn = this.shadowRoot.getElementById("toggler_img");
+
+    this.shadowRoot.getElementById("gallery_id").classList.toggle("collapsed"); //expand the grid container
+    btn.classList.toggle("less"); //to rotate the arrow
+
+    if (!btn.classList.contains("less")) {
+      document
+        .getElementById("title")
+        .scrollIntoView({ block: "end", behavior: "smooth" });
+    }
   }
 
   getAtt(attr) {
@@ -24,33 +35,118 @@ class Collection_container extends HTMLElement {
 
   connectedCallback() {
     this.render();
+    this.btn = this.shadowRoot.getElementById("btn");
+    this.btn.addEventListener("click", this);
   }
 
   render() {
     let imgPath = this.getAtt("imgPath");
     let text = this.getAtt("text");
-    let size = this.getAtt("size");
 
     this.shadowRoot.innerHTML = `
-    <div class="collection_wrapper2">
-        <div class="container2 collapsed2" id="gallery_id2">
+    <div class="collection_wrapper">
+        <div class="container collapsed" id="gallery_id">
           <slot></slot>
       </div>
 
-      <div class="toggler_button2" type="button2">
-        <img class="" id="toggler_img2" src="./media/icons/bottom-arrow-angle.png" alt="toggler icon">
+      <div id="btn" class="toggler_button" type="button">
+        <img class="" id="toggler_img" src="./media/icons/bottom-arrow-angle.png" alt="toggler icon">
       </div>
 
     </div>
 
     <style>
 
+    .collection_wrapper {
+      background-color: #260e0088;
+      height: fit-content;
+      padding: 1em;
+      box-shadow: 0px 5px 4px;
+    }
+    
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      grid-auto-rows: 400px 200px;
+      grid-gap: 10px;
+      grid-auto-flow: dense;
+    }
+    
+    .collapsed {
+      height: 400px;
+      overflow: hidden;
+      filter: grayscale();
+    }
+    
+    .toggler_button {
+      width: 50px;
+      margin: auto;
+      margin-top: 20px;
+    }
+    
+    #toggler_img {
+      width: 100%;
+      border-radius: 4px;
+      cursor: pointer;
+      padding: 10px;
+      background-color: rgba(255, 255, 255, 0.644);
+      transition: all 0.2s;
+      box-shadow: 4px 4px 2px rgba(0, 0, 0, 0.604);
+    }
+    
+    #toggler_img:hover {
+      box-shadow: 8px 8px 2px rgba(0, 0, 0, 0.304);
+    }
+
+    .less {
+      transform: rotate(180deg);
+    }
+    
+
+    ::slotted(.w-2){
+      grid-column: span 2
+    }
+    ::slotted(.w-2) {
+      grid-column: span 2;
+    }
+    ::slotted(.w-3) {
+      grid-column: span 3;
+    }
+    ::slotted(.w-4) {
+      grid-column: span 4;
+    }
+    ::slotted(.w-5) {
+      grid-column: span 5;
+    }
+    ::slotted(.w-6) {
+      grid-column: span 6;
+    }
+    
+    ::slotted(.h-1) {
+      grid-row: span 1;
+    }
+    ::slotted(.h-2) {
+      grid-row: span 2;
+    }
+    ::slotted(.h-3) {
+      grid-row: span 3;
+    }
+    ::slotted(.h-4) {
+      grid-row: span 4;
+    }
+    ::slotted(.h-5) {
+      grid-row: span 5;
+    }
+    ::slotted(.h-6) {
+      grid-row: span 6;
+    }
+
     </style>
     `;
   }
 }
 
-customElements.define("collection-container", Collection_container);
+customElements.define("collection-layout", CollectionLayout);
 
 class Photo_item extends HTMLElement {
   constructor() {
@@ -74,10 +170,9 @@ class Photo_item extends HTMLElement {
   render() {
     let imgPath = this.getAtt("imgPath");
     let text = this.getAtt("text");
-    let size = this.getAtt("size");
 
     this.shadowRoot.innerHTML = `
-    <div class="gallery-container ${size}">
+    <div class="gallery-container">
        <div class="gallery-item">
          <div class="image">
            <img src="${imgPath}" alt="${text}">
@@ -147,12 +242,7 @@ class Photo_item extends HTMLElement {
       width: 100%;
     }
 
-    .w-1 {
-      grid-column: span 1;
-    }
-    .w-2 {
-      grid-column: span 2;
-    }
+   
     </style>
     `;
   }
