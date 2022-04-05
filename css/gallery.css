@@ -25,7 +25,12 @@ body {
 }
 
 .collection_wrapper {
-  background-color: #260e0088;
+  /* background: linear-gradient(
+    to top,
+    rgba(38, 14, 0, 0.478) 97%,
+    rgba(0, 0, 0, 0)
+  ); */
+  background-color: rgba(38, 14, 0, 0.478);
   height: fit-content;
   padding: 1em;
   box-shadow: 0px 5px 4px;

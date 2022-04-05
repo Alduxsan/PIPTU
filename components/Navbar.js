@@ -70,6 +70,7 @@ class Navbar extends HTMLElement {
       </div>
     </div>
 
+    
     <div class="responsive_navbar">
     <div class="logo">
       <a href="#">PIPTU</a>

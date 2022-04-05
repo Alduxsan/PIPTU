@@ -18,7 +18,7 @@ class CollectionLayout extends HTMLElement {
   display_more() {
     let btn = this.shadowRoot.getElementById("toggler_img");
 
-    this.shadowRoot.getElementById("gallery_id").classList.toggle("collapsed"); //expand the grid container
+    this.shadowRoot.getElementById("gallery_id").classList.toggle("expanded"); //expand the grid container
     btn.classList.toggle("less"); //to rotate the arrow
 
     if (!btn.classList.contains("less")) {
@@ -38,12 +38,9 @@ class CollectionLayout extends HTMLElement {
   }
 
   render() {
-    let imgPath = this.getAtt("imgPath");
-    let text = this.getAtt("text");
-
     this.shadowRoot.innerHTML = `
     <div class="collection_wrapper">
-        <div class="container collapsed" id="gallery_id">
+        <div class="container" id="gallery_id">
           <slot></slot>
       </div>
 
@@ -56,9 +53,9 @@ class CollectionLayout extends HTMLElement {
     <style>
 
     .collection_wrapper {
-      background-color: #260e0088;
+      background-color: rgba(38, 14, 0, 0.578);
       height: fit-content;
-      padding: 1em;
+      padding: 2em;
       box-shadow: 0px 5px 4px;
     }
     
@@ -68,12 +65,16 @@ class CollectionLayout extends HTMLElement {
       grid-auto-rows: 400px 200px;
       grid-gap: 10px;
       grid-auto-flow: dense;
-    }
-    
-    .collapsed {
+
       height: 400px;
       overflow: hidden;
       filter: grayscale();
+    }
+    
+    .expanded {
+      animation: expand 1s;
+      animation-fill-mode: forwards;
+      filter: none;
     }
     
     .toggler_button {
@@ -139,6 +140,18 @@ class CollectionLayout extends HTMLElement {
       grid-row: span 6;
     }
 
+
+    @keyframes expand {
+      0%{
+        height: 400px
+      }
+      50%{
+        height: 600px
+      }
+      100% {
+        height:auto;
+      }
+    }
     </style>
     `;
   }
@@ -193,7 +206,7 @@ class Photo_item extends HTMLElement {
       height: 100%;
       position: relative;
       background: no-repeat url("/media/icons/photo_loading.png");
-      background-size: 50%;
+      background-size: 30%;
       background-position: center;
     }
 
@@ -238,9 +251,8 @@ class Photo_item extends HTMLElement {
       animation: move-down 0.3s linear;
       padding: 1em;
       width: 100%;
-    }
+    }   
 
-   
     </style>
     `;
   }

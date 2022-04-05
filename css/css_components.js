@@ -880,7 +880,7 @@ const ProjectNews_css = `
   margin: auto;
   width: 100%;
   height: 500px;
-  border-radius: 4px;
+  border-radius: 6px;
   cursor: pointer;
   box-shadow: 2px 1px 2px black;
   transition: all 0.3s
@@ -900,15 +900,18 @@ const ProjectNews_css = `
   padding-left: 20px;
   padding-right: 20px;
   border-radius: 0 6px 0 6px;
+  box-shadow: 0px 2px 2px black;
 }
 
 #title{
   font-size: 1.5rem;
   font-weight: bold;
+  margin: 0px;
 }
 
 #date{
   text-align: right;
+  margin: 3px;
 }
 
 .hide{
