@@ -38,15 +38,6 @@ body {
   color: green;
 }
 
-.profiles_wrapper {
-  display: flex;
-  width: 100%;
-  flex-direction: row;
-  flex-wrap: wrap;
-  margin-top: 20px;
-  justify-content: center;
-}
-
 #more {
   display: none;
 }
@@ -59,15 +50,15 @@ body {
 }
 
 .intro {
-  background-color: rgba(255, 255, 255, 0.3);
-  -webkit-backdrop-filter: blur(2px);
-  backdrop-filter: blur(1px);
-  padding: 3%;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 2em;
   margin: auto;
   margin-bottom: 3%;
   border-radius: 4px;
-  width: 90%;
+  width: 100%;
 }
+
+
 
 .intro p {
   font-family: quicksand, sans-serif;

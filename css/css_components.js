@@ -151,69 +151,6 @@ display:none;
 `;
 const Profiles_css = `
 
-.hide {display: none;}
-
-.profile_card{
-  min-width: 400px;
-  display: flex;
-  font-family: quicksand, sans-serif;
-  margin: 20px;
-  justify-content: center;
-  transition: box-shadow .5s;
-  border-radius: 8px;
-  cursor: pointer;
-  padding: 15px;
-  background: rgba(255, 255, 255, 0.300);
-  vertical-align: middle;
-}
-
-.profile_card:hover{
-  box-shadow:
-2px 2px 2px 1px rgba(0, 0, 0, 0.5),
-2px 4px 4px 1px rgba(0, 0, 0, 0.5)
-}
-
-
-#imgNameContainer{
-  text-align: center;
-  border-radius: 4px;
-  margin: 10px;
-}
-
-.imgContainer{
-  margin: auto;
-  width: fit-content;
-  box-shadow:
-  2px 2px 2px 1px rgba(0, 0, 0, .7);  
-  border-radius: 8px;
-}
-
-.imgContainer img{
-  border-radius: 8px;  
-}
-
-#detailsContent{
-  margin: 10px;
-}
-
-#name{
-  margin: 10px;
-}
-
-slot[name=name]{
-  font-size: 2rem;
-  text-align: center;
-  margin: 0;
-}
-
-
-slot[name=bio]{
-  font-size: 1.3rem;
-  text-align: justify;
-  text-justify: distribute;
-  hyphens: auto;
-}
-
 @media screen and (max-width: 1100px) {
   .profile_card{
     display: block;

@@ -1,6 +1,6 @@
 import { Profiles_css } from "../css/css_components.js";
 
-class Profiles extends HTMLElement {
+class Profiles_container extends HTMLElement {
   constructor() {
     super();
     this.attachShadow({ mode: "open" });
@@ -12,6 +12,49 @@ class Profiles extends HTMLElement {
 
   getAtt(attr) {
     let attribute = (this.attribute = this.getAttribute(attr));
+    return attribute;
+  }
+
+  connectedCallback() {
+    this.render();
+  }
+
+  render() {
+    this.shadowRoot.innerHTML = `
+    <div class="profiles_wrapper">
+      <slot></slot>
+    </div>
+
+
+    <style>
+    .profiles_wrapper {
+      display: flex;
+      gap: 1em 1em;
+      width: 100%;
+      flex-direction: row;
+      flex-wrap: wrap;
+      margin-top: 20px;
+      justify-content: center;
+    }
+    </style>
+    `;
+  }
+}
+
+customElements.define("profiles-container", Profiles_container);
+
+class Profiles extends HTMLElement {
+  constructor() {
+    super();
+    this.attachShadow({ mode: "open" });
+  }
+
+  static get styles() {
+    return Profiles_css;
+  }
+
+  getAtt(attr) {
+    let attribute = (this.attribute = this.getAttribute(attr) || "normal");
     return attribute;
   }
 
@@ -28,28 +71,97 @@ class Profiles extends HTMLElement {
 
   connectedCallback() {
     let img = this.getAtt("img");
+    let imgFix = this.getAtt("imgFix");
+    let bio = this.getAtt("bio");
+    let name = this.getAtt("name");
 
     this.shadowRoot.innerHTML = `
 
     <div id="card" class="profile_card">
         
-        <div id="imgNameContainer">
-          <div class="imgContainer">
+        <div  class="imgNameContainer">
+          <div id=${imgFix} class="imgContainer">
             <img src="${img}">
           </div>
-          <div id="name">
-            <slot name="name"></slot>
+          <div class="name">
+            <p>${name}</p>
           </div>
         </div>
         <div id="detailsContent" class="hide">
-          <slot name="bio"></slot>
+          <p class="bio">${bio}</p>
         </div>
-        
-        
+
     </div>
 
       <style>
-      ${Profiles.styles}
+
+      #rafael {
+        width: 100%;
+        height: fit-content;
+
+
+      }
+
+      #rafael img{
+        width: 100%;
+        height: min-content;
+      }
+
+      .hide{
+        display: none;
+      }
+
+      .profile_card{
+        display: flex;
+        font-family: quicksand, sans-serif;
+        justify-content: center;
+        transition: box-shadow .5s;
+        border-radius: 4px;
+        cursor: pointer;
+        background: rgba(255, 255, 255, 0.300);
+        padding: 1em;
+        min-width: 350px;
+        min-height: 300px;
+      }
+
+      .profile_card:hover{
+        box-shadow: 2px 2px 2px 1px
+      }
+      
+      .imgNameContainer{
+        min-width: 200px;
+
+      }
+
+      .imgContainer{
+        margin: auto;
+        max-width: fit-content;
+        height:200px;
+        border-radius: 4px;
+        overflow: hidden;
+        margin-bottom: 1em;
+      }
+      
+      .imgContainer img{
+        height: 100%;
+      }
+
+      .name{
+        font-size: 2rem;
+        text-align: center;
+        margin: 0;
+      }
+      
+      .bio{
+        margin: 0;
+        margin-left: 1em;
+        font-size: 1.3rem;
+        text-align: justify;
+        text-justify: distribute;
+        hyphens: auto;
+      }
+      
+
       </style>
       `;
     this.card = this.shadowRoot.getElementById("card");
