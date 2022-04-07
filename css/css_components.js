@@ -67,16 +67,21 @@ display:none;
  }
 
  .responsive_navbar{
-   width: 100%;
-   display: none;
-   align-items: center;
-   height:auto;
-   padding:2%;
-   justify-content: space-around;
- }
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: all 0.4s ease;
+  z-index: 1;
+  background-color: rgb(38 14 0);
+  display: none;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  
+}
 
  .responsive_navbar .nav-links {
-  flex-direction: column;
   font-family: quicksand;
   text-align: center;
   font-size: 1rem;
@@ -127,6 +132,10 @@ display:none;
   
   .responsive_navbar{
     display:flex;
+  }
+
+  .responsive_navbar .logo a{
+    font-size: 20px
   }
 
   nav .nav-content {

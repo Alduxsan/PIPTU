@@ -71,7 +71,7 @@ class Navbar extends HTMLElement {
     </div>
 
     
-    <div class="responsive_navbar">
+    <div class="responsive_navbar" id="responsive_sticky">
     <div class="logo">
       <a href="#">PIPTU</a>
     </div>
@@ -114,13 +114,16 @@ class Navbar extends HTMLElement {
     this.button.addEventListener("click", this);
 
     this.nav = this.shadowRoot.getElementById("navBar");
+    this.respNav = this.shadowRoot.getElementById("responsive_sticky");
     this.sticky = this.nav.offsetTop;
 
     window.onscroll = () => {
       if (window.scrollY > this.sticky) {
         this.nav.classList.add("sticky");
+        this.respNav.classList.add("sticky");
       } else {
         this.nav.classList.remove("sticky");
+        this.respNav.classList.remove("sticky");
       }
     };
   }
