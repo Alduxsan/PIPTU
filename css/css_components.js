@@ -67,6 +67,7 @@ display:none;
  }
 
  .responsive_navbar{
+   width: 100%;
    display: none;
    align-items: center;
    height:auto;
@@ -170,14 +171,15 @@ const Profiles_css = `
   slot[name=bio]{
     font-size: 1.3rem;
     text-align: left;
-    word-break: normal;
+    word-break: break;
     hyphens: auto;
   }
+
   #detailsContent{
     width:300px
   }
-  }
-
+  
+  
 
 `;
 
@@ -259,10 +261,11 @@ const ProjectListItem_css = `
     }
 
     .link-container a{
-      word-break: break;
+      word-break: break-all;
       text-decoration: none;
       color: rgb(231, 231, 231);
       font-size: 1.3rem;
+      hyphens: auto;
     }
 
     .link-container:hover a{
@@ -372,15 +375,14 @@ const Title_css = `
 
 .subtitle { 
   margin-top: 6%;
-  padding-right: 1%;
-  padding-left: 1%
+  
 }
 
 .subtitle p { 
   text-align: center;
   font-weight: 700;
   font-family: "Cabin Sketch", sans-serif;
-  font-size: 4.5rem;
+  font-size: calc(1.3rem + 3.6vw);
   color: rgb(255, 255, 255);
   text-shadow: 2px 2px 2px rgb(0, 0, 0);
 }
@@ -388,7 +390,7 @@ const Title_css = `
 @media screen and (max-width: 1100px) {
 
   .subtitle p { 
-    font-size: 3rem;
+    font-size: calc(1.3rem + 3.6vw);
   }
 
   .title{
@@ -398,7 +400,7 @@ const Title_css = `
   }
 
  .title p {
-    font-size: 4rem;
+  font-size: calc(1.3rem + 3.6vw);
   }
   
 }

@@ -36,6 +36,15 @@ class Profiles_container extends HTMLElement {
       margin-top: 20px;
       justify-content: center;
     }
+
+    @media screen and (max-width: 1100px) {
+        
+        
+      .profile_wrapper{
+       display: block
+      }
+      
+    }
     </style>
     `;
   }
@@ -160,6 +169,25 @@ class Profiles extends HTMLElement {
         text-justify: distribute;
         hyphens: auto;
       }
+
+      @media screen and (max-width: 1100px) {
+        
+        
+        .profile_card{
+         min-width: 300px;
+         padding:0;
+         padding-top: 1em;
+         display: block;
+        }
+        .name{
+          font-size: 1.5rem
+        }
+        
+        .bio{
+          margin: 0;
+          text-align: left;
+          padding: 10px;
+        }
       
 
       </style>
