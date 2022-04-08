@@ -1,13 +1,7 @@
-import { BookChapter_css } from "../css/css_components.js";
-
 class BookChapter extends HTMLElement {
   constructor() {
     super();
     this.attachShadow({ mode: "open" });
-  }
-
-  static get styles() {
-    return BookChapter_css;
   }
 
   getAtt(attr) {
@@ -38,7 +32,56 @@ class BookChapter extends HTMLElement {
     <div></a>            
     </article>
     <style>
-    ${BookChapter.styles}
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+article{
+  width: fit-content;
+  font-family: 'Roboto', sans-serif;
+  margin: 1%;
+  border-radius: 4px;
+}
+
+article:hover {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+
+.artLink{
+  text-decoration: none; 
+  color: black;
+  width: fit-content;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 1%;
+  align-items: center;
+}
+
+#ArtTitle{
+  border-right: 1px solid black;
+  padding: 2%
+}
+
+#author_editorial_info{
+  width: fit-content;
+}
+
+@media screen and (max-width: 1100px) {
+
+  .artLink{
+    display: block;
+    width: 100%
+  }
+
+  #ArtTitle{
+    padding: 0
+  }
+
+  article{
+    margin: auto;
+    padding: 2%
+  }
+}
     </style>
     `;
   }

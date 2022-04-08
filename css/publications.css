@@ -32,12 +32,9 @@ body {
 
 .content {
   font-family: quicksand, sans-serif;
-
   margin: auto;
-  padding: 1%;
   width: 95%;
-  background-color: rgba(255, 255, 255, 0.3);
-  border-radius: 8px;
+  border-radius: 4px;
 }
 
 .book_chapters {

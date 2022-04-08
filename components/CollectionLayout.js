@@ -1,13 +1,7 @@
-import { Collection_container_css } from "../css/css_components.js";
-
 class CollectionLayout extends HTMLElement {
   constructor() {
     super();
     this.attachShadow({ mode: "open" });
-  }
-
-  static get styles() {
-    return Collection_container_css;
   }
 
   handleEvent(event) {
@@ -66,7 +60,7 @@ class CollectionLayout extends HTMLElement {
       grid-gap: 10px;
       grid-auto-flow: dense;
 
-      height: 400px;
+      height: 410px;
       overflow: hidden;
       filter: grayscale();
     }
@@ -186,14 +180,20 @@ class Photo_item extends HTMLElement {
     <div class="gallery-container">
        <div class="gallery-item">
          <div class="image">
-           <img src="${imgPath}" alt="${text}">
+          <a target="_blank" href="${imgPath}"> 
+            <img src="${imgPath}" alt="${text}">
+          </a>
          </div>
          <div class="text">${text}</div>
        </div>
     </div>
 
     <style>
-    
+
+    :host{
+      border-radius: 4px
+    }
+
     .gallery-container{
       width: 100%;
       height: 100%;
@@ -207,6 +207,7 @@ class Photo_item extends HTMLElement {
       position: relative;
       background: no-repeat url("/media/icons/photo_loading.png");
       background-size: 30%;
+      border-radius: 4px;
       background-position: center;
     }
 
@@ -223,6 +224,7 @@ class Photo_item extends HTMLElement {
       object-fit: cover;
       object-position: 50% 50%;
       cursor: pointer;
+      border-radius: 4px;
       transition: 0.5s ease-in-out;
     }
 

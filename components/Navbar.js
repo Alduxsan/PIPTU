@@ -1,5 +1,3 @@
-import { Navbar_css } from "../css/css_components.js";
-
 class Navbar extends HTMLElement {
   constructor() {
     super();
@@ -14,9 +12,6 @@ class Navbar extends HTMLElement {
     }
   }
 
-  static get styles() {
-    return Navbar_css;
-  }
   handleEvent(event) {
     console.log(event);
     if (event.type === "click") this.showMenu();
@@ -106,7 +101,165 @@ class Navbar extends HTMLElement {
   </nav>
    
     <style>
-    ${Navbar.styles}
+    
+    @font-face {
+      font-family: quicksand;
+      src: url("../fonts/Quicksand/Quicksand-VariableFont_wght.ttf");
+    }
+    
+    .sticky{
+      position: fixed;
+      animation: fromTop 1s;
+      animation-fill-mode: forwards
+    }
+    
+    nav {
+      top: 0;
+      left: 0;
+      width: 100%;
+      transition: all 0.4s ease;
+      z-index: 1;
+      background-color: #260E00;
+    }
+    
+    nav .nav-content {
+      text-align: center;
+      margin: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px;
+    }
+    nav .logo a {
+      text-decoration: none;
+      font-size: 35px;
+      color: white;
+      padding: 5px;
+    }
+    nav.sticky .logo a {
+      color: white;
+    }
+    .nav-content .nav-links {
+      align-items: center;
+      display: flex;
+      justify-content: space-around;
+    }
+    
+    .nav-content .nav-links div {
+      list-style: none;
+      margin:15px;
+    }
+    
+    .nav-links div a {
+      font-family: quicksand;
+      text-decoration: none;
+      color: white;
+      font-size: 1.4rem;
+      font-weight: 100;
+      transition: all 0.3s ease;
+    }
+    
+    .nav-links div a:hover {
+      transition: .2s all;
+      color: #ab8400;
+    
+    }
+    
+    .hide {
+    display:none;
+     }
+    
+     .responsive_navbar{
+      top: 0;
+      left: 0;
+      width: 100%;
+      transition: all 0.4s ease;
+      z-index: 1;
+      background-color: rgb(38 14 0);
+      display: none;
+      justify-content: space-around;
+      align-items: center;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      
+    }
+    
+     .responsive_navbar .nav-links {
+      font-family: quicksand;
+      text-align: center;
+      font-size: 1rem;
+    }
+    
+    .nav-links div a{
+      font-size: 1rem;
+    }
+    
+    .icon{
+      width: 40px;
+      height: fit-content;
+      cursor: pointer;
+      animation: fadeIn .5s;
+      animation-fill-mode: forwards
+    }
+    
+    .icon img{
+      width: 100%;
+      filter: invert(1)
+    }
+    
+    .rotate{
+      animation: rotation .5s;
+      animation-fill-mode: forwards
+    }
+    
+    @keyframes rotation {
+      from {
+        transform: rotate(0deg);
+        opacity: 0;
+      }
+      to {
+        transform: rotate(90deg);
+        opacity: 1;
+      }
+    }
+    
+    @keyframes fadeIn {
+      from {
+        transform: translate(2000px);
+      }
+      to {
+        transform: translate(0);
+      }
+    }
+    @media screen and (max-width: 1100px) {
+      
+      .responsive_navbar{
+        display:flex;
+      }
+    
+      .responsive_navbar .logo a{
+        font-size: 20px
+      }
+    
+      nav .nav-content {
+        display: none;
+      }
+      
+      .link_container{
+        margin-bottom: 10px;
+      }
+    }
+    
+    @keyframes fromTop {
+      from {
+        transform: translateY(-2000px);
+        opacity: 0;
+      }
+      to {
+        transform: translate(0);
+        opacity: 1
+      }
+    }
     </style>
    
     `;

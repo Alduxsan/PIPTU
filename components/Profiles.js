@@ -1,13 +1,7 @@
-import { Profiles_css } from "../css/css_components.js";
-
 class Profiles_container extends HTMLElement {
   constructor() {
     super();
     this.attachShadow({ mode: "open" });
-  }
-
-  static get styles() {
-    return Profiles_css;
   }
 
   getAtt(attr) {
@@ -25,7 +19,6 @@ class Profiles_container extends HTMLElement {
       <slot></slot>
     </div>
 
-
     <style>
     .profiles_wrapper {
       display: flex;
@@ -38,8 +31,6 @@ class Profiles_container extends HTMLElement {
     }
 
     @media screen and (max-width: 1100px) {
-        
-        
       .profile_wrapper{
        display: block
       }
@@ -116,6 +107,14 @@ class Profiles extends HTMLElement {
         height: min-content;
       }
 
+      #ref {
+        text-decoration: none;
+        color: black;
+      }
+      #ref:hover {
+        color: green;
+      }
+
       .hide{
         display: none;
       }
@@ -130,7 +129,7 @@ class Profiles extends HTMLElement {
         background: rgba(255, 255, 255, 0.300);
         padding: 1em;
         min-width: 350px;
-        min-height: 300px;
+        min-height: 350px;
       }
 
       .profile_card:hover{
@@ -171,7 +170,6 @@ class Profiles extends HTMLElement {
       }
 
       @media screen and (max-width: 1100px) {
-        
         
         .profile_card{
          min-width: 300px;

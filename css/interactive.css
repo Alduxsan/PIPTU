@@ -88,7 +88,6 @@ body {
 }
 
 .infoContainer {
-  padding: 1%;
   margin: auto;
   margin-top: 1%;
   width: 95%;
@@ -96,16 +95,17 @@ body {
   flex-wrap: wrap;
   color: rgb(0, 0, 0);
   font-family: quicksand, sans-serif;
-  background-color: rgba(255, 255, 255, 0.24);
-  -webkit-backdrop-filter: blur(2px);
-  backdrop-filter: blur(1px);
+
   border-radius: 4px;
   justify-content: space-around;
 }
 
 .infoContainer article {
-  padding: 1%;
+  padding: 2%;
   transition: all 0.5s;
+  background-color: rgba(255, 255, 255, 0.767);
+  border-radius: 4px;
+  margin-bottom: 1%;
 }
 
 .titleAndInfo {
@@ -113,7 +113,6 @@ body {
   text-justify: distribute;
   hyphens: auto;
   color: rgb(0, 0, 0);
-  padding: 2%;
 }
 
 .titleAndInfo h2 {
@@ -126,7 +125,7 @@ body {
 
 .infoImg {
   float: right;
-  width: 600px;
+  width: 500px;
   overflow: hidden;
   border-radius: 4px;
   margin-left: 2%;
@@ -136,12 +135,6 @@ body {
   width: 100%;
   border-radius: 4px;
 }
-
-.infoContainer article:hover {
-  background-color: rgba(255, 255, 255, 0.767);
-  border-radius: 4px;
-}
-
 .center {
   margin: auto;
 }

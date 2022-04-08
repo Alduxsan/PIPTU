@@ -1,13 +1,7 @@
-import { BookItem_css } from "../css/css_components.js";
-
 class BookItem extends HTMLElement {
   constructor() {
     super();
     this.attachShadow({ mode: "open" });
-  }
-
-  static get styles() {
-    return BookItem_css;
   }
 
   getAtt(attr) {
@@ -62,7 +56,58 @@ class BookItem extends HTMLElement {
     </div>
     </article>
     <style>
-    ${BookItem.styles}
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+  article{
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 1%
+  }
+
+  .book_item_container{
+    padding: 2%;
+    background-color: rgba(240, 255, 240, 0.5);
+    border-radius: 4px;
+  }
+
+  .sublink{
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+  }
+
+  .img_and_resume_container{
+    margin-top: 1%;
+    display: flex;
+
+    text-align: justify;
+    text-justify: distribute;
+    hyphens: auto 
+  }
+
+  .book_resume{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3rem;
+  }
+
+  .bookImg{
+    margin-right: 2%; 
+    height:300px;
+    float: left;
+  }
+  img{
+    height: 100%;
+    border-radius: 4px
+  }
+
+  @media screen and (max-width: 1100px) {
+    .bookImg{
+      margin-right: 0; 
+      height:300px;
+      float: none;
+      width: fit-content;
+      margin: auto;
+    }
     </style>
     `;
   }
