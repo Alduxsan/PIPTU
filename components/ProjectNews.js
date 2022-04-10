@@ -44,18 +44,21 @@ class ProjectNews extends HTMLElement {
     </div>
 
     <style>
-    
+    @font-face {
+      font-family: quicksand;
+      src: url("../fonts/Quicksand/Quicksand-VariableFont_wght.ttf");
+    }
     .news_container{
       margin: auto;
       width: 100%;
       height: 500px;
       border-radius: 6px;
       cursor: pointer;
-      box-shadow: 2px 1px 2px black;
+      box-shadow: 2px 2px 2px black;
       transition: all 0.3s
     }
     .news_container:hover{
-      box-shadow: 1px 4px 3px black;
+      box-shadow: 4px 4px 4px black;
     
     }
     
@@ -73,12 +76,14 @@ class ProjectNews extends HTMLElement {
     }
     
     #title{
+      font-family: quicksand;
       font-size: 1.5rem;
       font-weight: bold;
       margin: 0px;
     }
     
     #date{
+      font-family: quicksand;
       text-align: right;
       margin: 3px;
     }
@@ -88,13 +93,14 @@ class ProjectNews extends HTMLElement {
     }
     
     .content{
+      font-family: quicksand;
       margin-top: 5px;
       font-size: 1.5rem;
       padding: 10px;
       background-color: rgba(255, 255, 255, 0.5);
       border-radius: 4px 6px 6px 6px;
     }
-    
+  
     img{
         width: 100%;
         border-radius: 4px;

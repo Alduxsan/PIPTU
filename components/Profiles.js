@@ -98,8 +98,6 @@ class Profiles extends HTMLElement {
       #rafael {
         width: 100%;
         height: fit-content;
-
-
       }
 
       #rafael img{
@@ -148,6 +146,7 @@ class Profiles extends HTMLElement {
         border-radius: 4px;
         overflow: hidden;
         margin-bottom: 1em;
+        box-shadow: 1px 2px 2px
       }
       
       .imgContainer img{

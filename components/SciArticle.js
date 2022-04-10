@@ -1,3 +1,118 @@
+class SciArticles_container extends HTMLElement {
+  constructor() {
+    super();
+    this.attachShadow({ mode: "open" });
+  }
+
+  handleEvent(event) {
+    console.log(event);
+    if (event.type === "click") this.display_more();
+  }
+
+  display_more() {
+    let btnMore = this.shadowRoot.getElementById("togglerMore");
+    let btnLess = this.shadowRoot.getElementById("toggleLess");
+
+    this.shadowRoot.getElementById("sciList").classList.toggle("expanded");
+    btnMore.classList.toggle("hide");
+    btnLess.classList.toggle("hide");
+
+    if (btnLess.classList.contains("hide")) {
+      document.getElementById("articles").scrollIntoView(true);
+    }
+  }
+
+  getAtt(attr) {
+    let attribute = (this.attribute = this.getAttribute(attr) ?? "");
+    return attribute;
+  }
+
+  connectedCallback() {
+    this.render();
+    this.btn = this.shadowRoot.getElementById("btn");
+    this.btn.addEventListener("click", this);
+  }
+
+  render() {
+    this.shadowRoot.innerHTML = `
+    <div class="sciWrapper">
+      <div class="sciArticles_container" id="sciList">
+        <slot></slot>
+      </div>
+      <div id="btn" class="toggler_button" type="button">
+        <p class="ToggleBtn" id="togglerMore">más artículos</p>
+        <p class="ToggleBtn hide" id="toggleLess">cerrar lista</p>
+      </div>
+    </div>
+
+    <style>
+
+    .hide{
+      display: none;
+    }
+
+    .sciWrapper{
+      background-color: rgba(255, 255, 255, 0.5);
+      width: 95%;
+      margin: auto;
+      border-radius: 4px;
+      padding-bottom: 2%
+    }
+
+    .sciArticles_container {
+      font-family: quicksand, sans-serif;
+      margin: auto;
+      padding: 1%;
+      height: 400px;
+      overflow: hidden;
+    }
+
+    .expanded {
+      animation: expand 1s;
+      animation-fill-mode: forwards;
+    }
+    
+    .toggler_button {
+      width: fit-content;
+      margin: auto;
+      margin-top: 20px;
+    }
+    
+    .ToggleBtn {
+      text-align: center;
+      border-radius: 4px;
+      cursor: pointer;
+      padding: 10px;
+      background-color: rgba(255, 255, 255, 0.644);
+      transition: all 0.2s;
+      box-shadow: 4px 4px 2px rgba(0, 0, 0, 0.604);
+    }
+    
+    .ToggleBtn:hover {
+      box-shadow: 8px 8px 2px rgba(0, 0, 0, 0.304);
+    }
+
+
+
+
+    @keyframes expand {
+      0%{
+        height: 400px
+      }
+      50%{
+        height: 600px
+      }
+      100% {
+        height:auto;
+      }
+    }
+    </style>
+    `;
+  }
+}
+
+customElements.define("sciarticles-container", SciArticles_container);
+
 class SciArticle extends HTMLElement {
   constructor() {
     super();
@@ -40,10 +155,8 @@ class SciArticle extends HTMLElement {
     </details>
     </article>
     <style>
-    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
-
 article{
-  font-family: 'Roboto', sans-serif;
+  font-family: quicksand, sans-serif;
   margin: 1%;
   border-radius: 4px;
   padding: 1%;
@@ -92,7 +205,6 @@ details summary {
   align-items: center;
   justify-content: end;
   text-decoration: none;
-  color: black;
 }
 
 .iconContainer img{
@@ -101,8 +213,8 @@ details summary {
 }
 
 .artLink:hover{
-  font-size: 1.3rem
-  
+  color: white;
+  filter: invert()  
 }
 @media screen and (max-width: 1100px) {
   summary {

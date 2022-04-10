@@ -31,57 +31,62 @@ class BookChapter extends HTMLElement {
         </div>
     <div></a>            
     </article>
+
     <style>
-    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 
-article{
-  width: fit-content;
-  font-family: 'Roboto', sans-serif;
-  margin: 1%;
-  border-radius: 4px;
-}
+      article{
+        width: fit-content;
+        font-family: quicksand, sans-serif;
+        margin: 1%;
+        border-radius: 4px;
+      }
 
-article:hover {
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
-}
+      article:hover {
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+      }
 
+      .artLink{
+        text-decoration: none; 
+        color: black;
+        width: fit-content;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 1%;
+        align-items: center;
+      }
 
-.artLink{
-  text-decoration: none; 
-  color: black;
-  width: fit-content;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  column-gap: 1%;
-  align-items: center;
-}
+      #ArtTitle{
+        font-family: quicksand, sans-serif;
+        border-right: 1px solid black;
+        padding: 2%
+      }
 
-#ArtTitle{
-  border-right: 1px solid black;
-  padding: 2%
-}
+      #author_editorial_info{
+        width: fit-content;
 
-#author_editorial_info{
-  width: fit-content;
-}
+      }
 
-@media screen and (max-width: 1100px) {
+      h4{
+        font-family: quicksand, sans-serif;
+      }
 
-  .artLink{
-    display: block;
-    width: 100%
-  }
+      @media screen and (max-width: 1100px) {
 
-  #ArtTitle{
-    padding: 0
-  }
+        .artLink{
+          display: block;
+          width: 100%
+        }
 
-  article{
-    margin: auto;
-    padding: 2%
-  }
-}
+        #ArtTitle{
+          padding: 0
+        }
+
+        article{
+          margin: auto;
+          padding: 2%
+        }
+      }
     </style>
     `;
   }

@@ -56,10 +56,9 @@ class BookItem extends HTMLElement {
     </div>
     </article>
     <style>
-    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 
   article{
-    font-family: 'Roboto', sans-serif;
+    font-family: quicksand, sans-serif;
     margin-bottom: 1%
   }
 
@@ -67,6 +66,10 @@ class BookItem extends HTMLElement {
     padding: 2%;
     background-color: rgba(240, 255, 240, 0.5);
     border-radius: 4px;
+  }
+
+  .book_title{
+    font-family: quicksand, sans-serif;
   }
 
   .sublink{
@@ -86,7 +89,7 @@ class BookItem extends HTMLElement {
   }
 
   .book_resume{
-    font-family: 'Roboto', sans-serif;
+    font-family: quicksand, sans-serif;
     font-size: 1.3rem;
   }
 
