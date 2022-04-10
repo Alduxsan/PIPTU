@@ -37,6 +37,8 @@ class Title extends HTMLElement {
     }
     
     .subtitle { 
+      margin: auto;
+      width: min-content;
       margin-top: 6%;
       
     }

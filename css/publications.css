@@ -85,11 +85,11 @@ body {
   display: flex;
   padding: 4%;
   justify-content: center;
+  gap: 1em;
 }
 
 .info_container img {
-  width: 100px;
-  margin: 20px;
+  width: 100%;
   filter: grayscale(100%);
 }
 
@@ -101,5 +101,6 @@ body {
   .press_content {
     display: flex;
     flex-direction: column;
+    width: 100%;
   }
 }

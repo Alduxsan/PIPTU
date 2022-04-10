@@ -37,7 +37,7 @@ class BookChapter extends HTMLElement {
       article{
         width: fit-content;
         font-family: quicksand, sans-serif;
-        margin: 1%;
+        margin: 1em;
         border-radius: 4px;
       }
 
@@ -52,14 +52,14 @@ class BookChapter extends HTMLElement {
         width: fit-content;
         display: grid;
         grid-template-columns: 1fr 1fr;
-        column-gap: 1%;
+        column-gap: 1em;
         align-items: center;
       }
 
       #ArtTitle{
         font-family: quicksand, sans-serif;
         border-right: 1px solid black;
-        padding: 2%
+        padding: 1em;
       }
 
       #author_editorial_info{
@@ -79,12 +79,19 @@ class BookChapter extends HTMLElement {
         }
 
         #ArtTitle{
-          padding: 0
+          padding: 0;
+          font-size: 1rem;
+          border-right: 0px;
+          text-align: left;
         }
 
         article{
           margin: auto;
-          padding: 2%
+          padding: 1em;
+        }
+        
+        #author_editorial_info *{
+          text-align: left
         }
       }
     </style>

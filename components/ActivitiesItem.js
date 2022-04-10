@@ -87,10 +87,12 @@ class ActivitiesItem extends HTMLElement {
         }
     
       .activity_text_container p{
+        font-size: 1rem;
         text-align: left;
         word-break: normal;
         column-count: 1
       }
+
         }
     </style>
     `;
