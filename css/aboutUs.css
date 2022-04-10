@@ -58,34 +58,14 @@ body {
   hyphens: auto;
 }
 
-.list-container {
-  background-color: rgba(56, 20, 0, 0.5);
-  width: 100%;
-  margin: auto;
-  border-radius: 4px;
-  padding: 2%;
-}
-
-.list-container h3 {
-  font-size: 2.5rem;
-  margin-top: 20px;
-  margin-bottom: 10px;
-}
-
-.list-container h2 {
-  text-align: start;
-  margin-top: 2%;
-}
-
-.list_sectionTitle h3 {
-  color: aliceblue;
-  text-align: center;
-}
-
 .list_subsectionTitle {
+  background-color: rgba(56, 20, 0, 0.8);
   color: aliceblue;
   text-align: center;
-  padding: 5px;
+  padding: 1em;
+  font-size: 1.5rem;
+  font-family: quicksand;
+  border-radius: 4px 4px 0 0;
 }
 
 /* footer */
