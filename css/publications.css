@@ -83,9 +83,10 @@ body {
 
 #network_list {
   display: flex;
-  padding: 4%;
+  padding: 1em;
   justify-content: center;
   gap: 1em;
+  max-width: 500px;
 }
 
 .info_container img {
