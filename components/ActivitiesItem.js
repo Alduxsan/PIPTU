@@ -31,10 +31,6 @@ class ActivitiesItem extends HTMLElement {
     </div>
     </article>
     <style>
-    @font-face {
-      font-family: quicksand;
-      src: url("../fonts/Quicksand/Quicksand-VariableFont_wght.ttf");
-    }
       .activities_item_container{
         margin-bottom: 20px
       }

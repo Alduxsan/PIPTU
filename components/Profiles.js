@@ -97,7 +97,7 @@ class Profiles extends HTMLElement {
 
       #rafael {
         width: 100%;
-        height: fit-content;
+        height: cover;
       }
 
       #rafael img{

@@ -100,13 +100,7 @@ class Navbar extends HTMLElement {
   </div>
   </nav>
    
-    <style>
-    
-    @font-face {
-      font-family: quicksand;
-      src: url("../fonts/Quicksand/Quicksand-VariableFont_wght.ttf");
-    }
-    
+    <style>    
     .sticky{
       position: fixed;
       animation: fromTop 1s;
