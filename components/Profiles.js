@@ -97,12 +97,10 @@ class Profiles extends HTMLElement {
 
       #rafael {
         width: 100%;
-        height: cover;
       }
 
       #rafael img{
         width: 100%;
-        height: min-content;
       }
 
       #ref {
@@ -135,7 +133,7 @@ class Profiles extends HTMLElement {
       }
       
       .imgNameContainer{
-        min-width: 200px;
+        min-width: 250px;
 
       }
 
