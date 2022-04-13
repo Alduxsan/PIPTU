@@ -63,12 +63,11 @@ body {
   width: 95%;
   display: grid;
   grid-template-columns: auto auto auto;
-  gap: 10px;
   background-color: rgba(240, 255, 240, 0.384);
-  padding: 20px;
+  padding: 10px;
   align-items: center;
   border-radius: 4px;
-  gap: 20px;
+  gap: 10px;
 }
 
 .item1 {
