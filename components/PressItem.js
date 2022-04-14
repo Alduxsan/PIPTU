@@ -15,66 +15,90 @@ class PressItem extends HTMLElement {
   }
 
   connectedCallback() {
-    let articleImgPath = this.getAtt("articleImgPath");
-
     this.render();
-    this.setBackgroundImg(articleImgPath);
   }
 
   render() {
-    let articleLink = this.getAtt("articleLink");
+    let link = this.getAtt("link");
+    let title = this.getAtt("title");
+    let imgPath = this.getAtt("imgPath");
 
     this.shadowRoot.innerHTML = `
-    <article>
-      <div id="background" class="press_item_container">
-      
-          <a class="sublink" target="_blank" href="${articleLink}"> 
-              <slot name="article_title"></slot>
-          </a>
-      </div>
-    </article>
+
+    <div class="press_item_container">
+       <div class="press-item">
+         <div class="image">
+            <a target="_blank" href="${link}"> 
+              <img src="${imgPath}" loading:"lazy" alt="${title}">
+            </a>
+         </div>
+        <div class="text"><p>${title}</p></div>
+       </div>
+    </div>
+
     <style>
-    article{
-      font-family: quicksand, sans-serif;
+  
+    .press_item_container{
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      border-radius: 4px;
+      position: relative;
+
+    }
+
+    .press-item {
+      width: 100%;
+      height: 100%;
+      background: no-repeat url("/media/icons/photo_loading.png");
+      background-size: 30%;
+      background-position: center;
+      border-radius: 4px;
+    }
+  
+    .press-item .image {
+      width: 100%;
+      height: 100%;
       overflow: hidden;
       border-radius: 4px;
     }
     
-  
-    .press_item_container{
-      border-radius: 4px;
-      display: flex;
-      justify-content: center;
-      height: 300px;
-      background-repeat: no-repeat;
-      background-size: cover;
-      align-items: flex-end;
-      transition: all 0.5s;
-  
-    }
-  
-    .sublink{
-      color: white;
+    .image img {
       width: 100%;
-      height: fit-content;
-      text-decoration: none;
-      text-transform: uppercase;
-      font-size: 100%;
-      padding: 3%;
-      background-color: rgba(0, 0, 0, 0.507);
-      backdrop-filter: blur(10px);
-      border-radius: 0 0 6px 6px;
+      height: 100%;
+      object-fit: cover;
+      object-position: 50% 50%;
+      cursor: pointer;
+      border-radius: 4px;
+      transition: 0.5s ease-in-out;
+    }
+
+
+    .press-item .text {
+      width:100%;
+      position: absolute;
+      bottom:0;
+      left: 0;
+      pointer-events: none;
       text-align: center;
+      background: rgba(0,0,0);
       transition: all 0.5s;
     }
-    .press_item_container:hover > .sublink { 
-      background-color: rgba(0, 0, 0);
+
+    .text p{
+      margin: 0;
+      padding: 10px;
+      font-family: quicksand, "sans-serif";
+      color: #fff;
+      font-size: 1.3rem;
+    }
+    
+    .press_item_container:hover .text { 
+      filter: invert()
     }
   
     @media screen and (max-width: 1100px) {
-      .press_item_container{
-        width: 350px;
-      }
+      
     }
     </style>
     `;

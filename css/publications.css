@@ -59,13 +59,13 @@ body {
 }
 
 .press_content {
+  padding: 1em;
   margin: auto;
   width: 95%;
+  height: 100%;
   display: grid;
   grid-template-columns: auto auto auto;
   background-color: rgba(240, 255, 240, 0.384);
-  padding: 10px;
-  align-items: center;
   border-radius: 4px;
   gap: 10px;
 }
