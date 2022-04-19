@@ -9,11 +9,6 @@ class PressItem extends HTMLElement {
     return attribute;
   }
 
-  setBackgroundImg(imgPath) {
-    this.container = this.shadowRoot.getElementById("background");
-    this.container.style.backgroundImage = `url(${imgPath})`;
-  }
-
   connectedCallback() {
     this.render();
   }
@@ -75,6 +70,10 @@ class PressItem extends HTMLElement {
 
 
     .press-item .text {
+      display: flex;
+      justify-content: center;
+      align-items : center;
+      min-height: 100px;
       width:100%;
       position: absolute;
       bottom:0;
@@ -82,7 +81,7 @@ class PressItem extends HTMLElement {
       pointer-events: none;
       text-align: center;
       background: rgba(0,0,0);
-      transition: all 0.5s;
+      transition: all 0.5s;    
     }
 
     .text p{
@@ -91,6 +90,7 @@ class PressItem extends HTMLElement {
       font-family: quicksand, "sans-serif";
       color: #fff;
       font-size: 1.3rem;
+      vertical-align: middle;
     }
     
     .press_item_container:hover .text { 

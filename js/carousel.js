@@ -15,11 +15,10 @@ const interval = setInterval(function () {
 var index = 1;
 
 function startCarousel() {
-  document.getElementById("carouselImage").src = `${images[index++]}`;
-
-  // carousel.style.backgroundImage = `url(${images[index++]})`;
   carousel.classList.remove("fade");
   void carousel.offsetWidth;
   carousel.classList.add("fade");
+  document.getElementById("carouselImage").src = `${images[index++]}`;
+
   if (index > images.length - 1) index = 0;
 }

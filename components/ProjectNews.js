@@ -44,10 +44,7 @@ class ProjectNews extends HTMLElement {
     </div>
 
     <style>
-    @font-face {
-      font-family: quicksand;
-      src: url("../fonts/Quicksand/Quicksand-VariableFont_wght.ttf");
-    }
+    
     .news_container{
       margin: auto;
       width: 100%;
@@ -76,14 +73,14 @@ class ProjectNews extends HTMLElement {
     }
     
     #title{
-      font-family: quicksand;
+      font-family: quicksand, "sans-serif";
       font-size: 1.5rem;
       font-weight: bold;
       margin: 0px;
     }
     
     #date{
-      font-family: quicksand;
+      font-family: quicksand, "sans-serif";
       text-align: right;
       margin: 3px;
     }
@@ -93,7 +90,7 @@ class ProjectNews extends HTMLElement {
     }
     
     .content{
-      font-family: quicksand;
+      font-family: quicksand, "sans-serif";
       margin-top: 5px;
       font-size: 1.5rem;
       padding: 10px;

@@ -8,9 +8,8 @@
   <link rel="stylesheet" href="./css/gallery.css" media="print" onload="this.media='all'" />
 
   <script src="./components/Navbar.js"></script>
-  <script src="./components/Title.js"></script>
-  <script src="./components/SubNavbarItem.js" async></script>
-  <script src="./components/CollectionLayout.js" async></script>
+  <script src="./components/SubNavbarItem.js" defer></script>
+  <script src="./components/CollectionLayout.js" defer></script>
 
   <title>PIPTU - GALERÍA DE FOTOS</title>
 </head>
@@ -22,8 +21,9 @@
 
   <nav-bar atribute="gallery"></nav-bar>
 
-  <section-title id="title" title="GALERÍA DE FOTOS" type="title">
-  </section-title>
+  <div id="title" class="title">
+    <p>GALERÍA DE FOTOS</p>
+  </div>
 
   <subnavbar-container id="sub-navbar">
 
@@ -46,8 +46,9 @@
 
   </subnavbar-container>
 
-  <section-title id="sites" title="SITIOS" type="subtitle">
-  </section-title>
+  <div id="sites" class="subtitle">
+    <p>SITIOS</p>
+  </div>
 
   <collection-layout>
     <photo-item imgPath="https://source.unsplash.com/1600x900/?archaeology" text="archaeology" class="w-2"></photo-item>
@@ -64,8 +65,9 @@
     <photo-item imgPath="https://source.unsplash.com/1600x900/?nature" text="Nature" size=""></photo-item>
   </collection-layout>
 
-  <section-title id="excavations" title="EXCAVACIONES" type="subtitle">
-  </section-title>
+  <div id="excavations" class="subtitle">
+    <p>EXCAVACIONES</p>
+  </div>
 
   <collection-layout>
     <photo-item imgPath="https://source.unsplash.com/1600x900/?nature" text="Nature" class="w-2"></photo-item>
@@ -82,27 +84,9 @@
     <photo-item imgPath="https://source.unsplash.com/1600x900/?nature" text="Nature" size=""></photo-item>
   </collection-layout>
 
-
-  <section-title id="labWork" title="TRABAJO DE GABINETE <br> Y CONSERVACIÓN" type="subtitle">
-  </section-title>
-
-  <collection-layout>
-    <photo-item imgPath="https://source.unsplash.com/1600x900/?nature" text="Nature" class="w-2"></photo-item>
-
-    <photo-item imgPath="https://source.unsplash.com/1600x900/?nature" text="Nature" size=""></photo-item>
-    <photo-item imgPath="https://source.unsplash.com/1600x900/?nature" text="Nature" size=""></photo-item>
-
-    <photo-item imgPath="https://source.unsplash.com/1600x900/?nature" text="Nature" size=""></photo-item>
-    <photo-item imgPath="https://source.unsplash.com/1600x900/?nature" text="Nature" size=""></photo-item>
-
-    <photo-item imgPath="https://source.unsplash.com/1600x900/?nature" text="Nature" size=""></photo-item>
-    <photo-item imgPath="https://source.unsplash.com/1600x900/?nature" text="Nature" size=""></photo-item>
-
-    <photo-item imgPath="https://source.unsplash.com/1600x900/?nature" text="Nature" size=""></photo-item>
-  </collection-layout>
-
-  <section-title id="que-hacemos" title="QUE HACEMOS" type="subtitle">
-  </section-title>
+  <div id="labWork" class="subtitle">
+    <p>TRABAJO DE GABINETE Y CONSERVACIÓN</p>
+  </div>
 
   <collection-layout>
     <photo-item imgPath="https://source.unsplash.com/1600x900/?nature" text="Nature" class="w-2"></photo-item>
@@ -119,8 +103,9 @@
     <photo-item imgPath="https://source.unsplash.com/1600x900/?nature" text="Nature" size=""></photo-item>
   </collection-layout>
 
-  <section-title id="difusion" title="DIFUSION" type="subtitle">
-  </section-title>
+  <div id="que-hacemos" class="subtitle">
+    <p>QUE HACEMOS</p>
+  </div>
 
   <collection-layout>
     <photo-item imgPath="https://source.unsplash.com/1600x900/?nature" text="Nature" class="w-2"></photo-item>
@@ -137,8 +122,28 @@
     <photo-item imgPath="https://source.unsplash.com/1600x900/?nature" text="Nature" size=""></photo-item>
   </collection-layout>
 
-  <section-title id="materials" title="MATERIALES" type="subtitle">
-  </section-title>
+  <div id="difusion" class="subtitle">
+    <p>DIFUSIÓN</p>
+  </div>
+
+  <collection-layout>
+    <photo-item imgPath="https://source.unsplash.com/1600x900/?nature" text="Nature" class="w-2"></photo-item>
+
+    <photo-item imgPath="https://source.unsplash.com/1600x900/?nature" text="Nature" size=""></photo-item>
+    <photo-item imgPath="https://source.unsplash.com/1600x900/?nature" text="Nature" size=""></photo-item>
+
+    <photo-item imgPath="https://source.unsplash.com/1600x900/?nature" text="Nature" size=""></photo-item>
+    <photo-item imgPath="https://source.unsplash.com/1600x900/?nature" text="Nature" size=""></photo-item>
+
+    <photo-item imgPath="https://source.unsplash.com/1600x900/?nature" text="Nature" size=""></photo-item>
+    <photo-item imgPath="https://source.unsplash.com/1600x900/?nature" text="Nature" size=""></photo-item>
+
+    <photo-item imgPath="https://source.unsplash.com/1600x900/?nature" text="Nature" size=""></photo-item>
+  </collection-layout>
+
+  <div id="materials" class="subtitle">
+    <p>MATERIALES</p>
+  </div>
 
   <collection-layout>
     <photo-item imgPath="https://source.unsplash.com/1600x900/?space" text="Nature" class="w-2"></photo-item>

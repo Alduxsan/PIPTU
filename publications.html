@@ -6,13 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <script src="./components/Navbar.js"></script>
-  <script src="./components/Title.js"></script>
-  <script src="./components/SubNavbarItem.js" async></script>
-  <script src="./components/BookItem.js" async></script>
-  <script src="./components/PressItem.js" async></script>
-  <script src="./components/PressItem2.js" async></script>
-  <script src="./components/SciArticle.js" async></script>
-  <script src="./components/BookChapter.js" async></script>
+  <script src="./components/SubNavbarItem.js" defer></script>
+  <script src="./components/BookItem.js" defer></script>
+  <script src="./components/PressItem.js" defer></script>
+  <script src="./components/SciArticle.js" defer></script>
+  <script src="./components/BookChapter.js" defer></script>
   <link rel="stylesheet" href="./css/publications.css" media="print" onload="this.media='all'" />
   <title>PIPTU - Publicaciones</title>
 </head>
@@ -21,8 +19,9 @@
   <nav-bar atribute="publications"></nav-bar>
   <div id="general">
 
-    <section-title title="PUBLICACIONES" type="title">
-    </section-title>
+    <div id="publications" class="title">
+      <p>PUBLICACIONES</p>
+    </div>
 
     <subnavbar-container>
       <subnavbar-item hrefId="articles" imgPath="media/icons/scientificArticles.png" sectionName="artículos científicos"
@@ -45,8 +44,9 @@
 
   </div>
 
-  <section-title id="articles" title="ARTÍCULOS CIENTÍFICOS" type="subtitle">
-  </section-title>
+  <div id="articles" class="subtitle">
+    <p>ARTÍCULOS CIENTÍFICOS</p>
+  </div>
 
   <sciarticles-container>
     <sci-article artAuthors="2021 SUÁREZ RAFAEL Y MARÍA JULIA MELÍAN"
@@ -310,8 +310,11 @@
 
   </sciarticles-container>
 
-  <section-title id="books" title="LIBROS" type="subtitle">
-  </section-title>
+  <div id="books" class="subtitle">
+    <p>LIBROS</p>
+  </div>
+
+
   <section class="content">
 
     <book-item bookImgPath="https://tmm.chicagodistributioncenter.com/IsbnImages/9781607816454.jpg" editorial_info="2019 Suárez Rafael y Ardelean Ciprian (editores). 
@@ -383,8 +386,10 @@
     </book-item>
   </section>
 
-  <section-title id="bookChapters" title="CAPÍTULOS DE LIBROS" type="subtitle">
-  </section-title>
+  <div id="bookChapters" class="subtitle">
+    <p>CAPÍTULOS DE LIBROS</p>
+  </div>
+
 
   <section class="book_chapters">
 
@@ -467,8 +472,10 @@
 
   </section>
 
-  <section-title id="press" title="PRENSA" type="subtitle">
-  </section-title>
+  <div id="press" class="subtitle">
+    <p>PRENSA</p>
+  </div>
+
   <div class="press_content">
 
     <press-item class="item1" imgPath="https://ladiaria.com.uy/media/photologue/photos/cache/ciencias-suarez_1200w.jpg"
@@ -522,8 +529,10 @@
 
   </div>
 
-  <section-title id="networks" title="REDES SOCIALES" type="subtitle">
-  </section-title>
+  <div id="networks" class="subtitle">
+    <p>REDES SOCIALES</p>
+  </div>
+
   <div id="network_list" class="content">
 
     <div class="info_container">

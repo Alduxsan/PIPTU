@@ -8,9 +8,8 @@
   <link rel="stylesheet" href="./css/investigations.css" media="print" onload="this.media='all'" />
 
   <script src="./components/Navbar.js"></script>
-  <script src="./components/Title.js"></script>
-  <script src="./components/SubNavbarItem.js" async></script>
-  <script src="./components/ActivitiesItem.js" async></script>
+  <script src="./components/SubNavbarItem.js" defer></script>
+  <script src="./components/ActivitiesItem.js" defer></script>
 
   <title>PIPTU - Investigaciones</title>
 </head>
@@ -18,8 +17,10 @@
 <body>
   <nav-bar atribute="investigations"></nav-bar>
 
-  <section-title title="INVESTIGACIONES" type="title">
-  </section-title>
+  <div class="title">
+    <p>INVESTIGACIONES</p>
+  </div>
+
   <div id="general">
 
     <subnavbar-container>
@@ -42,8 +43,10 @@
 
     </subnavbar-container>
 
-    <section-title id="investigationPaths" title="LÍNEAS DE INVESTIGACIÓN" type="subtitle">
-    </section-title>
+    <div id="investigationPaths" class="subtitle">
+      <p>LÍNEAS DE INVESTIGACIÓN</p>
+    </div>
+
 
 
     <div class="content">
@@ -75,8 +78,9 @@
 
     </div>
 
-    <section-title id="poulationModel" title="MODELO DE POBLAMIENTO" type="subtitle">
-    </section-title>
+    <div id="poulationModel" class="subtitle">
+      <p>MODELO DE POBLAMIENTO</p>
+    </div>
 
     <div class="content">
       <div class="intro">
@@ -145,8 +149,11 @@
 
       </div>
     </div>
-    <section-title id="sites" title="SITIOS" type="subtitle">
-    </section-title>
+
+    <div id="sites" class="subtitle">
+      <p>MODELO DE POBLAMIENTO</p>
+    </div>
+
 
     <div class="content">
       <div id="sites" class="intro">
@@ -201,8 +208,10 @@ La excavación arqueológica desarrollada en el sitio Pay Paso 1 abarcó una sup
     </div>
   </div>
 
-  <section-title id="map" title="MAPA DE SITIOS ARQUEOLÓGICOS" type="subtitle">
-  </section-title>
+  <div id="map" class="subtitle">
+    <p>MAPA DE SITIOS ARQUEOLÓGICOS</p>
+  </div>
+
 
   <div class="content">
 

@@ -6,17 +6,20 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="./css/home.css" media="print" onload="this.media='all'" />
-  <script src="./components/ProjectNews.js"></script>
+  <script src="./components/ProjectNews.js" defer></script>
   <script src="./components/Navbar.js" defer></script>
-  <script src="./components/Title.js" defer></script>
+  <script src="js/carousel.js" defer></script>
+
   <title>LIPTU - Uruguay</title>
 </head>
 
 <body>
   <nav-bar atribute="home"></nav-bar>
+
   <div class="carousel fade">
     <img id="carouselImage" src="https://i.ibb.co/rcj9YHF/1.jpg" alt="" style="
       width: 100%;">
+
     <div class="title">
       <p>
         PROGRAMA DE INVESTIGACIÓN <br />
@@ -26,8 +29,10 @@
 
   </div>
 
-  <section-title id="news" title="NOTICIAS RECIENTES" type="subtitle">
-  </section-title>
+  <div id="news" class="subtitle">
+    <p>NOTICIAS RECIENTES</p>
+  </div>
+
   <div class="background_color">
     <div class="slideshow-container">
 

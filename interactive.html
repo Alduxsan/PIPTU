@@ -8,12 +8,11 @@
   <link rel="stylesheet" href="./css/interactive.css" media="print" onload="this.media='all'" />
 
   <script src="./components/Navbar.js"></script>
-  <script src="./components/Title.js"></script>
-  <script src="./components/SubNavbarItem.js" async></script>
+  <script src="./components/SubNavbarItem.js" defer></script>
 
-  <script src="./components/artifacts3d.js" async></script>
-  <script src="./components/FaunaItem.js" async></script>
-  <script src="./components/ProjectListItem.js" async></script>
+  <script src="./components/artifacts3d.js" defer></script>
+  <script src="./components/FaunaItem.js" defer></script>
+  <script src="./components/ProjectListItem.js" defer></script>
 
   <title>PIPTU - Prehistoria Interactiva</title>
 </head>
@@ -23,8 +22,9 @@
 
   <div id="general">
 
-    <section-title title="PREHISTORIA INTERACTIVA" type="title">
-    </section-title>
+    <div id="colaboraciones" class="title">
+      <p>PREHISTORIA INTERACTIVA</p>
+    </div>
 
     <subnavbar-container>
       <subnavbar-item hrefId="fauna" imgPath="media/fauna/mamut.png" sectionName="FAUNA" animation="fadeIn5">
@@ -40,8 +40,9 @@
 
     </subnavbar-container>
 
-    <section-title id="#projectiles" title="PUNTAS DE PROYECTIL PALEOAMERICANAS DE URUGUAY" type="subtitle">
-    </section-title>
+    <div id="projectiles" class="subtitle">
+      <p>PUNTAS DE PROYECTIL PALEOAMERICANAS DE URUGUAY</p>
+    </div>
 
     <section class="projectile_types">
       <div class="intro">
@@ -170,8 +171,11 @@
     </section>
 
     <section class="content">
-      <section-title id="models3d" title="MODELOS 3D" type="subtitle">
-      </section-title>
+
+      <div id="models3d" class="subtitle">
+        <p>MODELOS 3D</p>
+      </div>
+
       <div class="intro">
 
         <div class="models3D">
@@ -208,8 +212,10 @@
 
 
     <section class="faunaSection center content">
-      <section-title id="fauna" title="FAUNA" type="subtitle">
-      </section-title>
+
+      <div id="fauna" class="subtitle">
+        <p>FAUNA</p>
+      </div>
 
       <div class="intro">
         <p class="resume">En el sitio Pay Paso 1, en los componentes 1 y 3 se recuperaron restos óseos de fauna

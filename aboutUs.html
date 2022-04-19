@@ -8,11 +8,10 @@
   <link rel="stylesheet" href="./css/aboutUs.css" media="print" onload="this.media='all'" />
 
   <script src="./components/Navbar.js"></script>
-  <script src="./components/Title.js"></script>
-  <script src="./components/SubNavbarItem.js" async></script>
+  <script src="./components/SubNavbarItem.js" defer></script>
 
-  <script src="./components/Profiles.js" async></script>
-  <script src="./components/ProjectListItem.js" async></script>
+  <script src="./components/Profiles.js" defer></script>
+  <script src="./components/ProjectListItem.js" defer></script>
 
   <title>PIPTU - Sobre Nosotros</title>
 </head>
@@ -25,8 +24,9 @@
   <nav-bar atribute="aboutUs"></nav-bar>
   <div id="general">
 
-    <section-title type="title" title="SOBRE NOSOTROS">
-    </section-title>
+    <div class="title">
+      <p>SOBRE NOSOTROS</p>
+    </div>
 
     <subnavbar-container>
 
@@ -45,8 +45,10 @@
 
     </subnavbar-container>
 
-    <section-title id="quienes" title="QUIENES SOMOS" type="subtitle">
-    </section-title>
+    <div id="quienes" class="subtitle">
+      <p>QUIENES SOMOS</p>
+    </div>
+
 
     <div class="content">
 
@@ -175,9 +177,9 @@
 
       </profiles-container>
 
-
-      <section-title id="que-hacemos" title="QUE HACEMOS" type="subtitle">
-      </section-title>
+      <div id="que-hacemos" class="subtitle">
+        <p>QUIENES SOMOS</p>
+      </div>
 
       <div class="intro">
         <p>
@@ -266,9 +268,10 @@
         ">
         </activities-item>
 
-        <section-title id="projectslist" title="PROYECTOS DE INVESTIGACIÓN" type="subtitle">
-        </section-title>
 
+        <div id="projectslist" class="subtitle">
+          <p>PROYECTOS DE INVESTIGACIÓN</p>
+        </div>
 
         <list-container ref="ongoing" id="ongoing">
 
@@ -348,8 +351,10 @@
           </project-listitem>
         </list-container>
 
-        <section-title id="colaboraciones" title="COLABORACIONES" type="subtitle">
-        </section-title>
+        <div id="colaboraciones" class="subtitle">
+          <p>COLABORACIONES</p>
+        </div>
+
         <div class="colab_container">
 
           <a class="link" href="https://www.fhuce.edu.uy/">
