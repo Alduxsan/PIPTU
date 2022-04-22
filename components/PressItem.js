@@ -23,7 +23,7 @@ class PressItem extends HTMLElement {
     <div class="press_item_container">
        <div class="press-item">
          <div class="image">
-            <a target="_blank" href="${link}"> 
+            <a target="_blank" rel="noopener" href="${link}"> 
               <img src="${imgPath}" loading:"lazy" alt="${title}">
             </a>
          </div>

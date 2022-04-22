@@ -72,7 +72,7 @@ class CollectionLayout extends HTMLElement {
     }
     
     .toggler_button {
-      width: 50px;
+      width: 3%;
       margin: auto;
       margin-top: 20px;
     }
@@ -180,9 +180,9 @@ class Photo_item extends HTMLElement {
     <div class="gallery-container">
        <div class="gallery-item">
          <div class="image">
-          <a target="_blank" href="${imgPath}"> 
-            <img src="${imgPath}" alt="${text}">
-          </a>
+            <a target="_blank" rel="noopener" href="${imgPath}"> 
+              <img src="${imgPath}" alt="${text}" loading="lazy">
+            </a>
          </div>
          <div class="text">${text}</div>
        </div>

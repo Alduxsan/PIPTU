@@ -22,7 +22,7 @@ class SubNavbarItem extends HTMLElement {
     <div class="sublink_container ${animation}">    
         <a class="sublink" href="#${hrefId}"> 
             <div class="iconContainer">
-                <img src="${imgPath}" alt="" />
+                <img src="${imgPath}" alt="${sectionName}" width="100" height="100" />
             </div>
             <p>${sectionName.toUpperCase()}</p>
         </a>
@@ -51,7 +51,8 @@ class SubNavbarItem extends HTMLElement {
       margin-bottom: 15px;
     }
     .iconContainer img{
-      height: 100%;
+      height: 100px;
+      width: auto;
     }
     
     .sublink_container:hover {

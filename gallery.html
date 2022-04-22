@@ -1,25 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Galería de fotos del PROGRAMA DE INVESTIGACIÓN POBLAMIENTO TEMPRANO EN URUGUAY ">
   <link rel="stylesheet" href="./css/gallery.css" media="print" onload="this.media='all'" />
 
-  <script src="./components/Navbar.js"></script>
-  <script src="./components/SubNavbarItem.js" defer></script>
-  <script src="./components/CollectionLayout.js" defer></script>
+  <script src="./components/Navbar.js" async></script>
+  <script src="./components/SubNavbarItem.js" async></script>
+  <script src="./components/CollectionLayout.js" async></script>
 
   <title>PIPTU - GALERÍA DE FOTOS</title>
 </head>
 
 <body>
   <header>
+    <nav-bar atribute="gallery"></nav-bar>
 
   </header>
 
-  <nav-bar atribute="gallery"></nav-bar>
 
   <div id="title" class="title">
     <p>GALERÍA DE FOTOS</p>
@@ -30,7 +31,8 @@
     <subnavbar-item hrefId="sites" imgPath="media/icons/map.png" sectionName="SITIOS" animation="fadeIn5">
     </subnavbar-item>
 
-    <subnavbar-item hrefId="excavations" imgPath="media/shovel.png" sectionName="EXCAVACIONES" animation="fadeIn4">
+    <subnavbar-item hrefId="excavations" imgPath="media/icons/shovel.png" sectionName="EXCAVACIONES"
+      animation="fadeIn4">
     </subnavbar-item>
 
     <subnavbar-item hrefId="labWork" imgPath="media/icons/chemistry.png"

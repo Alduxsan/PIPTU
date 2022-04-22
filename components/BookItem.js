@@ -35,7 +35,7 @@ class BookItem extends HTMLElement {
     <article>
     <div class="book_item_container">
         <div class="book_title">
-            <a class="sublink" target="_blank" href="${bookLink}"> 
+            <a class="sublink" target="_blank" rel="noopener" href="${bookLink}"> 
                 <slot name="book_title"></slot>
             </a> 
             <h5>${editorial_info}</h5>    

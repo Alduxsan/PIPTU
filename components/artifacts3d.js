@@ -20,7 +20,7 @@ class Artifact3D extends HTMLElement {
     <div class="artifactWrapper">
       <div class="sketchfab-embed-wrapper">
       <p class="artifactTitle">
-          <a href=${parameters.href_src} target="_blank">${parameters.iframe_title}</a> </p>
+          <a href=${parameters.href_src} target="_blank" rel="noopener">${parameters.iframe_title}</a> </p>
         <iframe title=${parameters.iframe_title} frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src=${parameters.iframe_src} loading="lazy"></iframe>
          </div> 
          

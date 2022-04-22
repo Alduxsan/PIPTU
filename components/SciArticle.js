@@ -150,7 +150,7 @@ class SciArticle extends HTMLElement {
         <h4 id="abstract">ABSTRACT</h4>
             <p class="artAbastract">${artAbstract}</p>
 
-          <a class="artLink" target="_blank" href="${artLink}"> 
+          <a class="artLink" target="_blank" rel="noopener" href="${artLink}"> 
           <p>Link al artículo</p> <div class="iconContainer"><img src="media/icons/arrow.png"></div></a>
     </details>
     </article>

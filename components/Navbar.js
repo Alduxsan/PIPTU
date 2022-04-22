@@ -96,7 +96,7 @@ class Navbar extends HTMLElement {
         atribute
       )}"><a href="/gallery.html">GALERÍA DE FOTOS</a></div>
     </div>
-    <i id="toggler" class="icon"><img src="media/icons/square.png"></i>
+    <i id="toggler" class="icon"><img src="media/icons/square.png" alt="menu toggler"></i>
   </div>
   </nav>
    
@@ -198,6 +198,7 @@ class Navbar extends HTMLElement {
     
     .icon img{
       width: 100%;
+      height: auto;
       filter: invert(1)
     }
     

@@ -22,7 +22,7 @@ class BookChapter extends HTMLElement {
 
     this.shadowRoot.innerHTML = `
     <article>
-    <a class="artLink" target="_blank" href="${artLink}"> 
+    <a class="artLink" target="_blank" rel="noopener" href="${artLink}"> 
     <div class="art_head_container">
     <h3 id="ArtTitle">${artTitle.toUpperCase()}</h3>
         <div id="author_editorial_info">
