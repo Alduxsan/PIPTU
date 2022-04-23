@@ -16,7 +16,6 @@ var index = 1;
 
 function startCarousel() {
   carousel.classList.remove("fade");
-  void carousel.offsetWidth;
   carousel.classList.add("fade");
   document.getElementById("carouselImage").src = `${images[index++]}`;
 

@@ -28,7 +28,7 @@ class ActivitiesItem extends HTMLElement {
     <article>
     <div class="activities_item_container">
         <div class="imgContainer" id="img-container">
-          <img src="${imgPath}" loading="lazy"/>
+          <img src="${imgPath}" loading="lazy" alt="${title}"/>
           <p id="activity-title">${title}</p>
         </div>
         <div class="activity_text_container">

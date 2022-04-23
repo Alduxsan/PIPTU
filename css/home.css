@@ -29,13 +29,14 @@ body {
 
 .carousel {
   width: 100%;
-  min-height: 500px;
+  height: auto;
 }
 
-#carouselImage {
+.carousel img {
   width: 100%;
-  min-height: 100%;
+  height: auto;
   box-shadow: 0px 2px 2px;
+  aspect-ratio: attr(width) / attr(height);
 }
 
 .fade {
