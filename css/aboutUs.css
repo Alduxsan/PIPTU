@@ -131,42 +131,51 @@ body {
 
 .link {
   width: fit-content;
+  height: auto;
 }
 
 .colabLink {
   margin: 20px;
   width: 300px;
+  height: auto;
 }
 
 .colabLink img {
-  width: 100%;
+  width: 300px;
+  height: auto;
 }
 
 #uesc {
   max-width: 60%;
+  height: auto;
   margin: auto;
 }
 
 @media screen and (max-width: 1100px) {
   .quehacemos {
     width: 100%;
+    height: auto;
   }
 
   .colabLink {
     margin: 20px;
     width: 150px;
+    height: auto;
   }
   .link {
     width: fit-content;
+    height: auto;
   }
 
   .content {
     padding: 0;
     width: 100%;
+    height: auto;
   }
 
   .intro {
     width: 100%;
+    height: auto;
   }
 
   .intro p {

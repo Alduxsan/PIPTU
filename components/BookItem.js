@@ -13,7 +13,7 @@ class BookItem extends HTMLElement {
     if (img !== "") {
       return `
       <div class="bookImg">
-        <img src="${img}" loading="lazy">
+        <img src="${img}" loading="lazy" alt="portada de libro">
       </div>
     `;
     } else {

@@ -81,7 +81,7 @@ class Profiles extends HTMLElement {
         
         <div  class="imgNameContainer">
           <div id=${imgFix} class="imgContainer">
-            <img src="${img}">
+            <img src="${img}" loading="lazy" alt="${name}">
           </div>
           <div class="name">
             <p>${name}</p>

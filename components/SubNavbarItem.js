@@ -101,7 +101,16 @@ class SubNavbarItem extends HTMLElement {
     }
     
     @media screen and (max-width: 1100px) {
-    
+      .iconContainer {
+        height:50px;
+        width: fit-content;
+        margin: auto;
+        margin-bottom: 15px;
+      }
+      .iconContainer img{
+        height: 50px;
+        width: auto;
+      }
       }
     </style>
    
