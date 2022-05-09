@@ -9,6 +9,15 @@
   font-display: swap;
 }
 
+:root {
+  --text-font-size: 1.4rem;
+  --section-title-size: calc(1.3rem + 3.6vw);
+  --arrow-title-size: 3rem;
+
+  --basic-font: quicksand, sans-serif;
+  --title-font: "Cabin Sketch", sans-serif;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -33,7 +42,7 @@ body {
 
 .title p {
   margin-top: 0;
-  font-family: "Cabin Sketch", sans-serif;
+  font-family: var(--title-font);
   font-weight: 700;
   font-size: 7rem;
   color: rgb(255, 255, 255);
@@ -52,8 +61,8 @@ body {
 .subtitle p {
   text-align: center;
   font-weight: 700;
-  font-family: "Cabin Sketch", sans-serif;
-  font-size: calc(1.3rem + 3.6vw);
+  font-family: var(--title-font);
+  font-size: var(--section-title-size);
   color: rgb(255, 255, 255);
   text-shadow: 2px 2px 2px rgb(0, 0, 0);
 }
@@ -83,7 +92,7 @@ body {
 .resume {
   padding-bottom: 3em;
   color: rgb(0, 0, 0);
-  font-family: quicksand, sans-serif;
+  font-family: var(--basic-font);
   font-size: 1.6rem;
   text-align: justify;
   text-justify: distribute;
@@ -105,7 +114,7 @@ body {
   width: 100%;
   display: block;
   color: rgb(0, 0, 0);
-  font-family: quicksand, sans-serif;
+  font-family: var(--basic-font);
   justify-content: space-around;
 }
 
@@ -121,15 +130,15 @@ body {
 .article_title {
   width: 49%;
   text-align: center;
-  font-size: 4rem;
+  font-size: var(--arrow-title-size);
 }
 
 .arrowinfo {
-  padding: 2em;
+  padding: 3em;
 }
 
 .arrowinfo p {
-  font-size: 1.4rem;
+  font-size: var(--text-font-size);
   column-count: 2;
   text-align: justify;
   text-justify: distribute;
@@ -190,7 +199,7 @@ body {
   }
 
   .title p {
-    font-size: 3.5rem;
+    font-size: calc(3rem + 3.6vw);
   }
 
   .resume {
