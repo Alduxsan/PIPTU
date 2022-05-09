@@ -56,8 +56,6 @@ class FaunaItem extends HTMLElement {
       list-style: none;
       width: min-content;
       background-color: rgba(255, 255, 255, 0.5);
-      -webkit-backdrop-filter: blur(2px);
-      backdrop-filter: blur(1px);
       border-radius: 8px;
       padding: 20px;
       border: 1px solid rgba(0, 0, 0, 0.3)

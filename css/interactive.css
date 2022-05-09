@@ -28,7 +28,7 @@ body {
 }
 
 .title {
-  padding: 2%;
+  padding: 1em;
 }
 
 .title p {
@@ -44,7 +44,7 @@ body {
 
 .subtitle {
   margin: auto;
-  width: min-content;
+  max-width: 70%;
   margin-top: 4rem;
   margin-bottom: 2em;
 }
@@ -58,30 +58,9 @@ body {
   text-shadow: 2px 2px 2px rgb(0, 0, 0);
 }
 
-@media screen and (max-width: 1100px) {
-  .subtitle p {
-    font-size: calc(1.3rem + 3.6vw);
-  }
-
-  .title {
-    width: fit-content;
-    margin: auto;
-    margin-top: 50px;
-  }
-
-  .title p {
-    font-size: calc(1.3rem + 3.6vw);
-  }
-}
-
-.styckyActive {
-  margin-top: 400px;
-}
-
 .content {
   margin: auto;
   width: 100%;
-  padding: 1%;
 }
 
 .img {
@@ -95,24 +74,21 @@ body {
 }
 
 .intro {
-  width: 95%;
+  width: 100%;
   margin: auto;
-  background-color: rgba(255, 255, 255, 0.24);
-  -webkit-backdrop-filter: blur(2px);
-  backdrop-filter: blur(1px);
-  border-radius: 4px;
+  padding: 5em;
+  margin-bottom: 3em;
 }
 
 .resume {
+  padding-bottom: 2em;
   color: rgb(0, 0, 0);
-  background-color: rgba(255, 255, 255, 0.3);
-  padding: 3%;
-  border-radius: 4px;
   font-family: quicksand, sans-serif;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   text-align: justify;
   text-justify: distribute;
   hyphens: auto;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
 }
 
 .fauna_gallery {
@@ -123,74 +99,127 @@ body {
   justify-content: center;
 }
 
-.maps {
-  display: flex;
-  justify-content: center;
-  margin: auto;
-  padding: 2%;
-}
-
-.maps img {
-  border-radius: 4px;
-  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.5),
-    2px 4px 4px 1px rgba(0, 0, 0, 0.5);
-}
-
 .infoContainer {
   margin: auto;
-  margin-top: 1%;
-  width: 95%;
-  display: flex;
-  flex-wrap: wrap;
+  margin-top: 1em;
+  width: 100%;
+  display: block;
   color: rgb(0, 0, 0);
   font-family: quicksand, sans-serif;
-
-  border-radius: 4px;
   justify-content: space-around;
 }
 
 .infoContainer article {
-  padding: 2%;
-  transition: all 0.5s;
-  background-color: rgba(255, 255, 255, 0.767);
-  border-radius: 4px;
-  margin-bottom: 1%;
+  margin-bottom: 4em;
 }
 
-.titleAndInfo {
-  text-align: justify;
-  text-justify: distribute;
-  hyphens: auto;
-  color: rgb(0, 0, 0);
+.article_header {
+  display: flex;
+  align-items: center;
 }
 
-.titleAndInfo h2 {
-  margin-bottom: 1%;
+.article_title {
+  width: 49%;
+  text-align: center;
+  font-size: 4rem;
 }
 
 .arrowinfo {
+  padding: 2em;
+}
+
+.arrowinfo p {
   font-size: 1.2rem;
+  column-count: 2;
+  text-align: justify;
+  text-justify: distribute;
+  hyphens: auto;
+
+  padding-top: 1em;
 }
 
-.infoImg {
-  float: right;
-  width: 500px;
-  overflow: hidden;
-  border-radius: 4px;
-  margin-left: 2%;
-}
-
-.infoContainer img {
-  width: 100%;
-  border-radius: 4px;
-}
-.center {
+.border-line {
   margin: auto;
+  width: 40%;
+  padding-bottom: 2em;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.arrowImgContainer {
+  width: 49%;
+  overflow: hidden;
+  background: rgb(0, 0, 0);
+  padding: 5em;
+  margin-left: auto;
+  margin-right: 0;
+  border-radius: 450px 0px 0px 450px;
+}
+
+.arrowImgContainer img {
+  float: right;
+  height: 300px;
+}
+
+.models3D {
+  padding-bottom: 1em;
 }
 
 @media screen and (max-width: 1100px) {
-  .infoImg {
-    margin: 0;
+  .intro {
+    padding: 2em;
+  }
+
+  .subtitle {
+    max-width: 100%;
+    padding: 2em;
+  }
+
+  .subtitle p {
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  .title {
+    width: fit-content;
+    margin: auto;
+    margin-top: 50px;
+  }
+
+  .title p {
+    font-size: 4rem;
+  }
+
+  .resume {
+    column-count: 1;
+  }
+
+  .article_title {
     width: 100%;
+    font-size: 2rem;
+    margin-bottom: 1em;
+  }
+
+  .article_header {
+    display: block;
+    align-items: center;
+  }
+
+  .arrowImgContainer {
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    background: rgb(0, 0, 0);
+    padding: 10px;
+    margin: auto;
+    border-radius: 0;
+  }
+
+  .arrowImgContainer a {
+    float: none;
+    margin: auto;
+  }
+
+  .arrowinfo p {
+    column-count: 1;
   }
 }

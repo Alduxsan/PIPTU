@@ -32,12 +32,13 @@ class Artifact3D extends HTMLElement {
         align-self: center;
         margin: 20px;
         border-radius: 8px;
-        padding: 2%;
+        padding: 2em;
       }
       
       iframe{
         border-radius: 4px;
         width: 80%;
+        height: 400px;
         margin: auto;
         margin-bottom: 15px;
         margin-top: 20px;

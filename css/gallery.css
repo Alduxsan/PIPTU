@@ -43,7 +43,7 @@ body {
 
 .subtitle {
   margin: auto;
-  width: min-content;
+  max-width: 70%;
   margin-top: 4rem;
   margin-bottom: 2em;
 }
