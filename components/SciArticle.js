@@ -52,19 +52,13 @@ class SciArticles_container extends HTMLElement {
     }
 
     .sciWrapper{
-      background-color: rgba(255, 255, 255, 0.5);
-      width: 95%;
+      width: 100%;
       margin: auto;
-      border-radius: 4px;
-      padding-bottom: 2%
     }
 
     .sciArticles_container {
       font-family: quicksand, sans-serif;
       margin: auto;
-      padding: 1%;
-      height: 400px;
-      overflow: hidden;
     }
 
     .expanded {
@@ -137,106 +131,116 @@ class SciArticle extends HTMLElement {
 
     this.shadowRoot.innerHTML = `
     <article>
-    <details>
-        <summary>
             <div class="art_head_container">
-            <h3 id="ArtTitle">${artTitle.toUpperCase()}</h3>
+                <h3 id="ArtTitle">${artTitle.toUpperCase()}</h3>
                 <div id="author_editorial_info">
-                <h4>${artAuthors.toUpperCase()}</h4>
-                <h5>${editorial}<h5>                    
+                  <p id="authors">${artAuthors.toUpperCase()}</p>
+                  <p id="editorial">${editorial}<p>                    
                 </div>
-            <div>
-        </summary>
-        <h4 id="abstract">ABSTRACT</h4>
-            <p class="artAbastract">${artAbstract}</p>
+            </div>
+            <div id="abstract-container"
+                <p id="abstract">ABSTRACT</p>
+                <p class="artAbastract">${artAbstract}</p>
+            <a class="artLink" target="_blank" rel="noopener" href="${artLink}"> 
+            <p>Link al artículo</p> <div class="iconContainer"><img src="media/icons/arrow.png"></div></a>
+            </div>
 
-          <a class="artLink" target="_blank" rel="noopener" href="${artLink}"> 
-          <p>Link al artículo</p> <div class="iconContainer"><img src="media/icons/arrow.png"></div></a>
-    </details>
+            <p class="separator"></p>
     </article>
+    
     <style>
-article{
-  font-family: quicksand, sans-serif;
-  margin: 1%;
-  border-radius: 4px;
-  padding: 1%;
-}
+    
+      article{
+        font-family: quicksand, sans-serif;
+        margin: auto;
+        padding: 2em;
+        transition: all 0.5s
+      }
 
-article:hover {
-  border-top: 1px solid rgba(0,0,0, 0.3);
-  border-bottom: 1px solid rgba(0,0,0, 0.3);
-  background-color: rgba(255, 255, 255, 0.2);
-}
+      article:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+      }
 
+      .art_head_container{
+        display:flex;
+        flex-direction: column;
+        width: 100%;
+      }
 
-.art_head_container{
-  width: 100%;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  column-gap: 1%;
-  align-items: center;
-}
+      #ArtTitle{
+        font-family: "quicksand";
+        width: 80%;
+      }
 
-#ArtTitle{
-  border-right: 1px solid black;
-  padding: 2%
-}
+      #author_editorial_info{
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+      }
 
-details summary { 
-  width: 100%;
-  cursor: pointer;
-  display: flex;
-}
+      #authors{
+        margin-right: 1em;
+        font-weight: 600
+      }
 
-#abstract{
-  margin: 0;
-}
+      #abstract-container{
+        display: none;
+      }
 
-.artAbastract{
-  column-count: 2;
-  text-align: justify;
-  text-justify: distribute;
-  hyphens: auto;
-}
+      .artAbastract{
+        column-count: 2;
+        text-align: justify;
+        text-justify: distribute;
+        hyphens: auto;
+      }
 
-.artLink{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: end;
-  text-decoration: none;
-}
+      .artLink{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        color: white;
+        margin-bottom: 1em;
+        transition: all 0.5s;
+      }
 
-.iconContainer img{
-  width: 40px;
-  margin-left: 10px;
-}
+      .iconContainer img{
+        width: 40px;
+        margin-left: 10px;
+      }
 
-.artLink:hover{
-  color: white;
-  filter: invert()  
-}
-@media screen and (max-width: 1100px) {
-  summary {
-  }
+      .artLink:hover{
+        color: white;
+        filter: invert()  
+      }
 
-  details summary { 
-    display: block;
-  }
-  
-  .art_head_container{
-    display: block;
-  }
-  
-  .artAbastract{
-    column-count: 1;
-  }
+      .separator{
+        width: 70%;
+        border-bottom: 1px solid rgba(0,0,0,0.3);
+        margin: auto;
+      }
+      @media screen and (max-width: 1100px) {
+        summary {
+        }
 
-  #ArtTitle{
-    border: none;
-    padding: 0%
-  }
-}
+        details summary { 
+          display: block;
+        }
+        
+        .art_head_container{
+          display: block;
+        }
+        
+        .artAbastract{
+          column-count: 1;
+        }
+
+        #ArtTitle{
+          border: none;
+          padding: 0%
+        }
+      }
     </style>
     `;
   }

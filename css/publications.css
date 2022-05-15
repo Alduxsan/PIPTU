@@ -13,13 +13,11 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  transition: all 0.5s;
 }
 
 html {
   scroll-behavior: smooth;
-  background: no-repeat url(../media/liquid-cheese.svg);
-  background-size: cover;
+  background: #ab8400;
 }
 
 body {

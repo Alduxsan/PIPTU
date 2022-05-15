@@ -64,12 +64,12 @@ class ProjectNews extends HTMLElement {
       position: absolute;
       top: 0;
       right: 0;
-      background-color: rgba(255, 255, 255, 0.4);
-      color: black;
-      padding-left: 20px;
-      padding-right: 20px;
-      border-radius: 0 6px 0 6px;
-      box-shadow: 0px 2px 2px black;
+      color: #fff;
+      padding: 1em
+    }
+
+    .text-block p {
+      text-shadow: 1px 1px 1px rgb(0, 0, 0,0.5)
     }
     
     #title{

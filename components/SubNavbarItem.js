@@ -24,7 +24,7 @@ class SubNavbarItem extends HTMLElement {
             <div class="iconContainer">
                 <img src="${imgPath}" alt="${sectionName}" width="100" height="100" />
             </div>
-            <p>${sectionName.toUpperCase()}</p>
+            <p id="section-name">${sectionName.toUpperCase()}</p>
         </a>
     </div>
     <style>
@@ -32,16 +32,16 @@ class SubNavbarItem extends HTMLElement {
       margin: 15px;
       margin-top: 50px;
       padding: 10px
+      transition: all 0.4s
     }
     
     .sublink {
       font-family: quicksand, sans-serif;
       text-decoration: none;
       color: rgb(0, 0, 0);
-      font-size: 1.2rem;
+      font-size: 1.4rem;
       transition: color 0.5s;
       text-align: center;
-      transition: all 0.5s
     }
     
     .iconContainer {
@@ -50,16 +50,24 @@ class SubNavbarItem extends HTMLElement {
       margin: auto;
       margin-bottom: 15px;
     }
+    
     .iconContainer img{
       height: 100px;
       width: auto;
+      transition: all 0.3s
+
     }
     
-    .sublink_container:hover {
-      border-bottom: 1px solid black;
-      border-top: 1px solid black;
-      border-radius: 4px;
+    #section-name{
+      transition: all 0.3s
+    }
+
+    .iconContainer img:hover {
       filter: invert(1) 
+    }
+
+    .iconContainer:hover + p{
+      color: #fff
     }
     
     .fadeIn5{
