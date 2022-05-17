@@ -12,6 +12,7 @@ class SciArticles_container extends HTMLElement {
   display_more() {
     let btnMore = this.shadowRoot.getElementById("togglerMore");
     let btnLess = this.shadowRoot.getElementById("toggleLess");
+    let articles = document.querySelectorAll("sci-article");
 
     this.shadowRoot.getElementById("sciList").classList.toggle("expanded");
     btnMore.classList.toggle("hide");
@@ -20,6 +21,10 @@ class SciArticles_container extends HTMLElement {
     if (btnLess.classList.contains("hide")) {
       document.getElementById("articles").scrollIntoView(true);
     }
+
+    articles.forEach(function (art) {
+      art.classList.toggle("hiddenList");
+    });
   }
 
   getAtt(attr) {
@@ -59,10 +64,11 @@ class SciArticles_container extends HTMLElement {
     .sciArticles_container {
       font-family: quicksand, sans-serif;
       margin: auto;
+
     }
 
     .expanded {
-      animation: expand 1s;
+      animation: expand 2s;
       animation-fill-mode: forwards;
     }
     
@@ -86,20 +92,9 @@ class SciArticles_container extends HTMLElement {
       box-shadow: 8px 8px 2px rgba(0, 0, 0, 0.304);
     }
 
-
-
-
     @keyframes expand {
-      0%{
-        height: 400px
-      }
-      50%{
-        height: 600px
-      }
-      100% {
-        height:auto;
-      }
-    }
+      from{opacity:0}
+      to{opacity: 1}
     </style>
     `;
   }
@@ -110,6 +105,9 @@ customElements.define("sciarticles-container", SciArticles_container);
 class SciArticle extends HTMLElement {
   constructor() {
     super();
+    if (!this.classList.contains("initialList")) {
+      this.classList.add("hiddenList", "art-sci");
+    }
     this.attachShadow({ mode: "open" });
   }
 
@@ -118,8 +116,18 @@ class SciArticle extends HTMLElement {
     return attribute;
   }
 
+  handleEvent(event) {
+    if (event.type === "click") this.showAbstract();
+  }
+  showAbstract() {
+    this.article = this.shadowRoot.getElementById("abstract-container");
+    this.article.classList.toggle("show");
+  }
+
   connectedCallback() {
     this.render();
+    this.expandArticle = this.shadowRoot.getElementById("expandArticle");
+    this.expandArticle.addEventListener("click", this);
   }
 
   render() {
@@ -130,31 +138,38 @@ class SciArticle extends HTMLElement {
     let editorial = this.getAtt("editorial");
 
     this.shadowRoot.innerHTML = `
-    <article>
+    <article id="expandArticle">
             <div class="art_head_container">
-                <h3 id="ArtTitle">${artTitle.toUpperCase()}</h3>
+                <div class="title-container">
+                  <h3 id="ArtTitle">${artTitle.toUpperCase()}</h3>
+                </div>
                 <div id="author_editorial_info">
                   <p id="authors">${artAuthors.toUpperCase()}</p>
                   <p id="editorial">${editorial}<p>                    
                 </div>
             </div>
-            <div id="abstract-container"
+            <div id="abstract-container" class="abstract-wrapper">
                 <p id="abstract">ABSTRACT</p>
                 <p class="artAbastract">${artAbstract}</p>
-            <a class="artLink" target="_blank" rel="noopener" href="${artLink}"> 
-            <p>Link al artículo</p> <div class="iconContainer"><img src="media/icons/arrow.png"></div></a>
+              <a class="artLink" target="_blank" rel="noopener" href="${artLink}"> 
+              <p>Link al artículo</p> <div class="iconContainer"><img src="media/icons/arrow.png"></div></a>
             </div>
 
             <p class="separator"></p>
     </article>
     
     <style>
-    
+      
+      :host-context(.hiddenList){
+        display: none;
+      }
+
       article{
         font-family: quicksand, sans-serif;
         margin: auto;
         padding: 2em;
-        transition: all 0.5s
+        transition: all 0.5s;
+        cursor: pointer;
       }
 
       article:hover {
@@ -165,6 +180,16 @@ class SciArticle extends HTMLElement {
         display:flex;
         flex-direction: column;
         width: 100%;
+      }
+
+      .title-container{
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+      }
+
+      #expandButton:hover{
+        opacity: 1;
       }
 
       #ArtTitle{
@@ -183,8 +208,14 @@ class SciArticle extends HTMLElement {
         font-weight: 600
       }
 
-      #abstract-container{
-        display: none;
+      .abstract-wrapper{
+        display:none
+      }
+      
+      #abstract-container.show{
+        display: block;
+        animation: expand 1s;
+        animation-fill-mode: forwards;
       }
 
       .artAbastract{
@@ -240,6 +271,11 @@ class SciArticle extends HTMLElement {
           border: none;
           padding: 0%
         }
+      }
+
+      @keyframes expand {
+        from {opacity: 0}
+        to {opacity: 1}
       }
     </style>
     `;
