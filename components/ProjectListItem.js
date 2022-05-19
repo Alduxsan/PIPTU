@@ -159,11 +159,11 @@ class ProjectListItem extends HTMLElement {
       }
 
       a p{
-        font-family: quicksand;
+        font-family: raleway;
       }
 
       #date{
-        font-family: quicksand;
+        font-family: raleway;
         margin: 0;
         width: fit-content;
         color: white;

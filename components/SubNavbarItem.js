@@ -31,17 +31,21 @@ class SubNavbarItem extends HTMLElement {
     .sublink_container{
       margin: 15px;
       margin-top: 50px;
-      padding: 10px
+      padding: 10px;
       transition: all 0.4s
     }
     
     .sublink {
-      font-family: quicksand, sans-serif;
+      font-family: raleway, sans-serif;
       text-decoration: none;
       color: rgb(0, 0, 0);
       font-size: 1.4rem;
-      transition: color 0.5s;
       text-align: center;
+    }
+
+    #section-name{
+      width: min-content;
+      margin: auto
     }
     
     .iconContainer {
@@ -54,21 +58,21 @@ class SubNavbarItem extends HTMLElement {
     .iconContainer img{
       height: 100px;
       width: auto;
-      transition: all 0.3s
+      transition: all 0.3s;
+      padding-top: 10px
 
     }
     
-    #section-name{
-      transition: all 0.3s
-    }
 
     .iconContainer img:hover {
-      filter: invert(1) 
+      border-top: 1px solid black
     }
 
     .iconContainer:hover + p{
-      color: #fff
+      font-weight: bolder
     }
+
+
     
     .fadeIn5{
       animation: fadeIn .4s;
@@ -110,13 +114,13 @@ class SubNavbarItem extends HTMLElement {
     
     @media screen and (max-width: 1100px) {
       .iconContainer {
-        height:50px;
+        height:100px;
         width: fit-content;
         margin: auto;
         margin-bottom: 15px;
       }
       .iconContainer img{
-        height: 50px;
+        height: 100px;
         width: auto;
       }
       }

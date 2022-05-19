@@ -16,7 +16,6 @@ class BookChapter extends HTMLElement {
   render() {
     let artLink = this.getAtt("artLink");
     let artTitle = this.getAtt("artTitle");
-    let artAbstract = this.getAtt("artAbstract");
     let artAuthors = this.getAtt("artAuthors");
     let editorial = this.getAtt("editorial");
 
@@ -36,7 +35,7 @@ class BookChapter extends HTMLElement {
 
       article{
         width: fit-content;
-        font-family: quicksand, sans-serif;
+        font-family: raleway, sans-serif;
         margin: 1em;
         border-radius: 4px;
       }
@@ -57,7 +56,7 @@ class BookChapter extends HTMLElement {
       }
 
       #ArtTitle{
-        font-family: quicksand, sans-serif;
+        font-family: raleway, sans-serif;
         border-right: 1px solid black;
         padding: 1em;
       }
@@ -68,7 +67,7 @@ class BookChapter extends HTMLElement {
       }
 
       h4{
-        font-family: quicksand, sans-serif;
+        font-family: raleway, sans-serif;
       }
 
       @media screen and (max-width: 1100px) {

@@ -57,7 +57,7 @@ class ActivitiesItem extends HTMLElement {
       }
     
       #activity-title{
-        font-family: "quicksand", sans-serif;
+        font-family: "raleway", sans-serif;
         font-size: 2rem;
         font-weight: bolder;
         color: white;
@@ -80,7 +80,7 @@ class ActivitiesItem extends HTMLElement {
       }
     
       .activity_text_container p{
-        font-family: quicksand, sans-serif;
+        font-family: raleway, sans-serif;
         font-size: 1.3rem;
         font-weight: 200;
         column-count: 2;

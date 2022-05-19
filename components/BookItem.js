@@ -38,7 +38,7 @@ class BookItem extends HTMLElement {
             <a class="sublink" target="_blank" rel="noopener" href="${bookLink}"> 
                 <slot name="book_title"></slot>
             </a> 
-            <h5>${editorial_info}</h5>    
+            <h5 class="editorialInfo">${editorial_info}</h5>    
         </div>
 
         <div class="img_and_resume_container">
@@ -51,67 +51,77 @@ class BookItem extends HTMLElement {
 
         <div class="book_info">
             <slot name="book_info"></slot>
-
-        </div>
+        </div>        
     </div>
+    <p class="separator"></p>
     </article>
+    
     <style>
-
-  article{
-    font-family: quicksand, sans-serif;
-    margin-bottom: 1%
-  }
-
-  .book_item_container{
-    padding: 2%;
-    background-color: rgba(240, 255, 240, 0.5);
-    border-radius: 4px;
-  }
-
-  .book_title{
-    font-family: quicksand, sans-serif;
-  }
-
-  .sublink{
-    text-decoration: none;
-    color: black;
-    text-transform: uppercase;
-    font-size: 1.3rem;
-  }
-
-  .img_and_resume_container{
-    margin-top: 1%;
-    display: flex;
-
-    text-align: justify;
-    text-justify: distribute;
-    hyphens: auto 
-  }
-
-  .book_resume{
-    font-family: quicksand, sans-serif;
-    font-size: 1.3rem;
-  }
-
-  .bookImg{
-    margin-right: 2%; 
-    height:300px;
-    float: left;
-  }
-  img{
-    height: 100%;
-    border-radius: 4px
-  }
-
-  @media screen and (max-width: 1100px) {
-    .bookImg{
-      margin-right: 0; 
-      height:300px;
-      float: none;
-      width: fit-content;
+ 
+    .separator{
+      width: 70%;
+      border-bottom: 1px solid rgba(0,0,0,0.3);
       margin: auto;
+      margin-top: 2em;
     }
-    </style>
+
+    article{
+      font-family: raleway, sans-serif;
+      padding: 0 5em 1em 5em;    }
+
+    .book_title{
+      font-family: raleway, sans-serif;
+      color:
+    }
+
+    .editorialInfo{
+      font-family: raleway, san-serif;
+      font-size: 1rem;
+      margin-right: 1em;
+      min-width: fit-content;
+    }
+
+    .sublink{
+      text-decoration: none;
+      color: black;
+      text-transform: uppercase;
+      font-size: 1.3rem;
+    }
+
+    .img_and_resume_container{
+      margin-top: 1%;
+      display: flex;
+      text-align: justify;
+      text-justify: distribute;
+      hyphens: auto 
+    }
+
+    .book_resume{
+      font-family: raleway, sans-serif;
+      font-size: 1.3rem;
+    }
+
+    .bookImg {
+      margin: 0 1em 1em 0;
+      height: 300px;
+      float: left;
+      box-shadow: 2px 2px 2px black;
+  }
+
+    img{
+      height: 100%;
+      border-radius: 4px
+    }
+
+    @media screen and (max-width: 1100px) {
+      .bookImg{
+        margin-right: 0; 
+        height:300px;
+        float: none;
+        width: fit-content;
+        margin: auto;
+      }
+      </style>
     `;
   }
 }

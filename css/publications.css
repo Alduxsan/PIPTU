@@ -1,14 +1,13 @@
 @font-face {
-  font-family: quicksand;
-  src: url("../fonts/Quicksand/Quicksand-VariableFont_wght.ttf");
+  font-family: raleway;
+  src: url("../fonts/Raleway/Raleway-Regular.ttf");
   font-display: swap;
 }
 @font-face {
-  font-family: "Cabin Sketch";
-  src: url("../fonts/Cabin_Sketch/CabinSketch-Bold.ttf");
+  font-family: oswald;
+  src: url("../fonts/Oswald/Oswald-Regular.ttf");
   font-display: swap;
 }
-
 
 * {
   box-sizing: border-box;
@@ -18,7 +17,7 @@
 
 html {
   scroll-behavior: smooth;
-  background: #ab8400;
+  background: #ab8300bd;
 }
 
 body {
@@ -33,12 +32,11 @@ body {
 
 .title p {
   margin-top: 0;
-  font-family: "Cabin Sketch", sans-serif;
+  font-family: oswald, sans-serif;
   font-weight: 700;
   font-size: 7rem;
-  color: rgb(255, 255, 255);
+  color: #260e00;
   text-align: center;
-  text-shadow: 2px 2px 2px rgb(0, 0, 0);
   margin-bottom: 0;
 }
 
@@ -50,12 +48,11 @@ body {
 }
 
 .subtitle p {
+  font-weight: 600;
   text-align: center;
-  font-weight: 700;
-  font-family: "Cabin Sketch", sans-serif;
+  font-family: "oswald", sans-serif;
   font-size: calc(1.3rem + 3.6vw);
-  color: rgb(255, 255, 255);
-  text-shadow: 2px 2px 2px rgb(0, 0, 0);
+  color: #260e00;
 }
 
 @media screen and (max-width: 1100px) {
@@ -79,9 +76,8 @@ body {
 }
 
 .content {
-  font-family: quicksand, sans-serif;
+  font-family: raleway, sans-serif;
   margin: auto;
-  width: 95%;
   border-radius: 4px;
 }
 

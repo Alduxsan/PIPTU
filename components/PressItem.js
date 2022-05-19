@@ -87,7 +87,7 @@ class PressItem extends HTMLElement {
     .text p{
       margin: 0;
       padding: 10px;
-      font-family: quicksand, "sans-serif";
+      font-family: raleway, "sans-serif";
       color: #fff;
       font-size: 1.3rem;
       vertical-align: middle;

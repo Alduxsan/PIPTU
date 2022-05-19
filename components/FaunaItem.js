@@ -36,7 +36,7 @@ class FaunaItem extends HTMLElement {
     
     <style>
     .card{
-      font-family: quicksand, sans-serif;
+      font-family: raleway, sans-serif;
       width: fit-content;
       margin: 20px;
       justify-content: center;

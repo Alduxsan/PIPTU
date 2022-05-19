@@ -145,7 +145,7 @@ class Navbar extends HTMLElement {
     }
     
     .nav-links div a {
-      font-family: quicksand;
+      font-family: raleway;
       text-decoration: none;
       color: white;
       font-size: 1.4rem;
@@ -155,8 +155,7 @@ class Navbar extends HTMLElement {
     
     .nav-links div a:hover {
       transition: .2s all;
-      color: #ab8400;
-    
+      color: #ab8400;    
     }
     
     .hide {
@@ -179,7 +178,7 @@ class Navbar extends HTMLElement {
     }
     
      .responsive_navbar .nav-links {
-      font-family: quicksand;
+      font-family: raleway;
       text-align: center;
       font-size: 1rem;
     }

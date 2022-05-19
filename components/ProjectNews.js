@@ -60,7 +60,7 @@ class ProjectNews extends HTMLElement {
     }
     
     .text-block {
-      font-family: quicksand;
+      font-family: raleway;
       position: absolute;
       top: 0;
       right: 0;
@@ -73,14 +73,14 @@ class ProjectNews extends HTMLElement {
     }
     
     #title{
-      font-family: quicksand, "sans-serif";
+      font-family: raleway, "sans-serif";
       font-size: 1.5rem;
       font-weight: bold;
       margin: 0px;
     }
     
     #date{
-      font-family: quicksand, "sans-serif";
+      font-family: raleway, "sans-serif";
       text-align: right;
       margin: 3px;
     }
@@ -90,7 +90,7 @@ class ProjectNews extends HTMLElement {
     }
     
     .content{
-      font-family: quicksand, "sans-serif";
+      font-family: raleway, "sans-serif";
       margin-top: 5px;
       font-size: 1.5rem;
       padding: 10px;

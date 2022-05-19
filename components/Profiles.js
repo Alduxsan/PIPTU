@@ -117,7 +117,7 @@ class Profiles extends HTMLElement {
 
       .profile_card{
         display: flex;
-        font-family: quicksand, sans-serif;
+        font-family: raleway, sans-serif;
         justify-content: center;
         transition: box-shadow .5s;
         border-radius: 4px;

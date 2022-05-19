@@ -68,7 +68,7 @@ class Artifact3D extends HTMLElement {
       .artifactTitle a{
         font-weight: bold; 
         color: #000000; 
-        font-family: quicksand, sans-serif;
+        font-family: raleway, sans-serif;
         text-decoration: none;
         text-align: center;
         font-size: 2rem;

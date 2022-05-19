@@ -1,10 +1,10 @@
 @font-face {
-  font-family: quicksand;
-  src: url("../fonts/Quicksand/Quicksand-VariableFont_wght.ttf");
+  font-family: raleway;
+  src: url("../fonts/raleway/raleway-VariableFont_wght.ttf");
   font-display: swap;
 }
 @font-face {
-  font-family: "Cabin Sketch";
+  font-family: "oswald";
   src: url("../fonts/Cabin_Sketch/CabinSketch-Bold.ttf");
   font-display: swap;
 }
@@ -14,8 +14,8 @@
   --section-title-size: calc(1.3rem + 3.6vw);
   --arrow-title-size: 3rem;
 
-  --basic-font: quicksand, sans-serif;
-  --title-font: "Cabin Sketch", sans-serif;
+  --basic-font: raleway, sans-serif;
+  --title-font: "oswald", sans-serif;
 }
 
 * {

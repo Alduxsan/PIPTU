@@ -59,10 +59,11 @@ class SciArticles_container extends HTMLElement {
     .sciWrapper{
       width: 100%;
       margin: auto;
+      
     }
 
     .sciArticles_container {
-      font-family: quicksand, sans-serif;
+      font-family: raleway, sans-serif;
       margin: auto;
 
     }
@@ -76,6 +77,7 @@ class SciArticles_container extends HTMLElement {
       width: fit-content;
       margin: auto;
       margin-top: 20px;
+      padding-bottom: 2em;
     }
     
     .ToggleBtn {
@@ -99,7 +101,6 @@ class SciArticles_container extends HTMLElement {
     `;
   }
 }
-
 customElements.define("sciarticles-container", SciArticles_container);
 
 class SciArticle extends HTMLElement {
@@ -152,9 +153,8 @@ class SciArticle extends HTMLElement {
                 <p id="abstract">ABSTRACT</p>
                 <p class="artAbastract">${artAbstract}</p>
               <a class="artLink" target="_blank" rel="noopener" href="${artLink}"> 
-              <p>Link al artículo</p> <div class="iconContainer"><img src="media/icons/arrow.png"></div></a>
+              <p>Link al artículo</p></a>
             </div>
-
             <p class="separator"></p>
     </article>
     
@@ -165,9 +165,9 @@ class SciArticle extends HTMLElement {
       }
 
       article{
-        font-family: quicksand, sans-serif;
+        font-family: raleway, sans-serif;
         margin: auto;
-        padding: 2em;
+        padding: 0 5em 1em 5em;
         transition: all 0.5s;
         cursor: pointer;
       }
@@ -193,8 +193,11 @@ class SciArticle extends HTMLElement {
       }
 
       #ArtTitle{
-        font-family: "quicksand";
+        font-size: 1.4rem;
+        font-weight: 100;
+        font-family: "raleway";
         width: 80%;
+        margin-bottom: 0
       }
 
       #author_editorial_info{
@@ -205,7 +208,8 @@ class SciArticle extends HTMLElement {
 
       #authors{
         margin-right: 1em;
-        font-weight: 600
+        font-weight: 600;
+        min-width: fit-content;
       }
 
       .abstract-wrapper{
@@ -218,7 +222,12 @@ class SciArticle extends HTMLElement {
         animation-fill-mode: forwards;
       }
 
+      #abstract{
+        font-size: 1.3rem
+      }
+
       .artAbastract{
+        font-size: 1.3rem;
         column-count: 2;
         text-align: justify;
         text-justify: distribute;
@@ -231,19 +240,14 @@ class SciArticle extends HTMLElement {
         align-items: center;
         justify-content: center;
         text-decoration: none;
-        color: white;
+        color: black;
         margin-bottom: 1em;
         transition: all 0.5s;
       }
 
-      .iconContainer img{
-        width: 40px;
-        margin-left: 10px;
-      }
-
-      .artLink:hover{
-        color: white;
-        filter: invert()  
+      .artLink:hover > p{
+        font-weight: bold;
+        border-bottom: 1px solid rgba(0,0,0,0.3);
       }
 
       .separator{
@@ -269,7 +273,8 @@ class SciArticle extends HTMLElement {
 
         #ArtTitle{
           border: none;
-          padding: 0%
+          padding: 0%;
+          width: fit-content
         }
       }
 

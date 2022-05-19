@@ -1,11 +1,11 @@
 /* Basic styling */
 @font-face {
-  font-family: quicksand;
-  src: url("../fonts/Quicksand/Quicksand-VariableFont_wght.ttf");
+  font-family: raleway;
+  src: url("../fonts/raleway/raleway-VariableFont_wght.ttf");
   font-display: swap;
 }
 @font-face {
-  font-family: "Cabin Sketch";
+  font-family: "oswald";
   src: url("../fonts/Cabin_Sketch/CabinSketch-Bold.ttf");
   font-display: swap;
 }
@@ -65,7 +65,7 @@ body {
 }
 
 .title {
-  font-family: "Cabin Sketch", sans-serif;
+  font-family: "oswald", sans-serif;
   font-weight: bolder;
   font-size: 2.5rem;
   color: rgb(255, 255, 255);
@@ -88,7 +88,7 @@ body {
 .subtitle p {
   text-align: center;
   font-weight: 700;
-  font-family: "Cabin Sketch", sans-serif;
+  font-family: "oswald", sans-serif;
   font-size: calc(1.3rem + 3.6vw);
   color: rgb(255, 255, 255);
   text-shadow: 2px 2px 2px rgb(0, 0, 0);
