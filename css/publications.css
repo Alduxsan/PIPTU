@@ -9,6 +9,16 @@
   font-display: swap;
 }
 
+:root {
+  --text-font-size: 1.4rem;
+  --section-title-size: calc(1.3rem + 3.6vw);
+  --arrow-title-size: 3rem;
+
+  --basic-font: raleway, "sans-serif";
+  --title-font: oswald, "sans-serif";
+}
+font-family: var(--title-font);
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -75,18 +85,16 @@ body {
   margin-top: 400px;
 }
 
-.content {
+.booksSection {
   font-family: raleway, sans-serif;
   margin: auto;
   border-radius: 4px;
 }
 
 .book_chapters {
+  font-family: raleway, sans-serif;
   margin: auto;
-  width: 95%;
-  background-color: rgba(255, 255, 255, 0.575);
-  padding: 2%;
-  border-radius: 4px;
+  width: 100%;
   text-align: justify;
   text-justify: distribute;
   hyphens: auto;
@@ -101,11 +109,10 @@ body {
 .press_content {
   padding: 1em;
   margin: auto;
-  width: 95%;
+  width: 100%;
   height: 100%;
   display: grid;
   grid-template-columns: auto auto auto;
-  background-color: rgba(240, 255, 240, 0.384);
   border-radius: 4px;
   gap: 10px;
 }

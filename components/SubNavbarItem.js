@@ -56,7 +56,7 @@ class SubNavbarItem extends HTMLElement {
     }
     
     .iconContainer img{
-      height: 100px;
+      height: 100%;
       width: auto;
       transition: all 0.3s;
       padding-top: 10px
@@ -155,7 +155,7 @@ class SubNavbarContainer extends HTMLElement {
    
     <style>
     .sublink_container {
-      align-items: center;
+      align-items: stretch;
       display: flex;
       flex-wrap: wrap;
       justify-content: center;

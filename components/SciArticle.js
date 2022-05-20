@@ -45,7 +45,7 @@ class SciArticles_container extends HTMLElement {
         <slot></slot>
       </div>
       <div id="btn" class="toggler_button" type="button">
-        <p class="ToggleBtn" id="togglerMore">más artículos</p>
+        <p class="ToggleBtn" id="togglerMore">mostrar todos</p>
         <p class="ToggleBtn hide" id="toggleLess">cerrar lista</p>
       </div>
     </div>
@@ -195,11 +195,11 @@ class SciArticle extends HTMLElement {
       #ArtTitle{
         font-size: 1.4rem;
         font-weight: 100;
-        font-family: "raleway";
+        font-family: raleway, sans-serif;
         width: 80%;
         margin-bottom: 0
       }
-
+ 
       #author_editorial_info{
         display: flex;
         flex-direction: row;

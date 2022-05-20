@@ -57,7 +57,7 @@ class ActivitiesItem extends HTMLElement {
       }
     
       #activity-title{
-        font-family: "raleway", sans-serif;
+        font-family: raleway, sans-serif;
         font-size: 2rem;
         font-weight: bolder;
         color: white;

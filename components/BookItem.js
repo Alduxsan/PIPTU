@@ -49,9 +49,7 @@ class BookItem extends HTMLElement {
             </div>            
         </div>
 
-        <div class="book_info">
-            <slot name="book_info"></slot>
-        </div>        
+       
     </div>
     <p class="separator"></p>
     </article>
@@ -63,6 +61,7 @@ class BookItem extends HTMLElement {
       border-bottom: 1px solid rgba(0,0,0,0.3);
       margin: auto;
       margin-top: 2em;
+      margin-bottom: 2em; 
     }
 
     article{
