@@ -9,6 +9,15 @@
   src: url("../fonts/Oswald/Oswald-Regular.ttf");
   font-display: swap;
 }
+
+:root {
+  --text-font-size: 1.4rem;
+  --section-title-size: calc(1.3rem + 3.6vw);
+  --arrow-title-size: 3rem;
+  --basic-font: raleway, "sans-serif";
+  --title-font: oswald, "sans-serif";
+}
+
 * {
   box-sizing: border-box;
   padding: 0;

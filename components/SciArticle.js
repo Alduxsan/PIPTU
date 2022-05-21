@@ -63,7 +63,7 @@ class SciArticles_container extends HTMLElement {
     }
 
     .sciArticles_container {
-      font-family: raleway, sans-serif;
+      font-family: var(--basic-font);
       margin: auto;
 
     }
@@ -93,7 +93,7 @@ class SciArticles_container extends HTMLElement {
     .ToggleBtn:hover {
       box-shadow: 8px 8px 2px rgba(0, 0, 0, 0.304);
     }
-
+    
     @keyframes expand {
       from{opacity:0}
       to{opacity: 1}
@@ -165,7 +165,7 @@ class SciArticle extends HTMLElement {
       }
 
       article{
-        font-family: raleway, sans-serif;
+        font-family: var(--basic-font);
         margin: auto;
         padding: 0 5em 1em 5em;
         transition: all 0.5s;
@@ -195,7 +195,7 @@ class SciArticle extends HTMLElement {
       #ArtTitle{
         font-size: 1.4rem;
         font-weight: 100;
-        font-family: raleway, sans-serif;
+        font-family: var(--basic-font);
         width: 80%;
         margin-bottom: 0
       }
@@ -275,6 +275,10 @@ class SciArticle extends HTMLElement {
           border: none;
           padding: 0%;
           width: fit-content
+        }
+
+        #author_editorial_info{
+          flex-direction: column
         }
       }
 

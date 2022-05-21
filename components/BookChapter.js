@@ -65,7 +65,6 @@ class BookChapters_container extends HTMLElement {
     .bookChapters_container {
       font-family: raleway, sans-serif;
       margin: auto;
-
     }
 
     .expanded {

@@ -65,7 +65,7 @@ class SubNavbarItem extends HTMLElement {
     
 
     .iconContainer img:hover {
-      border-top: 1px solid black
+      animation: lightRotation 1s forwards;
     }
 
     .iconContainer:hover + p{
@@ -111,6 +111,12 @@ class SubNavbarItem extends HTMLElement {
         opacity: 100%;
       }
     }
+  
+  @keyframes lightRotation {
+    50% {
+      transform: rotate(5deg);
+    }
+  }
     
     @media screen and (max-width: 1100px) {
       .iconContainer {

@@ -129,6 +129,7 @@ class Navbar extends HTMLElement {
       font-size: 35px;
       color: white;
       padding: 5px;
+      font-weight:bold
     }
     nav.sticky .logo a {
       color: white;

@@ -39,7 +39,12 @@ class PressItem extends HTMLElement {
       overflow: hidden;
       border-radius: 4px;
       position: relative;
+      box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.604);
 
+    }
+
+    .press_item_container:hover{
+      box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.404);
     }
 
     .press-item {
