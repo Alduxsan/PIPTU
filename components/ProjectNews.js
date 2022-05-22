@@ -44,12 +44,15 @@ class ProjectNews extends HTMLElement {
     </div>
 
     <style>
+
+    :host{
+      padding-bottom: 3em
+    }
     
     .news_container{
       margin: auto;
       width: 100%;
       height: 500px;
-      border-radius: 6px;
       cursor: pointer;
       box-shadow: 2px 2px 2px black;
       transition: all 0.3s
@@ -75,7 +78,7 @@ class ProjectNews extends HTMLElement {
     #title{
       font-family: raleway, "sans-serif";
       font-size: 1.5rem;
-      font-weight: bold;
+      font-weight: 300;
       margin: 0px;
     }
     
@@ -93,9 +96,8 @@ class ProjectNews extends HTMLElement {
       font-family: raleway, "sans-serif";
       margin-top: 5px;
       font-size: 1.5rem;
-      padding: 10px;
+      padding: 1em;
       background-color: rgba(255, 255, 255, 0.5);
-      border-radius: 4px 6px 6px 6px;
     }
   
     img{

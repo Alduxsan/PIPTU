@@ -26,8 +26,7 @@
 
 html {
   scroll-behavior: smooth;
-  background: no-repeat url(../media/liquid-cheese.svg);
-  background-size: cover;
+  background: #ab8300bd;
 }
 
 body {
@@ -72,50 +71,52 @@ body {
   }
 }
 
-.title {
-  font-family: "oswald", sans-serif;
-  font-weight: bolder;
-  font-size: 2.5rem;
-  color: rgb(255, 255, 255);
-  text-shadow: 2px 2px 2px rgb(0, 0, 0);
+.title-container {
   position: absolute;
-  background-color: rgba(56, 20, 0, 0.8);
-  padding: 2%;
-  border-radius: 0 6px 6px 0;
-  top: 60%;
   left: 0;
+  top: 30vh;
+  margin-bottom: 0;
+  background-color: rgba(255, 255, 255, 0.4);
+  padding: 2em 2em 2em 5em;
+  border-radius: 0 6px 6px 0;
+}
+
+#sigla {
+  font-family: var(--title-font);
+  font-weight: 700;
+  font-size: 10rem;
+  color: #260e00;
+  letter-spacing: 5px;
+}
+#fullTitle {
+  font-family: var(--basic-font);
+  font-size: 1.9rem;
+  text-align: right;
 }
 
 .subtitle {
   margin: auto;
   max-width: 70%;
-  margin-top: 4rem;
-  margin-bottom: 2em;
+  margin-top: 6rem;
+  margin-bottom: 4em;
 }
 
 .subtitle p {
+  font-weight: 600;
   text-align: center;
-  font-weight: 700;
-  font-family: "oswald", sans-serif;
+  font-family: var(--title-font);
   font-size: calc(1.3rem + 3.6vw);
-  color: rgb(255, 255, 255);
-  text-shadow: 2px 2px 2px rgb(0, 0, 0);
+  color: #260e00;
 }
 
 .img {
   width: 100%;
-  border-radius: 4px;
   box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.507);
-}
-
-.background_color {
-  background-color: rgba(255, 255, 255, 0.2);
-  padding: 3%;
 }
 
 .slideshow-container {
   /* Slideshow container */
-  width: 80%;
+  width: 100%;
   position: relative;
   margin: auto;
 }
@@ -150,12 +151,33 @@ body {
 }
 
 @media only screen and (max-width: 1100px) {
+  .title-container {
+    position: relative;
+    left: 0;
+    top: 0;
+    margin-bottom: 0;
+    background-color: rgba(255, 255, 255, 0.4);
+    padding: 1em;
+    border-radius: 0;
+  }
+
   .title {
-    font-size: 1.5rem;
     position: relative;
     margin-top: 0;
     border-radius: 0;
-    margin-top: -5px;
+    width: 100%;
+  }
+
+  #sigla {
+    font-size: 5rem;
+    text-align: left;
+    margin: auto;
+  }
+
+  #fullTitle {
+    font-size: 1.5rem;
+    text-align: left;
+    padding: 0;
   }
 
   .carousel {
