@@ -126,14 +126,18 @@ header {
   hyphens: auto;
 }
 
-.list_subsectionTitle {
-  background-color: rgba(56, 20, 0, 0.8);
-  color: aliceblue;
+.list_subsectionTitle h2 {
+  background-color: rgba(56, 20, 0, 1);
+  color: #fff;
   text-align: center;
   padding: 1em;
-  font-size: 1.5rem;
+  font-size: 2.2rem;
   font-family: raleway, sans-serif;
-  border-radius: 4px 4px 0 0;
+  font-weight: lighter;
+}
+
+.ongoing {
+  background-color: rgba(56, 20, 0, 0.5);
 }
 
 /* footer */
@@ -188,11 +192,6 @@ header {
   }
 
   .link img {
-    width: 100%;
-    height: auto;
-  }
-
-  .content {
     width: 100%;
     height: auto;
   }

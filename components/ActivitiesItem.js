@@ -139,7 +139,7 @@ class ActivitiesItem extends HTMLElement {
       }
 
       .activity_text_container{
-        padding: 2em;
+        padding: 5em;
         border-radius: 4px;
         margin-top: 10px;
       }

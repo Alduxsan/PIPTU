@@ -2,7 +2,6 @@ class ListContainer extends HTMLElement {
   constructor() {
     super();
     this.attachShadow({ mode: "open" });
-    this.ref = this.getAttribute("ref");
   }
 
   getAtt(attr) {
@@ -11,21 +10,27 @@ class ListContainer extends HTMLElement {
   }
 
   handleEvent(event) {
-    console.log(event);
     if (event.type === "click") this.display_more();
   }
 
   display_more() {
-    let btn = this.shadowRoot.getElementById("toggler_img");
+    let btnMore = this.shadowRoot.getElementById("togglerMore");
+    let btnLess = this.shadowRoot.getElementById("toggleLess");
+    let projects = document.querySelectorAll(".project");
 
     this.shadowRoot
       .getElementById("listContainer")
       .classList.toggle("expanded");
-    btn.classList.toggle("less"); //to rotate the arrow
+    btnMore.classList.toggle("hide");
+    btnLess.classList.toggle("hide");
 
-    if (!btn.classList.contains("less")) {
-      document.getElementById(this.ref).scrollIntoView(true);
+    if (btnLess.classList.contains("hide")) {
+      document.getElementById("finished").scrollIntoView(true);
     }
+
+    projects.forEach(function (project) {
+      project.classList.toggle("hiddenList");
+    });
   }
 
   connectedCallback() {
@@ -41,24 +46,58 @@ class ListContainer extends HTMLElement {
             <slot></slot>
         </div>
 
-      <div id="btn" class="toggler_button" type="button">
-        <img class="" id="toggler_img" src="./media/icons/bottom-arrow-angle.png" alt="toggler icon">
+        <div id="btn" class="toggler_button" type="button">
+        <p class="ToggleBtn" id="togglerMore">mostrar todos</p>
+        <p class="ToggleBtn hide" id="toggleLess">cerrar lista</p>
       </div>
 
     </div>
     <style>
-
+    
+    .expanded {
+      animation: expand 2s;
+      animation-fill-mode: forwards;
+    }
+    
+    .hide{
+      display:none;
+    }
+    
+    .toggler_button {
+      width: fit-content;
+      margin: auto;
+      margin-top: 20px;
+      padding-bottom: 2em;
+    }
+    
+    .ToggleBtn {
+      text-align: center;
+      border-radius: 4px;
+      cursor: pointer;
+      padding: 10px;
+      background-color: rgba(255, 255, 255, 0.644);
+      transition: all 0.2s;
+      box-shadow: 4px 4px 2px rgba(0, 0, 0, 0.604);
+    }
+    
+    .ToggleBtn:hover {
+      box-shadow: 8px 8px 2px rgba(0, 0, 0, 0.304);
+    }
+    
+    @keyframes expand {
+      from{opacity:0}
+      to{opacity: 1}
+    }
+ 
     .wrapper{
       background-color: rgba(56, 20, 0, 0.5);
       width: 100%;
       margin: auto;
       margin-bottom: 1em;
-      border-radius: 4px;
       padding-bottom: 1em;
     }
-    
+
     .toggler_button {
-      width: 30px;
       margin: auto;
       margin-top: 20px;
     }
@@ -77,27 +116,6 @@ class ListContainer extends HTMLElement {
       box-shadow: 8px 8px 2px rgba(0, 0, 0, 0.304);
     }
 
-    .expanded {
-      animation: expand 1s;
-      animation-fill-mode: forwards;
-      filter: none;
-    }
-
-    .less {
-      transform: rotate(180deg);
-    }
-
-    @keyframes expand {
-      0%{
-        height: 400px
-      }
-      50%{
-        height: 600px
-      }
-      100% {
-        height:auto;
-      }
-    }
     </style>
     
     `;
@@ -109,6 +127,9 @@ customElements.define("list-container", ListContainer);
 class ProjectListItem extends HTMLElement {
   constructor() {
     super();
+    if (!this.classList.contains("show")) {
+      this.classList.add("hiddenList", "project");
+    }
     this.attachShadow({ mode: "open" });
   }
 
@@ -135,14 +156,15 @@ class ProjectListItem extends HTMLElement {
     </div>
     
     <style>
-
+    :host-context(.hiddenList){
+      display: none;
+    }
       .link-container{
         transition: .5s all;
-        padding: 1em;
+        padding: 10px 5em ;     
       }
-
       .link-container:hover {
-        background-color: rgba(56, 20, 0, 0.8);
+        background-color: rgba(56, 20, 0, 1);
       }
 
       .link-container a{
