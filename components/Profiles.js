@@ -21,9 +21,9 @@ class Profiles_container extends HTMLElement {
 
     <style>
     .profiles_wrapper {
+      padding: 2em 5em;
       display: flex;
       gap: 1em 1em;
-      width: 100%;
       flex-direction: row;
       flex-wrap: wrap;
       margin-top: 20px;
@@ -31,8 +31,9 @@ class Profiles_container extends HTMLElement {
     }
 
     @media screen and (max-width: 1100px) {
-      .profile_wrapper{
-       display: block
+      .profiles_wrapper{
+       display: block;
+       padding: 5px
       }
       
     }
@@ -59,7 +60,6 @@ class Profiles extends HTMLElement {
   }
 
   handleEvent(event) {
-    console.log(event);
     if (event.type === "click") this.showInfo();
   }
 
@@ -68,8 +68,13 @@ class Profiles extends HTMLElement {
     this.info.classList.toggle("hide");
     this.info.scrollIntoView({ block: "end", behavior: "smooth" });
   }
-
   connectedCallback() {
+    this.render();
+    this.card = this.shadowRoot.getElementById("card");
+    this.card.addEventListener("click", this);
+  }
+
+  render() {
     let img = this.getAtt("img");
     let imgFix = this.getAtt("imgFix");
     let bio = this.getAtt("bio");
@@ -87,7 +92,7 @@ class Profiles extends HTMLElement {
             <p>${name}</p>
           </div>
         </div>
-        <div id="detailsContent" class="hide">
+        <div id="detailsContent" class="bio-wrapper hide">
           <p class="bio">${bio}</p>
         </div>
 
@@ -125,7 +130,7 @@ class Profiles extends HTMLElement {
         background: rgba(255, 255, 255, 0.300);
         padding: 1em;
         min-width: 350px;
-        min-height: 350px;
+        min-height: 320px;
       }
 
       .profile_card:hover{
@@ -134,7 +139,7 @@ class Profiles extends HTMLElement {
       
       .imgNameContainer{
         min-width: 250px;
-
+        padding-top: 1em
       }
 
       .imgContainer{
@@ -144,7 +149,7 @@ class Profiles extends HTMLElement {
         border-radius: 4px;
         overflow: hidden;
         margin-bottom: 1em;
-        box-shadow: 1px 2px 2px
+        box-shadow: 1px 2px 2px;
       }
       
       .imgContainer img{
@@ -152,11 +157,27 @@ class Profiles extends HTMLElement {
       }
 
       .name{
-        font-size: 2rem;
+        font-size: 1.6rem;
         text-align: center;
         margin: 0;
       }
+
+      .bio-wrapper{
+        animation: fadeIn 1s;
+        animation-fill-mode: forwards;
+        padding: 1em 1em
+      }
       
+      @keyframes fadeIn{
+        from{
+           opacity: 0
+      }
+
+      to{
+        opacity: 1
+      }
+    }
+
       .bio{
         margin: 0;
         margin-left: 1em;
@@ -173,6 +194,8 @@ class Profiles extends HTMLElement {
          padding:0;
          padding-top: 1em;
          display: block;
+         border-radius: 0;
+         margin: 5px 0;
         }
         .name{
           font-size: 1.5rem
@@ -181,14 +204,11 @@ class Profiles extends HTMLElement {
         .bio{
           margin: 0;
           text-align: left;
-          padding: 10px;
         }
       
 
       </style>
       `;
-    this.card = this.shadowRoot.getElementById("card");
-    this.card.addEventListener("click", this);
   }
 }
 

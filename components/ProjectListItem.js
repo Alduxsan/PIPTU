@@ -56,12 +56,6 @@ class ListContainer extends HTMLElement {
       border-radius: 4px;
       padding-bottom: 1em;
     }
-
-    .list-container {
-      height: 400px;
-      overflow: hidden;
-
-    }
     
     .toggler_button {
       width: 30px;

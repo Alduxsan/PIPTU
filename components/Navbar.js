@@ -100,8 +100,11 @@ class Navbar extends HTMLElement {
   </div>
   </nav>
    
-    <style>    
+    <style>   
+
+    
     .sticky{
+      z-index: 3;
       position: fixed;
       animation: fromTop 1s;
       animation-fill-mode: forwards
@@ -152,11 +155,25 @@ class Navbar extends HTMLElement {
       font-size: 1.4rem;
       font-weight: 100;
       transition: all 0.3s ease;
+      border-top: 1px solid rgba(0,0,0,0);
+      padding-top: 5px;
     }
     
     .nav-links div a:hover {
       transition: .2s all;
-      color: #ab8400;    
+      color: #ab8300bd;
+      animation: topline .6s ease;
+      animation-fill-mode: forwards     
+    }
+
+    @keyframes topline{
+      from{
+        border-top: 1px solid rgba(0,0,0,0);
+      }
+      
+      to{
+        border-top: 1px solid #ab8300bd;
+      }
     }
     
     .hide {

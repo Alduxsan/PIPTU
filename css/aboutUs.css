@@ -26,8 +26,7 @@
 
 html {
   scroll-behavior: smooth;
-  background: no-repeat url(../media/liquid-cheese.svg);
-  background-size: cover;
+  background: #c0a342;
 }
 
 body {
@@ -36,18 +35,25 @@ body {
   margin: auto;
 }
 
+header {
+  position: relative;
+  background: url("../media/aboutus/bkg-1.jpg") no-repeat;
+  background-attachment: fixed;
+  background-size: auto;
+  padding-bottom: 2em;
+}
+
 .title {
-  padding: 2%;
+  padding: 2em;
 }
 
 .title p {
   margin-top: 0;
-  font-family: "oswald", sans-serif;
+  font-family: var(--title-font);
   font-weight: 700;
   font-size: 7rem;
-  color: rgb(255, 255, 255);
+  color: #260e00;
   text-align: center;
-  text-shadow: 2px 2px 2px rgb(0, 0, 0);
   margin-bottom: 0;
 }
 
@@ -59,12 +65,25 @@ body {
 }
 
 .subtitle p {
+  font-weight: 600;
   text-align: center;
-  font-weight: 700;
-  font-family: "oswald", sans-serif;
+  font-family: var(--title-font);
   font-size: calc(1.3rem + 3.6vw);
-  color: rgb(255, 255, 255);
-  text-shadow: 2px 2px 2px rgb(0, 0, 0);
+  color: #260e00;
+}
+
+.separator {
+  margin: auto;
+  padding-top: 2em;
+  width: 50%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.wave-separator {
+  position: absolute;
+  bottom: 0;
+  height: 50px;
+  width: 100%;
 }
 
 @media screen and (max-width: 1100px) {
@@ -79,14 +98,8 @@ body {
   }
 
   .title p {
-    font-size: calc(1.3rem + 3.6vw);
+    font-size: calc(3rem + 3.6vw);
   }
-}
-
-.content {
-  padding: 2%;
-  margin: auto;
-  width: 100%;
 }
 
 #more {
@@ -94,17 +107,14 @@ body {
 }
 
 .quehacemos {
-  justify-content: center;
   margin: auto;
   font-family: raleway, sans-serif;
+  padding-bottom: 5em;
 }
 
 .intro {
-  background-color: rgba(255, 255, 255, 0.5);
-  padding: 2em;
-  margin: auto;
-  margin-bottom: 3%;
-  border-radius: 4px;
+  padding: 2em 5em;
+  margin: 3em auto;
   width: 100%;
 }
 
@@ -122,7 +132,7 @@ body {
   text-align: center;
   padding: 1em;
   font-size: 1.5rem;
-  font-family: raleway;
+  font-family: raleway, sans-serif;
   border-radius: 4px 4px 0 0;
 }
 
@@ -130,13 +140,13 @@ body {
 
 .colab_container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   flex-wrap: wrap;
-  border-radius: 4px;
-  padding: 2%;
+  padding: 5em;
   justify-content: center;
   background-color: white;
   align-items: center;
+  gap: 3em;
 }
 
 .link {
@@ -145,13 +155,12 @@ body {
 }
 
 .colabLink {
-  margin: 20px;
   width: 300px;
   height: auto;
 }
 
 .colabLink img {
-  width: 300px;
+  width: 100%;
   height: auto;
 }
 
@@ -167,18 +176,23 @@ body {
     height: auto;
   }
 
+  .colab_container {
+    width: 100%;
+    gap: 2em;
+    padding: 1em;
+  }
+
   .colabLink {
-    margin: 20px;
-    width: 150px;
+    width: 100%;
     height: auto;
   }
-  .link {
-    width: fit-content;
+
+  .link img {
+    width: 100%;
     height: auto;
   }
 
   .content {
-    padding: 0;
     width: 100%;
     height: auto;
   }

@@ -60,19 +60,20 @@ class SubNavbarItem extends HTMLElement {
       width: auto;
       transition: all 0.3s;
       padding-top: 10px
+    }
 
+    .iconContainer + p{
+      border-bottom: 1px solid rgba(0,0,0,0)
     }
     
-
-    .iconContainer img:hover {
+    a:hover > .iconContainer img {
       animation: lightRotation 1s forwards;
     }
 
-    .iconContainer:hover + p{
-      font-weight: bolder
+    a:hover > .iconContainer + p{
+      font-weight: bolder;
+      border-bottom: 1px solid rgba(0,0,0,1)
     }
-
-
     
     .fadeIn5{
       animation: fadeIn .4s;
@@ -160,11 +161,14 @@ class SubNavbarContainer extends HTMLElement {
     </div>
    
     <style>
+
     .sublink_container {
       align-items: stretch;
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
+      padding-bottom: 5em
+
     }
     
     @media screen and (max-width: 1100px) {
