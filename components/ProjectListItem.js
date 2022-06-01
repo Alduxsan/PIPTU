@@ -192,6 +192,11 @@ class ProjectListItem extends HTMLElement {
           font-weight: 100;
           padding: 1%
         }
+
+        .link-container{
+          padding: 1em;
+          word-break: break-all
+        }
       
       }
     </style>

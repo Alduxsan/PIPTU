@@ -1,27 +1,27 @@
 class Artifact3D extends HTMLElement {
   constructor() {
     super();
+    this.attachShadow({ mode: "open" });
   }
 
   connectedCallback() {
-    let parameters = { href_src: "", iframe_src: "", iframe_title: "" };
+    let params = { href_src: "", iframe_src: "", iframe_title: "" };
 
-    parameters["href_src"] = this.href_src =
-      this.getAttribute("href_src") ?? "";
-    parameters["iframe_src"] = this.iframe_src =
+    params["href_src"] = this.href_src = this.getAttribute("href_src") ?? "";
+    params["iframe_src"] = this.iframe_src =
       this.getAttribute("iframe_src") ?? "";
-    parameters["iframe_title"] = this.iframe_title =
+    params["iframe_title"] = this.iframe_title =
       this.getAttribute("iframe_title") ?? "";
-    this.render(parameters);
+    this.render(params);
   }
 
-  render(parameters) {
-    this.innerHTML = ` 
+  render(params) {
+    this.shadowRoot.innerHTML = ` 
     <div class="artifactWrapper">
       <div class="sketchfab-embed-wrapper">
       <p class="artifactTitle">
-          <a href=${parameters.href_src} target="_blank" rel="noopener">${parameters.iframe_title}</a> </p>
-        <iframe title=${parameters.iframe_title} frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src=${parameters.iframe_src} loading="lazy"></iframe>
+          <a href=${params.href_src} target="_blank" rel="noopener">${params.iframe_title}</a> </p>
+        <iframe title=${params.iframe_title} frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src=${params.iframe_src} loading="lazy"></iframe>
          </div> 
          
       <style>
@@ -42,21 +42,17 @@ class Artifact3D extends HTMLElement {
         margin: auto;
         margin-bottom: 15px;
         margin-top: 20px;
-        box-shadow:
-          0px 3px 5px -1px rgba(0, 0, 0, 0.2),
-          0px 6px 10px 0px rgba(0, 0, 0, 0.70),
-          0px 1px 18px 0px rgba(0,0,0,.12);
-          transition: box-shadow .5s;
+        box-shadow: 3px 3px rgba(0, 0, 0, 0.9);
+        transition: all .3s;
       }
       
       iframe:hover{
         box-shadow:
-          0px 3px 5px -1px rgba(0, 0, 0, 0.9),
-          0px 6px 10px 0px rgba(0, 0, 0, 0.9),
-          0px 1px 18px 0px rgba(0,0,0,.9);
+          5px 5px 4px rgba(0, 0, 0, 0.9)
       }
       
       .artifactTitle{
+        font-family: raleway, sans-serif;
         justify-content: center;
         align-self: center;
         font-size: 13px; 
@@ -84,6 +80,11 @@ class Artifact3D extends HTMLElement {
       .textFooter a{
         font-weight: bold; color: #000000; 
       }
+
+      @media screen and (max-width: 1100px) {
+         .artifactTitle a{
+           font-size: 1.5rem
+         }}
       </style>
         `;
   }

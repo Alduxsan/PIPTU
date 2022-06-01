@@ -256,19 +256,18 @@ class SciArticle extends HTMLElement {
         margin: auto;
       }
       @media screen and (max-width: 1100px) {
-        summary {
+        
+        article{
+          padding: 1em;
         }
 
-        details summary { 
-          display: block;
-        }
-        
         .art_head_container{
           display: block;
         }
         
         .artAbastract{
           column-count: 1;
+          text-align: left;
         }
 
         #ArtTitle{

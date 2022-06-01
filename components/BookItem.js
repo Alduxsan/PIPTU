@@ -69,8 +69,8 @@ class BookItem extends HTMLElement {
       padding: 0 5em 1em 5em;    }
 
     .book_title{
+      font-weight: 100;
       font-family: raleway, sans-serif;
-      color:
     }
 
     .editorialInfo{
@@ -119,7 +119,18 @@ class BookItem extends HTMLElement {
         float: none;
         width: fit-content;
         margin: auto;
+        margin-bottom: 1em;
       }
+
+      article{
+        padding: 1em
+      }
+
+      .editorialInfo{
+        text-align: left;
+        word-break: break-all
+      }
+    }
       </style>
     `;
   }

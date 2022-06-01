@@ -102,7 +102,7 @@ class ActivitiesItem extends HTMLElement {
       }
 
       .title-wrapper{
-        background-color: #260E00;
+        background-color:rgba(38, 14, 0, 0.851);
         height: fit-content;
         position: absolute;
         top: 50%;
@@ -113,26 +113,18 @@ class ActivitiesItem extends HTMLElement {
 
       .title-wrapper p{
         font-family: var(--title-font), sans-serif;
-        font-size:calc(2rem + 1.6vw);
+        font-size:calc(1.8rem + 1.6vw);
         color: white;
-        text-align: center;
+        text-align: left;
         margin:10px 10px 10px 40px;
       }
 
-      .imgContainer:hover .title-wrapper{
+      /*.imgContainer:hover .title-wrapper{
         animation: centerTitle 1s ease;
         animation-fill-mode: forwards;
-      }
+      }*/
 
-      @keyframes centerTitle{
-        from{
-           width: 80%;
-      }
-
-      to{
-        width: 100%
-      }
-    }
+     
     
       .hide{
         display: none
@@ -167,7 +159,11 @@ class ActivitiesItem extends HTMLElement {
         font-size: 1rem;
         text-align: left;
         word-break: normal;
-        column-count: 1
+        column-count: 1;
+      }
+
+      .activity_text_container{
+        padding: 1em;
       }
 
         }

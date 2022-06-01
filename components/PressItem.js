@@ -103,7 +103,9 @@ class PressItem extends HTMLElement {
     }
   
     @media screen and (max-width: 1100px) {
-      
+      .text{
+        font-size: 1rem
+      }
     }
     </style>
     `;

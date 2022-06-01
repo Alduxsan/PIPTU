@@ -202,6 +202,7 @@ class Profiles extends HTMLElement {
         }
         
         .bio{
+          font-size: 1.2rem;
           margin: 0;
           text-align: left;
         }

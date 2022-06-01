@@ -25,8 +25,7 @@
 
 html {
   scroll-behavior: smooth;
-  background: no-repeat url(../media/liquid-cheese.svg);
-  background-size: cover;
+  background: #ab8300bd;
 }
 
 body {
@@ -35,46 +34,55 @@ body {
   margin: auto;
 }
 
+header {
+  height: 100vh;
+  position: relative;
+  background: url("../media/interactive/lascasyherramientascom.jpeg") no-repeat;
+  background-size: cover;
+  background-position: top;
+  padding-bottom: 2em;
+}
 .title {
-  padding: 1em;
+  padding: 2em;
+  margin-top: 10vh;
 }
 
 .title p {
-  margin-top: 0;
   font-family: var(--title-font);
   font-weight: 700;
-  font-size: 7rem;
-  color: rgb(255, 255, 255);
+  font-size: calc(6rem + 3.6vw);
+  color: #ab8300;
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.6);
   text-align: center;
-  text-shadow: 2px 2px 2px rgb(0, 0, 0);
   margin-bottom: 0;
 }
 
 .subtitle {
   margin: auto;
   max-width: 70%;
-  margin-top: 4rem;
-  margin-bottom: 2em;
+  padding: 4em;
 }
 
 .subtitle p {
+  font-weight: 600;
   text-align: center;
-  font-weight: 700;
   font-family: var(--title-font);
-  font-size: var(--section-title-size);
-  color: rgb(255, 255, 255);
-  text-shadow: 2px 2px 2px rgb(0, 0, 0);
+  font-size: calc(1.3rem + 3.6vw);
+  color: #260e00;
 }
 
-.content {
+.separator {
   margin: auto;
-  width: 100%;
+  padding-top: 2em;
+  width: 50%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
 }
 
-.img {
+.wave-separator {
+  position: absolute;
+  bottom: 0;
+  height: 50px;
   width: 100%;
-  border-radius: 4px;
-  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.507);
 }
 
 .styckyActive {
@@ -82,29 +90,32 @@ body {
 }
 
 .intro {
-  width: 100%;
+  padding: 2em 5em;
   margin: auto;
-  padding: 5em;
-  margin-bottom: 3em;
+  width: 100%;
 }
 
-.resume {
-  padding-bottom: 3em;
-  color: rgb(0, 0, 0);
-  font-family: var(--basic-font);
-  font-size: 1.6rem;
+.intro p {
+  font-family: raleway, sans-serif;
+  font-size: 1.5rem;
   text-align: justify;
   text-justify: distribute;
   hyphens: auto;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
 }
 
 .fauna_gallery {
+  width: 100%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  margin-top: 20px;
+  margin-top: 1em;
   justify-content: center;
+  gap: 20px;
+  padding: 1em 5em;
+}
+
+.active-fauna-item {
+  order: -1;
 }
 
 .articles_container {
@@ -157,18 +168,32 @@ body {
   overflow: hidden;
   background: rgb(0, 0, 0);
   padding: 5em;
-  margin-left: auto;
-  margin-right: 0;
-  border-radius: 450px 0px 0px 450px;
   transition: all 0.5s;
 }
 
-.arrowImgContainer:hover {
+.arrowImgContainer a img {
+  height: 300px;
+  width: auto;
+}
+
+.article_header:hover .arrowImgContainer {
   width: 50%;
 }
 
-.arrowImgContainer img {
-  height: 300px;
+.atLeft {
+  margin-right: auto;
+  margin-right: 0;
+  border-radius: 0 450px 450px 0;
+}
+
+.atRight {
+  margin-left: auto;
+  margin-right: 0;
+  border-radius: 450px 0px 0px 450px;
+}
+
+.article_header:hover .article_title {
+  font-weight: bolder;
 }
 
 .models3D {
@@ -176,38 +201,45 @@ body {
 }
 
 @media screen and (max-width: 1100px) {
+  header {
+    height: 300px;
+  }
+
   .intro {
-    padding: 2em;
+    width: 100%;
+    height: auto;
+    padding: 1em;
+    text-align: left;
+  }
+
+  .intro p {
+    font-size: 1.2rem;
+    text-align: left;
+    word-break: normal;
   }
 
   .subtitle {
     max-width: 100%;
-    padding: 0;
+    padding: 1em;
   }
-
   .subtitle p {
-    font-size: calc(1.2rem + 3.6vw);
-    text-align: center;
+    font-size: calc(1.3rem + 3.6vw);
   }
 
   .title {
     width: fit-content;
     margin: auto;
-    margin-top: 50px;
+    padding: 0;
   }
 
   .title p {
-    font-size: calc(2rem + 3.6vw);
-  }
-
-  .resume {
-    column-count: 1;
+    font-size: calc(2.5rem + 3.6vw);
   }
 
   .article_title {
     width: 100%;
     font-size: calc(1rem + 2.6vw);
-    margin-bottom: 1em;
+    margin-bottom: 0;
   }
 
   .article_header {
@@ -216,34 +248,37 @@ body {
   }
 
   .arrowImgContainer {
+    width: 100%;
     display: flex;
-    width: 100%;
-    overflow: hidden;
+    overflow: none;
     background: rgb(0, 0, 0);
-    padding: 10px;
-    margin: auto;
+    margin: 1em 0;
     border-radius: 0;
-  }
-
-  .arrowImgContainer:hover {
-    width: 100%;
-  }
-
-  .arrowImgContainer a {
-    margin: auto;
+    padding: 0;
+    justify-content: center;
   }
 
   .arrowImgContainer a img {
     width: 100%;
-    height: auto;
+    object-fit: contain;
+  }
+
+  .article_header:hover .arrowImgContainer {
+    width: 100%;
   }
 
   .arrowinfo {
-    padding: 1em;
+    padding: 0;
   }
 
   .arrowinfo p {
+    font-size: 1.2rem;
     column-count: 1;
+    padding: 1em;
+  }
+
+  .fauna_gallery {
+    display: block;
     padding: 1em;
   }
 }
