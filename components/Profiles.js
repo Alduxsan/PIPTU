@@ -23,10 +23,9 @@ class Profiles_container extends HTMLElement {
     .profiles_wrapper {
       padding: 2em 5em;
       display: flex;
-      gap: 1em 1em;
+      gap: 1em;
       flex-direction: row;
       flex-wrap: wrap;
-      margin-top: 20px;
       justify-content: center;
     }
 
@@ -55,7 +54,7 @@ class Profiles extends HTMLElement {
   }
 
   getAtt(attr) {
-    let attribute = (this.attribute = this.getAttribute(attr) || "normal");
+    let attribute = (this.attribute = this.getAttribute(attr) || "Empty");
     return attribute;
   }
 
@@ -64,6 +63,8 @@ class Profiles extends HTMLElement {
   }
 
   showInfo() {
+    this.classList.toggle("opened-profile");
+
     this.info = this.shadowRoot.getElementById("detailsContent");
     this.info.classList.toggle("hide");
     this.info.scrollIntoView({ block: "end", behavior: "smooth" });
@@ -80,10 +81,30 @@ class Profiles extends HTMLElement {
     let bio = this.getAtt("bio");
     let name = this.getAtt("name");
 
-    this.shadowRoot.innerHTML = `
+    if (this.classList.contains("dummy")) {
+      this.shadowRoot.innerHTML = `
 
-    <div id="card" class="profile_card">
-        
+    <div id="card" class="profile_card"> </div>
+    <style>
+    .profile_card{
+      display: flex;
+      font-family: raleway, sans-serif;
+      justify-content: center;
+      transition: box-shadow .5s;
+      cursor: pointer;
+      border-radius: 4px;
+      border: 1px solid rgba(0, 0, 0, 0.2);
+      padding: 1em;
+      min-width: 350px;
+      min-height: 350px;
+      transition: all 0.3s
+    }
+    </style>
+    `;
+    } else {
+      this.shadowRoot.innerHTML = `
+
+    <div id="card" class="profile_card">        
         <div  class="imgNameContainer">
           <div id=${imgFix} class="imgContainer">
             <img src="${img}" loading="lazy" alt="${name}">
@@ -99,7 +120,7 @@ class Profiles extends HTMLElement {
     </div>
 
       <style>
-
+      
       #rafael {
         width: 100%;
       }
@@ -120,21 +141,25 @@ class Profiles extends HTMLElement {
         display: none;
       }
 
+      
+
       .profile_card{
         display: flex;
         font-family: raleway, sans-serif;
         justify-content: center;
         transition: box-shadow .5s;
-        border-radius: 4px;
         cursor: pointer;
-        background: rgba(255, 255, 255, 0.300);
+        border-radius: 4px;
+        border: 1px solid rgba(0, 0, 0, 0.3);
         padding: 1em;
         min-width: 350px;
-        min-height: 320px;
+        min-height: 350px;
+        transition: all 0.3s
       }
 
       .profile_card:hover{
-        box-shadow: 2px 2px 2px 1px
+        box-shadow:
+    2px 2px 2px 1px rgba(0, 0, 0, 0.5)
       }
       
       .imgNameContainer{
@@ -210,6 +235,7 @@ class Profiles extends HTMLElement {
 
       </style>
       `;
+    }
   }
 }
 

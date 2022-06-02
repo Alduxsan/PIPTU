@@ -1,11 +1,11 @@
 //carousel in home
 const images = [
-  "https://i.ibb.co/rcj9YHF/1.jpg",
-  "https://i.ibb.co/XbXMSvh/2.jpg",
-  "https://i.ibb.co/17J5KYS/4.jpg",
-  "https://i.ibb.co/tBNT1Lp/5.jpg",
-  "https://i.ibb.co/rbVXGZy/6.jpg",
-  "https://i.ibb.co/zGP56ST/7.jpg",
+  "../media/home/carousel/1.jpg",
+  "../media/home/carousel/2.jpg",
+  "../media/home/carousel/4.jpg",
+  "../media/home/carousel/5.jpg",
+  "../media/home/carousel/6.jpg",
+  "../media/home/carousel/7.jpg",
 ];
 
 const carousel = document.querySelector(".carousel");

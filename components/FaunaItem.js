@@ -7,7 +7,7 @@ class FaunaItem extends HTMLElement {
   getAtt(attr) {
     let attribute = (this.attribute = this.getAttribute(attr));
     return attribute;
-  }
+  } 
 
   handleEvent(event) {
     if (event.type === "click") {
