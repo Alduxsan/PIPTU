@@ -93,7 +93,7 @@ class Profiles extends HTMLElement {
       transition: box-shadow .5s;
       cursor: pointer;
       border-radius: 4px;
-      border: 1px solid rgba(0, 0, 0, 0.2);
+      border: 1px solid rgba(0, 0, 0, 0.3);
       padding: 1em;
       min-width: 350px;
       min-height: 350px;
@@ -158,8 +158,9 @@ class Profiles extends HTMLElement {
       }
 
       .profile_card:hover{
-        box-shadow:
-    2px 2px 2px 1px rgba(0, 0, 0, 0.5)
+        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.5);
+        background: #c2a23b;
+        border: 1px solid rgba(0, 0, 0, 0.1);
       }
       
       .imgNameContainer{

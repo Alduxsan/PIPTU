@@ -48,13 +48,12 @@ header {
 }
 
 .title p {
-  margin-top: 30vh;
   font-family: var(--title-font);
   font-weight: 700;
   font-size: calc(6rem + 3.6vw);
   color: #260e00;
   text-align: center;
-  margin-bottom: 0;
+  margin-top: 10%;
 }
 
 .subtitle {
@@ -127,6 +126,7 @@ header {
 }
 
 .maps {
+  padding: 2em 5em;
   display: flex;
   justify-content: center;
   margin: auto;
@@ -181,6 +181,7 @@ header {
     font-size: calc(1.5rem + 3.6vw);
     text-align: center;
     margin: auto;
+    margin-top: 30%;
   }
 
   .model_text_container {

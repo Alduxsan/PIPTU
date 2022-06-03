@@ -38,7 +38,7 @@ body {
 header {
   height: 100vh;
   position: relative;
-  background: url("../media/aboutus/bkg-1.jpg") no-repeat;
+  background: url("../media/aboutus/headerbkg.jpg ") no-repeat;
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
@@ -47,7 +47,6 @@ header {
 
 .title {
   padding: 2em;
-  margin-top: 30vh;
 }
 
 .title p {
@@ -56,7 +55,7 @@ header {
   font-size: calc(6rem + 3.6vw);
   color: #260e00;
   text-align: center;
-  margin-bottom: 0;
+  margin-top: 20%;
 }
 
 .subtitle {

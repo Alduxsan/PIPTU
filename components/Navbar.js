@@ -104,7 +104,7 @@ class Navbar extends HTMLElement {
 
     
     .sticky{
-      z-index: 3;
+      z-index: 10;
       position: fixed;
       animation: fromTop 1s;
       animation-fill-mode: forwards
@@ -117,6 +117,7 @@ class Navbar extends HTMLElement {
       transition: all 0.4s ease;
       z-index: 1;
       background-color: #260E00;
+      position: fixed;
     }
     
     nav .nav-content {

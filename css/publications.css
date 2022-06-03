@@ -37,7 +37,7 @@ body {
 header {
   height: 100vh;
   position: relative;
-  background: url("../media/publications/racn.jpg") no-repeat;
+  background: url("../media/activities/9-DIFUSI-N.jpg") no-repeat;
   background-size: cover;
   background-position: top;
   padding-bottom: 2em;
@@ -71,17 +71,16 @@ header {
 
 .title {
   padding: 2em;
-  margin-top: 15vh;
 }
 
 .title p {
   font-family: var(--title-font);
   font-weight: 700;
   font-size: calc(7rem + 3.6vw);
-  /* color: #260e00; */
   color: #260e00;
   text-align: center;
   margin-bottom: 0;
+  margin-top: 15%;
 }
 
 .subtitle {
@@ -97,16 +96,6 @@ header {
   font-family: var(--title-font);
   font-size: calc(1.3rem + 3.6vw);
   color: #260e00;
-}
-
-.styckyActive {
-  margin-top: 400px;
-}
-
-.img {
-  width: 100%;
-  border-radius: 4px;
-  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.607);
 }
 
 .press_content {
@@ -179,10 +168,10 @@ header {
     margin-top: 10vh;
     width: fit-content;
     margin: auto;
-    padding: 0;
   }
 
   .title p {
-    font-size: calc(2.5rem + 3.6vw);
+    font-size: calc(2rem + 3.6vw);
+    margin-top: 20%;
   }
 }
