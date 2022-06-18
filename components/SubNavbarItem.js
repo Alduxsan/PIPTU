@@ -44,8 +44,9 @@ class SubNavbarItem extends HTMLElement {
     }
 
     #section-name{
-      width: min-content;
-      margin: auto
+      width: fit-content;
+      margin: auto;
+      padding: 10px;
     }
     
     .iconContainer {
@@ -67,7 +68,8 @@ class SubNavbarItem extends HTMLElement {
     }
     
     a:hover > .iconContainer img {
-      animation: lightRotation 1s forwards;
+      animation: lightRotation 0.5s forwards;
+      animation-iteration-count: 2
     }
 
     a:hover > .iconContainer + p{
@@ -115,7 +117,7 @@ class SubNavbarItem extends HTMLElement {
   
   @keyframes lightRotation {
     50% {
-      transform: rotate(5deg);
+      transform: rotate(10deg);
     }
   }
     
