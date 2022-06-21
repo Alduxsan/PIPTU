@@ -20,26 +20,30 @@ class CollectionLayout extends HTMLElement {
       : this.setAttribute("collectionID", "empty");
   }
 
-  handleEvent(event) {
-    console.log(event);
-    if (event.type === "click") this.display_more();
-  }
+  // handleEvent(event) {
+  //   console.log(event);
+  //   if (event.type === "click") this.display_more();
+  // }
 
-  display_more() {
-    let btn = this.shadowRoot.getElementById("toggler_img");
+  // display_more() {
+  //   let btn = this.shadowRoot.getElementById("toggler_img");
 
-    this.shadowRoot.getElementById("gallery_id").classList.toggle("expanded"); //expand the grid container
-    btn.classList.toggle("less"); //to rotate the arrow
+  //   this.shadowRoot.querySelectorAll(".grid-container");
 
-    if (!btn.classList.contains("less")) {
-      document.getElementById("sub-navbar").scrollIntoView(true);
-    }
-  }
+  //   this.shadowRoot
+  //     .getElementById("gallery-container")
+  //     .classList.toggle("expanded"); //expand the grid container
+  //   btn.classList.toggle("less"); //to rotate the arrow
+
+  //   if (!btn.classList.contains("less")) {
+  //     document.getElementById("sub-navbar").scrollIntoView(true);
+  //   }
+  // }
 
   photoItemTemplate(imgPath, name) {
     const div = document.createElement("div");
     return (div.innerHTML = `
-         <div class="gallery-container">
+         <div class="item-container">
             <div class="gallery-item">
               <div class="image">
                  <a target="_blank" rel="noopener" href="${imgPath}">
@@ -49,6 +53,13 @@ class CollectionLayout extends HTMLElement {
             </div>
          </div>
         `);
+  }
+
+  subcollectionTitle(title) {
+    let div = document.createElement("div");
+    div.classList.add("gallery-subtitle");
+    div.innerHTML = `<p>${title}</p>`;
+    return div;
   }
 
   async requestCollection(collectionID) {
@@ -61,21 +72,31 @@ class CollectionLayout extends HTMLElement {
   }
 
   collectionAssembling(collectionID) {
-    const gall = this.shadowRoot.getElementById("gallery_id");
+    const gallery = this.shadowRoot.getElementById("gallery-container");
 
     this.requestCollection(collectionID).then((collection) => {
-      let assembled_collection = ``;
-
+      console.log(collection);
       for (const subcollection in collection) {
-        const imgPaths = collection[subcollection]["imgPaths"];
-        const sectionName = collection[subcollection]["name"];
+        const { imgPaths, name } = collection[subcollection];
+        // const imgPaths = collection[subcollection]["imgPaths"];
+        // const name = collection[subcollection]["name"];
 
-        let photoItem_factory = imgPaths.map((path) => {
-          return this.photoItemTemplate(path, sectionName);
+        const grid_container = document.createElement("div");
+        grid_container.setAttribute("id", subcollection);
+
+        const assembled_collection = document.createElement("div");
+        assembled_collection.classList.add("subcollection_container");
+
+        const photoItem_factory = imgPaths.map((path) => {
+          return this.photoItemTemplate(path, name);
         });
-        assembled_collection += photoItem_factory.join("");
+        assembled_collection.innerHTML += photoItem_factory.join("");
+
+        grid_container.appendChild(this.subcollectionTitle(name));
+        grid_container.appendChild(assembled_collection);
+
+        gallery.appendChild(grid_container);
       }
-      return (gall.innerHTML = assembled_collection);
     });
   }
 
@@ -87,7 +108,6 @@ class CollectionLayout extends HTMLElement {
   connectedCallback() {
     this.render();
     this.btn = this.shadowRoot.getElementById("btn");
-    this.btn.addEventListener("click", this);
     this.collectionAssembling(this.collectionID);
   }
 
@@ -95,12 +115,10 @@ class CollectionLayout extends HTMLElement {
     this.shadowRoot.innerHTML = `
     <div class="collection_wrapper">
     ${topSvg}         
-        <div class="container" id="gallery_id">
+        <div id="gallery-container">
       </div>
 
-      <div id="btn" class="toggler_button" type="button">
-        <img class="" id="toggler_img" src="./media/icons/bottom-arrow-angle.png" alt="toggler icon">
-      </div>
+      
       ${bottomSvg}
     </div>
 
@@ -126,108 +144,42 @@ class CollectionLayout extends HTMLElement {
       z-index: 1;
     }
 
+    #gallery-container {
+      height:auto
+      overflow: hidden;
+    }
+
     .collection_wrapper {
       position:relative;
       background-color: rgba(38, 14, 0, 0.578);
       height: fit-content;
-      padding: 5em 2em;
+      padding: 1em 2em;
+      padding-bottom: 4em;
     }
     
-    .container {
+    .subcollection_container {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      grid-auto-rows: 400px 200px;
+      grid-auto-rows: 400px;
       grid-gap: 10px;
       grid-auto-flow: dense;
-      height: 410px;
-      overflow: hidden;
-      filter: grayscale();
     }
+
     
-    .expanded {
-      animation: expand 1s;
-      animation-fill-mode: forwards;
-      filter: none;
-    }
-    
-    .toggler_button {
-      width: 3%;
+    .gallery-subtitle {
       margin: auto;
-      margin-top: 20px;
     }
     
-    #toggler_img {
-      width: 100%;
-      border-radius: 4px;
-      cursor: pointer;
-      padding: 10px;
-      background-color: rgba(255, 255, 255, 0.644);
-      transition: all 0.2s;
-      box-shadow: 4px 4px 2px rgba(0, 0, 0, 0.604);
-    }
-    
-    #toggler_img:hover {
-      box-shadow: 8px 8px 2px rgba(0, 0, 0, 0.304);
-    }
-
-    .less {
-      transform: rotate(180deg);
-    }
-    
-
-    ::slotted(.w-2){
-      grid-column: span 2
-    }
-    ::slotted(.w-2) {
-      grid-column: span 2;
-    }
-    ::slotted(.w-3) {
-      grid-column: span 3;
-    }
-    ::slotted(.w-4) {
-      grid-column: span 4;
-    }
-    ::slotted(.w-5) {
-      grid-column: span 5;
-    }
-    ::slotted(.w-6) {
-      grid-column: span 6;
-    }
-    
-    ::slotted(.h-1) {
-      grid-row: span 1;
-    }
-    ::slotted(.h-2) {
-      grid-row: span 2;
-    }
-    ::slotted(.h-3) {
-      grid-row: span 3;
-    }
-    ::slotted(.h-4) {
-      grid-row: span 4;
-    }
-    ::slotted(.h-5) {
-      grid-row: span 5;
-    }
-    ::slotted(.h-6) {
-      grid-row: span 6;
-    }
-
-
-    @keyframes expand {
-      0%{
-        height: 400px
-      }
-      50%{
-        height: 600px
-      }
-      100% {
-        height:auto;
-      }
+    .gallery-subtitle p {
+      font-weight: 600;
+      text-align: center;
+      font-family: var(--title-font);
+      font-size: calc(1rem + 2.6vw);
+      color: #260e00;
     }
 
     /* ----------- PhotoItem --------- */
-    .gallery-container{
+    .item-container{
              width: 100%;
              height: 100%;
              overflow: hidden;
