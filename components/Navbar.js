@@ -207,7 +207,7 @@ class Navbar extends HTMLElement {
     }
     
     .icon{
-      width: 40px;
+      width: 30px;
       height: fit-content;
       cursor: pointer;
       animation: fadeIn .5s;

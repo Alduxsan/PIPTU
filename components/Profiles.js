@@ -93,7 +93,7 @@ class Profiles extends HTMLElement {
       transition: box-shadow .5s;
       cursor: pointer;
       border-radius: 4px;
-      border: 1px solid rgba(0, 0, 0, 0.3);
+      border: 1px solid rgba(0, 0, 0, 0.0);
       padding: 1em;
       min-width: 350px;
       min-height: 350px;
@@ -232,7 +232,8 @@ class Profiles extends HTMLElement {
           margin: 0;
           text-align: left;
         }
-      
+
+      }
 
       </style>
       `;

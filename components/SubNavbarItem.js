@@ -123,15 +123,33 @@ class SubNavbarItem extends HTMLElement {
     
     @media screen and (max-width: 1100px) {
       .iconContainer {
-        height:100px;
+        height:50px;
         width: fit-content;
         margin: auto;
-        margin-bottom: 15px;
+        margin-bottom: 0;
       }
       .iconContainer img{
-        height: 100px;
+        height: 50px;
         width: auto;
       }
+      .sublink {
+        font-family: raleway, sans-serif;
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+        font-size: 1rem;
+        text-align: center;
+      }
+      .sublink_container {
+        margin: auto;
+        margin-top: 0;
+        padding: 0;
+        transition: all 0.4s;
+        min-width:150px
+    }
+
+    #section-name{
+      width: min-content
+    }
       }
     </style>
    
@@ -168,17 +186,16 @@ class SubNavbarContainer extends HTMLElement {
       align-items: stretch;
       display: flex;
       flex-wrap: wrap;
-      justify-content: center;
+      justify-content: space-between;
       padding-bottom: 5em
 
     }
     
     @media screen and (max-width: 1100px) {
-      
       .sublink_container{
-        display: block;
+        padding: 1em;
       }
-    
+
      
       }
     </style>

@@ -231,4 +231,8 @@ header {
   .title p {
     font-size: calc(2.5rem + 3.6vw);
   }
+
+  .dummy {
+    display: none;
+  }
 }
