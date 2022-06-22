@@ -220,7 +220,7 @@ class Profiles extends HTMLElement {
          padding:0;
          padding-top: 1em;
          display: block;
-         border-radius: 0;
+         border-radius: 4;
          margin: 5px 0;
         }
         .name{

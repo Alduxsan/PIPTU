@@ -198,4 +198,8 @@ header {
     hyphens: auto;
     -webkit-hyphens: auto;
   }
+
+  .maps {
+    padding: 2em 0;
+  }
 }

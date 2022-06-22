@@ -186,14 +186,15 @@ class SubNavbarContainer extends HTMLElement {
       align-items: stretch;
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-between;
-      padding-bottom: 5em
+      justify-content: center;
+      padding-bottom: 5em;
 
     }
     
     @media screen and (max-width: 1100px) {
       .sublink_container{
         padding: 1em;
+        justify-content: space-between
       }
 
      

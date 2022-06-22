@@ -82,6 +82,16 @@ class Artifact3D extends HTMLElement {
       }
 
       @media screen and (max-width: 1100px) {
+        .artifactWrapper{
+          padding:5px;
+          margin: auto;
+        }
+
+        iframe{
+          width: 300px;
+          height: 300px;
+        }
+
          .artifactTitle a{
            font-size: 1.5rem
          }}

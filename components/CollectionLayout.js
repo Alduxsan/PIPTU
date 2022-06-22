@@ -194,13 +194,13 @@ class CollectionLayout extends HTMLElement {
              border-radius: 4px;
              background-position: center;
            }
-                .gallery-item .image {
+          .gallery-item .image {
              width: 100%;
              height: 100%;
              overflow: hidden;
              border-radius: 4px;
            }
-                .image img {
+           .image img {
              width: 100%;
              height: 100%;
              object-fit: cover;
@@ -230,12 +230,20 @@ class CollectionLayout extends HTMLElement {
              backdrop-filter: blur(5px) saturate(1.8);
              text-align: center;
            }
-                .gallery-item:hover .text {
+            gallery-item:hover .text {
              opacity: 1;
              animation: move-down 0.3s linear;
              padding: 1em;
              width: 100%;
            }
+
+           @media screen and (max-width: 1100px) {
+            .collection_wrapper {
+              padding: 1em 5px
+            }
+            }
+          
+           
     </style>
     `;
   }
