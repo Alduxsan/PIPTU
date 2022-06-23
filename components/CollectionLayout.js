@@ -38,8 +38,7 @@ class CollectionLayout extends HTMLElement {
   //   if (!btn.classList.contains("less")) {
   //     document.getElementById("sub-navbar").scrollIntoView(true);
   //   }
-  // }
-
+  // } 
   photoItemTemplate(imgPath, name) {
     const div = document.createElement("div");
     return (div.innerHTML = `
