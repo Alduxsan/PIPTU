@@ -184,15 +184,13 @@ class Navbar extends HTMLElement {
      .responsive_navbar{
       top: 0;
       left: 0;
-      width: 100%;
       transition: all 0.4s ease;
       z-index: 1;
       background-color: rgb(38 14 0);
       display: none;
-      justify-content: space-around;
+      justify-content: space-between;
       align-items: center;
-      padding-top: 10px;
-      padding-bottom: 10px;
+      padding: 1em
       
     }
     
