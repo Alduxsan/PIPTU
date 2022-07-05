@@ -39,13 +39,14 @@ class ActivitiesItem extends HTMLElement {
     let subtitle = this.getAtt("subtitle");
     let imgPath = this.getAtt("imgPath");
     let text = this.getAtt("text");
+    let id = this.getAtt("id") || "";
 
     this.shadowRoot.innerHTML = `
     <article>
       <div class="activities_item_container">
           <div class="imgContainer" id="img-container">
             ${topSvg}         
-            <img src="${imgPath}" loading="lazy" alt="${title}"/>
+            <img src="${imgPath}" loading="lazy" alt="${title}" id="${id}">
             ${bottomSvg}
             
             <div class="title-wrapper">
@@ -62,7 +63,9 @@ class ActivitiesItem extends HTMLElement {
     </article>
 
     <style>
-
+    #paypaso {
+      object-position: bottom;
+    }
     .bottom-wave-separator {
       width: 100%;
       height: 30px;
