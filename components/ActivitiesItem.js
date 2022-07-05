@@ -36,6 +36,7 @@ class ActivitiesItem extends HTMLElement {
 
   render() {
     let title = this.getAtt("title");
+    let subtitle = this.getAtt("subtitle");
     let imgPath = this.getAtt("imgPath");
     let text = this.getAtt("text");
 
@@ -49,6 +50,7 @@ class ActivitiesItem extends HTMLElement {
             
             <div class="title-wrapper">
               <p id="activity-title">${title}</p>
+              <h4 id="activity-subtitle">${subtitle}</h4>
             </div>
           </div>
           <div id="activity-text" class="activity_text_container hide">
@@ -83,7 +85,7 @@ class ActivitiesItem extends HTMLElement {
 
       .activities_item_container{
         margin-bottom: 1em;
-        overflow: hidden
+        overflow: hidden;
       }
     
       .imgContainer{
@@ -102,6 +104,7 @@ class ActivitiesItem extends HTMLElement {
       }
 
       .title-wrapper{
+        width: 50%;
         background-color:rgba(38, 14, 0, 0.851);
         height: fit-content;
         position: absolute;
@@ -111,12 +114,31 @@ class ActivitiesItem extends HTMLElement {
         border-radius: 0 4px 4px 0
       }
 
+      .activities_item_container:hover .title-wrapper{
+        background: rgba(255,255,255,0.4);
+        transition: all .5s
+      }
+      .activities_item_container:hover p{
+        color: rgba(38, 14, 0)
+      }
+      .activities_item_container:hover img{
+        transform: scale(1.1);  
+        transition: all .5s
+      }
+
       .title-wrapper p{
         font-family: var(--title-font), sans-serif;
-        font-size:calc(1.8rem + 1.6vw);
+        font-size:calc(1.3rem + 1.6vw);
         color: white;
         text-align: left;
-        margin:10px 10px 10px 40px;
+        margin:10px 10px 0px 40px;
+      }
+
+      #activity-subtitle{
+        color: white;
+        text-align: left;
+        margin:00px 10px 10px 40px;
+        font-family: raleway, sans-serif;
       }
 
       /*.imgContainer:hover .title-wrapper{
