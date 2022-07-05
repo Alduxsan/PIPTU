@@ -107,7 +107,7 @@ class ActivitiesItem extends HTMLElement {
       }
 
       .title-wrapper{
-        width: 50%;
+        width: fit-content;
         background-color:rgba(38, 14, 0, 0.851);
         height: fit-content;
         position: absolute;
@@ -131,7 +131,7 @@ class ActivitiesItem extends HTMLElement {
 
       .title-wrapper p{
         font-family: var(--title-font), sans-serif;
-        font-size:calc(1.3rem + 1.6vw);
+        font-size:calc(1rem + 1.6vw);
         color: white;
         text-align: left;
         margin:10px 10px 0px 40px;
