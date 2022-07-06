@@ -33,11 +33,12 @@ class BookItem extends HTMLElement {
     let editorial_info = this.getAtt("editorial_info");
     this.shadowRoot.innerHTML = `
     <article>
+    <a class="sublink" target="_blank" rel="noopener" href="${bookLink}"> 
     <div class="book_item_container">
         <div class="book_title">
-            <a class="sublink" target="_blank" rel="noopener" href="${bookLink}"> 
+           
                 <slot name="book_title"></slot>
-            </a> 
+            
             <h5 class="editorialInfo">${editorial_info}</h5>    
         </div>
 
@@ -51,7 +52,7 @@ class BookItem extends HTMLElement {
 
        
     </div>
-    <p class="separator"></p>
+    </a> 
     </article>
     
     <style>
@@ -66,7 +67,12 @@ class BookItem extends HTMLElement {
 
     article{
       font-family: raleway, sans-serif;
-      padding: 0 5em 1em 5em;    }
+      padding: 1em 5em;
+    transition: all .5s   }
+
+    article:hover{
+      background-color: rgba(255, 255, 255, 0.2);
+    }
 
     .book_title{
       font-weight: 100;
@@ -83,7 +89,6 @@ class BookItem extends HTMLElement {
     .sublink{
       text-decoration: none;
       color: black;
-      text-transform: uppercase;
       font-size: 1.3rem;
     }
 

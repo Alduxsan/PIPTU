@@ -1,4 +1,14 @@
 const investigated_sites = {
+  loc_arq_pay_paso: {
+    name: "LOCALIDAD ARQUEOLÓGICA PAY PASO",
+    imgPaths: [
+      "media/gallery/investigated_sites/localidad_arqueologica_pay_paso/copia_de_perfil_pp1.jpg",
+      "media/gallery/investigated_sites/localidad_arqueologica_pay_paso/lp_6_en_pedestales_detalle.jpg",
+      "media/gallery/investigated_sites/localidad_arqueologica_pay_paso/piso_y_bifaz_ultradelgado.jpg",
+      "media/gallery/investigated_sites/localidad_arqueologica_pay_paso/rs_mostrando_estratificacion.jpg",
+      "media/gallery/investigated_sites/localidad_arqueologica_pay_paso/toda_exc_i_vista_wavy_too.jpg",
+    ],
+  },
   tigre_k87: {
     name: "TIGRE k87",
     imgPaths: [
@@ -8,7 +18,7 @@ const investigated_sites = {
     ],
   },
   gallery_sites: {
-    name: "SITIOS GALERÍA",
+    name: "CANTERA DEL ARROYO CATALAN CHICO Y CATALAN SECO (RACNA)",
     imgPaths: [
       "media/gallery/investigated_sites/sitos_galería/afloramiento_catalán_seco_11.jpg",
       "media/gallery/investigated_sites/sitos_galería/afloramiento_catalan.jpg",
@@ -21,7 +31,7 @@ const investigated_sites = {
     ],
   },
   queguay_caves: {
-    name: "CUEVAS DE QUEGUAY",
+    name: "CUEVAS, ALEROS Y AFLORAMIENTOS",
     imgPaths: [
       "media/gallery/investigated_sites/cuevas_queguay/cerro_cuervos_superficial_dscn0514.jpg",
       "media/gallery/investigated_sites/cuevas_queguay/copia_de_5.jpg",
@@ -31,53 +41,43 @@ const investigated_sites = {
       "media/gallery/investigated_sites/cuevas_queguay/dscn9958_low_res.jpg",
       "media/gallery/investigated_sites/cuevas_queguay/dscn9983_low_res.jpg",
       "media/gallery/investigated_sites/cuevas_queguay/dscn9994_low_res.jpg",
-    ],
-  },
-  loc_arq_pay_paso: {
-    name: "LOCALIDAD ARQUEOLÓGICA PAY PASO",
-    imgPaths: [
-      "media/gallery/investigated_sites/localidad_arqueologica_pay_paso/artefactos_pay_paso_1.jpg",
-      "media/gallery/investigated_sites/localidad_arqueologica_pay_paso/copia_de_perfil_pp1.jpg",
-      "media/gallery/investigated_sites/localidad_arqueologica_pay_paso/lascas_pay_paso_1.jpg",
-      "media/gallery/investigated_sites/localidad_arqueologica_pay_paso/lp_6_en_pedestales_detalle.jpg",
-      "media/gallery/investigated_sites/localidad_arqueologica_pay_paso/piso_y_bifaz_ultradelgado.jpg",
-      "media/gallery/investigated_sites/localidad_arqueologica_pay_paso/rs_mostrando_estratificacion.jpg",
-      "media/gallery/investigated_sites/localidad_arqueologica_pay_paso/toda_exc_i_vista_wavy_too.jpg",
-    ],
-  },
-};
-
-const excavations = {
-  pay_paso_1: {
-    name: "PAY PASO 1",
-    imgPaths: [
-      "media/gallery/excavations/piso_y_herramientas_-_pay_paso_1.jpg",
-      "media/gallery/excavations/excavación_pay_paso_1.jpg",
-      "media/gallery/excavations/planta_de_excavación_sitio_pay_paso_1.jpg",
-    ],
-  },
-
-  tigre_k87: {
-    name: "TIGRE k87",
-    imgPaths: [
-      "media/gallery/excavations/conjunto_cerámico_k87_camaña_2012.png",
-      "media/gallery/excavations/excavación_en_el_sitio_tigre_k87_campaña_2020.jpeg",
-      "media/gallery/excavations/planta_de_excavación_del_sitio_tigre_k87_campaña_2012.jpg",
-    ],
-  },
-  tuna_cave: {
-    name: "CUEVA DE LA TUNA",
-    imgPaths: [
       "media/gallery/excavations/planta_de_excavación_de_la_cueva_de_la_tuna.jpeg",
-    ],
-  },
-  cuervos_cave: {
-    name: "CUEVA DE LOS CUERVOS",
-    imgPaths: [
       "media/gallery/excavations/excavación_en_la_cueva_de_los_cuervos.jpg",
     ],
   },
 };
+
+// const excavations = {
+//   pay_paso_1: {
+//     name: "PAY PASO 1",
+//     imgPaths: [
+//       "media/gallery/excavations/piso_y_herramientas_-_pay_paso_1.jpg",
+//       "media/gallery/excavations/excavación_pay_paso_1.jpg",
+//       "media/gallery/excavations/planta_de_excavación_sitio_pay_paso_1.jpg",
+//     ],
+//   },
+
+//   tigre_k87: {
+//     name: "TIGRE k87",
+//     imgPaths: [
+//       "media/gallery/excavations/conjunto_cerámico_k87_camaña_2012.png",
+//       "media/gallery/excavations/excavación_en_el_sitio_tigre_k87_campaña_2020.jpeg",
+//       "media/gallery/excavations/planta_de_excavación_del_sitio_tigre_k87_campaña_2012.jpg",
+//     ],
+//   },
+//   tuna_cave: {
+//     name: "CUEVA DE LA TUNA",
+//     imgPaths: [
+//       "media/gallery/excavations/planta_de_excavación_de_la_cueva_de_la_tuna.jpeg",
+//     ],
+//   },
+//   cuervos_cave: {
+//     name: "CUEVA DE LOS CUERVOS",
+//     imgPaths: [
+//       "media/gallery/excavations/excavación_en_la_cueva_de_los_cuervos.jpg",
+//     ],
+//   },
+// };
 
 const lab_work_and_conservation = {
   lab_work: {
@@ -92,9 +92,20 @@ const lab_work_and_conservation = {
   },
 };
 
-const difusion_and_teaching = {
+const difusion_and_extension = {
   difusion: {
-    name: "DIFUSIÓN Y ENSEÑANZA",
+    name: "DIFUSIÓN",
+    imgPaths: [
+      "media/gallery/difusion/actividad_mna_2018_(1).jpg",
+      "media/gallery/difusion/actividad_mna_2018_(2).jpg",
+      "media/gallery/difusion/actividad_mna_2018_(3).jpg",
+      "media/gallery/difusion/actividad_mna_2021_(1).jpg",
+      "media/gallery/difusion/actividad_mna_2021_(2).jpeg",
+      "media/gallery/difusion/lascas_y_herramientas.jpeg",
+    ],
+  },
+  extension: {
+    name: "EXTENSIÓN",
     imgPaths: [
       "media/gallery/difusion/actividad_mna_2018_(1).jpg",
       "media/gallery/difusion/actividad_mna_2018_(2).jpg",
@@ -107,18 +118,34 @@ const difusion_and_teaching = {
 };
 // const materials = {};
 
+const teaching = {
+  teaching: {
+    name: "",
+    imgPaths: [
+      "media/gallery/difusion/actividad_mna_2018_(1).jpg",
+      "media/gallery/difusion/actividad_mna_2018_(2).jpg",
+      "media/gallery/difusion/actividad_mna_2018_(3).jpg",
+      "media/gallery/difusion/actividad_mna_2021_(1).jpg",
+      "media/gallery/difusion/actividad_mna_2021_(2).jpeg",
+      "media/gallery/difusion/lascas_y_herramientas.jpeg",
+    ],
+  },
+};
+
 export const dataDelivery = (request) => {
   switch (request) {
     case "investigated_sites":
       return JSON.stringify(investigated_sites);
-    case "excavations":
-      return JSON.stringify(excavations);
+    // case "excavations":
+    //   return JSON.stringify(excavations);
     case "lab_work":
       return JSON.stringify(lab_work_and_conservation);
-    case "difusion_teaching":
-      return JSON.stringify(difusion_and_teaching);
-    case "materials":
-      return JSON.stringify(materials);
+    case "difusion_extension":
+      return JSON.stringify(difusion_and_extension);
+    // case "materials":
+    //   return JSON.stringify(materials);
+    case "teaching":
+      return JSON.stringify(teaching);
 
     default:
       return "";

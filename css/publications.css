@@ -34,7 +34,7 @@ html {
     opacity: 0;
   }
   to {
-    opacity: 1;
+    opacity: 100;
   }
 }
 
@@ -47,9 +47,9 @@ body {
 header {
   height: 100vh;
   position: relative;
-  background: url("../media/activities/9-DIFUSI-N.jpg") no-repeat;
+  background: url("../media/publications/publicationsHeaderImg.jpg") no-repeat;
   background-size: cover;
-  background-position: top;
+  background-position: center;
   padding-bottom: 2em;
 }
 .wave-separator {
