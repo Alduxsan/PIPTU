@@ -20,25 +20,23 @@ class CollectionLayout extends HTMLElement {
       : this.setAttribute("collectionID", "empty");
   }
 
-  // handleEvent(event) {
-  //   console.log(event);
-  //   if (event.type === "click") this.display_more();
-  // }
+  display_more(subcollectionID) {
+    let gallery = this.shadowRoot.getElementById(subcollectionID);
+    let btnMore = this.shadowRoot.getElementById(
+      "togglerMore" + subcollectionID
+    );
+    let btnLess = this.shadowRoot.getElementById(
+      "toggleLess" + subcollectionID
+    );
+    gallery.classList.toggle("expand");
+    btnMore.classList.toggle("hide");
+    btnLess.classList.toggle("hide");
 
-  // display_more() {
-  //   let btn = this.shadowRoot.getElementById("toggler_img");
+    if (btnLess.classList.contains("hide")) {
+      this.shadowRoot.getElementById(subcollectionID).scrollIntoView(true);
+    }
+  }
 
-  //   this.shadowRoot.querySelectorAll(".grid-container");
-
-  //   this.shadowRoot
-  //     .getElementById("gallery-container")
-  //     .classList.toggle("expanded"); //expand the grid container
-  //   btn.classList.toggle("less"); //to rotate the arrow
-
-  //   if (!btn.classList.contains("less")) {
-  //     document.getElementById("sub-navbar").scrollIntoView(true);
-  //   }
-  // } 
   photoItemTemplate(imgPath, name) {
     const div = document.createElement("div");
     return (div.innerHTML = `
@@ -74,25 +72,34 @@ class CollectionLayout extends HTMLElement {
     const gallery = this.shadowRoot.getElementById("gallery-container");
 
     this.requestCollection(collectionID).then((collection) => {
-      console.log(collection);
       for (const subcollection in collection) {
         const { imgPaths, name } = collection[subcollection];
-        // const imgPaths = collection[subcollection]["imgPaths"];
-        // const name = collection[subcollection]["name"];
 
         const grid_container = document.createElement("div");
-        grid_container.setAttribute("id", subcollection);
+
+        const expandButton = document.createElement("div");
+        expandButton.classList.add("toggler_button");
+        expandButton.setAttribute("type", "button");
+        expandButton.setAttribute("id", "btn" + subcollection);
+
+        expandButton.innerHTML = `
+        <p class="ToggleBtn" id="togglerMore${subcollection}"> MOSTRAR MÁS</p>
+        <p class="ToggleBtn hide" id="toggleLess${subcollection}">CONTRAER</p>`;
 
         const assembled_collection = document.createElement("div");
         assembled_collection.classList.add("subcollection_container");
+        assembled_collection.setAttribute("id", subcollection);
 
         const photoItem_factory = imgPaths.map((path) => {
           return this.photoItemTemplate(path, name);
         });
         assembled_collection.innerHTML += photoItem_factory.join("");
-
+        expandButton.addEventListener("click", () =>
+          this.display_more(subcollection)
+        );
         grid_container.appendChild(this.subcollectionTitle(name));
         grid_container.appendChild(assembled_collection);
+        grid_container.appendChild(expandButton);
 
         gallery.appendChild(grid_container);
       }
@@ -115,10 +122,8 @@ class CollectionLayout extends HTMLElement {
     <div class="collection_wrapper">
     ${topSvg}         
         <div id="gallery-container">
-      </div>
-
-      
-      ${bottomSvg}
+      </div>   
+    ${bottomSvg}
     </div>
 
     <style>
@@ -162,6 +167,12 @@ class CollectionLayout extends HTMLElement {
       grid-auto-rows: 400px;
       grid-gap: 10px;
       grid-auto-flow: dense;
+      height: 400px;
+      overflow: hidden;
+    }
+
+    .expand{
+      height: fit-content
     }
 
     
@@ -175,6 +186,31 @@ class CollectionLayout extends HTMLElement {
       font-family: var(--title-font);
       font-size: calc(1rem + 2.6vw);
       color: #260e00;
+    }
+
+    .toggler_button {
+      width: fit-content;
+      margin: auto;
+      margin-top: 20px;
+      padding-bottom: 2em;
+    }
+    
+    .ToggleBtn {
+      text-align: center;
+      border-radius: 4px;
+      cursor: pointer;
+      padding: 10px;
+      background-color: rgba(255, 255, 255, 0.644);
+      transition: all 0.2s;
+      box-shadow: 4px 4px 2px rgba(0, 0, 0, 0.604);
+    }
+    
+    .ToggleBtn:hover {
+      box-shadow: 8px 8px 2px rgba(0, 0, 0, 0.304);
+    }
+
+    .hide{
+      display: none;
     }
 
     /* ----------- PhotoItem --------- */

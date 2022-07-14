@@ -124,6 +124,11 @@ class ActivitiesItem extends HTMLElement {
       .activities_item_container:hover p{
         color: rgba(38, 14, 0)
       }
+
+      .activities_item_container:hover #activity-subtitle{
+        color: rgba(38, 14, 0)
+      }
+
       .activities_item_container:hover img{
         transform: scale(1.1);  
         transition: all .5s
