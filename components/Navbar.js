@@ -42,26 +42,61 @@ class Navbar extends HTMLElement {
           "home",
           atribute
         )}"><a href="/index.html">INICIO</a></div>
-        <div class=" ${this.checkActive(
+        <div class="menu ${this.checkActive(
           "aboutUs",
           atribute
-        )}"><a href="/aboutUs.html">SOBRE NOSOTROS</a></div>
-        <div class=" ${this.checkActive(
+        )}"><a href="/aboutUs.html">SOBRE NOSOTROS</a>
+        <div class="sub_menu">
+        <a class="sub_menu_link" href="/aboutUs.html#quienes">QUIENES SOMOS</a>
+        <a class="sub_menu_link" href="/aboutUs.html#que-hacemos">QUE HACEMOS</a>
+        <a class="sub_menu_link" href="/aboutUs.html#projectslist">PROYECTOS DE INVESTIGACIÓN</a>
+        </div>        
+        </div>
+        <div class="menu ${this.checkActive(
           "investigations",
           atribute
-        )}"><a href="/investigations.html">INVESTIGACIONES</a></div>
-        <div class=" ${this.checkActive(
+        )}"><a href="/investigations.html">INVESTIGACIONES</a>
+        <div class="sub_menu">
+        <a class="sub_menu_link" href="/investigations.html#investigationPaths">LÍNEAS DE INVESTIGACIÓN</a>
+        <a class="sub_menu_link" href="/investigations.html#poulationModel">MODELO DE POBLAMIENTO</a>
+        <a class="sub_menu_link" href="/investigations.html#sites">SITIOS</a>
+        <a class="sub_menu_link" href="/investigations.html#map">MAPA DE SITIOS ARQUEOLÓGICOS</a>
+        </div>
+        </div>
+        <div class="menu ${this.checkActive(
           "interactive",
           atribute
-        )}"><a href="/interactive.html">PREHISTORIA INTERACTIVA</a></div>
-        <div class=" ${this.checkActive(
+        )}"><a href="/interactive.html">PREHISTORIA INTERACTIVA</a>
+    <div class="sub_menu">
+        <a class="sub_menu_link" href="/interactive.html#fauna">FAUNA</a>
+        <a class="sub_menu_link" href="/interactive.html#projectiles">PUNTAS DE PROYECTIL</a>
+        <a class="sub_menu_link" href="/interactive.html#models3d">MODELOS 3D</a>
+        </div>    
+    </div>
+        <div class="menu ${this.checkActive(
           "publications",
           atribute
-        )}"><a href="/publications.html">PUBLICACIONES</a></div>
-        <div class=" ${this.checkActive(
+        )}"><a href="/publications.html">PUBLICACIONES</a>
+    <div class="sub_menu">
+        <a class="sub_menu_link" href="/publications.html#articles">ARTÍCULOS CIENTÍFICOS</a>
+        <a class="sub_menu_link" href="/publications.html#books">LIBROS</a>
+        <a class="sub_menu_link" href="/publications.html#bookChapters">CAPÍTULOS DE LIBROS</a>
+        <a class="sub_menu_link" href="/publications.html#press">PRENSA</a>
+        <a class="sub_menu_link" href="/publications.html#networks">REDES SOCIALES</a>
+        </div>    
+    </div>
+        <div class="menu ${this.checkActive(
           "gallery",
           atribute
-        )}"><a href="/gallery.html">GALERÍA DE FOTOS</a></div>
+        )}"><a href="/gallery.html">GALERÍA DE FOTOS</a>
+    <div class="sub_menu">
+        <a class="sub_menu_link" href="/gallery.html#sites">SITIOS</a>
+        <a class="sub_menu_link" href="gallery.html#labWork">TRABAJO DE GABINETE
+        Y CONSERVACIÓN</a>
+        <a class="sub_menu_link" href="/gallery.html#difusion">DIFUSIÓN Y EXTENSIÓN</a>
+        <a class="sub_menu_link" href="/gallery.html#teaching">DOCENCIA / ENSEÑANZA</a>
+        </div>
+    </div>
       </div>
     </div>
 
@@ -101,6 +136,40 @@ class Navbar extends HTMLElement {
   </nav>
    
     <style>   
+    .menu{
+      position: relative;
+      transition: all 1s
+
+    }
+    .sub_menu{
+      padding: 10px;
+      background: #260E00;
+      width: 100%;
+      position: absolute;
+      display: none;
+      flex-direction: column;
+      animation: fadeIn .5s;
+      animation-fill-mode: forwards;
+      text-align: left;
+      border-radius: 4px;
+    }
+
+    .sub_menu_link{
+      padding: 10px 0;
+    }
+
+    .menu:hover > .sub_menu{
+      display: flex;
+    }
+
+    @keyframes fadeIn{
+      from{
+        opacity:0
+      }
+      to{
+        opacity: 1;
+      }
+    }
 
     
     .sticky{
@@ -146,7 +215,7 @@ class Navbar extends HTMLElement {
     
     .nav-content .nav-links div {
       list-style: none;
-      margin:15px;
+      margin-right:15px;
     }
     
     .nav-links div a {
@@ -157,7 +226,7 @@ class Navbar extends HTMLElement {
       font-weight: 100;
       transition: all 0.3s ease;
       border-top: 1px solid rgba(0,0,0,0);
-      padding-top: 5px;
+      padding: 10px;
     }
     
     .nav-links div a:hover {
@@ -234,14 +303,7 @@ class Navbar extends HTMLElement {
       }
     }
     
-    @keyframes fadeIn {
-      from {
-        transform: translate(2000px);
-      }
-      to {
-        transform: translate(0);
-      }
-    }
+    
     @media screen and (max-width: 1100px) {
       
       .responsive_navbar{
