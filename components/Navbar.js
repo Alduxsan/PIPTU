@@ -47,8 +47,8 @@ class Navbar extends HTMLElement {
           atribute
         )}"><a href="/aboutUs.html">SOBRE NOSOTROS</a>
         <div class="sub_menu">
-        <a class="sub_menu_link" href="/aboutUs.html#quienes">QUIENES SOMOS</a>
-        <a class="sub_menu_link" href="/aboutUs.html#que-hacemos">QUE HACEMOS</a>
+        <a class="sub_menu_link" href="/aboutUs.html#quienes">QUIÉNES SOMOS</a>
+        <a class="sub_menu_link" href="/aboutUs.html#que-hacemos">QUÉ HACEMOS</a>
         <a class="sub_menu_link" href="/aboutUs.html#projectslist">PROYECTOS DE INVESTIGACIÓN</a>
         </div>        
         </div>
