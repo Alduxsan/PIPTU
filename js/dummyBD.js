@@ -18,7 +18,7 @@ const investigated_sites = {
     ],
   },
   gallery_sites: {
-    name: "CANTERA DEL ARROYO CATALAN CHICO Y CATALAN SECO (RACNA)",
+    name: "CANTERA DEL ARROYO CATALÁN CHICO Y CATALÁN SECO (RACNA)",
     imgPaths: [
       "media/gallery/investigated_sites/sitos_galería/afloramiento_catalán_seco_11.jpg",
       "media/gallery/investigated_sites/sitos_galería/afloramiento_catalan.jpg",
@@ -155,14 +155,14 @@ const difusion_and_extension = {
 
 const teaching_docency = {
   docency: {
-    name: "DOCENCIA",
+    name: "",
     imgPaths: ["media/gallery/teaching/educación.jpeg"],
   },
 
-  teaching: {
-    name: "",
-    imgPaths: [],
-  },
+  // teaching: {
+  //   name: "",
+  //   imgPaths: [],
+  // },
 };
 
 export const dataDelivery = (request) => {

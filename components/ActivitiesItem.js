@@ -25,7 +25,7 @@ class ActivitiesItem extends HTMLElement {
   showInfo() {
     this.info = this.shadowRoot.getElementById("activity-text");
     this.info.classList.toggle("hide");
-    this.info.scrollIntoView({ block: "end", behavior: "smooth" });
+    this.info.scrollIntoView({ block: "start", behavior: "smooth" });
   }
 
   connectedCallback() {
