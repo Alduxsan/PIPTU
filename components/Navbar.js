@@ -5,11 +5,9 @@ class Navbar extends HTMLElement {
   }
 
   checkActive(section, atribute) {
-    if (section === atribute) {
-      return "hide";
-    } else {
-      return "show";
-    }
+    let status;
+    section === atribute ? (status = "active") : (status = "show");
+    return status;
   }
 
   handleEvent(event) {
@@ -171,7 +169,6 @@ class Navbar extends HTMLElement {
       }
     }
 
-    
     .sticky{
       z-index: 10;
       position: fixed;
@@ -232,8 +229,8 @@ class Navbar extends HTMLElement {
     .nav-links div a:hover {
       transition: .2s all;
       color: #ab8300bd;
-      animation: topline .6s ease;
-      animation-fill-mode: forwards     
+      animation-fill-mode: forwards;   
+      font-weight: 900 
     }
 
     @keyframes topline{
@@ -245,7 +242,12 @@ class Navbar extends HTMLElement {
         border-top: 1px solid #ab8300bd;
       }
     }
-    
+
+    .active{
+      border-top: 1px solid #ab8300bd;
+      padding-top: 10px
+    }
+
     .hide {
     display:none;
      }
