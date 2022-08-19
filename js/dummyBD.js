@@ -10,7 +10,7 @@ const investigated_sites = {
     ],
   },
   tigre_k87: {
-    name: "TIGRE k87",
+    name: "TIGRE K87",
     imgPaths: [
       "media/gallery/investigated_sites/tigre_k87/conjunto_cerámico_-_sitio_tigre_k87_camaña_2012.png",
       "media/gallery/investigated_sites/tigre_k87/excavación_en_el_sitio_tigre_k87_campaña_2020.jpeg",

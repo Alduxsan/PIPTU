@@ -83,7 +83,7 @@ class CollectionLayout extends HTMLElement {
         expandButton.setAttribute("id", "btn" + subcollection);
 
         expandButton.innerHTML = `
-        <p class="ToggleBtn" id="togglerMore${subcollection}"> MOSTRAR MÁS</p>
+        <p class="ToggleBtn" id="togglerMore${subcollection}">MOSTRAR MÁS</p>
         <p class="ToggleBtn hide" id="toggleLess${subcollection}">CONTRAER</p>`;
 
         const assembled_collection = document.createElement("div");
@@ -275,6 +275,10 @@ class CollectionLayout extends HTMLElement {
            @media screen and (max-width: 1100px) {
             .collection_wrapper {
               padding: 1em 5px
+            }
+
+            .ToggleBtn{
+              font-size: 1rem;
             }
             }
           
