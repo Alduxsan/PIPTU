@@ -111,7 +111,6 @@ const excavations = {
       "media/gallery/excavations/piso_y_herramientas_-_pay_paso_1.jpg",
       "media/gallery/excavations/planta_de_excavación_de_la_cueva_de_la_tuna.jpeg",
       "media/gallery/excavations/planta_de_excavación_del_sitio_tigre_k87_campaña_2012.jpg",
-      "media/gallery/excavations/IMg-20210831-WA0063.jpg",
       "media/gallery/excavations/planta_de_excavación_sitio_pay_paso_1.jpg",
     ],
   },
