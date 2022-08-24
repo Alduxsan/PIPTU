@@ -1,14 +1,13 @@
 @font-face {
   font-family: raleway;
   src: url("../fonts/Raleway/Raleway-Regular.ttf");
-  font-display: swap;
 }
 
 @font-face {
   font-family: oswald;
   src: url("../fonts/Oswald/Oswald-Regular.ttf");
-  font-display: swap;
 }
+
 :root {
   --text-font-size: 1.4rem;
   --section-title-size: calc(1.3rem + 3.6vw);
@@ -119,7 +118,7 @@ header {
 .fauna_gallery {
   width: 100%;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
   margin-top: 1em;
   justify-content: center;
