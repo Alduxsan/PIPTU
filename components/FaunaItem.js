@@ -18,7 +18,9 @@ class FaunaItem extends HTMLElement {
   showInfo() {
     this.classList.toggle("active-fauna-item");
     this.info = this.shadowRoot.getElementById("info");
+    this.imgNameWrapper = this.shadowRoot.getElementById("imageNameWrapper");
     this.info.classList.toggle("show");
+    this.imgNameWrapper.classList.toggle("onShowInfo");
     this.info.scrollIntoView({ block: "end", behavior: "smooth" });
   }
 
@@ -37,7 +39,7 @@ class FaunaItem extends HTMLElement {
     this.shadowRoot.innerHTML = `
     
     <div class="card" id="faunaItem">
-        <div class="imgNameContainer">
+        <div id="imageNameWrapper" class="imgNameContainer">
             <div class="imgWrapper">
               <img src = "${imgSrc}" alt="${name}">
             </div>
@@ -54,13 +56,17 @@ class FaunaItem extends HTMLElement {
     
     
     <style>
+
     .card .show{
       display: block;
     }
 
+   
+
     .card{
       display: flex;
-      flex-direction: column;
+      align-items: center;
+      flex-direction: row;
       width: 100%;
       justify-content: center;
       transition: all .3s;
@@ -68,8 +74,11 @@ class FaunaItem extends HTMLElement {
       border: 1px solid rgba(0, 0, 0, 0.3);
       cursor: pointer;
       padding: 1em;
-    }
 
+    }
+    .card .onShowInfo{
+      flex-direction: column;
+    }
     .imgNameContainer{
       width: 100%;
       display: flex;
@@ -78,7 +87,7 @@ class FaunaItem extends HTMLElement {
     }
 
     .imgWrapper{
-      width: 300px;
+      width: 400px;
       padding: 1em;
     }
 
@@ -94,13 +103,13 @@ class FaunaItem extends HTMLElement {
     .nameWrapper{
       padding-left: 1em
     }
-    
+
     .nameWrapper p{
-      font-family: raleway, sans-serif;
+      font-family: raleway, sans-serif; 
     }
 
     .commonName{
-      font-size: 4rem;
+      font-size: 3rem;
       text-align: left;
       margin: auto;
       transition: all .5s
@@ -117,15 +126,15 @@ class FaunaItem extends HTMLElement {
     .infoWrapper{
       width: 100%;
       display: none;
+      font-family: raleway, sans-serif;
     }
 
     .infoWrapper p {
       font-size: var(--text-font-size);
-      font-family: raleway, "sans-serif";
       padding: 10px;
       text-align: justify;
       text-justify: distribute;
-      hyphens: auto 
+      hyphens: auto ;
     }
 
     .card:hover{
@@ -141,6 +150,7 @@ class FaunaItem extends HTMLElement {
     @media screen and (max-width: 1100px) {
       .card{
        padding: 3px;
+       flex-direction: column
       }
 
       .imgWrapper{
@@ -152,6 +162,7 @@ class FaunaItem extends HTMLElement {
       .infoWrapper p, .nameWrapper p{
         font-size: 1rem
       }
+
       }
     
     </style>

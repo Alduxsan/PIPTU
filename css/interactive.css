@@ -1,11 +1,13 @@
 @font-face {
   font-family: raleway;
   src: url("../fonts/Raleway/Raleway-Regular.ttf");
+  font-display: swap;
 }
 
 @font-face {
   font-family: oswald;
   src: url("../fonts/Oswald/Oswald-Regular.ttf");
+  font-display: swap;
 }
 
 :root {
@@ -286,5 +288,10 @@ header {
   .fauna_gallery {
     display: block;
     width: 100%;
+    padding: 3px;
+  }
+
+  p {
+    font-family: raleway, sans-serif;
   }
 }

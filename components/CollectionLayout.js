@@ -194,7 +194,7 @@ class CollectionLayout extends HTMLElement {
       margin-top: 20px;
       padding-bottom: 2em;
     }
-    
+     
     .ToggleBtn {
       text-align: center;
       border-radius: 4px;
@@ -224,10 +224,11 @@ class CollectionLayout extends HTMLElement {
              width: 100%;
              height: 100%;
              position: relative;
-             background: no-repeat url("/media/icons/photo_loading.png");
+             background: rgba(0,0,0,0.2);
              background-size: 30%;
              border-radius: 4px;
              background-position: center;
+             border: 1px solid rgba(0,0,0,0.3)
            }
           .gallery-item .image {
              width: 100%;
