@@ -255,6 +255,7 @@ class Navbar extends HTMLElement {
      .responsive_navbar{
       top: 0;
       left: 0;
+      right:0;
       transition: all 0.4s ease;
       z-index: 1;
       background-color: rgb(38 14 0);
@@ -273,6 +274,7 @@ class Navbar extends HTMLElement {
     
     .nav-links div a{
       font-size: 1rem;
+      text-align: center;
     }
     
     .icon{

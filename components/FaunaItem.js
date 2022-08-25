@@ -103,6 +103,7 @@ class FaunaItem extends HTMLElement {
       font-size: 4rem;
       text-align: left;
       margin: auto;
+      transition: all .5s
     }
 
     .classification{
@@ -139,18 +140,16 @@ class FaunaItem extends HTMLElement {
 
     @media screen and (max-width: 1100px) {
       .card{
-        margin: 1em 0;
-        flex-direction: column;
-        width: 100%;
-        min-height: fit-content;
+       padding: 3px;
       }
 
       .imgWrapper{
-        height: 100px;
-        width: fit-content;
+       width: 200px;
         margin: auto;
       }
-      .infoWrapper p{
+
+
+      .infoWrapper p, .nameWrapper p{
         font-size: 1rem
       }
       }
