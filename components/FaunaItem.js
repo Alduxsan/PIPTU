@@ -56,7 +56,7 @@ class FaunaItem extends HTMLElement {
     
     
     <style>
-
+    @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
     .card .show{
       display: block;
     }
@@ -65,7 +65,6 @@ class FaunaItem extends HTMLElement {
 
     .card{
       display: flex;
-      align-items: center;
       flex-direction: row;
       width: 100%;
       justify-content: center;
@@ -105,7 +104,7 @@ class FaunaItem extends HTMLElement {
     }
 
     .nameWrapper p{
-      font-family: raleway, sans-serif; 
+      font-family: 'Raleway', sans-serif; 
     }
 
     .commonName{
@@ -131,7 +130,7 @@ class FaunaItem extends HTMLElement {
 
     .infoWrapper p {
       font-size: var(--text-font-size);
-      padding: 10px;
+      padding: 0 10px;
       text-align: justify;
       text-justify: distribute;
       hyphens: auto ;

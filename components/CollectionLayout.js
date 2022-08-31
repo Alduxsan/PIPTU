@@ -69,6 +69,9 @@ class CollectionLayout extends HTMLElement {
   }
 
   collectionAssembling(collectionID) {
+    let details = navigator.userAgent;
+    let regexp = /android|iphone|kindle|ipad/i;
+    let isMobileDevice = regexp.test(details);
     const gallery = this.shadowRoot.getElementById("gallery-container");
 
     this.requestCollection(collectionID).then((collection) => {
@@ -99,7 +102,15 @@ class CollectionLayout extends HTMLElement {
         );
         grid_container.appendChild(this.subcollectionTitle(name));
         grid_container.appendChild(assembled_collection);
-        grid_container.appendChild(expandButton);
+        console.log(isMobileDevice);
+
+        if (isMobileDevice) {
+          grid_container.appendChild(expandButton);
+        } else {
+          if (assembled_collection.children.length > 4) {
+            grid_container.appendChild(expandButton);
+          }
+        }
 
         gallery.appendChild(grid_container);
       }
@@ -228,7 +239,6 @@ class CollectionLayout extends HTMLElement {
              background-size: 30%;
              border-radius: 4px;
              background-position: center;
-             border: 1px solid rgba(0,0,0,0.3)
            }
           .gallery-item .image {
              width: 100%;
