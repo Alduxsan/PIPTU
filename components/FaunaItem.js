@@ -61,8 +61,6 @@ class FaunaItem extends HTMLElement {
       display: block;
     }
 
-   
-
     .card{
       display: flex;
       flex-direction: row;
