@@ -129,7 +129,7 @@ header {
   text-align: justify;
   hyphens: auto;
   -webkit-hyphens: auto;
-}
+}  
 
 .model_img_wrapper {
   margin: auto;
@@ -137,10 +137,12 @@ header {
   width: 100%;
 }
 .model_img_wrapper div {
-  height: 400px;
-  background: url("../media/relleno.jpeg");
-  height: 400px;
+  width: 100%;
+  background: url("../media/gallery/investigated_sites/localidad_arqueologica_pay_paso/piso_y_bifaz_ultradelgado.jpg") no-repeat;
+  height: 500px;
   border-radius: 4px;
+  background-position: bottom;
+  background-size: 90%;
 }
 
 .maps {

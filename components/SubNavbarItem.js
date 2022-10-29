@@ -148,7 +148,8 @@ class SubNavbarItem extends HTMLElement {
     }
 
     #section-name{
-      width: min-content
+      width: min-content;
+      font-size: 0.8rem
     }
       }
     </style>
@@ -194,7 +195,7 @@ class SubNavbarContainer extends HTMLElement {
     @media screen and (max-width: 1100px) {
       .sublink_container{
         padding: 1em;
-        justify-content: space-between
+        justify-content: center
       }
 
      

@@ -49,9 +49,9 @@ class Profiles extends HTMLElement {
     this.attachShadow({ mode: "open" });
   }
 
-  static get styles() {
-    return Profiles_css;
-  }
+  // static get styles() {
+  //   return Profiles_css;
+  // }
 
   getAtt(attr) {
     let attribute = (this.attribute = this.getAttribute(attr) || "Empty");
