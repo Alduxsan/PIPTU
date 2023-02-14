@@ -174,7 +174,7 @@ class CollectionLayout extends HTMLElement {
     
     .subcollection_container {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(300px, 400px));
       grid-auto-rows: 400px;
       grid-gap: 10px;
       grid-auto-flow: dense;

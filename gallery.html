@@ -1,108 +1,128 @@
 <!DOCTYPE html>
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Galería de fotos del PROGRAMA DE INVESTIGACIÓN POBLAMIENTO TEMPRANO EN URUGUAY "
+    />
+    <link rel="stylesheet" href="./css/gallery.css" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Galería de fotos del PROGRAMA DE INVESTIGACIÓN POBLAMIENTO TEMPRANO EN URUGUAY ">
-  <link rel="stylesheet" href="./css/gallery.css" />
+    <script src="./components/Navbar.js" async></script>
+    <script src="./components/SubNavbarItem.js" async></script>
+    <script type="module" src="./components/CollectionLayout.js" async></script>
 
-  <script src="./components/Navbar.js" async></script>
-  <script src="./components/SubNavbarItem.js" async></script>
-  <script type="module" src="./components/CollectionLayout.js" async></script>
+    <title>PIPTU - GALERÍA DE FOTOS</title>
+  </head>
 
-  <title>PIPTU - GALERÍA DE FOTOS</title>
-</head>
+  <body>
+    <header>
+      <nav-bar atribute="gallery"></nav-bar>
 
-<body>
+      <div id="title" class="title">
+        <p>GALERÍA DE FOTOS</p>
+      </div>
 
-  <header>
-    <nav-bar atribute="gallery"></nav-bar>
+      <svg
+        class="wave-separator"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1440 320"
+        preserveAspectRatio="none"
+      >
+        <path
+          fill="#c0a342"
+          fill-opacity="1"
+          d="M0,128L48,149.3C96,171,192,213,288,202.7C384,192,480,128,576,128C672,128,768,192,864,234.7C960,277,1056,299,1152,266.7C1248,235,1344,149,1392,106.7L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+        ></path>
+      </svg>
+    </header>
 
-    <div id="title" class="title">
-      <p>GALERÍA DE FOTOS</p>
+    <subnavbar-container id="sub-navbar">
+      <subnavbar-item
+        hrefId="sites"
+        imgPath="media/icons/map.png"
+        sectionName="SITIOS"
+        animation="fadeIn5"
+      >
+      </subnavbar-item>
+
+      <subnavbar-item
+        hrefId="labWork"
+        imgPath="media/icons/chemistry.png"
+        sectionName="TRABAJO DE GABINETE <br> Y CONSERVACIÓN"
+        animation="fadeIn3"
+      >
+      </subnavbar-item>
+
+      <subnavbar-item
+        hrefId="difusion"
+        imgPath="media/icons/teacher.png"
+        sectionName="DIFUSIÓN Y <br> EXTENSIÓN"
+        animation="fadeIn2"
+      >
+      </subnavbar-item>
+
+      <subnavbar-item
+        hrefId="teaching"
+        imgPath="media/icons/teaching.png"
+        sectionName="DOCENCIA / ENSEÑANZA"
+        animation="fadeIn2"
+      >
+      </subnavbar-item>
+
+      <!-- <subnavbar-item hrefId="materials" imgPath="media/icons/materials.png" sectionName="MATERIALES" animation="fadeIn1">
+    </subnavbar-item> -->
+    </subnavbar-container>
+
+    <div id="sites" class="subtitle">
+      <p>SITIOS</p>
     </div>
 
-    <svg class="wave-separator" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none">
-      <path fill="#c0a342" fill-opacity="1"
-        d="M0,128L48,149.3C96,171,192,213,288,202.7C384,192,480,128,576,128C672,128,768,192,864,234.7C960,277,1056,299,1152,266.7C1248,235,1344,149,1392,106.7L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
-      </path>
-    </svg>
-  </header>
+    <collection-layout collectionID="investigated_sites"> </collection-layout>
 
+    <div id="excavations" class="subtitle">
+      <p>PROSPECCIONES ARQUEOLÓGICAS</p>
+    </div>
 
+    <collection-layout id="excavations" collectionID="excavations">
+    </collection-layout>
 
-  <subnavbar-container id="sub-navbar">
+    <div id="labWork" class="subtitle">
+      <p>TRABAJO DE GABINETE Y CONSERVACIÓN</p>
+    </div>
 
-    <subnavbar-item hrefId="sites" imgPath="media/icons/map.png" sectionName="SITIOS" animation="fadeIn5">
-    </subnavbar-item>
+    <collection-layout collectionID="lab_work"> </collection-layout>
 
-    <!-- <subnavbar-item hrefId="excavations" imgPath="media/icons/shovel.png" sectionName="EXCAVACIONES"
-      animation="fadeIn4">
-    </subnavbar-item> -->
-    <subnavbar-item hrefId="labWork" imgPath="media/icons/chemistry.png"
-      sectionName="TRABAJO DE GABINETE <br> Y CONSERVACIÓN" animation="fadeIn3">
-    </subnavbar-item>
+    <div id="difusion" class="subtitle">
+      <p>DIFUSIÓN Y EXTENSIÓN</p>
+    </div>
 
-    <subnavbar-item hrefId="difusion" imgPath="media/icons/teacher.png" sectionName="DIFUSIÓN Y <br> EXTENSIÓN"
-      animation="fadeIn2">
-    </subnavbar-item>
+    <collection-layout collectionID="difusion_extension"> </collection-layout>
 
-    <subnavbar-item hrefId="teaching" imgPath="media/icons/teaching.png" sectionName="DOCENCIA / ENSEÑANZA"
-      animation="fadeIn2">
-    </subnavbar-item>
-
-    <!-- <subnavbar-item hrefId="materials" imgPath="media/icons/materials.png" sectionName="MATERIALES" animation="fadeIn1">
-    </subnavbar-item> -->
-
-  </subnavbar-container>
-
-  <div id="sites" class="subtitle">
-    <p>SITIOS</p>
-  </div>
-
-  <collection-layout collectionID="investigated_sites"> </collection-layout>
-
-  <div id="excavations" class="subtitle">
-    <p>PROSPECCIONES ARQUEOLÓGICAS</p>
-  </div>
-
-  <collection-layout id="excavations" collectionID="excavations"> </collection-layout>
-
-
-  <div id="labWork" class="subtitle">
-    <p>TRABAJO DE GABINETE Y CONSERVACIÓN</p>
-  </div>
-
-  <collection-layout collectionID="lab_work"> </collection-layout>
-
-
-  <div id="difusion" class="subtitle">
-    <p>DIFUSIÓN Y EXTENSIÓN</p>
-  </div>
-
-  <collection-layout collectionID="difusion_extension"> </collection-layout>
-
-  <!-- <div id="materials" class="subtitle">
+    <!-- <div id="materials" class="subtitle">
     <p>MATERIALES</p>
   </div>
 
   <collection-layout id="materials" collectionID="materials"> </collection-layout> -->
 
-  <div id="teaching" class="subtitle">
-    <p>DOCENCIA / ENSEÑANZA</p>
-  </div>
+    <div id="teaching" class="subtitle">
+      <p>DOCENCIA / ENSEÑANZA</p>
+    </div>
 
-  <collection-layout collectionID="teaching_docency"> </collection-layout>
+    <collection-layout collectionID="teaching_docency"> </collection-layout>
+  </body>
 
-</body>
-
-<footer style="text-align: center; padding: 10px;">
-  <div>
-    Icons from <a href="https://www.flaticon.com/" title="Flaticon"
-      style="text-decoration: none; color: black;">www.flaticon.com</a>
-  </div>
-</footer>
-
+  <footer style="text-align: center; padding: 10px">
+    <div>
+      Icons from
+      <a
+        href="https://www.flaticon.com/"
+        title="Flaticon"
+        style="text-decoration: none; color: black"
+        >www.flaticon.com</a
+      >
+    </div>
+  </footer>
 </html>
