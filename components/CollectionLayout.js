@@ -180,6 +180,7 @@ class CollectionLayout extends HTMLElement {
       grid-auto-flow: dense;
       height: 400px;
       overflow: hidden;
+      justify-content: center
     }
 
     .expand{
