@@ -1,6 +1,5 @@
 ---
 deployment:
  tasks:
- - export DEPLOYPATH=/home2/programa/public_html/
- - /bin/cp index.html $DEPLOYPATH
- - /bin/cp style.css $DEPLOYPATH
+ - export DEPLOYPATH=/home/programa/public_html/
+ - /bin/cp -R /home2/programa/repositories/PIPTU $DEPLOYPATH
