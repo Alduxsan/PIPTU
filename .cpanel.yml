@@ -2,17 +2,5 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/programa/public_html/
-    - /bin/cp index.html $DEPLOYPATH
-    - /bin/cp aboutUs.html $DEPLOYPATH
-    - /bin/cp gallery.html $DEPLOYPATH
-    - /bin/cp interactive.html $DEPLOYPATH
-    - /bin/cp investigations.html $DEPLOYPATH
-    - /bin/cp publications.html $DEPLOYPATH
-    - /bin/cp -R components $DEPLOYPATH
-    - /bin/cp -R css $DEPLOYPATH
-    - /bin/cp -R fonts $DEPLOYPATH
-    - /bin/cp -R js $DEPLOYPATH
-    - /bin/cp -R media $DEPLOYPATH
-
-
+    -/bin/cp -R * $DEPLOYPATH
 
