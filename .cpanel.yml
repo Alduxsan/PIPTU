@@ -2,4 +2,4 @@
 deployment:
  tasks:
  - export DEPLOYPATH=/home/programa/public_html/
- - /bin/cp -R /home2/programa/repositories/PIPTU $DEPLOYPATH
+ - /bin/cp -R /PIPTU $DEPLOYPATH
