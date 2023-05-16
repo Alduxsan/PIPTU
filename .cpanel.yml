@@ -1,6 +1,11 @@
----
+# ---
+# deployment:
+#   tasks:
+#     - export DEPLOYPATH=/home2/programa/public_html/
+#     -/bin/cp -R /home2/programa/repositories/PIPTU  $DEPLOYPATH
+
+# ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home2/programa/public_html/
-    -/bin/cp -R /home2/programa/repositories/PIPTU  $DEPLOYPATH
-
+    - export DEPLOYPATH=/home/example/public_html/
+    - /bin/cp -R * $DEPLOYPATH
