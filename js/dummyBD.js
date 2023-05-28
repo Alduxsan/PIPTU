@@ -157,12 +157,18 @@ const teaching_docency = {
     name: "",
     imgPaths: ["media/gallery/teaching/educación.jpeg"],
   },
-
-  // teaching: {
-  //   name: "",
-  //   imgPaths: [],
-  // },
 };
+
+const news = [
+  {
+    date: "24 / 05 / 2023",
+    imgPath: "https://ars.els-cdn.com/content/image/X00035521.jpg",
+    title: "Nueva publicación en la revista L´Anthropologie",
+    content:
+      'Con agrado informamos la reciente publicación de los integrantes de nuestro equipo de investigación. La publicación se realiza en la prestigiosa revista L´Anthropologie, revista pionera en investigaciones antropológicas que desde 1890 viene publicando trabajos de arqueología en Francia. 2023 Suárez Rafael, Julia Melián y Jenny Volarich. The initial peopling of South American Plains: an overview on Late Pleistocene and Early Holocene settlers in Uruguay. L´Anthropologie. Editorial Elsevier <a href="https://doi.org/10.1016/j.anthro.2023.103120">https://doi.org/10.1016/j.anthro.2023.103120</a> ',
+    url: "https://doi.org/10.1016/j.anthro.2023.103120",
+  },
+];
 
 export const dataDelivery = (request) => {
   switch (request) {
@@ -174,10 +180,10 @@ export const dataDelivery = (request) => {
       return JSON.stringify(lab_work_and_conservation);
     case "difusion_extension":
       return JSON.stringify(difusion_and_extension);
-    // case "materials":
-    //   return JSON.stringify(materials);
     case "teaching_docency":
       return JSON.stringify(teaching_docency);
+    case "news":
+      return JSON.stringify(news);
 
     default:
       return "";

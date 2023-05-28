@@ -16,6 +16,7 @@
   --arrow-title-size: 3rem;
   --basic-font: raleway, "sans-serif";
   --title-font: oswald, "sans-serif";
+  text-overflow: ellipsis;
 }
 
 * {

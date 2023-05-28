@@ -1,100 +1,83 @@
 <!DOCTYPE html>
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/home.css" />
+    <script type="module" src="./components/ProjectNews.js"></script>
+    <script src="./components/Navbar.js" defer></script>
+    <script src="js/carousel.js" defer></script>
+    <meta
+      name="description"
+      content="Página de inicio para el Programa de investigación poblamiento temprano en uruguay, del departamento de Antropología, de la Facultad de Humanidades y Ciencias de la Educación - FHCE, de la Universidad de la República UDELAR"
+    />
+    <title>
+      PIPTU - Programa de Investigación sobre Prehistoria Temprana en Uruguay
+    </title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="./css/home.css" />
-  <script src="./components/ProjectNews.js" defer></script>
-  <script src="./components/Navbar.js" defer></script>
-  <script src="js/carousel.js" defer></script>
-  <meta name="description" content="Página de inicio para el Programa de investigación poblamiento temprano en uruguay">
-  <title>LIPTU - Uruguay</title>
-</head>
+  <body>
+    <nav-bar atribute="home"></nav-bar>
 
-<body>
-  <nav-bar atribute="home"></nav-bar>
+    <div class="carousel fade">
+      <img
+        id="carouselImage"
+        src="../media/home/carousel/1.jpg"
+        width="640"
+        height="360"
+        alt="image"
+      />
 
-  <div class="carousel fade">
-    <img id="carouselImage" src="../media/home/carousel/1.jpg" width="640" height="360" alt="image">
-
-    <div class="title-container">
-      <p id="sigla">
-        PIPTU
-      </p>
-      <p id="fullTitle">Programa de Investigación <br />
-        de Poblamiento Temprano <br /> en Uruguay</p>
+      <div class="title-container">
+        <p id="sigla">PIPTU</p>
+        <p id="fullTitle">
+          Programa de Investigación <br />sobre Prehistoria Temprana<br />
+          en Uruguay
+        </p>
+      </div>
     </div>
 
-  </div>
-
-  <!-- <div id="news" class="subtitle">
-    <p>NOTICIAS RECIENTES</p>
-  </div>
-
-  <div class="slideshow-container">
-
-    <div class="mySlides fade">
-      <project-news date="21 / 03 / 2022" imgPath="https://i.ibb.co/ydPKWSM/cuevas.jpg"
-        title="inspeccion exploratoria en el cerro Arequita / Minas"
-        content="El valiente grupo de arqueólogos del PIPTU explorará por primera vez el interior del cerro Arequita, donde esperan hallar restos fósiles que demuestren que el primer homínido era Uruguayo">
-      </project-news>
+    <div id="news" class="subtitle">
+      <p>NOTICIAS RECIENTES</p>
     </div>
 
-    <div class="mySlides fade">
-      <project-news date="25 / 05 / 2022"
-        imgPath="https://foodie-woman.com/wp-content/uploads/2021/11/MG_0129-1-scaled-1-840x473.jpg"
-        title="Artefactos más de 1.500.000 de años de antiguedad"
-        content="El grupo de investigadores del PIPTU (Programa de Investigación en Poblamiento Temprano de Uruguay) halló artefactos más de 1.500.000 de años de antiguedad. Tras varias pruebas de laboratorio se cree que sería un conjunto de mate, termo y bombilla de piedra creados por los primeros homininos que poblaron estas tierras">
-      </project-news>
+    <!-- <div class="slideshow-container">
+      <div class="mySlides fade"> -->
+    <project-news />
+    <!-- </div>
+
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
     </div>
 
-    <div class="mySlides fade">
-      <project-news date="21 / 03 / 2022" imgPath="https://i.ibb.co/ydPKWSM/cuevas.jpg"
-        title="inspeccion exploratoria en el cerro Arequita / Minas"
-        content="El valiente grupo de arqueólogos del PIPTU explorará por primera vez el interior del cerro Arequita, donde esperan hallar restos fósiles que demuestren que el primer homínido era Uruguayo">
-      </project-news>
-    </div>
+    <script>
+      var slideIndex = 1;
+      showSlides(slideIndex);
 
-    <div class="mySlides fade">
-      <project-news date="25 / 05 / 2022"
-        imgPath="https://foodie-woman.com/wp-content/uploads/2021/11/MG_0129-1-scaled-1-840x473.jpg"
-        title="Artefactos más de 1.500.000 de años de antiguedad"
-        content="El grupo de investigadores del PIPTU (Programa de Investigación en Poblamiento Temprano de Uruguay) halló artefactos más de 1.500.000 de años de antiguedad. Tras varias pruebas de laboratorio se cree que sería un conjunto de mate, termo y bombilla de piedra creados por los primeros homininos que poblaron estas tierras">
-      </project-news>
-    </div>
-
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-  </div>
-  <script>
-    var slideIndex = 1;
-    showSlides(slideIndex);
-
-    function plusSlides(n) {
-      showSlides(slideIndex += n);
-    }
-
-    function currentSlide(n) {
-      showSlides(slideIndex = n);
-    }
-
-    function showSlides(n) {
-      var i;
-      var slides = document.getElementsByClassName("mySlides");
-      if (n > slides.length) { slideIndex = 1 }
-      if (n < 1) { slideIndex = slides.length }
-      for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
+      function plusSlides(n) {
+        showSlides((slideIndex += n));
       }
 
-      slides[slideIndex - 1].style.display = "block";
-    }
-  </script> -->
+      function currentSlide(n) {
+        showSlides((slideIndex = n));
+      }
 
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
 
-</body>
-
+        slides[slideIndex - 1].style.display = "block";
+      }
+    </script> -->
+  </body>
 </html>
