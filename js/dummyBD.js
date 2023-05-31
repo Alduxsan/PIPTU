@@ -170,6 +170,15 @@ const news = [
   },
 ];
 
+const homeSlider = [
+  { url: "../media/home/carousel/1.jpg" },
+  { url: "../media/home/carousel/2.jpg" },
+  { url: "../media/home/carousel/4.jpg" },
+  { url: "../media/home/carousel/5.jpg" },
+  { url: "../media/home/carousel/6.jpg" },
+  { url: "../media/home/carousel/7.jpg" },
+];
+
 export const dataDelivery = (request) => {
   switch (request) {
     case "investigated_sites":
@@ -184,7 +193,8 @@ export const dataDelivery = (request) => {
       return JSON.stringify(teaching_docency);
     case "news":
       return JSON.stringify(news);
-
+    case "homeSlider":
+      return JSON.stringify(homeSlider);
     default:
       return "";
   }

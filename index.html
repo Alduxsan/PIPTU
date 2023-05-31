@@ -7,10 +7,16 @@
     <link rel="stylesheet" href="./css/home.css" />
     <script type="module" src="./components/ProjectNews.js"></script>
     <script src="./components/Navbar.js" defer></script>
-    <script src="js/carousel.js" defer></script>
+    <script type="module" src="js/slidesInjector.js"></script>
+    <script src="js/splide-4.1.3/dist/js/splide.min.js"></script>
+
+    <link rel="stylesheet" href="js/splide-4.1.3/dist/css/splide.min.css" />
     <meta
       name="description"
-      content="Página de inicio para el Programa de investigación poblamiento temprano en uruguay, del departamento de Antropología, de la Facultad de Humanidades y Ciencias de la Educación - FHCE, de la Universidad de la República UDELAR"
+      content="Página de
+    inicio para el Programa de investigación poblamiento temprano en uruguay,
+    del departamento de Antropología, de la Facultad de Humanidades y Ciencias
+    de la Educación - FHCE, de la Universidad de la República UDELAR"
     />
     <title>
       PIPTU - Programa de Investigación sobre Prehistoria Temprana en Uruguay
@@ -19,39 +25,31 @@
 
   <body>
     <nav-bar atribute="home"></nav-bar>
-
-    <div class="carousel fade">
-      <img
-        id="carouselImage"
-        src="../media/home/carousel/1.jpg"
-        width="640"
-        height="360"
-        alt="image"
-      />
-
-      <div class="title-container">
-        <p id="sigla">PIPTU</p>
-        <p id="fullTitle">
-          Programa de Investigación <br />sobre Prehistoria Temprana<br />
-          en Uruguay
-        </p>
+    <section class="splide" aria-label="Splide Basic HTML Example">
+      <div class="splide__track">
+        <ul id="homeSlideContainer" class="splide__list"></ul>
       </div>
+    </section>
+
+    <div class="title-container">
+      <p id="sigla">PIPTU</p>
+      <p id="fullTitle">
+        Programa de Investigación <br />sobre Prehistoria Temprana<br />
+        en Uruguay
+      </p>
     </div>
 
     <div id="news" class="subtitle">
       <p>NOTICIAS RECIENTES</p>
     </div>
 
-    <!-- <div class="slideshow-container">
-      <div class="mySlides fade"> -->
     <project-news />
-    <!-- </div>
+    <!-- 
 
       <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-      <a class="next" onclick="plusSlides(1)">&#10095;</a>
-    </div>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>-->
 
-    <script>
+    <!-- <script>
       var slideIndex = 1;
       showSlides(slideIndex);
 
@@ -79,5 +77,13 @@
         slides[slideIndex - 1].style.display = "block";
       }
     </script> -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var splide = new Splide(".splide", {
+          type: "loop",
+          autoplay: true,
+        }).mount();
+      });
+    </script>
   </body>
 </html>
