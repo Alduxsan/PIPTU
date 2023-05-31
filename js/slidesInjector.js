@@ -14,7 +14,6 @@ function slidejsSlide(imgPath) {
 }
 async function slidesProvider(reqId, hostID, slideElement) {
   const slidesContainer = document.getElementById(hostID);
-  console.log(slidesContainer);
 
   const fragment = new DocumentFragment();
 
