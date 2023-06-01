@@ -31,7 +31,8 @@ class ProjectNews extends HTMLElement {
     <img src="${imgPath}" alt="${title}" class="news-card__image">
     <div class="news-card__text-wrapper">
       <h3 class="news-card__title">${title}</h3>
-      <div class="news-card__post-date">${date}</div>
+      <div class="news-card__post-date">
+      ${date.getDate()} / ${date.getMonth() + 1} / ${date.getFullYear()}</div>
       <div class="news-card__details-wrapper">
         <p class="news-card__excerpt">${content}&hellip;</p>
         <a href="#" class="news-card__read-more">Read more <i class="fas fa-long-arrow-alt-right"></i></a>
@@ -49,7 +50,12 @@ class ProjectNews extends HTMLElement {
     let newsList = JSON.parse(data);
     newsList.map((news) => {
       fragment.append(
-        this.newCard(news.imgPath, news.title, news.date, news.content)
+        this.newCard(
+          news.imgPath,
+          news.title,
+          new Date(news.date),
+          news.content
+        )
       );
     });
     return newsContainer.appendChild(fragment);
@@ -136,7 +142,7 @@ body {
     height: 100%;
     display: block;
     object-fit: cover;
-    transition: transform 3s ease;
+    transition: transform .5s ease;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     position: relative;
@@ -153,7 +159,7 @@ body {
   }
 
 .news-card__title {
-    transition: color 1s ease;
+    transition: color .5s ease;
     margin-bottom: 0.5rem;
   }
 
@@ -166,7 +172,7 @@ body {
 .news-card__details-wrapper {
     max-height: 0;
     opacity: 0;
-    transition: max-height 1.5s ease, opacity 1s ease;
+    transition: max-height .5s ease, opacity 1s ease;
   }
 
 @media (min-width: 900px) {
@@ -225,146 +231,6 @@ body {
     }
 </style>
   `;
-    // this.shadowRoot.innerHTML = `;
-
-    // <div id="container" class="news_container">
-    //   <div class="text-block">
-    //     <p id="date">${date}</p>
-    //     <p id="title">${title}</p>
-    //   </div>
-    // </div>
-    // <div id="info" class="news_content hideInfo fromRight">
-    // <p class="content">
-    // ${content}
-    // </p>
-    // </div>
-
-    // <style>
-
-    // :host{
-    //   width: 80%
-    // }
-
-    // .news_container{
-    //   margin: auto;
-    //   width: 100%;
-    //   height: 500px;
-    //   cursor: pointer;
-    //   box-shadow: 2px 2px 2px black;
-    //   transition: all 0.3s
-    // }
-    // .news_container:hover{
-    //   box-shadow: 4px 4px 4px black;
-
-    // }
-
-    // .text-block {
-    //   font-family: raleway;
-    //   position: absolute;
-    //   top: 0;
-    //   right: 0;
-    //   color: #fff;
-    //   padding: 1em
-    // }
-
-    // .text-block p {
-    //   text-shadow: 1px 1px 1px rgb(0, 0, 0,0.5)
-    // }
-
-    // #title{
-    //   font-family: raleway, "sans-serif";
-    //   font-size: 1.5rem;
-    //   font-weight: 300;
-    //   margin: 0px;
-    // }
-
-    // #date{
-    //   font-family: raleway, "sans-serif";
-    //   text-align: right;
-    //   margin: 3px;
-    // }
-
-    // .hideInfo{
-    //   overflow: hidden;
-    //   height: 0px;
-    //   animation: hideContent .3s
-
-    // }
-
-    // .showInfo{
-    //     animation: showContent .3s;
-    //  }
-
-    //  .content{
-    //   transition: all .3s
-    //   font-family: raleway, "sans-serif";
-    //   margin-top: 5px;
-    //   font-size: 1.5rem;
-    //   padding: 1em;
-    //   background-color: rgba(255, 255, 255, 0.5);
-
-    // }
-
-    // img{
-    //     width: 100%;
-    //     border-radius: 4px;
-
-    //   }
-
-    //   .fromRight{
-    //     animation: fromRight .3s;
-    //     animation-fill-mode: forwards
-    //   }
-
-    //   @keyframes fromRight {
-    //     from {
-    //       transform: translateY(2000px);
-    //       opacity: 0
-    //     }
-    //     to {
-    //       transform: translateY(0);
-    //       opacity: 1
-    //     }
-    //   }
-
-    //   @keyframes hideContent {
-    //     height: 0px}
-
-    //   @keyframes showContent {
-    //     from {
-    //       height: 100px;
-    //     }
-    //     to {
-    //       height: 0px
-    //     }
-    //   }
-
-    //   @media screen and (max-width: 500px) {
-    //     .text-block {
-    //       border-radius: 4px 6px 0 0;
-    //     }
-    //     #date{
-    //       text-align: left;
-    //     }
-
-    //     #title{
-    //       font-size: 1rem
-    //     }
-
-    //     .content{
-    //       font-size: 1rem;
-    //     }
-    //   }
-
-    // .news_container{
-    //   background: no-repeat center url(${imgPath});
-    //   background-size: cover;
-    // }
-    // </style>
-
-    // `;
-    // this.card = this.shadowRoot.getElementById("container");
-    // this.card.addEventListener("click", this);
   }
 }
 
