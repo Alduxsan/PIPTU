@@ -1,7 +1,10 @@
+import styles from "./css_components/FaunaItem.css" assert { type: "css" };
+
 class FaunaItem extends HTMLElement {
   constructor() {
     super();
     this.attachShadow({ mode: "open" });
+    this.shadowRoot.adoptedStyleSheets.push(styles);
   }
 
   getAtt(attr) {
@@ -53,116 +56,6 @@ class FaunaItem extends HTMLElement {
         </div>
         
     </div>
-    
-    
-    <style>
-    @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
-    .card .show{
-      display: block;
-    }
-
-    .card{
-      display: flex;
-      flex-direction: row;
-      width: 100%;
-      justify-content: center;
-      transition: all .3s;
-      border-radius: 4px;
-      border: 1px solid rgba(0, 0, 0, 0.3);
-      cursor: pointer;
-      padding: 1em;
-
-    }
-    .card .onShowInfo{
-      flex-direction: column;
-    }
-    .imgNameContainer{
-      width: 100%;
-      display: flex;
-      flex-direction: row;
-      align-items: center
-    }
-
-    .imgWrapper{
-      width: 400px;
-      padding: 1em;
-    }
-
-    .imgWrapper img {
-      width: 100%;
-      object-fit: cover;
-      border-radius: 6px;
-      box-shadow:
-    2px 2px 2px 1px rgba(0, 0, 0, 0.5)
-    }
-
-
-    .nameWrapper{
-      padding-left: 1em
-    }
-
-    .nameWrapper p{
-      font-family: 'Raleway', sans-serif; 
-    }
-
-    .commonName{
-      font-size: 3rem;
-      text-align: left;
-      margin: auto;
-      transition: all .5s
-    }
-
-    .classification{
-      font-size: 1.2rem;
-      opacity: 0;
-      transition: all .5s;
-      height: 0;
-      overflow: hidden;
-    }
-
-    .infoWrapper{
-      width: 100%;
-      display: none;
-      font-family: raleway, sans-serif;
-    }
-
-    .infoWrapper p {
-      font-size: var(--text-font-size);
-      padding: 0 10px;
-      text-align: justify;
-      text-justify: distribute;
-      hyphens: auto ;
-    }
-
-    .card:hover{
-      box-shadow:
-    2px 2px 2px 1px rgba(0, 0, 0, 0.5)
-    }
-
-    .card:hover .classification {
-      opacity: 1;
-      height:auto
-    }
-
-    @media screen and (max-width: 1100px) {
-      .card{
-       padding: 3px;
-       flex-direction: column
-      }
-
-      .imgWrapper{
-       width: 200px;
-        margin: auto;
-      }
-
-
-      .infoWrapper p, .nameWrapper p{
-        font-size: 1rem
-      }
-
-      }
-    
-    </style>
     `;
   }
 }

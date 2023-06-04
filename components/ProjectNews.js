@@ -24,10 +24,10 @@ class ProjectNews extends HTMLElement {
     if (event.type === "click") this.showInfo();
   }
 
-  newCard(imgPath, title, date, content) {
+  newCard(imgPath, title, date, content, id) {
     let newsCard = document.createElement("div");
     newsCard.classList.add("news-card");
-    newsCard.innerHTML = `<a href="#" class="news-card__card-link"></a>
+    newsCard.innerHTML = `<a href="../news.html#${id}" class="news-card__card-link"></a>
     <img src="${imgPath}" alt="${title}" class="news-card__image">
     <div class="news-card__text-wrapper">
       <h3 class="news-card__title">${title}</h3>
@@ -35,7 +35,7 @@ class ProjectNews extends HTMLElement {
       ${date.getDate()} / ${date.getMonth() + 1} / ${date.getFullYear()}</div>
       <div class="news-card__details-wrapper">
         <p class="news-card__excerpt">${content}&hellip;</p>
-        <a href="#" class="news-card__read-more">Read more <i class="fas fa-long-arrow-alt-right"></i></a>
+        <a href="../news.html#${id}" class="news-card__read-more">Read more <i class="fas fa-long-arrow-alt-right"></i></a>
       </div>
     </div>`;
     return newsCard;
@@ -54,7 +54,8 @@ class ProjectNews extends HTMLElement {
           news.imgPath,
           news.title,
           new Date(news.date),
-          news.content
+          news.content,
+          news.id
         )
       );
     });

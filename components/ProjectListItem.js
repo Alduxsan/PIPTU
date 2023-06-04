@@ -1,7 +1,11 @@
+import ListContainerCSS from "./css_components/ListContainer.css" assert { type: "css" };
+import ProjectListItemCSS from "./css_components/ProjectListItem.css" assert { type: "css" };
+
 class ListContainer extends HTMLElement {
   constructor() {
     super();
     this.attachShadow({ mode: "open" });
+    this.shadowRoot.adoptedStyleSheets.push(ListContainerCSS);
   }
 
   getAtt(attr) {
@@ -52,71 +56,7 @@ class ListContainer extends HTMLElement {
       </div>
 
     </div>
-    <style>
-    
-    .expanded {
-      animation: expand 2s;
-      animation-fill-mode: forwards;
-    }
-    
-    .hide{
-      display:none;
-    }
-    
-    .toggler_button {
-      width: fit-content;
-      margin: auto;
-      margin-top: 20px;
-      padding-bottom: 2em;
-    }
-    
-    .ToggleBtn {
-      text-align: center;
-      border-radius: 4px;
-      cursor: pointer;
-      padding: 10px;
-      background-color: rgba(255, 255, 255, 0.644);
-      transition: all 0.2s;
-      box-shadow: 4px 4px 2px rgba(0, 0, 0, 0.604);
-    }
-    
-    .ToggleBtn:hover {
-      box-shadow: 8px 8px 2px rgba(0, 0, 0, 0.304);
-    }
-    
-    @keyframes expand {
-      from{opacity:0}
-      to{opacity: 1}
-    }
- 
-    .wrapper{
-      background-color: rgba(56, 20, 0, 0.5);
-      width: 100%;
-      margin: auto;
-      margin-bottom: 1em;
-      padding-bottom: 1em;
-    }
-
-    .toggler_button {
-      margin: auto;
-      margin-top: 20px;
-    }
-    
-    #toggler_img {
-      width: 100%;
-      border-radius: 4px;
-      cursor: pointer;
-      padding: 10px;
-      background-color: rgba(255, 255, 255, 0.644);
-      transition: all 0.2s;
-      box-shadow: 4px 4px 2px rgba(0, 0, 0, 0.604);
-    }
-    
-    #toggler_img:hover {
-      box-shadow: 8px 8px 2px rgba(0, 0, 0, 0.304);
-    }
-
-    </style>
+   
     
     `;
   }
@@ -131,6 +71,7 @@ class ProjectListItem extends HTMLElement {
       this.classList.add("hiddenList", "project");
     }
     this.attachShadow({ mode: "open" });
+    this.shadowRoot.adoptedStyleSheets.push(ProjectListItemCSS);
   }
 
   getAtt(attr) {
@@ -155,51 +96,6 @@ class ProjectListItem extends HTMLElement {
       </a>
     </div>
     
-    <style>
-    :host-context(.hiddenList){
-      display: none;
-    }
-      .link-container{
-        transition: .5s all;
-        padding: 10px 5em ;     
-      }
-      .link-container:hover {
-        background-color: rgba(56, 20, 0, 1);
-      }
-
-      .link-container a{
-        text-decoration: none;
-        color: #fff;
-        font-size: 1.3rem;
-        hyphens: auto;
-      }
-
-      a p{
-        font-family: raleway;
-      }
-
-      #date{
-        font-family: raleway;
-        margin: 0;
-        width: fit-content;
-        color: white;
-        font-weight: bolder;
-        border-radius: 4px;
-      }
-
-      @media screen and (max-width: 1100px) {
-        #date{
-          font-weight: 100;
-          padding: 1%
-        }
-
-        .link-container{
-          padding: 1em;
-          word-break: break-all
-        }
-      
-      }
-    </style>
     `;
   }
 }

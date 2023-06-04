@@ -1,0 +1,47 @@
+@font-face {
+  font-family: raleway;
+  src: url("../fonts/Raleway/Raleway-Regular.ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: oswald;
+  src: url("../fonts/Oswald/Oswald-Regular.ttf");
+  font-display: swap;
+}
+
+:root {
+  --text-font-size: 1.4rem;
+  --section-title-size: calc(1.3rem + 3.6vw);
+  --arrow-title-size: 3rem;
+  --basic-font: raleway, "sans-serif";
+  --title-font: oswald, "sans-serif";
+  text-overflow: ellipsis;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  background: #ab8300bd;
+  animation: fade 1s ease;
+}
+
+.subtitle {
+  margin: auto;
+  max-width: 70%;
+  margin-top: 6rem;
+  margin-bottom: 4em;
+}
+
+.subtitle p {
+  font-weight: 600;
+  text-align: center;
+  font-family: var(--title-font);
+  font-size: calc(1.3rem + 3.6vw);
+  color: #260e00;
+}

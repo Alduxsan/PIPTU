@@ -1,0 +1,74 @@
+.artifactWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+  margin: 20px;
+  border-radius: 8px;
+  padding: 2em;
+}
+
+iframe {
+  border-radius: 4px;
+  width: 80%;
+  height: 400px;
+  margin: auto;
+  margin-bottom: 15px;
+  margin-top: 20px;
+  box-shadow: 3px 3px rgba(0, 0, 0, 0.9);
+  transition: all 0.3s;
+}
+
+iframe:hover {
+  box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.9);
+}
+
+.artifactTitle {
+  font-family: raleway, sans-serif;
+  justify-content: center;
+  align-self: center;
+  font-size: 13px;
+  font-weight: normal;
+  margin: 5px;
+  color: #000000;
+}
+
+.artifactTitle a {
+  font-weight: bold;
+  color: #000000;
+  font-family: raleway, sans-serif;
+  text-decoration: none;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.sketchfab-embed-wrapper {
+  text-align: center;
+}
+
+.textFooter {
+  font-size: 13px;
+  font-weight: normal;
+  margin: 5px;
+  color: #4a4a4a;
+}
+.textFooter a {
+  font-weight: bold;
+  color: #000000;
+}
+
+@media screen and (max-width: 1100px) {
+  .artifactWrapper {
+    padding: 5px;
+    margin: auto;
+  }
+
+  iframe {
+    width: 300px;
+    height: 300px;
+  }
+
+  .artifactTitle a {
+    font-size: 1.5rem;
+  }
+}

@@ -1,323 +1,450 @@
 <!DOCTYPE html>
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/interactive.css" />
+    <meta
+      name="description"
+      content="Sección Prehistoria Interactiva, recopilación de algunos materiales fotográficos, representaciones 3D y otros elementos relacionados a los materiales del programa PIPTU"
+    />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="./css/interactive.css" />
-  <meta name="description"
-    content="Sección Prehistoria Interactiva, recopilación de algunos materiales fotográficos, representaciones 3D y otros elementos relacionados a los materiales del programa PIPTU">
+    <script type="module" src="./components/Navbar.js"></script>
+    <script type="module" src="./components/SubNavbarItem.js"></script>
 
-  <script src="./components/Navbar.js"></script>
-  <script src="./components/SubNavbarItem.js"></script>
+    <script type="module" src="./components/Artifacts3d.js"></script>
+    <script type="module" src="./components/FaunaItem.js"></script>
+    <script type="module" src="./components/ProjectListItem.js"></script>
 
-  <script src="./components/artifacts3d.js"></script>
-  <script src="./components/FaunaItem.js"></script>
-  <script src="./components/ProjectListItem.js"></script>
+    <title>PIPTU - Prehistoria Interactiva</title>
+  </head>
 
-  <title>PIPTU - Prehistoria Interactiva</title>
-</head>
+  <body>
+    <header>
+      <nav-bar atribute="interactive"></nav-bar>
 
-<body>
+      <div id="interactive" class="title">
+        <p>
+          PREHISTORIA <br />
+          INTERACTIVA
+        </p>
+      </div>
 
-  <header>
-    <nav-bar atribute="interactive"></nav-bar>
+      <svg
+        class="wave-separator"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1440 320"
+        preserveAspectRatio="none"
+      >
+        <path
+          fill="#c0a342"
+          fill-opacity="1"
+          d="M0,128L48,149.3C96,171,192,213,288,202.7C384,192,480,128,576,128C672,128,768,192,864,234.7C960,277,1056,299,1152,266.7C1248,235,1344,149,1392,106.7L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+        ></path>
+      </svg>
+    </header>
 
-    <div id="interactive" class="title">
-      <p>PREHISTORIA <br> INTERACTIVA</p>
+    <subnavbar-container>
+      <subnavbar-item
+        hrefId="fauna"
+        imgPath="media/fauna/mamut.png"
+        sectionName="FAUNA"
+        animation="fadeIn5"
+      >
+      </subnavbar-item>
+      <subnavbar-item
+        hrefId="projectiles"
+        imgPath="media/icons/tools.png"
+        sectionName="PUNTAS DE PROYECTIL"
+        animation="fadeIn4"
+      >
+      </subnavbar-item>
+
+      <subnavbar-item
+        hrefId="models3d"
+        imgPath="media/icons/3d.png"
+        sectionName="MODELOS 3D"
+        animation="fadeIn3"
+      >
+      </subnavbar-item>
+    </subnavbar-container>
+
+    <div id="projectiles" class="subtitle">
+      <p>PUNTAS DE PROYECTIL PALEOAMERICANAS DE URUGUAY</p>
     </div>
 
-    <svg class="wave-separator" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none">
-      <path fill="#c0a342" fill-opacity="1"
-        d="M0,128L48,149.3C96,171,192,213,288,202.7C384,192,480,128,576,128C672,128,768,192,864,234.7C960,277,1056,299,1152,266.7C1248,235,1344,149,1392,106.7L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
-      </path>
-    </svg>
-  </header>
+    <section>
+      <div class="intro">
+        <p>
+          Uruguay presenta una importante diversidad de diseños de puntas de
+          proyectil, armas tanto para la caza como para la guerra. En nuestra
+          región se realizaron trabajos sistemáticos donde recuperamos contextos
+          arqueológicos (“pisos de ocupación”) que hemos podido datar de forma
+          precisa por medio del carbono 14. Los grupos humanos durante la
+          prehistoria manufacturaron puntas con formas diferentes, lo que los
+          arqueólogos llamamos “tipos de puntas” que fueron utilizadas durante
+          varias generaciones.
+        </p>
 
-  <subnavbar-container>
-    <subnavbar-item hrefId="fauna" imgPath="media/fauna/mamut.png" sectionName="FAUNA" animation="fadeIn5">
-    </subnavbar-item>
-    <subnavbar-item hrefId="projectiles" imgPath="media/icons/tools.png" sectionName="PUNTAS DE PROYECTIL"
-      animation="fadeIn4">
-    </subnavbar-item>
+        <!-- <p class="separator"></p> -->
+      </div>
 
-    <subnavbar-item hrefId="models3d" imgPath="media/icons/3d.png" sectionName="MODELOS 3D" animation="fadeIn3">
-    </subnavbar-item>
-  </subnavbar-container>
+      <div class="articles_container">
+        <article class="arrow_container">
+          <div class="article_header">
+            <div class="article_title">
+              <p>COLA DE PESCADO</p>
+            </div>
 
-  <div id="projectiles" class="subtitle">
-    <p>PUNTAS DE PROYECTIL PALEOAMERICANAS DE URUGUAY</p>
-  </div>
-
-  <section>
-    <div class="intro">
-      <p>
-        Uruguay presenta una importante diversidad de diseños de puntas de proyectil, armas tanto para la caza como
-        para la guerra. En nuestra región se realizaron trabajos sistemáticos donde recuperamos contextos
-        arqueológicos (“pisos de ocupación”) que hemos podido datar de forma precisa por medio del carbono 14. Los
-        grupos humanos durante la prehistoria manufacturaron puntas con formas diferentes, lo que los arqueólogos
-        llamamos “tipos de puntas” que fueron utilizadas durante varias generaciones.
-      </p>
-
-      <!-- <p class="separator"></p> -->
-    </div>
-
-    <div class="articles_container">
-
-      <article class="arrow_container">
-        <div class="article_header">
-          <div class="article_title">
-            <p>COLA DE PESCADO</p>
+            <div class="arrowImgContainer atRight">
+              <a
+                href="media/projectiles/Puntas_PCP.jpg"
+                target="_blank"
+                rel="noopener"
+              >
+                <img
+                  class="arrowImg"
+                  src="media/projectiles/Puntas_PCP.jpg"
+                  alt="Diversidad y variabilidad en el diseño de las puntas Cola de Pescado"
+                  loading="lazy"
+              /></a>
+            </div>
           </div>
 
-          <div class="arrowImgContainer atRight">
-            <a href="media/projectiles/Puntas_PCP.jpg" target="_blank" rel="noopener">
-              <img class="arrowImg" src="media/projectiles/Puntas_PCP.jpg"
-                alt="Diversidad y variabilidad en el diseño de las puntas Cola de Pescado" loading="lazy"></a>
+          <div class="arrowinfo">
+            <p>
+              Las puntas Cola de Pescado o “Fishtail” son un artefacto
+              diagnóstico de uno de los grupos de cazadores-recolectores que
+              ocuparon extensas regiones del Cono Sur (Uruguay, Pampa, Patagonia
+              y Tierra del Fuego) utilizadas entre hace 12,900 y 12,200 años.
+              Fueron recuperadas por primera vez en estratigrafía asociadas a
+              fauna extinguida del Pleistoceno en Cueva Fell (Bird, 1938). Este
+              diseño o tipo de punta se ha recuperado con mayor frecuencia en
+              sitios de superficie y en menor medida en sitios estratigráficos
+              en Pampa y Patagonia (Argentina y Chile), el sur de Brasil y
+              Uruguay. Estas puntas presentan variaciones tecnológicas,
+              morfológicas y estilísticas ligadas al mantenimiento, reciclaje,
+              y/o a diferentes calidades técnicas que se pueden observar en la
+              confección de las mismas, distinguiendo en el conjunto si fueron
+              manufacturadas por aprendices o expertos talladores. Aunque, en
+              otros casos, las variaciones pueden representar estilos o
+              diferencias culturales locales o regionales (Suárez, 2003). Estas
+              puntas sufrieron un intenso proceso de mantenimiento,
+              rejuvenecimiento y reciclaje. Las causas del mantenimiento de
+              estos artefactos no están vinculados a la falta de materias primas
+              como se sugiere tradicionalmente, pues puntas altamente mantenidas
+              y ejemplares reciclados se han registrado en zonas donde existe
+              excelente disponibilidad de rocas de alta calidad, como es el caso
+              del Río Negro medio.
+            </p>
+            <p class="separator"></p>
           </div>
-        </div>
+        </article>
 
+        <article class="arrow_container">
+          <div class="article_header">
+            <div class="arrowImgContainer atLeft">
+              <a
+                href="media/projectiles/Puntas_Pay_Paso.jpg"
+                target="blank"
+                rel="noopener"
+                ><img
+                  src="media/projectiles/Puntas_Pay_Paso.jpg"
+                  alt="Diversidad y variabilidad en el diseño de las puntas Pay Paso"
+              /></a>
+            </div>
 
-        <div class="arrowinfo">
-          <p>
-            Las puntas Cola de Pescado o “Fishtail” son un artefacto diagnóstico de uno de los grupos de
-            cazadores-recolectores que ocuparon extensas regiones del Cono Sur (Uruguay, Pampa, Patagonia y Tierra del
-            Fuego) utilizadas entre hace 12,900 y 12,200 años. Fueron recuperadas por primera vez en estratigrafía
-            asociadas a fauna extinguida del Pleistoceno en Cueva Fell (Bird, 1938). Este diseño o tipo de punta se ha
-            recuperado con mayor frecuencia en sitios de superficie y en menor medida en sitios estratigráficos en
-            Pampa y Patagonia (Argentina y Chile), el sur de Brasil y Uruguay. Estas puntas presentan variaciones
-            tecnológicas, morfológicas y estilísticas ligadas al mantenimiento, reciclaje, y/o a diferentes calidades
-            técnicas que se pueden observar en la confección de las mismas, distinguiendo en el conjunto si fueron
-            manufacturadas por aprendices o expertos talladores. Aunque, en otros casos, las variaciones pueden
-            representar estilos o diferencias culturales locales o regionales (Suárez, 2003). Estas puntas sufrieron
-            un intenso proceso de mantenimiento, rejuvenecimiento y reciclaje. Las causas del mantenimiento de estos
-            artefactos no están vinculados a la falta de materias primas como se sugiere tradicionalmente, pues puntas
-            altamente mantenidas y ejemplares reciclados se han registrado en zonas donde existe excelente
-            disponibilidad de rocas de alta calidad, como es el caso del Río Negro medio.
-          </p>
-          <p class="separator"></p>
-        </div>
-
-      </article>
-
-      <article class="arrow_container">
-        <div class="article_header">
-          <div class="arrowImgContainer atLeft">
-            <a href="media/projectiles/Puntas_Pay_Paso.jpg" target="blank" rel="noopener"><img
-                src="media/projectiles/Puntas_Pay_Paso.jpg"
-                alt="Diversidad y variabilidad en el diseño de las puntas Pay Paso"></a>
+            <div class="article_title">
+              <p>PAY PASO</p>
+            </div>
           </div>
-
-          <div class="article_title">
-            <p>PAY PASO</p>
+          <div class="arrowinfo">
+            <p>
+              Las puntas Pay Paso fueron definidas por Suárez (2003) y datadas a
+              partir de una base cronológica de 10 edades radiocarbónicas entre
+              hace 11.100 y 10.300 años. Hasta el presente, se han registrado un
+              total de 40 puntas Pay Paso en Uruguay y 5 en el Sur de Brasil. El
+              diseño y principales características tecno-morfológicas de las
+              puntas Pay Paso incluye pedúnculo corto, base cóncava profunda,
+              lados del pedúnculo cóncavos divergentes expandidos hacia la base,
+              lados del limbo convexo o recto, retoque laminar regular en el
+              limbo y tratamiento de la base muy cuidadoso realizado con un
+              negativo triangular.
+            </p>
+            <p class="separator"></p>
           </div>
-        </div>
-        <div class="arrowinfo">
-          <p>
-            Las puntas Pay Paso fueron definidas por Suárez (2003) y datadas a partir de una base cronológica de 10
-            edades radiocarbónicas entre hace 11.100 y 10.300 años. Hasta el presente, se han registrado un total de
-            40 puntas Pay Paso en Uruguay y 5 en el Sur de Brasil. El diseño y principales características
-            tecno-morfológicas de las puntas Pay Paso incluye pedúnculo corto, base cóncava profunda, lados del
-            pedúnculo cóncavos divergentes expandidos hacia la base, lados del limbo convexo o recto, retoque
-            laminar
-            regular en el limbo y tratamiento de la base muy cuidadoso realizado con un negativo triangular.
-          </p>
-          <p class="separator"></p>
-        </div>
-      </article>
+        </article>
 
-      <article class="arrow_container">
-        <div class="article_header">
-          <div class="article_title">
-            <p>TIGRE</p>
+        <article class="arrow_container">
+          <div class="article_header">
+            <div class="article_title">
+              <p>TIGRE</p>
+            </div>
+            <div class="arrowImgContainer atRight">
+              <a
+                href="media/projectiles/Puntas_Tigre.jpg"
+                target="blank"
+                rel="noopener"
+                ><img
+                  src="media/projectiles/Puntas_Tigre.jpg"
+                  alt="Diversidad y variabilidad en el diseño de las puntas Tigre"
+                  loading="lazy"
+              /></a>
+            </div>
           </div>
-          <div class="arrowImgContainer atRight">
-            <a href="media/projectiles/Puntas_Tigre.jpg" target="blank" rel="noopener"><img
-                src="media/projectiles/Puntas_Tigre.jpg"
-                alt="Diversidad y variabilidad en el diseño de las puntas Tigre" loading="lazy"></a>
+          <div class="arrowinfo">
+            <p>
+              Este diseño de puntas se distribuye geográficamente en el norte y
+              centro de Uruguay, así como el sur de Brasil. Las puntas Tigre
+              fueron recuperadas en estratigrafía y reconocidas primeramente en
+              el sitio K87, Arroyo del Tigre a mediados de la década de 1970,
+              pero fueron como un diseño temprano por Suárez (2011, 2015, 2017)
+              a partir de evidencia cronológica, arqueológica y estratigráfica
+              en los sitios Pay Paso 1, Laguna de Canosa y Tigre. Los datos
+              cronológicos indican que este diseño tiene hace entre 12.000 y
+              11.300 años. <br />
+              Las características morfológicas y tecnológicas principales de las
+              puntas Tigre son pedúnculo ancho con lados rectos o levemente
+              convexos, base convexa o convexa atenuada generalmente adelgazada
+              por retoques, aletas muy pronunciadas con ángulos de entre 70°-
+              45°. El limbo de estas puntas es triangular corto en las puntas
+              que han sido muy reavivadas y limbo triangular largo en las puntas
+              que están al inicio de su vida útil. Estas puntas tienen
+              adelgazamiento bifacial completo, fueron manufacturadas a partir
+              de preformas bifaciales. A medida que estas puntas son utilizadas
+              como armas en actividades de caza y/o guerra, tienden a perder las
+              aletas que se modifican hacia hombros muy o poco pronunciados,
+              debido al rejuvenecimiento.
+            </p>
+            <p class="separator"></p>
           </div>
-        </div>
-        <div class="arrowinfo">
-          <p>
-            Este diseño de puntas se distribuye geográficamente en el norte y centro de Uruguay, así como el sur de Brasil. Las puntas Tigre fueron recuperadas en estratigrafía y reconocidas primeramente en el sitio K87, Arroyo del Tigre a mediados de la década de 1970, pero fueron como un diseño temprano por Suárez (2011, 2015, 2017) a partir de evidencia cronológica, arqueológica y estratigráfica en los sitios Pay Paso 1, Laguna de Canosa y Tigre. Los datos cronológicos indican que este diseño tiene hace entre 12.000 y 11.300 años. <br>
-Las características morfológicas y tecnológicas principales de las puntas Tigre son pedúnculo ancho con lados rectos o levemente convexos, base convexa o convexa atenuada generalmente adelgazada por retoques, aletas muy pronunciadas con ángulos de entre 70°- 45°. El limbo de estas puntas es triangular corto en las puntas que han sido muy reavivadas y limbo triangular largo en las puntas que están al inicio de su vida útil. Estas puntas tienen adelgazamiento bifacial completo, fueron manufacturadas a partir de preformas bifaciales. A medida que estas puntas son utilizadas como armas en actividades de caza y/o guerra, tienden a perder las aletas que se modifican hacia hombros muy o poco pronunciados, debido al rejuvenecimiento.
+        </article>
 
-          </p>
-          <p class="separator"></p>
-        </div>
-      </article>
-
-      <article class="arrow_container">
-        <div class="article_header">
-
-          <div class="arrowImgContainer atLeft">
-            <a href="media/projectiles/Puntas_Triangulares_Apedunculadas.jpg" target="blank" rel="noopener"><img
-                src="media/projectiles/Puntas_Triangulares_Apedunculadas.jpg"
-                alt="Diversidad y variabilidad en el diseño de las puntas triangulares apendunculadas"
-                loading="lazy"></a>
+        <article class="arrow_container">
+          <div class="article_header">
+            <div class="arrowImgContainer atLeft">
+              <a
+                href="media/projectiles/Puntas_Triangulares_Apedunculadas.jpg"
+                target="blank"
+                rel="noopener"
+                ><img
+                  src="media/projectiles/Puntas_Triangulares_Apedunculadas.jpg"
+                  alt="Diversidad y variabilidad en el diseño de las puntas triangulares apendunculadas"
+                  loading="lazy"
+              /></a>
+            </div>
+            <div class="article_title">
+              <p>TRIANGULARES APEDUNCULADAS</p>
+            </div>
           </div>
-          <div class="article_title">
-            <p>TRIANGULARES APEDUNCULADAS</p>
+          <div class="arrowinfo">
+            <p>
+              Este diseño de puntas se caracteriza fundamentalmente por
+              presentar un limbo en forma de triángulo, lados levemente convexos
+              o rectos y base levemente cóncava a levemente convexa con
+              presencia o no de acanaladura; además no tienen pedúnculo. En
+              Uruguay han sido recuperadas de diferentes puntos del país: región
+              media del río Uruguay, río Negro, cuenca del río Santa Lucía,
+              Laguna Negra y Aº Miguelete en el depto. de Montevideo. En 2021 se
+              publicó el primer estudio sistemático de este diseño de puntas
+              para Uruguay (Suárez y Melián, 2021) que incluye el relevamiento
+              de los 24 ejemplares reconocidos y el análisis morfométrico de 12
+              de ellos. Todas las puntas triangulares sin pedúnculo
+              identificadas y relevadas fueron encontradas en superficie, a
+              excepción de un ejemplar recuperado en estratigrafía durante las
+              excavaciones de recate arqueológico desarrolladas a raíz de la
+              construcción de la represa de Palmar en el río Negro. A través de
+              su comparación extra regional, se estima que este diseño de puntas
+              habría emergido hacia el año 12.650 AP.
+            </p>
+            <p class="separator"></p>
           </div>
-        </div>
-        <div class="arrowinfo">
-          <p>
-            Este diseño de puntas se caracteriza fundamentalmente por presentar un limbo en forma de triángulo, lados levemente convexos o rectos y base levemente cóncava a levemente convexa con presencia o no de acanaladura; además no tienen pedúnculo. En Uruguay han sido recuperadas de diferentes puntos del país: región media del río Uruguay, río Negro, cuenca del río Santa Lucía,  Laguna Negra y Aº Miguelete en el depto. de Montevideo. En 2021 se publicó el primer estudio sistemático de este diseño de puntas para Uruguay (Suárez y Melián, 2021) que incluye el relevamiento de los 24 ejemplares reconocidos y el análisis morfométrico de 12 de ellos. Todas las puntas triangulares sin pedúnculo identificadas y relevadas fueron encontradas en superficie, a excepción de un ejemplar recuperado en estratigrafía durante las excavaciones de recate arqueológico desarrolladas a raíz de la construcción de la represa de Palmar en el río Negro. A través de su comparación extra regional, se estima que este diseño de puntas habría emergido hacia el año 12.650 AP. 
-          </p>
-          <p class="separator"></p>
-        </div>
-      </article>
-    </div>
-  </section>
+        </article>
+      </div>
+    </section>
 
-  <section class="content">
+    <section class="content">
+      <div id="models3d" class="subtitle">
+        <p>MODELOS 3D</p>
+      </div>
 
-    <div id="models3d" class="subtitle">
-      <p>MODELOS 3D</p>
-    </div>
+      <div class="intro">
+        <div class="models3D">
+          <artifact-3d
+            href_src="https://sketchfab.com/3d-models/fishtail-projectile-point-741094b62328417383b1255fa323bdb6?utm_medium=embed&utm_campaign=share-popup&utm_content=741094b62328417383b1255fa323bdb6"
+            iframe_src="https://sketchfab.com/models/741094b62328417383b1255fa323bdb6/embed"
+            iframe_title="PUNTA COLA DE PESCADO"
+          ></artifact-3d>
 
-    <div class="intro">
+          <artifact-3d
+            href_src="https://sketchfab.com/3d-models/tigre-projectile-point-74c513f9bd614bb78badaa4b77756d33?utm_medium=embed&utm_campaign=share-popup&utm_content=74c513f9bd614bb78badaa4b77756d33"
+            iframe_src="https://sketchfab.com/models/74c513f9bd614bb78badaa4b77756d33/embed"
+            iframe_title="PUNTA TIGRE"
+          >
+          </artifact-3d>
 
-      <div class="models3D">
-
-        <artifact-3d
-          href_src="https://sketchfab.com/3d-models/fishtail-projectile-point-741094b62328417383b1255fa323bdb6?utm_medium=embed&utm_campaign=share-popup&utm_content=741094b62328417383b1255fa323bdb6"
-          iframe_src="https://sketchfab.com/models/741094b62328417383b1255fa323bdb6/embed"
-          iframe_title="PUNTA COLA DE PESCADO"></artifact-3d>
-
-        <artifact-3d
-          href_src="https://sketchfab.com/3d-models/tigre-projectile-point-74c513f9bd614bb78badaa4b77756d33?utm_medium=embed&utm_campaign=share-popup&utm_content=74c513f9bd614bb78badaa4b77756d33"
-          iframe_src="https://sketchfab.com/models/74c513f9bd614bb78badaa4b77756d33/embed" iframe_title="PUNTA TIGRE">
-        </artifact-3d>
-
-        <div style="text-align: center" class="Articles3D-footer">
-          by
-          <a href="https://sketchfab.com/Flavia_Barcelo?utm_medium=embed&utm_campaign=share-popup&utm_content=74c513f9bd614bb78badaa4b77756d33"
-            target="_blank" rel="noopener" style="font-weight: bold; color: #000000; text-decoration: none">
-            Flavia Barceló
-          </a>
-          on
-          <a href="https://sketchfab.com?utm_medium=embed&utm_campaign=share-popup&utm_content=74c513f9bd614bb78badaa4b77756d33"
-            target="_blank" rel="noopener"
-            style="font-weight: bold; color: #000000; text-decoration: none">Sketchfab</a>
+          <div style="text-align: center" class="Articles3D-footer">
+            by
+            <a
+              href="https://sketchfab.com/Flavia_Barcelo?utm_medium=embed&utm_campaign=share-popup&utm_content=74c513f9bd614bb78badaa4b77756d33"
+              target="_blank"
+              rel="noopener"
+              style="font-weight: bold; color: #000000; text-decoration: none"
+            >
+              Flavia Barceló
+            </a>
+            on
+            <a
+              href="https://sketchfab.com?utm_medium=embed&utm_campaign=share-popup&utm_content=74c513f9bd614bb78badaa4b77756d33"
+              target="_blank"
+              rel="noopener"
+              style="font-weight: bold; color: #000000; text-decoration: none"
+              >Sketchfab</a
+            >
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
+    <section class="faunaSection">
+      <div id="fauna" class="subtitle">
+        <p>FAUNA</p>
+      </div>
 
+      <div class="intro">
+        <p>
+          En el sitio Pay Paso 1, en los componentes 1 y 3 se recuperaron restos
+          óseos de fauna extinta y actual en asociación directa con material
+          lítico. Estos permitieron identificar 5 diferentes taxones (especies).
+          Dos de las especies identificadas corresponden a mamíferos extintos
+          del Pleistoceno: caballo (Equus sp.) y un pariente de la mulita
+          (Glyptodon sp.). Las otras tres especies corresponden a fauna actual
+          que incluyen peces de gran tamaño como la boga (Megaleporinus sp.),
+          aves de gran porte como el ñandú (Rhea Americana) y mamíferos de
+          mediano porte como la nutria (Myocastor coypus). La presencia de
+          mamíferos de diferente porte, aves y peces permite inferir una
+          estrategia generalizada de subsistencia no solo basada en la caza,
+          sino también en la pesca y recolección de huevos.
+        </p>
+      </div>
 
-  <section class="faunaSection">
-
-    <div id="fauna" class="subtitle">
-      <p>FAUNA</p>
-    </div>
-
-    <div class="intro">
-      <p>En el sitio Pay Paso 1, en los componentes 1 y 3 se recuperaron restos óseos de fauna extinta y actual en
-        asociación directa con material lítico. Estos permitieron identificar 5 diferentes taxones (especies). Dos de
-        las especies identificadas corresponden a mamíferos extintos del Pleistoceno: caballo (Equus sp.) y un pariente
-        de la mulita (Glyptodon sp.). Las otras tres especies corresponden a fauna actual que incluyen peces de gran
-        tamaño como la boga (Megaleporinus sp.), aves de gran porte como el ñandú (Rhea Americana) y mamíferos de
-        mediano porte como la nutria (Myocastor coypus). La presencia de mamíferos de diferente porte, aves y peces
-        permite inferir una estrategia generalizada de subsistencia no solo basada en la caza, sino también en la pesca
-        y recolección de huevos.
-      </p>
-
-    </div>
-
-    <div class="fauna_gallery">
-
-      <fauna-item imgSrc="media/fauna/nutria.jpg" name="NUTRIA" classification="Clase Mammalia <br>
+      <div class="fauna_gallery">
+        <fauna-item
+          imgSrc="media/fauna/nutria.jpg"
+          name="NUTRIA"
+          classification="Clase Mammalia <br>
         Orden	Rodentia <br>
         Suborden Hystricomorpha <br>
         Familia Myocastoridae <br>
         Género Myocastor <br>
-        Especie Myocastor coypus" info="Nombre común: Nutria.<br> La nutria es un roedor sudamericano de gran tamaño que habita en el este de Bolivia, centro y sur de Chile, sur de Brasil, gran parte de Argentina y en todo el Paraguay y Uruguay.
+        Especie Myocastor coypus"
+          info="Nombre común: Nutria.<br> La nutria es un roedor sudamericano de gran tamaño que habita en el este de Bolivia, centro y sur de Chile, sur de Brasil, gran parte de Argentina y en todo el Paraguay y Uruguay.
         Se la encuentra en ambientes acuáticos como ríos, arroyos y lagunas, principalmente de abundante cobertura vegetal flotante.
         De cuerpo robusto y macizo, pesa entre 4 y 10 kg alcanzando 40 a 60 cm de longitud, y un pelaje de dos capas que le brindan impermeabilidad y protección térmica: una interna de pelo corto, muy denso y afelpado, y otra externa de pelo más largo y áspero.
         En el sitio Pay Paso 1 en nuestro país se encontraron restos de esmalte de dientes de este mamífero junto con otra fauna actual (boga y ñandú), en asociación contextual y estratigráfica con material arqueológico y con restos de caballo prehistórico y gliptodonte.
         Estos animales son explotados actualmente por su carne como alimento, pero principalmente por el valor comercial de su piel para la confección de vestimenta y accesorios.
-        ">
-      </fauna-item>
+        "
+        >
+        </fauna-item>
 
-      <fauna-item imgSrc="media/fauna/ñandu.png" name="ÑANDÚ" classification="Clase Aves <br>
+        <fauna-item
+          imgSrc="media/fauna/ñandu.png"
+          name="ÑANDÚ"
+          classification="Clase Aves <br>
         Orden	Struthioniformes <br>
         Familia Rheidae <br>
         Género Rhea <br>
-        Especie Rhea americana " info="Nombre común: Ñandú. <br>
+        Especie Rhea americana "
+          info="Nombre común: Ñandú. <br>
 
         
         Ñandú es el nombre que daban los guaraníes a esta enorme ave corredora que habita praderas y sabanas con vegetación mixta de arbustos y gramíneas desde el norte de Brasil, Uruguay, Paraguay, Bolivia hasta la provincia de Río Negro en la Argentina.
 Es un ave de gran tamaño, la mayor de Sudamérica, con miembros anteriores muy cortos imposibilitados para el vuelo, y extremidades posteriores largas y fuertes adaptadas para la carrera, con un cuello largo y angosto. El macho alcanza una altura de 1,50 m y un peso de 30 a 35 kg, mientras que la altura de la hembra llega a 1,20 m y 25 kg de peso.
 Fragmentos de huevo de ñandú fueron recuperados en la excavación arqueológica del sitio Pay Paso 1, asociados con material arqueológico y con otros restos de fauna. Esto es interesante porque permite sugerir que los humanos hace 12,500 años recolectaban los huevos de estas aves como forma de subsistencia y para obtener proteínas. 
 Actualmente son explotados principalmente para consumo de la carne y los huevos, así como para la utilización del cuero y plumas para vestimenta u ornamentos.
-">
-      </fauna-item>
+"
+        >
+        </fauna-item>
 
-      <fauna-item imgSrc="media/fauna/boga.png" name="BOGA" classification="Clase Actinopterygii <br>
+        <fauna-item
+          imgSrc="media/fauna/boga.png"
+          name="BOGA"
+          classification="Clase Actinopterygii <br>
         Orden	Characiformes <br>
         Familia Anostomidae <br>
         Género Megaleporinus <br>
-        Especie Megaleporinus sp" info="Nombre común: Boga.<br>
+        Especie Megaleporinus sp"
+          info="Nombre común: Boga.<br>
         
         La boga es un pez sudamericano de agua dulce de gran tamaño que se encuentra distribuido en varias cuencas de ríos sudamericanos como el Paraná, Río de la Plata, Uruguay y San Francisco, entre otros. Se la encuentra preferentemente en ambientes lóticos como ríos y arroyos, aunque presenta buena adaptación a zonas de grandesembalses, y realiza grandes migraciones con fines reproductivos y alimenticios.
         Presenta un gran tamaño, pudiendo superar los 70 cm de largo y alcanzar hasta por lo menos 10 kg de peso, con un cuerpo alargado y moderadamente comprimido. Quizás durante la prehistoria, con menos presión que la pesca actual, algunos ejemplares podrían haber llegado a pesar 15 kg. o más. 
         En nuestro país es una especie muy común, encontrándose en el río Uruguay y sus principales afluentes, en el tramo inferior del río Negro, así como también en el río Santa Lucía y Río de la Plata, siendo de una gran importancia en la pesca artesanal, el segundo en importancia después del sábalo.
         En el sitio Pay Paso 1 se encontraron restos de esmaltes de dientes, que de acuerdo a su particular morfología, su relativo gran tamaño y mediante comparación con dientes actuales, permitieron identificarlos como pertenecientes a individuos juveniles y adultos de esta especie.
-        ">
-      </fauna-item>
+        "
+        >
+        </fauna-item>
 
-      <fauna-item imgSrc="media/fauna/caballo.png" name="CABALLO <br>PREHISTÓRICO" classification="Clase Mammalia <br>
+        <fauna-item
+          imgSrc="media/fauna/caballo.png"
+          name="CABALLO <br>PREHISTÓRICO"
+          classification="Clase Mammalia <br>
         Orden	Perissodactyla <br>
         Familia Equidae <br>
         Género Equus <br>
         Subgénero Amerhippus† <br>
-        Equus sp.†" info="Nombre común: Caballo prehistórico americano. <br>
+        Equus sp.†"
+          info="Nombre común: Caballo prehistórico americano. <br>
         
         Mucho antes de que los conquistadores europeos introdujeran caballos a América del Sur, existieron dos géneros de caballos americanos que convivieron con la megafauna, el Hippidion y el Equus (Amerhippus).
 El Equus (Amerhippus) habitaba en las latitudes medias y bajas del este del continente, en los actuales territorios de Argentina, Uruguay y Brasil. Las especies de este género ocupaban sabanas y pastizales xerófilos, estando bien adaptadas a paisajes abiertos y áridos, y se extinguieron durante la transición Pleistoceno-Holoceno junto con el resto de mamíferos de gran porte.
 Estos mamíferos perisodáctilos, si bien eran robustos y bastante grandes, eran de tamaño menor al de un caballo doméstico actual, pudiendo llegar a pesar 400 kg. Tenían una mandíbula robusta y miembros monodáctilos (de un solo dedo) macizos y cortos.
 En nuestro país, el sitio arqueológico Pay Paso 1 es el primero donde se recuperaron restos de este caballo prehistórico –parte de la región intra-alveolar de un molar superior izquierda- en asociación contextual y estratigráfica con material lítico (arqueológico) confeccionado por los antiguos cazadores-recolectores. 
 En Pampa y Patagonia en diferentes sitios como por ejemplo Piedra Museo (meseta central patagónica) hay evidencia de que los caballos prehistóricos fueron cazados por humanos y su carne se utilizó como alimento. 
-">
-      </fauna-item>
+"
+        >
+        </fauna-item>
 
-      <fauna-item imgSrc="media/fauna/G.jpg" name="GLIPTODONTE" classification="Clase Mammalia
+        <fauna-item
+          imgSrc="media/fauna/G.jpg"
+          name="GLIPTODONTE"
+          classification="Clase Mammalia
       Superorden Xenarthra <br>
       Orden	Cingulata <br>
       Familia Glyptodontidae† <br>
       Subfamilia Glyptodontinae† <br>
       Género Glyptodon† <br>
-      Glyptodon sp.†" info="Nombre común: Gliptodonte<br>
+      Glyptodon sp.†"
+          info="Nombre común: Gliptodonte<br>
         
         Los gliptodontes fueron grandes mamíferos emblemáticos de la megafauna de esta región, extinta durante la transición Pleistoceno-Holoceno. Parientes de los armadillos y mulitas -aunque no son sus antepasados- tenían el tamaño de un auto pequeño, llegando a una altura de 1.5 metros, una longitud de hasta 3 metros, y un peso de entre una y dos toneladas según la especie. Se caracterizan por tener un caparazón no articulado, formado por hasta 1500 placas óseas. Estas últimas son los fósiles de vertebrados más abundantes del Uruguay, y tienen diferentes diseños de acuerdo a los diferentes tipos de gliptodontes. 
 
 En nuestro país, el sitio arqueológico Pay Paso 1 ha proporcionado restos de estos grandes herbívoros, en asociación contextual y estratigráfica con material arqueológico, donde se recuperaron algunas partes esqueletarias -una plaqueta fracturada en dos partes que ensamblan y varias partes de placas-, pertenecientes a individuo/s infantiles y/o juveniles.
 
 En varios sitios arqueológicos de la Pampa en Argentina, hay evidencia de consumo humano de estos grandes mamíferos del Pleistoceno. 
-">
-      </fauna-item>
+"
+        >
+        </fauna-item>
+      </div>
+    </section>
+  </body>
 
-
+  <footer style="text-align: center; padding: 10px">
+    <div>
+      Icons made by
+      <a
+        href="https://www.flaticon.com/authors/smashicons"
+        title="Smashicons"
+        style="text-decoration: none; color: black"
+        >Smashicons</a
+      >
+      from
+      <a
+        href="https://www.flaticon.com/"
+        title="Flaticon"
+        style="text-decoration: none; color: black"
+        >www.flaticon.com</a
+      >
     </div>
-  </section>
-
-  </div>
-</body>
-
-<footer style="text-align: center; padding: 10px;">
-  <div>
-    Icons made by
-    <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons"
-      style="text-decoration: none; color: black;">Smashicons</a>
-    from
-    <a href="https://www.flaticon.com/" title="Flaticon"
-      style="text-decoration: none; color: black;">www.flaticon.com</a>
-  </div>
-</footer>
-
-</html>
-
+  </footer>
 </html>

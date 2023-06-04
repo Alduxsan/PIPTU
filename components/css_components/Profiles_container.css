@@ -1,0 +1,15 @@
+.profiles_wrapper {
+  padding: 2em 5em;
+  display: flex;
+  gap: 1em;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+@media screen and (max-width: 1100px) {
+  .profiles_wrapper {
+    display: block;
+    padding: 5px;
+  }
+}
