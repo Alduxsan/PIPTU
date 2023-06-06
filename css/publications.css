@@ -131,11 +131,14 @@ header {
 }
 
 .item4 {
+  grid-column: 1/2;
+}
+.item5 {
   grid-column: 2/4;
 }
 
 .item10 {
-  grid-column: 2/4;
+  grid-column: 1/4;
 }
 
 #network_list {
