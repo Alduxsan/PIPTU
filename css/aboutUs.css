@@ -143,46 +143,6 @@ header {
   pointer-events: none;
 }
 
-/* footer */
-
-.colab_container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  padding: 5em;
-  padding-top: 10em;
-  justify-content: center;
-  background: rgb(255, 255, 255);
-  background: linear-gradient(
-    0deg,
-    rgba(255, 255, 255, 1) 93%,
-    rgba(192, 163, 66, 1) 100%
-  );
-  align-items: center;
-  gap: 3em;
-}
-
-.link {
-  width: fit-content;
-  height: auto;
-}
-
-.colabLink {
-  width: 300px;
-  height: auto;
-}
-
-.colabLink img {
-  width: 100%;
-  height: auto;
-}
-
-#uesc {
-  max-width: 60%;
-  height: auto;
-  margin: auto;
-}
-
 .opened-profile {
   order: -1;
 }

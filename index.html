@@ -9,6 +9,7 @@
     <script type="module" src="./components/Navbar.js" defer></script>
     <script type="module" src="js/slidesInjector.js"></script>
     <script src="js/splide-4.1.3/dist/js/splide.min.js"></script>
+    <script type="module" src="./components/Footer.js" defer></script>
 
     <link rel="stylesheet" href="js/splide-4.1.3/dist/css/splide.min.css" />
     <meta
@@ -43,15 +44,15 @@
       <p>NOTICIAS RECIENTES</p>
     </div>
 
-    <project-news />
-
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        var splide = new Splide(".splide", {
-          type: "loop",
-          autoplay: true,
-        }).mount();
-      });
-    </script>
+    <div><project-news /></div>
+    <footer-data />
   </body>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var splide = new Splide(".splide", {
+        type: "loop",
+        autoplay: true,
+      }).mount();
+    });
+  </script>
 </html>

@@ -1,0 +1,12 @@
+footer {
+  font-size: smaller;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  padding: 1%;
+  justify-content: space-around;
+}
+
+footer div p {
+  font-family: raleway, sans-serif;
+}
