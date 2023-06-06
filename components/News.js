@@ -1,4 +1,5 @@
 import { dataRequest } from "../js/data_source.js";
+import styles from "./css_components/News.css" assert { type: "css" };
 
 class News extends HTMLElement {
   constructor() {
@@ -13,8 +14,12 @@ class News extends HTMLElement {
   }
   newCard(imgPath, title, date, content, id) {
     let news = document.createElement("div");
+    let infoContainer = document.createElement("div");
+
     news.id = `${id}`;
     news.classList.add("news");
+    infoContainer.classList.add("infoContainer");
+
     let newsTitle = document.createElement("h2");
     newsTitle.classList.add("newsTitle");
     newsTitle.innerHTML = `${title}`;
@@ -33,10 +38,12 @@ class News extends HTMLElement {
     newsContent.innerHTML = `${content}`;
 
     newsImgContainer.appendChild(newsImg);
-    news.appendChild(newsTitle);
-    news.appendChild(newsDate);
+    infoContainer.appendChild(newsDate);
+
+    infoContainer.appendChild(newsTitle);
+    infoContainer.appendChild(newsContent);
     news.appendChild(newsImgContainer);
-    news.appendChild(newsContent);
+    news.appendChild(infoContainer);
     return news;
   }
 
