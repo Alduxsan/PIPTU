@@ -1,10 +1,10 @@
-import styles from "./css_components/Navbar.css" assert { type: "css" };
+// import styles from "./css_components/Navbar.css" assert { type: "css" };
 
 class Navbar extends HTMLElement {
   constructor() {
     super();
     this.attachShadow({ mode: "open" });
-    this.shadowRoot.adoptedStyleSheets.push(styles);
+    // this.shadowRoot.adoptedStyleSheets.push(styles);
   }
 
   checkActive(section, atribute) {
@@ -135,6 +135,209 @@ class Navbar extends HTMLElement {
     <i id="toggler" class="icon"><img src="media/icons/square.png" alt="menu toggler"></i>
   </div>
   </nav>
+
+  <style>
+  .menu {
+    position: relative;
+    transition: all 1s;
+  }
+  .sub_menu {
+    padding: 10px;
+    background: #260e00;
+    width: 100%;
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    animation: fadeIn 0.5s;
+    animation-fill-mode: forwards;
+    text-align: left;
+    border-radius: 4px;
+  }
+  
+  .sub_menu_link {
+    padding: 10px 0;
+  }
+  
+  .menu:hover > .sub_menu {
+    display: flex;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .sticky {
+    z-index: 10;
+    position: fixed;
+    animation: fromTop 1s;
+    animation-fill-mode: forwards;
+  }
+  
+  nav {
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: all 0.4s ease;
+    z-index: 1;
+    background-color: #260e00;
+    position: fixed;
+  }
+  
+  nav .nav-content {
+    text-align: center;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+  }
+  nav .logo a {
+    text-decoration: none;
+    font-size: 35px;
+    color: white;
+    padding: 5px;
+    font-weight: bold;
+  }
+  nav.sticky .logo a {
+    color: white;
+  }
+  .nav-content .nav-links {
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .nav-content .nav-links div {
+    list-style: none;
+    margin-right: 15px;
+  }
+  
+  .nav-links div a {
+    font-family: raleway;
+    text-decoration: none;
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 100;
+    transition: all 0.3s ease;
+    border-top: 1px solid rgba(0, 0, 0, 0);
+    padding: 10px;
+  }
+  
+  .nav-links div a:hover {
+    transition: 0.2s all;
+    color: #ab8300bd;
+    animation-fill-mode: forwards;
+    font-weight: 900;
+  }
+  
+  @keyframes topline {
+    from {
+      border-top: 1px solid rgba(0, 0, 0, 0);
+    }
+  
+    to {
+      border-top: 1px solid #ab8300bd;
+    }
+  }
+  
+  .active {
+    border-top: 1px solid #ab8300bd;
+    padding-top: 10px;
+  }
+  
+  .hide {
+    display: none;
+  }
+  
+  .responsive_navbar {
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: all 0.4s ease;
+    z-index: 1;
+    background-color: rgb(38 14 0);
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+  }
+  
+  .responsive_navbar .nav-links {
+    font-family: raleway;
+    text-align: center;
+    font-size: 1rem;
+  }
+  
+  .nav-links div a {
+    font-size: 1rem;
+    text-align: center;
+  }
+  
+  .icon {
+    width: 30px;
+    height: fit-content;
+    cursor: pointer;
+    animation: fadeIn 0.5s;
+    animation-fill-mode: forwards;
+  }
+  
+  .icon img {
+    width: 100%;
+    height: auto;
+    filter: invert(1);
+  }
+  
+  .rotate {
+    animation: rotation 0.5s;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+      opacity: 0;
+    }
+    to {
+      transform: rotate(90deg);
+      opacity: 1;
+    }
+  }
+  
+  @media screen and (max-width: 1100px) {
+    .responsive_navbar {
+      display: flex;
+    }
+  
+    .responsive_navbar .logo a {
+      font-size: 20px;
+    }
+  
+    nav .nav-content {
+      display: none;
+    }
+  
+    .link_container {
+      margin-bottom: 10px;
+    }
+  }
+  
+  @keyframes fromTop {
+    from {
+      transform: translateY(-2000px);
+      opacity: 0;
+    }
+    to {
+      transform: translate(0);
+      opacity: 1;
+    }
+  }
+  
+  </style>
     `;
     this.button = this.shadowRoot.getElementById("toggler");
     this.button.addEventListener("click", this);

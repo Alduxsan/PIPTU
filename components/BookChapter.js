@@ -1,10 +1,10 @@
-import styles from "./css_components/BookChapter.css" assert { type: "css" };
+// import styles from "./css_components/BookChapter.css" assert { type: "css" };
 
 class BookChapters_container extends HTMLElement {
   constructor() {
     super();
     this.attachShadow({ mode: "open" });
-    this.shadowRoot.adoptedStyleSheets.push(styles);
+    // this.shadowRoot.adoptedStyleSheets.push(styles);
   }
 
   handleEvent(event) {
@@ -96,6 +96,55 @@ class BookChapter extends HTMLElement {
     </article>
 
     <style>
+    .hide {
+      display: none;
+    }
+    
+    .chapterWrapper {
+      width: 100%;
+      margin: auto;
+    }
+    
+    .bookChapters_container {
+      font-family: raleway, sans-serif;
+      margin: auto;
+    }
+    
+    .expanded {
+      animation: expand 2s;
+      animation-fill-mode: forwards;
+    }
+    
+    .toggler_button {
+      width: fit-content;
+      margin: auto;
+      margin-top: 20px;
+      padding-bottom: 2em;
+    }
+    
+    .ToggleBtn {
+      text-align: center;
+      border-radius: 4px;
+      cursor: pointer;
+      padding: 10px;
+      background-color: rgba(255, 255, 255, 0.644);
+      transition: all 0.2s;
+      box-shadow: 4px 4px 2px rgba(0, 0, 0, 0.604);
+    }
+    
+    .ToggleBtn:hover {
+      box-shadow: 8px 8px 2px rgba(0, 0, 0, 0.304);
+    }
+    
+    @keyframes expand {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+    
 
     :host-context(.normalChapter){
       display: none;

@@ -1,10 +1,10 @@
-import styles from "./css_components/Artifacts3d.css" assert { type: "css" };
+// import styles from "./css_components/Artifacts3d.css" assert { type: "css" };
 
 class Artifact3D extends HTMLElement {
   constructor() {
     super();
     this.attachShadow({ mode: "open" });
-    this.shadowRoot.adoptedStyleSheets.push(styles);
+    // this.shadowRoot.adoptedStyleSheets.push(styles);
   }
 
   connectedCallback() {
@@ -26,7 +26,83 @@ class Artifact3D extends HTMLElement {
           <a href=${params.href_src} target="_blank" rel="noopener">${params.iframe_title}</a> </p>
         <iframe title=${params.iframe_title} frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src=${params.iframe_src} loading="lazy"></iframe>
          </div> 
-        `;
+        
+        <style>.artifactWrapper {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-self: center;
+          margin: 20px;
+          border-radius: 8px;
+          padding: 2em;
+        }
+        
+        iframe {
+          border-radius: 4px;
+          width: 80%;
+          height: 400px;
+          margin: auto;
+          margin-bottom: 15px;
+          margin-top: 20px;
+          box-shadow: 3px 3px rgba(0, 0, 0, 0.9);
+          transition: all 0.3s;
+        }
+        
+        iframe:hover {
+          box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.9);
+        }
+        
+        .artifactTitle {
+          font-family: raleway, sans-serif;
+          justify-content: center;
+          align-self: center;
+          font-size: 13px;
+          font-weight: normal;
+          margin: 5px;
+          color: #000000;
+        }
+        
+        .artifactTitle a {
+          font-weight: bold;
+          color: #000000;
+          font-family: raleway, sans-serif;
+          text-decoration: none;
+          text-align: center;
+          font-size: 2rem;
+        }
+        
+        .sketchfab-embed-wrapper {
+          text-align: center;
+        }
+        
+        .textFooter {
+          font-size: 13px;
+          font-weight: normal;
+          margin: 5px;
+          color: #4a4a4a;
+        }
+        .textFooter a {
+          font-weight: bold;
+          color: #000000;
+        }
+        
+        @media screen and (max-width: 1100px) {
+          .artifactWrapper {
+            padding: 5px;
+            margin: auto;
+          }
+        
+          iframe {
+            width: 300px;
+            height: 300px;
+          }
+        
+          .artifactTitle a {
+            font-size: 1.5rem;
+          }
+        }
+        </style>
+         `;
   }
 }
 

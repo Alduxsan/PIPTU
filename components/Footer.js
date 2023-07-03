@@ -1,10 +1,10 @@
-import styles from "./css_components/Footer.css" assert { type: "css" };
+// import styles from "./css_components/Footer.css" assert { type: "css" };
 
 class Footer extends HTMLElement {
   constructor() {
     super();
     this.attachShadow({ mode: "open" });
-    this.shadowRoot.adoptedStyleSheets.push(styles);
+    // this.shadowRoot.adoptedStyleSheets.push(styles);
   }
 
   getAtt(attr) {
@@ -24,6 +24,21 @@ class Footer extends HTMLElement {
     Paysandú s/n (entre Tristán Narvaja y D. Fernández Crespo)<br/> 11200 Montevideo - Uruguay <br/>
 Tel: (+598) 2408 3076 </p> </div>
     </footer>
+    <style>
+    footer {
+      font-size: smaller;
+      margin-top: 50px;
+      display: flex;
+      flex-direction: row;
+      padding: 1%;
+      justify-content: space-around;
+    }
+    
+    footer div p {
+      font-family: raleway, sans-serif;
+    }
+    
+    </style>
     `;
   }
 
