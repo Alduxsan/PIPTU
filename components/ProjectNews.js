@@ -27,7 +27,7 @@ class ProjectNews extends HTMLElement {
   newCard(imgPath, title, date, content, id) {
     let newsCard = document.createElement("div");
     newsCard.classList.add("news-card");
-    newsCard.innerHTML = `<a href="../news.html#${id}" class="news-card__card-link"></a>
+    newsCard.innerHTML = `<a href="../news.html#${id}" target="_blank" rel="noopener" class="news-card__card-link"></a>
     <img src="${imgPath}" alt="${title}" class="news-card__image">
     <div class="news-card__text-wrapper">
       <h3 class="news-card__title">${title}</h3>

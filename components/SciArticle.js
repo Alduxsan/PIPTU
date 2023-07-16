@@ -52,7 +52,8 @@ class SciArticles_container extends HTMLElement {
         <p class="ToggleBtn hide" id="toggleLess">cerrar lista</p>
       </div>
     </div>
-    <styles>.hide {
+    <style>
+    .hide {
       display: none;
     }
     
@@ -100,7 +101,7 @@ class SciArticles_container extends HTMLElement {
         opacity: 1;
       }
     }
-    </styles>
+    </style>
     `;
   }
 }

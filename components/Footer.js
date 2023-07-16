@@ -18,11 +18,11 @@ class Footer extends HTMLElement {
     <div class="info1_container"> <p class="info1">
     Facultad de Humanidades y Ciencias de la Educación, Edificio Central <br/>
     Avenida Uruguay 1695 <br/>11200 Montevideo - Uruguay <br/>
-    Tel: (+598) 2409 1104 /05 /06</p> </div>
+    Contacto: rafaelsuarez23@gmail.com</p> </div>
     <div class="info2_container"> <p class="info2">
     Laboratorio de Arqueologí­a y Antropologí­a Biológica <br/>
     Paysandú s/n (entre Tristán Narvaja y D. Fernández Crespo)<br/> 11200 Montevideo - Uruguay <br/>
-Tel: (+598) 2408 3076 </p> </div>
+    Contacto: rafaelsuarez23@gmail.com </p> </div>
     </footer>
     <style>
     footer {
