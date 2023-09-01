@@ -1,54 +1,54 @@
-const investigated_sites = {
+const sites = {
   loc_arq_pay_paso: {
     name: "LOCALIDAD ARQUEOLÓGICA PAY PASO",
     imgPaths: [
-      "media/gallery/investigated_sites/localidad_arqueologica_pay_paso/copia_de_perfil_pp1.jpg",
-      "media/gallery/investigated_sites/localidad_arqueologica_pay_paso/lp_6_en_pedestales_detalle.jpg",
-      "media/gallery/investigated_sites/localidad_arqueologica_pay_paso/piso_y_bifaz_ultradelgado.jpg",
-      "media/gallery/investigated_sites/localidad_arqueologica_pay_paso/rs_mostrando_estratificacion.jpg",
-      "media/gallery/investigated_sites/localidad_arqueologica_pay_paso/toda_exc_i_vista_wavy_too.jpg",
+      "media/gallery/sites/localidad_arqueologica_pay_paso/copia_de_perfil_pp1.jpg",
+      "media/gallery/sites/localidad_arqueologica_pay_paso/lp_6_en_pedestales_detalle.jpg",
+      "media/gallery/sites/localidad_arqueologica_pay_paso/piso_y_bifaz_ultradelgado.jpg",
+      "media/gallery/sites/localidad_arqueologica_pay_paso/rs_mostrando_estratificacion.jpg",
+      "media/gallery/sites/localidad_arqueologica_pay_paso/toda_exc_i_vista_wavy_too.jpg",
     ],
   },
   tigre_k87: {
     name: "TIGRE K87",
     imgPaths: [
-      "media/gallery/investigated_sites/tigre_k87/conjunto_cerámico_-_sitio_tigre_k87_camaña_2012.png",
-      "media/gallery/investigated_sites/tigre_k87/excavación_en_el_sitio_tigre_k87_campaña_2020.jpeg",
-      "media/gallery/investigated_sites/tigre_k87/planta_de_excavación_del_sitio_tigre_k87_campaña_2012.jpg",
+      "media/gallery/sites/tigre_k87/conjunto_cerámico_-_sitio_tigre_k87_camaña_2012.png",
+      "media/gallery/sites/tigre_k87/excavación_en_el_sitio_tigre_k87_campaña_2020.jpeg",
+      "media/gallery/sites/tigre_k87/planta_de_excavación_del_sitio_tigre_k87_campaña_2012.jpg",
     ],
   },
   gallery_sites: {
     name: "CANTERA DEL ARROYO CATALÁN CHICO Y CATALÁN SECO (RACNA)",
     imgPaths: [
-      "media/gallery/investigated_sites/sitos_galería/afloramiento_catalán_seco_11.jpg",
-      "media/gallery/investigated_sites/sitos_galería/afloramiento_catalan.jpg",
-      "media/gallery/investigated_sites/sitos_galería/catalán_seco_13.jpg",
-      "media/gallery/investigated_sites/sitos_galería/catalancito.jpg",
-      "media/gallery/investigated_sites/sitos_galería/dsc_7683.jpg",
-      "media/gallery/investigated_sites/sitos_galería/dsc04451.jpg",
-      "media/gallery/investigated_sites/sitos_galería/dsc05431_cs-11.jpg",
-      "media/gallery/investigated_sites/sitos_galería/dsc09299.jpg",
+      "media/gallery/sites/sitos_galería/afloramiento_catalán_seco_11.jpg",
+      "media/gallery/sites/sitos_galería/afloramiento_catalan.jpg",
+      "media/gallery/sites/sitos_galería/catalán_seco_13.jpg",
+      "media/gallery/sites/sitos_galería/catalancito.jpg",
+      "media/gallery/sites/sitos_galería/dsc_7683.jpg",
+      "media/gallery/sites/sitos_galería/dsc04451.jpg",
+      "media/gallery/sites/sitos_galería/dsc05431_cs-11.jpg",
+      "media/gallery/sites/sitos_galería/dsc09299.jpg",
     ],
   },
   queguay_caves: {
     name: "CUEVAS, ALEROS Y AFLORAMIENTOS",
     imgPaths: [
-      "media/gallery/investigated_sites/cuevas_queguay/cerro_cuervos_superficial_dscn0514.jpg",
-      "media/gallery/investigated_sites/cuevas_queguay/copia_de_5.jpg",
-      "media/gallery/investigated_sites/cuevas_queguay/cueva_de_las_dos_bocas.jpg",
-      "media/gallery/investigated_sites/cuevas_queguay/cueva_de_los_cuervos_dscn0419.jpg",
-      "media/gallery/investigated_sites/cuevas_queguay/cueva_tuna_dscn9487_low_res.jpg",
-      "media/gallery/investigated_sites/cuevas_queguay/dscn9958_low_res.jpg",
-      "media/gallery/investigated_sites/cuevas_queguay/dscn9983_low_res.jpg",
-      "media/gallery/investigated_sites/cuevas_queguay/dscn9994_low_res.jpg",
+      "media/gallery/sites/cuevas_queguay/cerro_cuervos_superficial_dscn0514.jpg",
+      "media/gallery/sites/cuevas_queguay/copia_de_5.jpg",
+      "media/gallery/sites/cuevas_queguay/cueva_de_las_dos_bocas.jpg",
+      "media/gallery/sites/cuevas_queguay/cueva_de_los_cuervos_dscn0419.jpg",
+      "media/gallery/sites/cuevas_queguay/cueva_tuna_dscn9487_low_res.jpg",
+      "media/gallery/sites/cuevas_queguay/dscn9958_low_res.jpg",
+      "media/gallery/sites/cuevas_queguay/dscn9983_low_res.jpg",
+      "media/gallery/sites/cuevas_queguay/dscn9994_low_res.jpg",
       "media/gallery/excavations/planta_de_excavación_de_la_cueva_de_la_tuna.jpeg",
       "media/gallery/excavations/excavación_en_la_cueva_de_los_cuervos.jpg",
-      "media/gallery/investigated_sites/cuevas_queguay/IMG_0510.JPG",
-      "media/gallery/investigated_sites/cuevas_queguay/IMG_0804.JPG",
-      "media/gallery/investigated_sites/cuevas_queguay/01e3eca3-938f-434b-be18-cb7c616f6f41.jpg",
-      "media/gallery/investigated_sites/cuevas_queguay/00f79106-6162-4414-82de-b285b8946538.jpg",
-      "media/gallery/investigated_sites/cuevas_queguay/cbfcb6f4-31cf-416c-a779-2e79f6707252.jpg",
-      "media/gallery/investigated_sites/cuevas_queguay/32837a69-485c-43ab-a420-673471be3603.jpg",
+      "media/gallery/sites/cuevas_queguay/IMG_0510.JPG",
+      "media/gallery/sites/cuevas_queguay/IMG_0804.JPG",
+      "media/gallery/sites/cuevas_queguay/01e3eca3-938f-434b-be18-cb7c616f6f41.jpg",
+      "media/gallery/sites/cuevas_queguay/00f79106-6162-4414-82de-b285b8946538.jpg",
+      "media/gallery/sites/cuevas_queguay/cbfcb6f4-31cf-416c-a779-2e79f6707252.jpg",
+      "media/gallery/sites/cuevas_queguay/32837a69-485c-43ab-a420-673471be3603.jpg",
     ],
   },
 };
@@ -182,8 +182,8 @@ const homeSlider = [
 
 export const dataDelivery = (request) => {
   switch (request) {
-    case "investigated_sites":
-      return JSON.stringify(investigated_sites);
+    case "sites":
+      return JSON.stringify(sites);
     case "excavations":
       return JSON.stringify(excavations);
     case "lab_work":
