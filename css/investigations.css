@@ -131,12 +131,12 @@ header {
   -webkit-hyphens: auto;
 }  
 
-.model_img_wrapper {
+.model_middleText_img {
   margin: auto;
   padding: 1em 0;
   width: 100%;
 }
-.model_img_wrapper div {
+.model_middleText_img div {
   width: 100%;
   background: url("../media/gallery/sites/localidad_arqueologica_pay_paso/piso_y_bifaz_ultradelgado.jpg") no-repeat;
   height: 500px;
