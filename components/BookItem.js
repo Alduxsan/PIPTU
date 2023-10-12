@@ -145,3 +145,27 @@ class BookItem extends HTMLElement {
 }
 
 customElements.define("book-item", BookItem);
+
+
+class BookItemsList extends HTMLElement {
+  constructor() {
+    super();
+    this.attachShadow({ mode: "open" });
+    
+  }
+  getAtt(attr) {
+    let attribute = (this.attribute = this.getAttribute(attr) ?? "");
+    return attribute;
+  } 
+
+  connectedCallback() {
+    this.render();
+    
+  }
+
+  render() {
+    
+  }
+}
+
+customElements.define("bookItem-list", BookItemsList);

@@ -171,6 +171,34 @@ const news = [
   },
 ];
 
+const bookItems = [
+  {
+    title: "",
+    subtitle: "",
+    imgPath: "",
+    text:"",
+    id:""
+},
+{
+  title: "MOVILIDAD Y UTILIZACIÓN <br>DEL ESPACIO DURANTE LA <br>PREHISTORIA MÁS ANTIGUA",
+  subtitle: "",
+  imgPath: "media/activities/1-MOVILIDAD.jpg",
+  text:"",
+  id:""
+},
+];
+
+const sciArticles = [
+  {
+    title: "",
+    subtitle: "",
+    imgPath: "",
+    text:"",
+    id:""
+},
+
+]
+
 const homeSlider = [
   { url: "../media/home/carousel/1.jpg" },
   { url: "../media/home/carousel/2.jpg" },
@@ -196,6 +224,10 @@ export const dataDelivery = (request) => {
       return JSON.stringify(news);
     case "homeSlider":
       return JSON.stringify(homeSlider);
+    case "bookItems":
+      return JSON.stringify(bookItems);
+    case "sciArticles":
+      return JSON.stringify(sciArticles) 
     default:
       return "";
   }

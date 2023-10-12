@@ -19,7 +19,7 @@ class ActivitiesItem extends HTMLElement {
   getAtt(attr) {
     let attribute = (this.attribute = this.getAttribute(attr) ?? "");
     return attribute;
-  }
+  } 
 
   handleEvent(event) {
     if (event.type === "click") this.showInfo();
@@ -201,3 +201,4 @@ class ActivitiesItem extends HTMLElement {
 }
 
 customElements.define("activities-item", ActivitiesItem);
+
