@@ -160,7 +160,7 @@ const teaching_docency = {
 };
 
 const news = [
-  {
+/*   {
     id: 1,
     date: "2023-02-8",
     imgPath: "./media/news/NOTICIA-LANTHROPOLOGIE.webp",
@@ -168,6 +168,22 @@ const news = [
     content:
       'Con agrado informamos la reciente publicación de los integrantes de nuestro equipo de investigación. La publicación se realiza en la prestigiosa revista L´Anthropologie, revista pionera en investigaciones antropológicas que desde 1890 viene publicando trabajos de arqueología en Francia. 2023 Suárez Rafael, Julia Melián y Jenny Volarich. The initial peopling of South American Plains: an overview on Late Pleistocene and Early Holocene settlers in Uruguay. L´Anthropologie. Editorial Elsevier <a href="https://doi.org/10.1016/j.anthro.2023.103120">https://doi.org/10.1016/j.anthro.2023.103120</a> ',
     url: "https://doi.org/10.1016/j.anthro.2023.103120",
+  }, */
+  {
+    id: 2,
+    date: "2024-08-17",
+    imgPath: "https://ladiaria.com.uy/media/photologue/photos/cache/1_IImQnuO_1200w.jpg",
+    title: "Aquí también vivimos en cuevas: reportan ocupación humana continua por más de 11.000 años en alero rocoso de Cerro Largo",
+    content: 'Nos complace presentar el artículo periodístico publicado en LA DIARIA CIENCIA: “Aquí también vivimos en cuevas: reportan ocupación humana continua por más de 11.000 años en alero rocoso de Cerro Largo”, por el periodista Leo Lagos.',
+    url: "https://ladiaria.com.uy/ciencia/articulo/2024/8/aqui-tambien-vivimos-en-cuevas-reportan-ocupacion-humana-continua-por-mas-de-11000-anos-en-alero-rocoso-de-cerro-largo/",
+  },
+  {
+    id: 3 ,
+    date: "2024-09-18",
+    imgPath: "./media/news/sobrecienciauruguaymilenario.webp",
+    title: 'Informe realizado por TV CIUDAD Sobre Ciencia "Uruguay milenario"',
+    content: 'Con gusto compartimos el informe realizado por TV CIUDAD Sobre Ciencia “Uruguay milenario: Investigaciones arqueológicas en Cerro Largo”, entrevistando al Dr. Rafael Suárez en relación con los hallazgos en el alero Tamanduá de Cerro Largo.',
+    url: "https://www.youtube.com/watch?v=y6DKBa9PiF4&t=2106s",
   },
 ];
 
