@@ -1,149 +1,135 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Sección Publicaciones, libros, artículos y otros materiales publicados relacionados al programa PIPTU"
-    />
-    <meta http-equiv="Cache-Control" content="no-cache">
-    <meta http-equiv="Pragma" content="no-cache">
-    <meta http-equiv="Expires" content="600">
 
-    <script type="module" src="./components/Navbar.js"></script>
-    <script type="module" src="./components/SubNavbarItem.js" defer></script>
-    <script type="module" src="./components/BookItem.js" defer></script>
-    <script type="module" src="./components/PressItem.js" defer></script>
-    <script type="module" src="./components/SciArticle.js" defer></script>
-    <script type="module" src="./components/BookChapter.js" defer></script>
-    <script type="module" src="./components/Footer.js" defer></script>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Sección Publicaciones, libros, artículos y otros materiales publicados relacionados al programa PIPTU" />
+  <meta http-equiv="Cache-Control" content="no-cache">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="600">
 
-    <link rel="stylesheet" href="./css/publications.css" />
+  <script type="module" src="./components/Navbar.js"></script>
+  <script type="module" src="./components/SubNavbarItem.js" defer></script>
+  <script type="module" src="./components/BookItem.js" defer></script>
+  <script type="module" src="./components/PressItem.js" defer></script>
+  <script type="module" src="./components/SciArticle.js" defer></script>
+  <script type="module" src="./components/BookChapter.js" defer></script>
+  <script type="module" src="./components/Footer.js" defer></script>
 
-    <title>PIPTU - Publicaciones</title>
-  </head>
+  <link rel="stylesheet" href="./css/publications.css" />
 
-  <body>
-    <header>
-      <nav-bar atribute="publications"></nav-bar>
+  <title>PIPTU - Publicaciones</title>
+</head>
 
-      <div id="publications" class="title">
-        <p>PUBLICACIONES</p>
-      </div>
+<body>
+  <header>
+    <nav-bar atribute="publications"></nav-bar>
 
-      <svg
-        class="wave-separator"
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 1440 320"
-        preserveAspectRatio="none"
-      >
-        <path
-          fill="#c0a342"
-          fill-opacity="1"
-          d="M0,128L48,149.3C96,171,192,213,288,202.7C384,192,480,128,576,128C672,128,768,192,864,234.7C960,277,1056,299,1152,266.7C1248,235,1344,149,1392,106.7L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
-        ></path>
-      </svg>
-    </header>
-    <subnavbar-container>
-      <subnavbar-item
-        hrefId="articles"
-        imgPath="media/icons/scientificArticles.png"
-        sectionName="artículos científicos"
-        animation="fadeIn5"
-      ></subnavbar-item>
-
-      <subnavbar-item
-        hrefId="books"
-        imgPath="media/icons/books.png"
-        sectionName="LIBROS"
-        animation="fadeIn3"
-      >
-      </subnavbar-item>
-
-      <subnavbar-item
-        hrefId="bookChapters"
-        imgPath="media/icons/chapter.png"
-        sectionName="Capítulos de libros"
-        animation="fadeIn4"
-      >
-      </subnavbar-item>
-
-      <subnavbar-item
-        hrefId="press"
-        imgPath="media/icons/press.png"
-        sectionName="PRENSA"
-        animation="fadeIn2"
-      >
-      </subnavbar-item>
-
-      <subnavbar-item
-        hrefId="networks"
-        imgPath="media/icons/network.png"
-        sectionName="REDES SOCIALES"
-        animation="fadeIn1"
-      ></subnavbar-item>
-    </subnavbar-container>
-
-    <div id="articles" class="subtitle">
-      <p>ARTÍCULOS CIENTÍFICOS</p>
+    <div id="publications" class="title">
+      <p>PUBLICACIONES</p>
     </div>
 
+    <svg class="wave-separator" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none">
+      <path fill="#c0a342" fill-opacity="1"
+        d="M0,128L48,149.3C96,171,192,213,288,202.7C384,192,480,128,576,128C672,128,768,192,864,234.7C960,277,1056,299,1152,266.7C1248,235,1344,149,1392,106.7L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+      </path>
+    </svg>
+  </header>
+  <subnavbar-container>
+    <subnavbar-item hrefId="articles" imgPath="media/icons/scientificArticles.png" sectionName="artículos científicos"
+      animation="fadeIn5"></subnavbar-item>
+
+    <subnavbar-item hrefId="books" imgPath="media/icons/books.png" sectionName="LIBROS" animation="fadeIn3">
+    </subnavbar-item>
+
+    <subnavbar-item hrefId="bookChapters" imgPath="media/icons/chapter.png" sectionName="Capítulos de libros"
+      animation="fadeIn4">
+    </subnavbar-item>
+
+    <subnavbar-item hrefId="press" imgPath="media/icons/press.png" sectionName="PRENSA" animation="fadeIn2">
+    </subnavbar-item>
+
+    <subnavbar-item hrefId="networks" imgPath="media/icons/network.png" sectionName="REDES SOCIALES"
+      animation="fadeIn1"></subnavbar-item>
+  </subnavbar-container>
+
+  <div id="articles" class="subtitle">
+    <p>ARTÍCULOS CIENTÍFICOS</p>
+  </div>
+
+  <!--    
     <sciarticles-container>
       <sci-article
-        artAuthors="2021 SUÁREZ RAFAEL Y MARÍA JULIA MELÍAN"
-        class="initialList art-sci"
-        artTitle="Fluted triangular non-stemmed points in Uruguay and their extra-regional relationship : Broadening Technological Diversity During the Early Holocene of South America"
-        editorial="Paleoamerica Volume (7) 3 pp.190-210. Editorial Routledge Taylor & Francis.<br>DOI 10.1080/20555563.2021.1928983"
-        artAbstract="Triangular non-stemmed points (TNSPs) have been recovered for several decades from early archaeological sites in different regions of South America. We report a synthesis and review of 63 early Holocene radiocarbon dates (∼12,650–8050 cal yr BP) of the main sites where TNSPs have been recovered and records of this point design with fluting technology. The oldest ages of dated sites with TNSPs are synchronous with ages obtained for Fishtail point sites. The extra-regional evidence allows discussion of aspects related to the use of open environments, chronology, size, context, fluting technology and distribution of these points, leading to the generation of new ways to continue increasing our understanding of cultural complexity in early settlement in South America. The results open new perspectives and implications for the debate on social interaction and technological transmission by Paleoamericans during the peopling of South America."
-        artLink="https://www.researchgate.net/publication/352215020_Fluted_Triangular_Non-stemmed_Points_in_Uruguay_and_Their_Extra-regional_Relationship_Broadening_Technological_Diversity_during_the_Early_Holocene_of_South_America"
-      >
-      </sci-article>
+      artAuthors=""
+      class="initialList art-sci"
+      artTitle=""
+      editorial=""
+      artAbstract=""
+      artLink="">
+    </sci-article>
+-->
+  <sciarticles-container>
+    <sci-article
+      artAuthors="2024 RAFAEL SUÁREZ, JULIA MELIÁN, FLAVIA BARCELÓ, JENNY VOLARICH, ISMAEL LUGO Y FEDERICO REY"
+      class="initialList art-sci"
+      artTitle="NEW SITES AND CHALLENGES IN PREHISTORIC ARCHAEOLOGY OF URUGUAY: RECURRENT OCCUPATIONS IN CAVES, ROCKSHELTERS AND EARTHEN MOUNDS"
+      editorial="Antiquity, 1–10."
+      artAbstract="Systematic investigation of caves and rockshelters in Uruguay is revealing the archaeological importance of these sites and their association with earthen mounds. Multiple periods of human occupation at Tamanduá rockshelter are revealed through stratigraphic analysis, and radiocarbon dates suggest recurrent occupation from the Early Holocene up to the historic period."
+      artLink="https://doi.org/10.15184/aqy.2024.95">
+    </sci-article>
+    <sci-article artAuthors="2024 RAFAEL SUÁREZ Y FLAVIA BARCELÓ" class="initialList art-sci"
+      artTitle="MOBILITY AND RAW MATERIAL PROCUREMENT BY FISHTAIL PEOPLE IN URUGUAY: EVALUATION OF SILCRETE LONG DISTANCE TRANSPORT BETWEEN CAMPSITES AND OUTCROPS DURING THE LATE PLEISTOCENE (CA. 12,900–12,250 CAL BP)"
+      editorial="Journal of Archaeological Science: Reports. 53."
+      artAbstract="Lithic artifacts from late Pleistocene manufactured in silcrete are used to understand Fishtail behaviors linked to mobility, land use and raw material acquisition during early prehistory in Uruguay. The data analyzed here include three categories of silcrete evidence: (1) a database of Fishtail points, (2) regional outcrops of these lithic resource, (3) debitage and unifacial tools from campsites. We calculated the cumulative cost of movement between campsites and the nearest lithic resources in space, located within the silcrete area, the distances involved in such movements, and the possible connection routes between campsites and silcrete resources. We analyzed the raw materials, density and spatial distribution of Fishtail points, and generated a Predictive Model of Transit Pathways. The results obtained indicate that silcretes were transported over long distances in mobility networks by an extensive Paleoamerican social landscape from outcrops located in the western and southwestern to campsites in northwestern Uruguay at distances ranging between ~ 179 and 482 km. This new data confirms long distance displacements, the high social value, and the preference of this lithic resource for the production of tool assemblages by the Fishtail peoples of Uruguay."
+      artLink="https://doi.org/10.1016/j.jasrep.2023.104338">
+    </sci-article>
+    <sci-article artAuthors="2023 RAFAEL SUÁREZ, JENNY VOLARICH Y JULIA MELIÁN" class="initialList art-sci"
+      artTitle="THE INITIAL PEOPLING OF SOUTH AMERICAN PLAINS: AN OVERVIEW ON LATE PLEISTOCENE AND EARLY HOLOCENE SETTLERS IN URUGUAY"
+      editorial="L’Anthropologie 103–120"
+      artAbstract="This paper reviews more than 20 years of research about the Late Pleistocene and Early Holocene occupations of the Uruguayan plains. The aim of this synthesis is to provide an overview of the available information related to early human peopling of Uruguay. Here, we focus on the main issues discussed over the last two decades: early sites characterization and chronology, human response to climate change, cultural diversity, occupations patterns, mobility and technology. The systematic and continuous efforts made have provided new data and new perspectives regarding the earliest human occupations of the region. We have defined an archaeological complex landscape and ongoing research strategy is based on the three main types of site that compose it: residential camps, cave and rock shelters, and raw material sources. This has allowed us to expand and improve our understanding of the record. The new research and data provided by these sites have led us to propose a settlement model for the region and the period. A cultural diversity has been evidenced through in-depth studies of stratified archaeological sites, cultural sequence, a solid chronological database and lithic technology. Finally, we advance in the characterization of objects of social prestige among hunter-gatherers who occupied the plains during the end of the Pleistocene in Southeastern South America."
+      artLink="https://doi.org/10.1016/j.anthro.2023.103120">
+    </sci-article>
+    <sci-article artAuthors="2021 SUÁREZ RAFAEL Y MARÍA JULIA MELÍAN" class="initialList art-sci"
+      artTitle="Fluted triangular non-stemmed points in Uruguay and their extra-regional relationship : Broadening Technological Diversity During the Early Holocene of South America"
+      editorial="Paleoamerica Volume (7) 3 pp.190-210. Editorial Routledge Taylor & Francis.<br>DOI 10.1080/20555563.2021.1928983"
+      artAbstract="Triangular non-stemmed points (TNSPs) have been recovered for several decades from early archaeological sites in different regions of South America. We report a synthesis and review of 63 early Holocene radiocarbon dates (∼12,650–8050 cal yr BP) of the main sites where TNSPs have been recovered and records of this point design with fluting technology. The oldest ages of dated sites with TNSPs are synchronous with ages obtained for Fishtail point sites. The extra-regional evidence allows discussion of aspects related to the use of open environments, chronology, size, context, fluting technology and distribution of these points, leading to the generation of new ways to continue increasing our understanding of cultural complexity in early settlement in South America. The results open new perspectives and implications for the debate on social interaction and technological transmission by Paleoamericans during the peopling of South America."
+      artLink="https://www.researchgate.net/publication/352215020_Fluted_Triangular_Non-stemmed_Points_in_Uruguay_and_Their_Extra-regional_Relationship_Broadening_Technological_Diversity_during_the_Early_Holocene_of_South_America">
+    </sci-article>
 
-      <sci-article
-        artAuthors="2021 Barceló Flavia y Suárez Rafael"
-        class="initialList art-sci"
-        artTitle="Vasijas cerámicas de los cazadores-recolectores durante el final del holoceno en el Río Uruguay medio (sitio Tigre - K87): reconstrucción 3d, análisis volumétrico y funcional"
-        editorial="LEPAARQ Vol. XVIII, 18 (35) pp. 236-262"
-        artAbstract="Triangular non-stemmed points (TNSPs) have been recovered for several decades from early archaeological sites in different regions of South America. We report a synthesis and review of 63 early Holocene radiocarbon dates (∼12,650–8050 cal yr BP) of the main sites where TNSPs have been recovered and records of this point design with fluting technology. The oldest ages of dated sites with TNSPs are synchronous with ages obtained for Fishtail point sites. The extra-regional evidence allows discussion of aspects related to the use of open environments, chronology, size, context, fluting technology and distribution of these points, leading to the generation of new ways to continue increasing our understanding of cultural complexity in early settlement in South America. The results open new perspectives and implications for the debate on social interaction and technological transmission by Paleoamericans during the peopling of South America."
-        artLink=" https://www.researchgate.net/publication/352781582_Vasijas_ceramicas_de_los_cazadores-recolectores_del_final_del_Holoceno_en_el_rio_Uruguay_medio_Sitio_Tigre_-_K87_reconstruccion_3d_analisis_volumetrico_y_funcional"
-      >
-      </sci-article>
+    <sci-article artAuthors="2021 Barceló Flavia y Suárez Rafael" class="initialList art-sci"
+      artTitle="Vasijas cerámicas de los cazadores-recolectores durante el final del holoceno en el Río Uruguay medio (sitio Tigre - K87): reconstrucción 3d, análisis volumétrico y funcional"
+      editorial="LEPAARQ Vol. XVIII, 18 (35) pp. 236-262"
+      artAbstract="Triangular non-stemmed points (TNSPs) have been recovered for several decades from early archaeological sites in different regions of South America. We report a synthesis and review of 63 early Holocene radiocarbon dates (∼12,650–8050 cal yr BP) of the main sites where TNSPs have been recovered and records of this point design with fluting technology. The oldest ages of dated sites with TNSPs are synchronous with ages obtained for Fishtail point sites. The extra-regional evidence allows discussion of aspects related to the use of open environments, chronology, size, context, fluting technology and distribution of these points, leading to the generation of new ways to continue increasing our understanding of cultural complexity in early settlement in South America. The results open new perspectives and implications for the debate on social interaction and technological transmission by Paleoamericans during the peopling of South America."
+      artLink=" https://www.researchgate.net/publication/352781582_Vasijas_ceramicas_de_los_cazadores-recolectores_del_final_del_Holoceno_en_el_rio_Uruguay_medio_Sitio_Tigre_-_K87_reconstruccion_3d_analisis_volumetrico_y_funcional">
+    </sci-article>
 
-      <sci-article
-        artAuthors="2019 Rafael Suárez"
-        class="initialList art-sci"
-        artTitle="High resolution AMS 14C dates for Late Pleistocene Fishtail technology from the Tigre site, Uruguay River basin, South America"
-        editorial="Quaternary Science Review 213, pp. 155-161. Editorial Elsevier"
-        artAbstract="The basin of the Uruguay middle river has contributed important advances related to knowledge of the early settlement of southeastern South America.. This paper presents recent progress of the research on the Paleoamerican period that is being carried out in the Tigre site (Uruguay), where a cultural component with Fishtail points, bifaces, preforms and other artifacts dated at ~ 12,800 and 12,200 cal BP was found. The presence of silicified limestone (silcrete) in the Tigre site indicates mobility ranges of 190 e350 km to obtain this lithic resource. The data presented here allow to have an accurate discussion of the chronological period occupied by Fishtail groups on the plains of Uruguay; and to recognize the late stages of the Fishtail point manufacturing process used by these human groups, one of the most successful adaptations during the end of the Pleistocene in South America."
-        artLink="https://www.researchgate.net/publication/332481686_High_resolution_AMS_14C_dates_for_late_Pleistocene_Fishtail_technology_from_the_Tigre_site_Uruguay_river_basin_South_America"
-      >
-      </sci-article>
+    <sci-article artAuthors="2019 Rafael Suárez" class="initialList art-sci"
+      artTitle="High resolution AMS 14C dates for Late Pleistocene Fishtail technology from the Tigre site, Uruguay River basin, South America"
+      editorial="Quaternary Science Review 213, pp. 155-161. Editorial Elsevier"
+      artAbstract="The basin of the Uruguay middle river has contributed important advances related to knowledge of the early settlement of southeastern South America.. This paper presents recent progress of the research on the Paleoamerican period that is being carried out in the Tigre site (Uruguay), where a cultural component with Fishtail points, bifaces, preforms and other artifacts dated at ~ 12,800 and 12,200 cal BP was found. The presence of silicified limestone (silcrete) in the Tigre site indicates mobility ranges of 190 e350 km to obtain this lithic resource. The data presented here allow to have an accurate discussion of the chronological period occupied by Fishtail groups on the plains of Uruguay; and to recognize the late stages of the Fishtail point manufacturing process used by these human groups, one of the most successful adaptations during the end of the Pleistocene in South America."
+      artLink="https://www.researchgate.net/publication/332481686_High_resolution_AMS_14C_dates_for_late_Pleistocene_Fishtail_technology_from_the_Tigre_site_Uruguay_river_basin_South_America">
+    </sci-article>
 
-      <sci-article
-        artAuthors="2019 Rafael Suárez y Marcelo Cardillo"
-        class="initialList art-sci"
-        artTitle="Life history or stylistic variation? A geometric morphometric method for evaluation of Fishtail point variability"
-        editorial="Journal of Archaeological Science Reports 27: pp 1-12. Ed. Elsevier"
-        artAbstract="Fishtail points are considered an indicator of the presence for one of the earliest and most successful human adaptations during the late Pleistocene in South America (~12,900-12,200 cal BP). Although these points display a wide range of variability both in size and shape, previous studies are mainly technological and descriptive observations. No efforts have been made to propose qualitative and quantitative indexes in order to understand how the rejuvenation/resharpening process may have affected the observed variability. In this paper, we explore different analytical methods to understand the rejuvenation process, explain the morphological variability of the Fishtail points and evaluate them from the perspectives of geometric morphometrics and multivariate statistics. This analysis allows us to generate new fresh interpretations and ideas about the rejuvenation of points. The combination of 2d geometric morphometrics, linear measurements, and multivariate regression, supports the hypothesis that the continuum of shape variation is explained by the long life history trajectories of the Fishtail points."
-        artLink="https://www.researchgate.net/publication/335452645_Life_history_or_stylistic_variation_A_geometric_morphometric_method_for_evaluation_of_Fishtail_point_variability"
-      >
-      </sci-article>
+    <sci-article artAuthors="2019 Rafael Suárez y Marcelo Cardillo" class="initialList art-sci"
+      artTitle="Life history or stylistic variation? A geometric morphometric method for evaluation of Fishtail point variability"
+      editorial="Journal of Archaeological Science Reports 27: pp 1-12. Ed. Elsevier"
+      artAbstract="Fishtail points are considered an indicator of the presence for one of the earliest and most successful human adaptations during the late Pleistocene in South America (~12,900-12,200 cal BP). Although these points display a wide range of variability both in size and shape, previous studies are mainly technological and descriptive observations. No efforts have been made to propose qualitative and quantitative indexes in order to understand how the rejuvenation/resharpening process may have affected the observed variability. In this paper, we explore different analytical methods to understand the rejuvenation process, explain the morphological variability of the Fishtail points and evaluate them from the perspectives of geometric morphometrics and multivariate statistics. This analysis allows us to generate new fresh interpretations and ideas about the rejuvenation of points. The combination of 2d geometric morphometrics, linear measurements, and multivariate regression, supports the hypothesis that the continuum of shape variation is explained by the long life history trajectories of the Fishtail points."
+      artLink="https://www.researchgate.net/publication/335452645_Life_history_or_stylistic_variation_A_geometric_morphometric_method_for_evaluation_of_Fishtail_point_variability">
+    </sci-article>
 
-      <sci-article
-        artAuthors="2018 Rafael Suárez, G. Piñeiro, F. Barceló"
-        artTitle="Living on the river edge: The Tigre site (K-87) new data and implications for the initial colonization of the Uruguay River basin"
-        artAbstract='This paper presents new data on the initial settlement of the southeastern region of South America, based on recent research conducted at the Tigre archaeological site (K87), located in the middle Uruguay River basin, near the Uruguayan border with Brazil and Argentina. The current archaeological excavations carried out in this open-air site confirmed that it is a multicomponent site. A new series of 20 radio-carbon dates refined the chronology of recurrent human occupations at this site during the late Pleis-tocene (13,260 cal BP), the Pleistocene-Holocene transition (12,920e11,750 cal BP), the early Holocene (11,300e9300 cal BP), and the late Holocene (1180 cal BP), demonstrating the strategic importance of this site during the prehistory of the region. In this paper, we describe the archaeological and stratigraphic contexts of the site, and analyze the artifact assemblage of the early components. Tigre points recovered from the archaeological excavations confirm that this is a Paleoamerican point design that circulated in the region between 12,000e11,100 cal BP. In addition, associated with these points, bifaces, fractured preforms and a type of asymmetric biface with a crescent/half moon shape were recovered. These " crescent artifacts " show a high standardization in form, size and knapping technique, which is described in this paper. Finally, we discuss the geographic distribution of the Tigre points, the blade technology present in the Uruguay River basin, the presence of prestige artifacts during the settlement, and the chronology of the " Umbu tradition " of southern Brazil in relation to the previous and recent data obtained in the Tigre site.'
-        editorial="Quaternary International 473:pp242-260. Ed. Elsevier"
-        artLink="https://www.researchgate.net/publication/319182510_Living_on_the_river_edge_The_Tigre_site_K-87_new_data_and_implications_for_the_initial_colonization_of_the_Uruguay_River_basin"
-      >
-      </sci-article>
+    <sci-article artAuthors="2018 Rafael Suárez, G. Piñeiro, F. Barceló"
+      artTitle="Living on the river edge: The Tigre site (K-87) new data and implications for the initial colonization of the Uruguay River basin"
+      artAbstract='This paper presents new data on the initial settlement of the southeastern region of South America, based on recent research conducted at the Tigre archaeological site (K87), located in the middle Uruguay River basin, near the Uruguayan border with Brazil and Argentina. The current archaeological excavations carried out in this open-air site confirmed that it is a multicomponent site. A new series of 20 radio-carbon dates refined the chronology of recurrent human occupations at this site during the late Pleis-tocene (13,260 cal BP), the Pleistocene-Holocene transition (12,920e11,750 cal BP), the early Holocene (11,300e9300 cal BP), and the late Holocene (1180 cal BP), demonstrating the strategic importance of this site during the prehistory of the region. In this paper, we describe the archaeological and stratigraphic contexts of the site, and analyze the artifact assemblage of the early components. Tigre points recovered from the archaeological excavations confirm that this is a Paleoamerican point design that circulated in the region between 12,000e11,100 cal BP. In addition, associated with these points, bifaces, fractured preforms and a type of asymmetric biface with a crescent/half moon shape were recovered. These " crescent artifacts " show a high standardization in form, size and knapping technique, which is described in this paper. Finally, we discuss the geographic distribution of the Tigre points, the blade technology present in the Uruguay River basin, the presence of prestige artifacts during the settlement, and the chronology of the " Umbu tradition " of southern Brazil in relation to the previous and recent data obtained in the Tigre site.'
+      editorial="Quaternary International 473:pp242-260. Ed. Elsevier"
+      artLink="https://www.researchgate.net/publication/319182510_Living_on_the_river_edge_The_Tigre_site_K-87_new_data_and_implications_for_the_initial_colonization_of_the_Uruguay_River_basin">
+    </sci-article>
 
-      <sci-article
-        artAuthors="2018 Méndez César, Suárez Rafael y Luis Borrero"
-        artTitle="Mobility and Use of Space in Late Pleistocene South America: Disscussing Early Human Regional Trajectories"
-        artAbstract="Over the past two decades significant advances have been achieved
+    <sci-article artAuthors="2018 Méndez César, Suárez Rafael y Luis Borrero"
+      artTitle="Mobility and Use of Space in Late Pleistocene South America: Disscussing Early Human Regional Trajectories"
+      artAbstract="Over the past two decades significant advances have been achieved
       in the study of the initial peopling of South America. Abundant new
       sites have been discovered in both known and novel areas and chronological data have been systematically gathered. Currently, the South
       American map of late Pleistocene to early Holocene sites and landscapes displays dots in most regions and scholars can evaluate which
@@ -154,89 +140,70 @@
       have been put on the validation of the sites and the associations of
       remains to anthropogenic activity or on the chronological time frames
       in which these occupations occurred. Once we recognize the distribution of sites throughout a landscape, the subsistence remains there(...)"
-        editorial="Quaternary International 473:141-143. Editorial Elsevier"
-        artLink="https://www.researchgate.net/publication/325384318_Mobility_and_Use_of_Space_in_Late_Pleistocene_South_America_Discussing_Early_Human_Regional_Trajectories"
-      >
-      </sci-article>
+      editorial="Quaternary International 473:141-143. Editorial Elsevier"
+      artLink="https://www.researchgate.net/publication/325384318_Mobility_and_Use_of_Space_in_Late_Pleistocene_South_America_Discussing_Early_Human_Regional_Trajectories">
+    </sci-article>
 
-      <sci-article
-        artAuthors="2018 Suárez Rafael, Jorge Vegh y Joaquín Astiazarán"
-        artTitle="Paleoamerican occupations on the Yí River (Uruguay): Fishtail points, blades and preforms, news evidences from La Palomita site"
-        editorial="PaleoAmerica – Ed. Routledge/Taylor & Francis –USA - https://doi.org/10.1080/20555563.2017.1415651"
-        artLink="https://www.researchgate.net/publication/322316631_Fishtail_Points_Blades_and_Preforms_and_the_Paleoamerican_Occupation_of_the_Yi_River_Uruguay_New_Evidence_from_La_Palomita"
-        artAbstract="This paper presents unpublished data of La Palomita (Uruguay), an archaeological site where Paleoamerican lithic material was recovered. Namely, two Fishtail points, preforms, and several blades are described. In northern Uruguay, evidence of a blade technology (blades and cores) was previously recovered in buried Paleoamerican sites dated between 12,800 and 11,300 cal yr BP. We conclude that the artifacts recovered from La Palomita suggest the presence of Paleoamericans in the basin of the Yí River, central Uruguay."
-      >
-      </sci-article>
+    <sci-article artAuthors="2018 Suárez Rafael, Jorge Vegh y Joaquín Astiazarán"
+      artTitle="Paleoamerican occupations on the Yí River (Uruguay): Fishtail points, blades and preforms, news evidences from La Palomita site"
+      editorial="PaleoAmerica – Ed. Routledge/Taylor & Francis –USA - https://doi.org/10.1080/20555563.2017.1415651"
+      artLink="https://www.researchgate.net/publication/322316631_Fishtail_Points_Blades_and_Preforms_and_the_Paleoamerican_Occupation_of_the_Yi_River_Uruguay_New_Evidence_from_La_Palomita"
+      artAbstract="This paper presents unpublished data of La Palomita (Uruguay), an archaeological site where Paleoamerican lithic material was recovered. Namely, two Fishtail points, preforms, and several blades are described. In northern Uruguay, evidence of a blade technology (blades and cores) was previously recovered in buried Paleoamerican sites dated between 12,800 and 11,300 cal yr BP. We conclude that the artifacts recovered from La Palomita suggest the presence of Paleoamericans in the basin of the Yí River, central Uruguay.">
+    </sci-article>
 
-      <sci-article
-        artAuthors="2017 Suárez Rafael"
-        artTitle="The human colonization of the southeast Plains of South America: climatic conditions, technological innovations and the peopling of Uruguay and South of Brazil"
-        editorial="Quaternary International 431:181-193. Ed. Elsevier"
-        artLink="https://www.researchgate.net/publication/315663612_The_human_colonization_of_the_Southeast_Plains_of_South_America_Climatic_conditions_technological_innovations_and_the_peopling_of_Uruguay_and_south_of_Brazil"
-        artAbstract="During the late Pleistocene and early Holocene, climatic, faunistic, and ecological changes could produce social readjustments and technological innovations in human populations that were exploring and colonizing the low southeastern plains of South America. In this paper, paleoecological and archaeological data are integrated to systematize and discuss different aspects of early human settlement in Uruguay and the south of Brazil. It is possible to recognize evidence of initial human dispersion by the region between ~14,000 and 13,100 cal BP (12,000 to 11,320 14C BP) during the late Pleistocene, when dry and cold climatic conditions prevailed in the region. Later, between 12,800 and 10,065 cal BP, a low plains Paleoamerican stemmed bifacial tradition emerged with three different techno-complexes, represented by Fishtail, Tigre, and Pay Paso projectile points. These groups were adapted to the grassland plains and characterized by the presence of wide-stemmed projectile points. The Fishtail point had been supplanted by the Tigre point, showing diversification in design of projectile points during the PleistoceneeHolocene transition. Approximately 12,000 to 11,200 cal BP in the middle Uruguay River, a social and technological reorganization occurred, along with the emergence of the Tigre techno-complex during post-Fishtail times. The advent of Tigre groups coincided with warmer and wetter climatic conditions, indicating the beginning of the Holocene. By 11,080e10,928 cal BP, new weaponry changes occurred in the region, including the production of the Pay Paso points, a regionally distinctive projectile-point style for the early Holocene. These aspects allow start discussions of cultural transmission, technological innovations and morphological variation in projectile point styles over the time and space. The field research developed over the past 15 years, in conjunction with the previous research conducted in southern Brazil, the relative high density of early sites with radiocarbon ages (n ¼ 22), and the chronological base (67 radiocarbon ages), allow to formulate an archaeological and behavioral model about the initial peopling of the Uruguayan and southern Brazil plains."
-      >
-      </sci-article>
+    <sci-article artAuthors="2017 Suárez Rafael"
+      artTitle="The human colonization of the southeast Plains of South America: climatic conditions, technological innovations and the peopling of Uruguay and South of Brazil"
+      editorial="Quaternary International 431:181-193. Ed. Elsevier"
+      artLink="https://www.researchgate.net/publication/315663612_The_human_colonization_of_the_Southeast_Plains_of_South_America_Climatic_conditions_technological_innovations_and_the_peopling_of_Uruguay_and_south_of_Brazil"
+      artAbstract="During the late Pleistocene and early Holocene, climatic, faunistic, and ecological changes could produce social readjustments and technological innovations in human populations that were exploring and colonizing the low southeastern plains of South America. In this paper, paleoecological and archaeological data are integrated to systematize and discuss different aspects of early human settlement in Uruguay and the south of Brazil. It is possible to recognize evidence of initial human dispersion by the region between ~14,000 and 13,100 cal BP (12,000 to 11,320 14C BP) during the late Pleistocene, when dry and cold climatic conditions prevailed in the region. Later, between 12,800 and 10,065 cal BP, a low plains Paleoamerican stemmed bifacial tradition emerged with three different techno-complexes, represented by Fishtail, Tigre, and Pay Paso projectile points. These groups were adapted to the grassland plains and characterized by the presence of wide-stemmed projectile points. The Fishtail point had been supplanted by the Tigre point, showing diversification in design of projectile points during the PleistoceneeHolocene transition. Approximately 12,000 to 11,200 cal BP in the middle Uruguay River, a social and technological reorganization occurred, along with the emergence of the Tigre techno-complex during post-Fishtail times. The advent of Tigre groups coincided with warmer and wetter climatic conditions, indicating the beginning of the Holocene. By 11,080e10,928 cal BP, new weaponry changes occurred in the region, including the production of the Pay Paso points, a regionally distinctive projectile-point style for the early Holocene. These aspects allow start discussions of cultural transmission, technological innovations and morphological variation in projectile point styles over the time and space. The field research developed over the past 15 years, in conjunction with the previous research conducted in southern Brazil, the relative high density of early sites with radiocarbon ages (n ¼ 22), and the chronological base (67 radiocarbon ages), allow to formulate an archaeological and behavioral model about the initial peopling of the Uruguayan and southern Brazil plains.">
+    </sci-article>
 
-      <sci-article
-        artAuthors="2015 Suárez Rafael"
-        artTitle="The Paleoamerican Occupation on Plains of Uruguay: Technology, Adaptations, and Mobility"
-        editorial="PaleoAmerica Vol. 1 N° 1, pp. 88-104. Editorial Routledge. USA"
-        artLink="https://www.researchgate.net/publication/272181721_The_Paleoamerican_Occupation_of_the_Plains_of_Uruguay_Technology_Adaptations_and_Mobility"
-        artAbstract="This paper presents results of investigation of an early archaeological site in Uruguay, and considers its position on a regional scale. Pay Paso 1 is the first early site of Uruguay to yield both artifacts and faunal remains including records of Pleistocene fauna (Equus sp. and Glyptodon sp.) in a radiocarbon-dated stratigraphic context. From stratigraphic, chronological and archaeological observations, three cultural components for the Pleistocene-Holocene transition have been identified, together representing one of the most intensively AMS dated sites in South America. This solid chronological base allows the positioning of the peopling of Uruguay in the context of the early settlement of the surrounding region including northeastern Argentina and southern Brazil. The site is also remarkable because it yielded evidence of a blade technology at 12,802 cal yr BP, with numerous blades and a depleted blade core, which, together with the records from Laguna Canosa and K87 (Arroyo del Tigre), permit the definition of the Tigre and Pay Paso Paleoamerican cultural complexes. Tigre and Pay Paso bifacial points were produced in post- Fishtail times in the Low Plains, a vast open territory in Uruguay and southern Brazil."
-      >
-      </sci-article>
+    <sci-article artAuthors="2015 Suárez Rafael"
+      artTitle="The Paleoamerican Occupation on Plains of Uruguay: Technology, Adaptations, and Mobility"
+      editorial="PaleoAmerica Vol. 1 N° 1, pp. 88-104. Editorial Routledge. USA"
+      artLink="https://www.researchgate.net/publication/272181721_The_Paleoamerican_Occupation_of_the_Plains_of_Uruguay_Technology_Adaptations_and_Mobility"
+      artAbstract="This paper presents results of investigation of an early archaeological site in Uruguay, and considers its position on a regional scale. Pay Paso 1 is the first early site of Uruguay to yield both artifacts and faunal remains including records of Pleistocene fauna (Equus sp. and Glyptodon sp.) in a radiocarbon-dated stratigraphic context. From stratigraphic, chronological and archaeological observations, three cultural components for the Pleistocene-Holocene transition have been identified, together representing one of the most intensively AMS dated sites in South America. This solid chronological base allows the positioning of the peopling of Uruguay in the context of the early settlement of the surrounding region including northeastern Argentina and southern Brazil. The site is also remarkable because it yielded evidence of a blade technology at 12,802 cal yr BP, with numerous blades and a depleted blade core, which, together with the records from Laguna Canosa and K87 (Arroyo del Tigre), permit the definition of the Tigre and Pay Paso Paleoamerican cultural complexes. Tigre and Pay Paso bifacial points were produced in post- Fishtail times in the Low Plains, a vast open territory in Uruguay and southern Brazil.">
+    </sci-article>
 
-      <sci-article
-        artAuthors="2015 Suárez Rafael"
-        artTitle="Tecnología Lítica y Conjunto de Artefactos Utilizados Durante el Poblamiento Temprano de Uruguay"
-        editorial="Chungará, Revista Chilena de Antropología 47 (1): 43-54. Chile"
-        artLink="https://www.researchgate.net/publication/273641525_TECNOLOGIA_LITICA_Y_CONJUNTO_DE_ARTEFACTOS_UTILIZADOS_DURANTE_EL_POBLAMIENTO_TEMPRANO_DE_URUGUAY"
-        artAbstract="This paper considers different aspects of lithic technology and the toolkits used during the peopling of Uruguay. At the site of Pay Paso 1, three early cultural components were identified from chronological, stratigraphic, and archaeological observations. We recorded blades and blade cores in the early components of Pay Paso 1 site. Artifacts recovered during the excavation of the site allowed the definition of the weaponry and toolkits used by the early hunters, featuring different styles of projectile points, bifaces, side-scrapers, knives, and artifacts made on blades. A solid base of 31 14C analyses provides a range of dates between 12,802 and 10,176 yr cal BP."
-      >
-      </sci-article>
+    <sci-article artAuthors="2015 Suárez Rafael"
+      artTitle="Tecnología Lítica y Conjunto de Artefactos Utilizados Durante el Poblamiento Temprano de Uruguay"
+      editorial="Chungará, Revista Chilena de Antropología 47 (1): 43-54. Chile"
+      artLink="https://www.researchgate.net/publication/273641525_TECNOLOGIA_LITICA_Y_CONJUNTO_DE_ARTEFACTOS_UTILIZADOS_DURANTE_EL_POBLAMIENTO_TEMPRANO_DE_URUGUAY"
+      artAbstract="This paper considers different aspects of lithic technology and the toolkits used during the peopling of Uruguay. At the site of Pay Paso 1, three early cultural components were identified from chronological, stratigraphic, and archaeological observations. We recorded blades and blade cores in the early components of Pay Paso 1 site. Artifacts recovered during the excavation of the site allowed the definition of the weaponry and toolkits used by the early hunters, featuring different styles of projectile points, bifaces, side-scrapers, knives, and artifacts made on blades. A solid base of 31 14C analyses provides a range of dates between 12,802 and 10,176 yr cal BP.">
+    </sci-article>
 
-      <sci-article
-        artAuthors="2014 Suárez Rafael, Borrero Luis, Borrazzo Karen, Ubilla Martín, S, Martínez"
-        artTitle="Archaeological evidences are still missing: a comment on Fariña et al. Arroyo del Vizcaíno Site, Uruguay"
-        editorial="Proceedings of The Royal Society 281, 1795: doi: 10.1098/rspb.2014.0449. Inglaterra"
-        artLink="https://www.researchgate.net/publication/266615996_Archaeological_evidences_are_still_missing_A_comment_on_Farina_et_al_Arroyo_del_Vizcaino_site_Uruguay"
-        artAbstract="Farina et al. [[1][1]] suggest the possibility of human presence ca 30 ka in the Arroyo del Vizcaino site (AVS) (southern Uruguay). This is based mainly on the record of cutmarks made by human artefacts on Pleistocene animal bones. They also inform of the finding of a single tiny stone tool and"
-      >
-      </sci-article>
+    <sci-article artAuthors="2014 Suárez Rafael, Borrero Luis, Borrazzo Karen, Ubilla Martín, S, Martínez"
+      artTitle="Archaeological evidences are still missing: a comment on Fariña et al. Arroyo del Vizcaíno Site, Uruguay"
+      editorial="Proceedings of The Royal Society 281, 1795: doi: 10.1098/rspb.2014.0449. Inglaterra"
+      artLink="https://www.researchgate.net/publication/266615996_Archaeological_evidences_are_still_missing_A_comment_on_Farina_et_al_Arroyo_del_Vizcaino_site_Uruguay"
+      artAbstract="Farina et al. [[1][1]] suggest the possibility of human presence ca 30 ka in the Arroyo del Vizcaino site (AVS) (southern Uruguay). This is based mainly on the record of cutmarks made by human artefacts on Pleistocene animal bones. They also inform of the finding of a single tiny stone tool and">
+    </sci-article>
 
-      <sci-article
-        artAuthors="2012 Gustavo Piñeiro y Suárez Rafael "
-        artTitle="Paleosuelos en el Holoceno del Río Cuareim"
-        editorial="III Jornadas del Cenozoico en Uruguay, pp. 45-51 Facultad de Ciencias. Montevideo"
-        artLink=""
-        artAbstract=""
-      >
-      </sci-article>
+    <sci-article artAuthors="2012 Gustavo Piñeiro y Suárez Rafael "
+      artTitle="Paleosuelos en el Holoceno del Río Cuareim"
+      editorial="III Jornadas del Cenozoico en Uruguay, pp. 45-51 Facultad de Ciencias. Montevideo" artLink=""
+      artAbstract="">
+    </sci-article>
 
-      <sci-article
-        artAuthors="2011 Suárez Rafael"
-        artTitle="Movilidad, Acceso y Uso de Ágata Traslúcida por los Cazadores-Recolectores Tempranos del Norte de Uruguay (ca. 11,000-8,500 años C14 a.P.)"
-        editorial="Latin American Antiquity 22 (3): pág. 245-260. USA"
-        artLink="https://www.researchgate.net/publication/319089854_Movilidad_Acceso_y_Uso_de_Agata_Traslucida_Por_Los_Cazadores-Recolectores_Tempranos_Durante_La_Transicion_Pleistoceno-Holoceno_En_El_Norte_De_Uruguay_ca_11000-8500_aP"
-        artAbstract="The paper presents the location of 10 translucent agate quarries discovered in the Catalanes Nacientes Arapey Archaeological Region (RACNA), which defines a procurement zone of agate in northern Uruguay. This raw material is the second-most used lithic resource in early stratigraphic contexts dated by 14C in northwestern Uruguay, following silicified sandstone. The frequency distribution of translucent agate is analyzed in two early residential hunter-gatherer sites, Pay Paso 1 (11,000 to 8,500 B.P.), and site K87 (10,420 B.P.), and at Catalan Seco 1 (CS-), which is a quarry-workshop site. A strong chronological basis is presented for the Pay Paso 1 site, which includes 32 radiocarbon dates that allow recognition of three early cultural components and a blade lithic technology for the initial occupation of the 1 site (10,930–10,880 B.P.). The paper discusses the main ways of distributing the translucent agate during the Pleistocene-Holocene transition, which are related to accessibility of the resource, lithic technology, territory, and mobility of early hunter-gatherers in the region. Movements were recorded between 140 and 170 km from residential sites to the procurement area of the agate."
-      >
-      </sci-article>
+    <sci-article artAuthors="2011 Suárez Rafael"
+      artTitle="Movilidad, Acceso y Uso de Ágata Traslúcida por los Cazadores-Recolectores Tempranos del Norte de Uruguay (ca. 11,000-8,500 años C14 a.P.)"
+      editorial="Latin American Antiquity 22 (3): pág. 245-260. USA"
+      artLink="https://www.researchgate.net/publication/319089854_Movilidad_Acceso_y_Uso_de_Agata_Traslucida_Por_Los_Cazadores-Recolectores_Tempranos_Durante_La_Transicion_Pleistoceno-Holoceno_En_El_Norte_De_Uruguay_ca_11000-8500_aP"
+      artAbstract="The paper presents the location of 10 translucent agate quarries discovered in the Catalanes Nacientes Arapey Archaeological Region (RACNA), which defines a procurement zone of agate in northern Uruguay. This raw material is the second-most used lithic resource in early stratigraphic contexts dated by 14C in northwestern Uruguay, following silicified sandstone. The frequency distribution of translucent agate is analyzed in two early residential hunter-gatherer sites, Pay Paso 1 (11,000 to 8,500 B.P.), and site K87 (10,420 B.P.), and at Catalan Seco 1 (CS-), which is a quarry-workshop site. A strong chronological basis is presented for the Pay Paso 1 site, which includes 32 radiocarbon dates that allow recognition of three early cultural components and a blade lithic technology for the initial occupation of the 1 site (10,930–10,880 B.P.). The paper discusses the main ways of distributing the translucent agate during the Pleistocene-Holocene transition, which are related to accessibility of the resource, lithic technology, territory, and mobility of early hunter-gatherers in the region. Movements were recorded between 140 and 170 km from residential sites to the procurement area of the agate.">
+    </sci-article>
 
-      <sci-article
-        artAuthors="2011 Suárez Rafael, David S. Leigh y Mario Trindade"
-        artTitle="First Early Human Occupations in Caves and Rockshelters in Uruguay and different landscapes utilized by early South Americans"
-        editorial="Current Research in the Pleistocene 28:125-128. Texas A & M University. USA"
-        artLink="https://www.researchgate.net/publication/267623756_First_Early_Human_Occupations_in_Caves_and_Rockshelters_in_Uruguay_and_Diverse_Landscapes_Utilized_by_Early_South_Americans"
-        artAbstract="AmericaResearch on the first Americans in northern Uruguay is a long-term projectthat started over 10 years ago. All Pleistocene and early-Holocene transitionsites documented so far in Uruguay are open-air sites. Recent field workconducted since 2008 by the research team of the Museum of Archaeologyand Natural Sciences of Salto led to the discovery of a series of caves (n = 5)and rockshelters (n = 4) with early human occupations among the rolling hillsof Cuchilla de Haedo. Additionally, surveys helped to identify an additional112 archaeological sites, including quarries for raw materials (silicified sand-stone and translucent agate), rock-art sites, and stone structures (cairns andstone circles). Between November 2009 and May 2010 test excavations wereconducted in three rockshelters (ZT-1, TN 1, TN9). In this paper we presentthe results obtained at the Zanja del Tigre 1 site (ZT-1) an overhang 6.75 mlong, 2.25 m wide, and 3.00 m high. In ZT-1 we excavated a 2.00-by-0.50-munit, which recovered 5,652 pieces of debitage and 43 formal tools (bifaces,projectile points, unifacial tools, and abraders). The two main raw materialsare local silicified sandstone (92%) and chalcedony-agate (5.4%). A very lowfrequency of raw material is silicified limestone (0.2%), whose source is over150 km from the site. Other raw materials are present (2.4%), such as quartz,jasper, opal, basalt, and unidentified. The test excavation reached a depth of0.47 m, then encountered a probable collapse of roof rock. Two charcoalsamples taken at a depth of 0.37–0.40 m were dated by AMS at 8770 ± 30(UGAMS 7459) and 8750 ± 30 RCYBP (UGAMS 7460), or approximately 9750CALYBP. These are the oldest dates obtained in a rockshelter in Uruguay andreveal new perspectives for comparing the occupation in rockshelters (orconfined spaces) with chronologically similar occupations in southern Braziland the Pampa-Patagonia region in Argentina. In 2011 we will excavate a moreextensive area in the ZT-1 rockshelter and the Cueva del Tigre site ZT-2.The early-Holocene occupation at circa 10,000 CALYBP at ZT-1 provides newevidence that indicates the presence of early sites in environments and land-scapes not previously recognized. Our research confirms that early occupa(...)"
-      >
-      </sci-article>
+    <sci-article artAuthors="2011 Suárez Rafael, David S. Leigh y Mario Trindade"
+      artTitle="First Early Human Occupations in Caves and Rockshelters in Uruguay and different landscapes utilized by early South Americans"
+      editorial="Current Research in the Pleistocene 28:125-128. Texas A & M University. USA"
+      artLink="https://www.researchgate.net/publication/267623756_First_Early_Human_Occupations_in_Caves_and_Rockshelters_in_Uruguay_and_Diverse_Landscapes_Utilized_by_Early_South_Americans"
+      artAbstract="AmericaResearch on the first Americans in northern Uruguay is a long-term projectthat started over 10 years ago. All Pleistocene and early-Holocene transitionsites documented so far in Uruguay are open-air sites. Recent field workconducted since 2008 by the research team of the Museum of Archaeologyand Natural Sciences of Salto led to the discovery of a series of caves (n = 5)and rockshelters (n = 4) with early human occupations among the rolling hillsof Cuchilla de Haedo. Additionally, surveys helped to identify an additional112 archaeological sites, including quarries for raw materials (silicified sand-stone and translucent agate), rock-art sites, and stone structures (cairns andstone circles). Between November 2009 and May 2010 test excavations wereconducted in three rockshelters (ZT-1, TN 1, TN9). In this paper we presentthe results obtained at the Zanja del Tigre 1 site (ZT-1) an overhang 6.75 mlong, 2.25 m wide, and 3.00 m high. In ZT-1 we excavated a 2.00-by-0.50-munit, which recovered 5,652 pieces of debitage and 43 formal tools (bifaces,projectile points, unifacial tools, and abraders). The two main raw materialsare local silicified sandstone (92%) and chalcedony-agate (5.4%). A very lowfrequency of raw material is silicified limestone (0.2%), whose source is over150 km from the site. Other raw materials are present (2.4%), such as quartz,jasper, opal, basalt, and unidentified. The test excavation reached a depth of0.47 m, then encountered a probable collapse of roof rock. Two charcoalsamples taken at a depth of 0.37–0.40 m were dated by AMS at 8770 ± 30(UGAMS 7459) and 8750 ± 30 RCYBP (UGAMS 7460), or approximately 9750CALYBP. These are the oldest dates obtained in a rockshelter in Uruguay andreveal new perspectives for comparing the occupation in rockshelters (orconfined spaces) with chronologically similar occupations in southern Braziland the Pampa-Patagonia region in Argentina. In 2011 we will excavate a moreextensive area in the ZT-1 rockshelter and the Cueva del Tigre site ZT-2.The early-Holocene occupation at circa 10,000 CALYBP at ZT-1 provides newevidence that indicates the presence of early sites in environments and land-scapes not previously recognized. Our research confirms that early occupa(...)">
+    </sci-article>
 
-      <sci-article
-        artAuthors="2011 Suárez Rafael"
-        artTitle="Cronología de alta resolución, extinción-supervivencia de Fauna del Pleistoceno y tendencia económica durante el poblamiento temprano de Uruguay: Evidencias y reflexiones desde Pay Paso 1"
-        editorial="Anuario Arqueología, pp 184-199"
-        artLink="https://www.researchgate.net/publication/271442420_Cronologia_de_alta_resolucion_extincion-supervivencia_de_Fauna_del_Pleistoceno_y_tendencia_economica_durante_el_poblamiento_temprano_de_Uruguay_Evidencias_y_reflexiones_desde_Pay_Paso_1"
-        artAbstract="Este trabajo presenta algunos avances de la investigación que realizamos sobre sitios
+    <sci-article artAuthors="2011 Suárez Rafael"
+      artTitle="Cronología de alta resolución, extinción-supervivencia de Fauna del Pleistoceno y tendencia económica durante el poblamiento temprano de Uruguay: Evidencias y reflexiones desde Pay Paso 1"
+      editorial="Anuario Arqueología, pp 184-199"
+      artLink="https://www.researchgate.net/publication/271442420_Cronologia_de_alta_resolucion_extincion-supervivencia_de_Fauna_del_Pleistoceno_y_tendencia_economica_durante_el_poblamiento_temprano_de_Uruguay_Evidencias_y_reflexiones_desde_Pay_Paso_1"
+      artAbstract="Este trabajo presenta algunos avances de la investigación que realizamos sobre sitios
     arqueológicos Paleoamericanos y se enmarcan dentro del proyecto Arqueología y
     Paleoambientes durante la Transición Pleistoceno Holoceno en el Norte de Uruguay
     (FCE-2009-1-2453 - ANII). El mismo concurso en el llamado de la Agencia Nacional
@@ -288,51 +255,40 @@
     de dataciones por AMS en un intento de generar confiabilidad sobre los contextos
     estratigráficos y arqueológicos que se investigan en Uruguay para que los mismos
     puedan ser reconocidos, aceptados o rechazados por la comunidad arqueológica
-    americana."
-      >
-      </sci-article>
-      <sci-article
-        artAuthors="2010 Suárez Rafael y David S. Leigh"
-        artTitle="Tres Árboles Site (RN2-2b): A Buried Late Pleistocene Fishtail site in Alluvium, Central Uruguay"
-        editorial="Current Research in the Pleistocene, 26: páginas 25-29. Texas A & M University, USA"
-        artLink="https://www.researchgate.net/publication/267623778_Tres_Arboles_Site_RN2-2b_A_Buried_Late_Pleistocene_Fishtail_site_in_Alluvium_Central_Uruguay"
-        artAbstract="Tres Árboles Site (RN2-2b), a Buried Late-Pleistocene Fishtail Site in Alluvium, CentralUruguayRafael Suárez and David S. Leigh➤➤➤➤➤Keywords: Fishtail, alluvium, UruguayThe Tres Árboles site (RN2-2b) is located in central Uruguay (32° 44′29.7″S56° 44′10.7″W) along arroyo Tres Árboles, where during a visit in May 2009 theauthors verified the context of artifacts in alluvial sediments of probable termi-nal-Pleistocene to early-Holocene age. The site location was referred to us by Mr.S. Bálsamo, a local collector, who had obtained from this site a Fishtail pointmade from chert of the Queguay Formation. This Fishtail point (Figure 1B) is65.7 mm long and 36.9 mm wide, with a 22.4-mm stem and a thickness of 8.4mm. It exhibits basal thinning by long overlapping parallel retouches. The pointis red and black with white spots. During the visit, two diagnostic artifacts werefound in situ at a depth of about 250–280 cm below the surface of an alluvialterrace tread within the eroding terrace scarp, including: (1) a biface in theinitial stage of reduction manufactured from chalcedony (Figure 1A), which wasthinned from a rounded pebble and exhibits one face totally with flake scars,whereas the opposite face exhibits about 40% cortex; and (2) a blade tool ofsilicified limestone (Figure 2C). Other artifacts, which were out of context andhad been washed out onto the sloping ground surface, include endscrapers,sidescrapers, and informal tools from flakes.(...)"
-      >
-      </sci-article>
+    americana.">
+    </sci-article>
+    <sci-article artAuthors="2010 Suárez Rafael y David S. Leigh"
+      artTitle="Tres Árboles Site (RN2-2b): A Buried Late Pleistocene Fishtail site in Alluvium, Central Uruguay"
+      editorial="Current Research in the Pleistocene, 26: páginas 25-29. Texas A & M University, USA"
+      artLink="https://www.researchgate.net/publication/267623778_Tres_Arboles_Site_RN2-2b_A_Buried_Late_Pleistocene_Fishtail_site_in_Alluvium_Central_Uruguay"
+      artAbstract="Tres Árboles Site (RN2-2b), a Buried Late-Pleistocene Fishtail Site in Alluvium, CentralUruguayRafael Suárez and David S. Leigh➤➤➤➤➤Keywords: Fishtail, alluvium, UruguayThe Tres Árboles site (RN2-2b) is located in central Uruguay (32° 44′29.7″S56° 44′10.7″W) along arroyo Tres Árboles, where during a visit in May 2009 theauthors verified the context of artifacts in alluvial sediments of probable termi-nal-Pleistocene to early-Holocene age. The site location was referred to us by Mr.S. Bálsamo, a local collector, who had obtained from this site a Fishtail pointmade from chert of the Queguay Formation. This Fishtail point (Figure 1B) is65.7 mm long and 36.9 mm wide, with a 22.4-mm stem and a thickness of 8.4mm. It exhibits basal thinning by long overlapping parallel retouches. The pointis red and black with white spots. During the visit, two diagnostic artifacts werefound in situ at a depth of about 250–280 cm below the surface of an alluvialterrace tread within the eroding terrace scarp, including: (1) a biface in theinitial stage of reduction manufactured from chalcedony (Figure 1A), which wasthinned from a rounded pebble and exhibits one face totally with flake scars,whereas the opposite face exhibits about 40% cortex; and (2) a blade tool ofsilicified limestone (Figure 2C). Other artifacts, which were out of context andhad been washed out onto the sloping ground surface, include endscrapers,sidescrapers, and informal tools from flakes.(...)">
+    </sci-article>
 
-      <sci-article
-        artAuthors="2010 Suárez Rafael y Guaciara M. Santos"
-        artTitle="Cazadores-recolectores tempranos y supervivencia de fauna del Pleistoceno (Equus sp. y Glyptodon sp.) durante el Holoceno temprano en la frontera Uruguay-Brasil"
-        editorial="Revista de Arqueología. Vol. 24 pág. 25-40. São Paulo Brasil"
-        artLink="https://www.researchgate.net/publication/259439165_Cazadores_recolectores_tempranos_supervivencia_de_fauna_del_pleistoceno_Equus_sp_y_Glyptodon_sp_y_tecnologia_litica_durante_el_Holoceno_temprano_en_la_frontera_Uruguay-Brasil"
-        artAbstract="On this paper we show records of Pleistocene fauna from the archaeological site of PayPaso 1, located near of the Quarai River. On this site we recovered two extinct species, Equus sp. (ancient horse) e Glyptodon sp. (giant armadillo), direct associated with lithic artifacts. Our results indicate that these extinct mammals lived in the beginning of the Holocene (9,600 – 9,100 years 14C BP), based on nine 14C age results obtained by AMS (Accelerator Mass Spectrometry) measurements. In this work, these results are compared with others in South America. Human adaptation, lithic technology, Pleistocene fauna extinction and climate change at the transition between Pleistocene-Holocene are also discussed."
-      >
-      </sci-article>
+    <sci-article artAuthors="2010 Suárez Rafael y Guaciara M. Santos"
+      artTitle="Cazadores-recolectores tempranos y supervivencia de fauna del Pleistoceno (Equus sp. y Glyptodon sp.) durante el Holoceno temprano en la frontera Uruguay-Brasil"
+      editorial="Revista de Arqueología. Vol. 24 pág. 25-40. São Paulo Brasil"
+      artLink="https://www.researchgate.net/publication/259439165_Cazadores_recolectores_tempranos_supervivencia_de_fauna_del_pleistoceno_Equus_sp_y_Glyptodon_sp_y_tecnologia_litica_durante_el_Holoceno_temprano_en_la_frontera_Uruguay-Brasil"
+      artAbstract="On this paper we show records of Pleistocene fauna from the archaeological site of PayPaso 1, located near of the Quarai River. On this site we recovered two extinct species, Equus sp. (ancient horse) e Glyptodon sp. (giant armadillo), direct associated with lithic artifacts. Our results indicate that these extinct mammals lived in the beginning of the Holocene (9,600 – 9,100 years 14C BP), based on nine 14C age results obtained by AMS (Accelerator Mass Spectrometry) measurements. In this work, these results are compared with others in South America. Human adaptation, lithic technology, Pleistocene fauna extinction and climate change at the transition between Pleistocene-Holocene are also discussed.">
+    </sci-article>
 
-      <sci-article
-        artAuthors="2010 Suárez Rafael"
-        artTitle="Early Human Occupation in the Northwest Plains of Uruguay"
-        editorial="Mammoth Trumpet Vol. 25: páginas 12-15. Texas A & M Universitiy. USA"
-        artLink="https://www.researchgate.net/publication/267623679_Early_Human_Occupation_in_the_Northwest_Plains_of_Uruguay"
-        artAbstract="The archaeology of the late Pleistocene in southeast SouthAmerica hasn’t attracted as many investigators as other re-gions of the continent, for example, Pampa and Patagonia, andconsequently isn’t as well known. Our relatively meager knowl-edge of this region, especially of Uruguay, can’t be blamed on apaucity of early occupations. Instead, the fault lies with flawedinvestigation strategies that aren’t designed to look for earlystratified archaeological sites.In 2000 our research team undertook a long-term investiga-tion of early human occupations in the Uruguay plains duringthe late Pleistocene and early Holocene. The team includesgeologist Gustavo Piñeiro and paleontologist Andrés Rinder-chneckt (both University of Sciences, Uruguay), MarioTrindade (Museo de Arqueología of Salto), and various avoca-tional and amateur archaeologists from the cities of BellaUnión and Paso de los Toros. Recently two North Americanscientists contributed their talents, Dr. Chris Gillam (Univer-sity of South Carolina) to develop a GIS database of earlyhuman occupations in Uruguay, Dr. David Leigh (University ofGeorgia) to initiate geoarchaeological studies on early sites indunes in central Uruguay. Our project is indebted to Dr. LauraMiotti (University of La Plata, Argentina) and Dr. Bruce Brad-ley (Exeter University, UK), whose expert advice oftensmooths rough patches of road we encounter in our investigation"
-      >
-      </sci-article>
+    <sci-article artAuthors="2010 Suárez Rafael" artTitle="Early Human Occupation in the Northwest Plains of Uruguay"
+      editorial="Mammoth Trumpet Vol. 25: páginas 12-15. Texas A & M Universitiy. USA"
+      artLink="https://www.researchgate.net/publication/267623679_Early_Human_Occupation_in_the_Northwest_Plains_of_Uruguay"
+      artAbstract="The archaeology of the late Pleistocene in southeast SouthAmerica hasn’t attracted as many investigators as other re-gions of the continent, for example, Pampa and Patagonia, andconsequently isn’t as well known. Our relatively meager knowl-edge of this region, especially of Uruguay, can’t be blamed on apaucity of early occupations. Instead, the fault lies with flawedinvestigation strategies that aren’t designed to look for earlystratified archaeological sites.In 2000 our research team undertook a long-term investiga-tion of early human occupations in the Uruguay plains duringthe late Pleistocene and early Holocene. The team includesgeologist Gustavo Piñeiro and paleontologist Andrés Rinder-chneckt (both University of Sciences, Uruguay), MarioTrindade (Museo de Arqueología of Salto), and various avoca-tional and amateur archaeologists from the cities of BellaUnión and Paso de los Toros. Recently two North Americanscientists contributed their talents, Dr. Chris Gillam (Univer-sity of South Carolina) to develop a GIS database of earlyhuman occupations in Uruguay, Dr. David Leigh (University ofGeorgia) to initiate geoarchaeological studies on early sites indunes in central Uruguay. Our project is indebted to Dr. LauraMiotti (University of La Plata, Argentina) and Dr. Bruce Brad-ley (Exeter University, UK), whose expert advice oftensmooths rough patches of road we encounter in our investigation">
+    </sci-article>
 
-      <sci-article
-        artAuthors="2009 Suárez Rafael"
-        artTitle="Unifacial Fishtail Points and Considerations about the Archaeological Record of South Paleoamericans"
-        editorial="Current Research in the Pleistocene, 26: páginas 12-15. Texas A & M University. USA."
-        artLink="https://www.researchgate.net/publication/271442233_Unifacial_Fishtail_Points_and_Considerations_about_the_Archaeological_Record_of_South_Paleoamericans"
-        artAbstract="Fishtail points were first recognized as tools of early hunter-gatherers of SouthAmerica with the stratigraphic excavations of J. Bird (1938) in Fell’s Cave.However, Fishtail points were previously reported at the end of the 19thcentury. Ameghino (1918, Plate 1, 42 [1880]) published one Fishtail fromPampa; and a pioneer of Uruguayan archaeology, J. H. Figueira (1892:210),published two Fishtail points recovered from surface sites on dunes in the areaof Valizas on the Atlantic coast.Bifacial Fishtail points have been registered widely in several countries ofSouth and Central America, but reports of unifacial Fishtail points are scarce.The term “unifacial” Fishtail point is used here in a wide sense, referring notstrictly to a point with flake scars on one face only, but also to one that maypresent a few flake scars on an opposite face. Generally a Fishtail point hasthinning on both faces; in all examples of the unifacial Fishtail class, however,at least one surface of the original flake blank remains essentially unmodified(Figure 1).Bell (1960) and Mayer-Oakes (1966, 1986) described Fishtail points fromthe El Inga site in highland Ecuador. Mayer-Oakes (1966:650–52) provided adetailed description of these artifacts; he discussed three points, having un-modified surfaces of the original flakes, that were used as blanks (1966:Figures 7b, 8b, 9b).In Uruguay, unifacial Fishtail points were first reported by Bosch et al.(1980: Figure 2-17). In the Argentinean Pampas, three examples have beenreported by Martínez (1997), Mazzanti (2003), Valverde (2003) andFlegenheimer et al. (2003).To date, I have recorded nine unifacial Fishtail points in Uruguay, in thebasins of the middle Río Negro and Río de la Plata, and on the Atlantic coast.They range in length from 35.2 to 63 mm, are manufactured on silicified(...)"
-      >
-      </sci-article>
+    <sci-article artAuthors="2009 Suárez Rafael"
+      artTitle="Unifacial Fishtail Points and Considerations about the Archaeological Record of South Paleoamericans"
+      editorial="Current Research in the Pleistocene, 26: páginas 12-15. Texas A & M University. USA."
+      artLink="https://www.researchgate.net/publication/271442233_Unifacial_Fishtail_Points_and_Considerations_about_the_Archaeological_Record_of_South_Paleoamericans"
+      artAbstract="Fishtail points were first recognized as tools of early hunter-gatherers of SouthAmerica with the stratigraphic excavations of J. Bird (1938) in Fell’s Cave.However, Fishtail points were previously reported at the end of the 19thcentury. Ameghino (1918, Plate 1, 42 [1880]) published one Fishtail fromPampa; and a pioneer of Uruguayan archaeology, J. H. Figueira (1892:210),published two Fishtail points recovered from surface sites on dunes in the areaof Valizas on the Atlantic coast.Bifacial Fishtail points have been registered widely in several countries ofSouth and Central America, but reports of unifacial Fishtail points are scarce.The term “unifacial” Fishtail point is used here in a wide sense, referring notstrictly to a point with flake scars on one face only, but also to one that maypresent a few flake scars on an opposite face. Generally a Fishtail point hasthinning on both faces; in all examples of the unifacial Fishtail class, however,at least one surface of the original flake blank remains essentially unmodified(Figure 1).Bell (1960) and Mayer-Oakes (1966, 1986) described Fishtail points fromthe El Inga site in highland Ecuador. Mayer-Oakes (1966:650–52) provided adetailed description of these artifacts; he discussed three points, having un-modified surfaces of the original flakes, that were used as blanks (1966:Figures 7b, 8b, 9b).In Uruguay, unifacial Fishtail points were first reported by Bosch et al.(1980: Figure 2-17). In the Argentinean Pampas, three examples have beenreported by Martínez (1997), Mazzanti (2003), Valverde (2003) andFlegenheimer et al. (2003).To date, I have recorded nine unifacial Fishtail points in Uruguay, in thebasins of the middle Río Negro and Río de la Plata, and on the Atlantic coast.They range in length from 35.2 to 63 mm, are manufactured on silicified(...)">
+    </sci-article>
 
-      <sci-article
-        artAuthors="2008 Suárez Rafael y Gillam, J. Christopher"
-        artTitle="The Paleoindian Database of Uruguay: Collections Survey and GIS Data Development"
-        editorial="Current Research in the Pleistocene, 25: pág. 200-202. Texas A&M University. USA"
-        artLink="https://www.researchgate.net/publication/271442171_The_Paleoindian_Database_of_Uruguay_Collections_Survey_and_GIS_Data_Development"
-        artAbstract="In the past decade, the archaeology of the late Pleistocene and early Holocene
+    <sci-article artAuthors="2008 Suárez Rafael y Gillam, J. Christopher"
+      artTitle="The Paleoindian Database of Uruguay: Collections Survey and GIS Data Development"
+      editorial="Current Research in the Pleistocene, 25: pág. 200-202. Texas A&M University. USA"
+      artLink="https://www.researchgate.net/publication/271442171_The_Paleoindian_Database_of_Uruguay_Collections_Survey_and_GIS_Data_Development"
+      artAbstract="In the past decade, the archaeology of the late Pleistocene and early Holocene
     in Uruguay has witnessed many new discoveries of early hunter-gatherers that
     parallel findings throughout the Americas. This transitional period is characterized by two early point types, Fishtail and Pay Paso. Fishtail, or Fell’s Cave,
     points occur with and without fluting and are widely distributed in Uruguay
@@ -344,390 +300,309 @@
     or Pay Paso points, quarries of agate, silicified sandstone, silicified limestone,
     and rhyolite, and 14C-dated site locations have been recorded (Figure 1).
     These new sites supplement the 15 previously known early sites from the
-    region(...)"
-      >
-      </sci-article>
+    region(...)">
+    </sci-article>
 
-      <sci-article
-        artAuthors="2007 Suárez Rafael y Rinderknecht Andrés"
-        artTitle="First Fossil Records of Characiformes -boga fish- in Uruguay: Evidences Recovered in Pay Paso Site Locality 1, a Paleoamerican Site of South America"
-        editorial="Current Research in the Pleistocene, 24: pág. 72-76. Texas A & M University.  USA."
-        artLink="https://www.researchgate.net/publication/303516500_First_Fossil_Records_of_Characiformes_-boga_fish-_in_Uruguay_Evidences_Recovered_in_Pay_Paso_Site_Locality_1_a_Paleoamerican_Site_of_South_America"
-        artAbstract=""
-      >
-      </sci-article>
+    <sci-article artAuthors="2007 Suárez Rafael y Rinderknecht Andrés"
+      artTitle="First Fossil Records of Characiformes -boga fish- in Uruguay: Evidences Recovered in Pay Paso Site Locality 1, a Paleoamerican Site of South America"
+      editorial="Current Research in the Pleistocene, 24: pág. 72-76. Texas A & M University.  USA."
+      artLink="https://www.researchgate.net/publication/303516500_First_Fossil_Records_of_Characiformes_-boga_fish-_in_Uruguay_Evidences_Recovered_in_Pay_Paso_Site_Locality_1_a_Paleoamerican_Site_of_South_America"
+      artAbstract="">
+    </sci-article>
 
-      <sci-article
-        artAuthors="2007 Gillam, J. Christopher y Suárez Rafael"
-        artTitle="The Paleoindian Survey and Geographic Database of Uruguay"
-        editorial="Legacy 11 (1): páginas 1-5. University of South Carolina. USA."
-        artLink="https://www.researchgate.net/publication/277814692_The_Paleoindian_Survey_and_Geographic_Database_of_Uruguay"
-        artAbstract=""
-      >
-      </sci-article>
+    <sci-article artAuthors="2007 Gillam, J. Christopher y Suárez Rafael"
+      artTitle="The Paleoindian Survey and Geographic Database of Uruguay"
+      editorial="Legacy 11 (1): páginas 1-5. University of South Carolina. USA."
+      artLink="https://www.researchgate.net/publication/277814692_The_Paleoindian_Survey_and_Geographic_Database_of_Uruguay"
+      artAbstract="">
+    </sci-article>
 
-      <sci-article
-        artAuthors="2006 Suárez Rafael"
-        artTitle="Comments on South American Fishtail Projectile Points: Design, Reduction Sequences and Function"
-        editorial="Current Research in the Pleistocene, 23: pág. 69-72. Texas A & M University. USA."
-        artLink="https://www.researchgate.net/publication/271442333_Comments_on_South_American_Fishtail_Projectile_Points_Design_Reduction_Sequences_and_Function"
-        artAbstract="The fishtail point has a discontinuous distribution and dispersion pattern inSouth America (Borrero 1983). Some fishtail points have been recorded inCentral America and at the El Inga site in Ecuador (Bird and Cooke 1978;Mayer-Oakes 1986; Ranere and Cooke 1991). However, the pattern appearsmore frequently in the southern cone of South America, Pampa-Patagonia ofArgentina, the Uruguayan plains, central and southern Chile, and southernBrazil. Isolated fishtail points have also been recovered in Perú (Chauchat andZevallos 1979; Briceño 1999). Fishtail points have not yet been reported inColombia, Venezuela, Bolivia, Paraguay, the Amazon Basin, or the northernand central regions of Brazil.In Uruguay complete fishtail points range in size from 35 to 109 mm long,21 to 56.8 mm wide, and 5 to 11 mm thick; their weight ranges from 5.4 to 51.8g. Approximately 68 percent are not fluted, 24 percent are fluted on one faceof the stem, and only 8 percent are fluted on both faces of the stem.Based on the available information for Uruguay (n ~ 90 fishtail points), Isuggest at least three main lithic reduction sequences for making fishtailpoints by Paleoamerican knappers (Suárez 2003c). One technique includescomplete bifacial thinning from initial to final stages of reduction. In Uru-guay, this technique is illustrated by Suárez and López (2003:73, Figure 5).Additional early-stage bifaces, ranging from ca. 130 to 195 mm long, and otherfluted bifaces with some Paleoamerican technological features, includingnipple isolation and platform prepared by retouch and abrasion, have beenrecognized in Uruguay (Suárez 2002:318, Figure 3). Fishtail points madeusing complete bifacial thinning are relatively long and generally exhibitfluting and good spacing of flake scars. These points were likely used in lancesor hand-held spears. Another recognized reduction technique is bifacialthinning in the final stage of manufacture, similar to the one reported forsouthern Patagonia (Nami 2003). The last technique observed in somesamples starts with a thin flake and uses a unifacial method of manufacturewithout bifacial thinning"
-      >
-      </sci-article>
+    <sci-article artAuthors="2006 Suárez Rafael"
+      artTitle="Comments on South American Fishtail Projectile Points: Design, Reduction Sequences and Function"
+      editorial="Current Research in the Pleistocene, 23: pág. 69-72. Texas A & M University. USA."
+      artLink="https://www.researchgate.net/publication/271442333_Comments_on_South_American_Fishtail_Projectile_Points_Design_Reduction_Sequences_and_Function"
+      artAbstract="The fishtail point has a discontinuous distribution and dispersion pattern inSouth America (Borrero 1983). Some fishtail points have been recorded inCentral America and at the El Inga site in Ecuador (Bird and Cooke 1978;Mayer-Oakes 1986; Ranere and Cooke 1991). However, the pattern appearsmore frequently in the southern cone of South America, Pampa-Patagonia ofArgentina, the Uruguayan plains, central and southern Chile, and southernBrazil. Isolated fishtail points have also been recovered in Perú (Chauchat andZevallos 1979; Briceño 1999). Fishtail points have not yet been reported inColombia, Venezuela, Bolivia, Paraguay, the Amazon Basin, or the northernand central regions of Brazil.In Uruguay complete fishtail points range in size from 35 to 109 mm long,21 to 56.8 mm wide, and 5 to 11 mm thick; their weight ranges from 5.4 to 51.8g. Approximately 68 percent are not fluted, 24 percent are fluted on one faceof the stem, and only 8 percent are fluted on both faces of the stem.Based on the available information for Uruguay (n ~ 90 fishtail points), Isuggest at least three main lithic reduction sequences for making fishtailpoints by Paleoamerican knappers (Suárez 2003c). One technique includescomplete bifacial thinning from initial to final stages of reduction. In Uru-guay, this technique is illustrated by Suárez and López (2003:73, Figure 5).Additional early-stage bifaces, ranging from ca. 130 to 195 mm long, and otherfluted bifaces with some Paleoamerican technological features, includingnipple isolation and platform prepared by retouch and abrasion, have beenrecognized in Uruguay (Suárez 2002:318, Figure 3). Fishtail points madeusing complete bifacial thinning are relatively long and generally exhibitfluting and good spacing of flake scars. These points were likely used in lancesor hand-held spears. Another recognized reduction technique is bifacialthinning in the final stage of manufacture, similar to the one reported forsouthern Patagonia (Nami 2003). The last technique observed in somesamples starts with a thin flake and uses a unifacial method of manufacturewithout bifacial thinning">
+    </sci-article>
 
-      <sci-article
-        artAuthors="2003 Suárez Rafael y José López"
-        artTitle="Archaeology of the Pleistocene/Holocene transition in Uruguay: An overview"
-        editorial="Quaternary International 109-110. Pág. 65-76. Ed. Elsevier"
-        artLink="https://www.researchgate.net/publication/253436497_Archaeology_of_the_Pleistocene-Holocene_transition_in_Uruguay_An_overview"
-        artAbstract='In Uruguay evidence of early human occupation comes from different archaeological regions, including the Basin of Uruguay and Cuareim Rivers, Basin of Negro mid River, and the Atlantic littoral. This paper presents a synthesis and overview of the poorly known archaeology of the Pleistocene/Holocene transition of Uruguay, including archaeological, sedimentological and palaeontological information related to the early human occupation. In this region, the ancient human settlements occurred in various environmental settings including riverbanks, hilltops, and maritime landscapes. New Fell type or "fishtail" projectile points and preliminary results of the current research in Pay Paso locality are presented. Evidence from Pay Paso site 1 indicates that during Early Holocene, the shore of the Cuareim River was a paleosurface that was occupied by early human groups. A new and previously unpublished type of projectile point from early hunter-gatherers (ca. 9300-9100 yr BP) was recovered from excavation of Pay Paso site 1. Finally, some comments and observations about culture material and lithic technology for early people of Uruguay are explored.'
-      >
-      </sci-article>
+    <sci-article artAuthors="2003 Suárez Rafael y José López"
+      artTitle="Archaeology of the Pleistocene/Holocene transition in Uruguay: An overview"
+      editorial="Quaternary International 109-110. Pág. 65-76. Ed. Elsevier"
+      artLink="https://www.researchgate.net/publication/253436497_Archaeology_of_the_Pleistocene-Holocene_transition_in_Uruguay_An_overview"
+      artAbstract='In Uruguay evidence of early human occupation comes from different archaeological regions, including the Basin of Uruguay and Cuareim Rivers, Basin of Negro mid River, and the Atlantic littoral. This paper presents a synthesis and overview of the poorly known archaeology of the Pleistocene/Holocene transition of Uruguay, including archaeological, sedimentological and palaeontological information related to the early human occupation. In this region, the ancient human settlements occurred in various environmental settings including riverbanks, hilltops, and maritime landscapes. New Fell type or "fishtail" projectile points and preliminary results of the current research in Pay Paso locality are presented. Evidence from Pay Paso site 1 indicates that during Early Holocene, the shore of the Cuareim River was a paleosurface that was occupied by early human groups. A new and previously unpublished type of projectile point from early hunter-gatherers (ca. 9300-9100 yr BP) was recovered from excavation of Pay Paso site 1. Finally, some comments and observations about culture material and lithic technology for early people of Uruguay are explored.'>
+    </sci-article>
 
-      <sci-article
-        artAuthors="2003 Suárez Rafael"
-        artTitle="First Records of Pleistocene Fauna for an Archaeological Context in Uruguay: Evidences from Pay Paso Locality, Site 1"
-        editorial="Current Research in the Pleistocene, 20: Pág. 113-116. Texas A & M University. USA"
-        artLink="https://www.researchgate.net/publication/271442189_First_Records_of_Pleistocene_Fauna_for_an_Archaeological_Context_in_Uruguay_Evidences_from_Pay_Paso_Locality_Site_1"
-        artAbstract=""
-      >
-      </sci-article>
+    <sci-article artAuthors="2003 Suárez Rafael"
+      artTitle="First Records of Pleistocene Fauna for an Archaeological Context in Uruguay: Evidences from Pay Paso Locality, Site 1"
+      editorial="Current Research in the Pleistocene, 20: Pág. 113-116. Texas A & M University. USA"
+      artLink="https://www.researchgate.net/publication/271442189_First_Records_of_Pleistocene_Fauna_for_an_Archaeological_Context_in_Uruguay_Evidences_from_Pay_Paso_Locality_Site_1"
+      artAbstract="">
+    </sci-article>
 
-      <sci-article
-        artAuthors="2001 Suárez Rafael"
-        artTitle="Technomorphological Observations on Fishtail Projectile Points and Bifacial Artifacts from Northern Uruguay"
-        editorial="Current Research in the Pleistocene, 18: páginas 56-58. Texas A & M University.  USA"
-        artLink="https://www.researchgate.net/publication/271442259_Technomorphological_Observations_on_Fishtail_Projectile_Points_and_Bifacial_Artifacts_from_Northern_Uruguay"
-        artAbstract=""
-      >
-      </sci-article>
+    <sci-article artAuthors="2001 Suárez Rafael"
+      artTitle="Technomorphological Observations on Fishtail Projectile Points and Bifacial Artifacts from Northern Uruguay"
+      editorial="Current Research in the Pleistocene, 18: páginas 56-58. Texas A & M University.  USA"
+      artLink="https://www.researchgate.net/publication/271442259_Technomorphological_Observations_on_Fishtail_Projectile_Points_and_Bifacial_Artifacts_from_Northern_Uruguay"
+      artAbstract="">
+    </sci-article>
 
-      <sci-article
-        artAuthors="2000 Suárez Rafael"
-        artTitle="Paleoindian Occupations in Uruguay"
-        editorial="Current Research in the Pleistocene,17: páginas 78-80.Texas A&M University. USA"
-        artLink="https://www.researchgate.net/publication/271442350_Paleoindian_Occupations_in_Uruguay"
-        artAbstract=""
-      >
-      </sci-article>
-    </sciarticles-container>
+    <sci-article artAuthors="2000 Suárez Rafael" artTitle="Paleoindian Occupations in Uruguay"
+      editorial="Current Research in the Pleistocene,17: páginas 78-80.Texas A&M University. USA"
+      artLink="https://www.researchgate.net/publication/271442350_Paleoindian_Occupations_in_Uruguay" artAbstract="">
+    </sci-article>
+  </sciarticles-container>
 
-    <div id="books" class="subtitle">
-      <p>LIBROS</p>
-    </div>
+  <div id="books" class="subtitle">
+    <p>LIBROS</p>
+  </div>
 
-    <section class="booksSection">
-      <book-item
-        bookImgPath="https://tmm.chicagodistributioncenter.com/IsbnImages/9781607816454.jpg"
-        editorial_info="2019 Suárez Rafael y Ardelean Ciprian (editores). 
+  <section class="booksSection">
+    <book-item bookImgPath="https://tmm.chicagodistributioncenter.com/IsbnImages/9781607816454.jpg" editorial_info="2019 Suárez Rafael y Ardelean Ciprian (editores). 
     Utah University Press, Salt Lake City (USA). ISBN 978-1-60781-645-4. 268 páginas"
-        bookLink="https://uofupress.lib.utah.edu/people-and-culture-in-ice-age-americas/?fbclid=IwAR3Us4lhn-ze8SETgyO_wW8aW3iiPBCBq7a1AwD717npBtKlK8p-NrNDmD0"
-      >
-        <h3 slot="book_title">
-          Peoples and Culture in the Ice Age in the Americas: New Dimensions in
-          Paleoamerican Archaeology
-        </h3>
-        <p slot="book_resume">
-          This edited volume, which emerged from a symposium organized at the
-          2014 SAA meeting in Austin, Texas, covers recent Paleoamerican
-          research and site excavations from Patagonia to Canada. Contributors
-          discuss the peopling of the Americas, early American assemblages,
-          lifeways, and regional differences. Many scholars present current data
-          previously unavailable in English. Chapters are organized south to
-          north in an attempt to shake the usual north-centric focus of
-          Pleistocene–Early Holocene archaeological studies and to bring to the
-          forefront the many fascinating discoveries being made in southern
-          latitudes. The diversity of approaches over a large geographic expanse
-          generates discussion that prompts a re-evaluation of predominant
-          paradigms about how the expansion of Homo sapiens in the Western
-          Hemisphere took place. Those who work in Paleoamerican studies will
-          embrace this book for its new data and for its comparative look at the
-          Americas.
-        </p>
-      </book-item>
+      bookLink="https://uofupress.lib.utah.edu/people-and-culture-in-ice-age-americas/?fbclid=IwAR3Us4lhn-ze8SETgyO_wW8aW3iiPBCBq7a1AwD717npBtKlK8p-NrNDmD0">
+      <h3 slot="book_title">
+        Peoples and Culture in the Ice Age in the Americas: New Dimensions in
+        Paleoamerican Archaeology
+      </h3>
+      <p slot="book_resume">
+        This edited volume, which emerged from a symposium organized at the
+        2014 SAA meeting in Austin, Texas, covers recent Paleoamerican
+        research and site excavations from Patagonia to Canada. Contributors
+        discuss the peopling of the Americas, early American assemblages,
+        lifeways, and regional differences. Many scholars present current data
+        previously unavailable in English. Chapters are organized south to
+        north in an attempt to shake the usual north-centric focus of
+        Pleistocene–Early Holocene archaeological studies and to bring to the
+        forefront the many fascinating discoveries being made in southern
+        latitudes. The diversity of approaches over a large geographic expanse
+        generates discussion that prompts a re-evaluation of predominant
+        paradigms about how the expansion of Homo sapiens in the Western
+        Hemisphere took place. Those who work in Paleoamerican studies will
+        embrace this book for its new data and for its comparative look at the
+        Americas.
+      </p>
+    </book-item>
 
-      <book-item
-        bookImgPath="https://www.fulcrum.org/image-service/k930c00621585572322/full/225,/0/default.png"
-        editorial_info=" 2011 Suárez, Rafael. Editado por British Archaeological Reports International Series, Oxford. Inglaterra, 274 páginas Utah University Press, Salt Lake City (USA). ISBN 978-1-60781-645-4. 268 páginas https://doi.org/10.30861/9781407307787"
-        bookLink="https://www.fulcrum.org/concern/monographs/xw42n988p?locale=en&fbclid=IwAR2YPpBRc2fbTXfMRiKitaiB-3JuY-r0yk2dYrPyYxOqKM-ZfCAYxiGdRYg#toc"
-      >
-        <h3 slot="book_title">
-          Arqueología durante la Transición Pleistoceno Holoceno en Uruguay.
-          Componentes Paleoindios, Organización de la Tecnología Lítica y
-          Movilidad de los Primeros Americanos
-        </h3>
-        <p slot="book_resume">
-          The main objective of this investigation is to obtain basic data that
-          will allow the generation of cultural, geoarchaeological,
-          paleoenvironmental and paleoecological knowledge about the
-          Pleistocene-Holocene transition. In turn, this will facilitate the
-          discussion of different topics about the peopling of Uruguay within
-          the context of the peopling of America. The study presents a detailed
-          investigation carried out at the Pay Paso locality, which contains a
-          total of nine sites of archaeological, paleontological and
-          paleoecological interest on the plains of the Cuareim River in
-          northwestern Uruguay.
-        </p>
-      </book-item>
+    <book-item bookImgPath="https://www.fulcrum.org/image-service/k930c00621585572322/full/225,/0/default.png"
+      editorial_info=" 2011 Suárez, Rafael. Editado por British Archaeological Reports International Series, Oxford. Inglaterra, 274 páginas Utah University Press, Salt Lake City (USA). ISBN 978-1-60781-645-4. 268 páginas https://doi.org/10.30861/9781407307787"
+      bookLink="https://www.fulcrum.org/concern/monographs/xw42n988p?locale=en&fbclid=IwAR2YPpBRc2fbTXfMRiKitaiB-3JuY-r0yk2dYrPyYxOqKM-ZfCAYxiGdRYg#toc">
+      <h3 slot="book_title">
+        Arqueología durante la Transición Pleistoceno Holoceno en Uruguay.
+        Componentes Paleoindios, Organización de la Tecnología Lítica y
+        Movilidad de los Primeros Americanos
+      </h3>
+      <p slot="book_resume">
+        The main objective of this investigation is to obtain basic data that
+        will allow the generation of cultural, geoarchaeological,
+        paleoenvironmental and paleoecological knowledge about the
+        Pleistocene-Holocene transition. In turn, this will facilitate the
+        discussion of different topics about the peopling of Uruguay within
+        the context of the peopling of America. The study presents a detailed
+        investigation carried out at the Pay Paso locality, which contains a
+        total of nine sites of archaeological, paleontological and
+        paleoecological interest on the plains of the Cuareim River in
+        northwestern Uruguay.
+      </p>
+    </book-item>
 
-      <book-item
-        bookImgPath="https://www.csic.edu.uy/sites/csic/files/styles/slick_300/public/23019scr_7e83e756cdafa47.jpg?itok=msMfzjj2"
-        editorial_info="2010 Suárez Rafael. Editado por departamento de publicaciones CSIC, Universidad de la República, 74 páginas "
-        bookLink="https://www.csic.edu.uy/content/arqueolog%C3%ADa-prehist%C3%B3rica-en-la-localidad-arroyo-catal%C3%A1n-chico"
-      >
-        <h3 slot="book_title">
-          Arqueología prehistórica en la localidad Arroyo Catalán Chico
-        </h3>
-        <p slot="book_resume">
-          Los sitios arqueológicos del arroyo Catalán Chico fueron descubiertos
-          en el año 1955 por Antonio Taddei. Fueron referencia en la arqueología
-          regional americana durante la década de 1960-1970. El presente libro
-          analiza desde una perspectiva histórica-critica el conocimiento
-          generado en la primera etapa de investigación de los sitios, llegando
-          a la conclusión que estos sitios no pertenecen a un único grupo
-          sociocultural o industria lítica como se sugiere el planteo clásico.
-          Además en el libro se presentan los resultados de las investigaciones
-          interdisciplinarias actuales iniciadas en el año 2000, que incluyen
-          estudios geoarqueológicos, petrográficos (cortes de lámina delgada),
-          estratigrafía y tecnología lítica relacionada con la producción de
-          bifaces en los sitios. Los sitios arqueológicos del Catalán Chico
-          forman parte de lo que se ha definido recientemente como la Región
-          Arqueológica Catalanes Nacientes Arapey (RACNA), donde se han
-          identificado centenares de sitios arqueológicos, canteras-talleres,
-          afloramientos de ágata, arenisca silicificada, jaspe, ópalo y cristal
-          de cuarzo entre otras. Hoy los sitios de la RACNA y en particular los
-          del arroyo Catalán Chico están en serio riesgo de destrucción debido
-          al avance de la minería en la zona, el libro dedica algunas hojas al
-          tema en el capitulo Patrimonio y Arqueología. Por último, se presenta
-          un modelo de movilidad para los cazadores tempranos, donde se han
-          identificado desplazamientos que incluyen traslados de los
-          cazadores-recolectores a distancias de entre 140-170 km desde los
-          sitios residenciales Paleoindios del río Uruguay medio y río Cuareim
-          inferior, hasta la zona de afloramientos de recursos líticos de la
-          RACNA en busca de ágata traslúcida, roca que por motivos culturales,
-          sociales y/o simbólicos era utilizada por los primeros humanos que
-          exploraron y colonizaron el norte de Uruguay hace 13.000 años.
-        </p>
-      </book-item>
-    </section>
+    <book-item
+      bookImgPath="https://www.csic.edu.uy/sites/csic/files/styles/slick_300/public/23019scr_7e83e756cdafa47.jpg?itok=msMfzjj2"
+      editorial_info="2010 Suárez Rafael. Editado por departamento de publicaciones CSIC, Universidad de la República, 74 páginas "
+      bookLink="https://www.csic.edu.uy/content/arqueolog%C3%ADa-prehist%C3%B3rica-en-la-localidad-arroyo-catal%C3%A1n-chico">
+      <h3 slot="book_title">
+        Arqueología prehistórica en la localidad Arroyo Catalán Chico
+      </h3>
+      <p slot="book_resume">
+        Los sitios arqueológicos del arroyo Catalán Chico fueron descubiertos
+        en el año 1955 por Antonio Taddei. Fueron referencia en la arqueología
+        regional americana durante la década de 1960-1970. El presente libro
+        analiza desde una perspectiva histórica-critica el conocimiento
+        generado en la primera etapa de investigación de los sitios, llegando
+        a la conclusión que estos sitios no pertenecen a un único grupo
+        sociocultural o industria lítica como se sugiere el planteo clásico.
+        Además en el libro se presentan los resultados de las investigaciones
+        interdisciplinarias actuales iniciadas en el año 2000, que incluyen
+        estudios geoarqueológicos, petrográficos (cortes de lámina delgada),
+        estratigrafía y tecnología lítica relacionada con la producción de
+        bifaces en los sitios. Los sitios arqueológicos del Catalán Chico
+        forman parte de lo que se ha definido recientemente como la Región
+        Arqueológica Catalanes Nacientes Arapey (RACNA), donde se han
+        identificado centenares de sitios arqueológicos, canteras-talleres,
+        afloramientos de ágata, arenisca silicificada, jaspe, ópalo y cristal
+        de cuarzo entre otras. Hoy los sitios de la RACNA y en particular los
+        del arroyo Catalán Chico están en serio riesgo de destrucción debido
+        al avance de la minería en la zona, el libro dedica algunas hojas al
+        tema en el capitulo Patrimonio y Arqueología. Por último, se presenta
+        un modelo de movilidad para los cazadores tempranos, donde se han
+        identificado desplazamientos que incluyen traslados de los
+        cazadores-recolectores a distancias de entre 140-170 km desde los
+        sitios residenciales Paleoindios del río Uruguay medio y río Cuareim
+        inferior, hasta la zona de afloramientos de recursos líticos de la
+        RACNA en busca de ágata traslúcida, roca que por motivos culturales,
+        sociales y/o simbólicos era utilizada por los primeros humanos que
+        exploraron y colonizaron el norte de Uruguay hace 13.000 años.
+      </p>
+    </book-item>
+  </section>
 
-    <div id="bookChapters" class="subtitle">
-      <p>CAPÍTULOS DE LIBROS</p>
-    </div>
+  <div id="bookChapters" class="subtitle">
+    <p>CAPÍTULOS DE LIBROS</p>
+  </div>
 
-    <section class="book_chapters">
-      <bookchapters-container>
-        <book-chapter
-          class="initialChapters"
-          artLink="https://www.researchgate.net/publication/332543603_Early_Human_Occupation_in_the_Southeastern_Plains_of_South_America"
-          artTitle="The Early Human Occupation in the Southeast Plains of South America. Capítulo  del libro: People and Culture in Ice Age Americas: New Dimensions in Paleoamerican Archaeology"
-          artAbstract=""
-          artAuthors="2019 | Suárez Rafael"
-          editorial="Editado por R. Suárez y C. Ardelean,  pp. 52-66. Utah University Press (USA)"
-        >
-          s
-        </book-chapter>
+  <section class="book_chapters">
+    <bookchapters-container>
+      <book-chapter class="initialChapters"
+        artLink="https://www.researchgate.net/publication/332543603_Early_Human_Occupation_in_the_Southeastern_Plains_of_South_America"
+        artTitle="The Early Human Occupation in the Southeast Plains of South America. Capítulo  del libro: People and Culture in Ice Age Americas: New Dimensions in Paleoamerican Archaeology"
+        artAbstract="" artAuthors="2019 | Suárez Rafael"
+        editorial="Editado por R. Suárez y C. Ardelean,  pp. 52-66. Utah University Press (USA)">
+        s
+      </book-chapter>
 
-        <book-chapter
-          class="initialChapters"
-          artLink="https://www.researchgate.net/publication/332543600_An_Upside-Down_View?_sg%5B0%5D=09XoKpaaFXSVxqnlWEMtoBSRdRjvErOrNlGNWASn32w3-WbCZrLgwPQissijtIkjDPAce3gcnD5SvZy1FJZXrEaBG4Ttn4xpZByyez1F.0kRp2PRf1fYfYPdTE_Y-U3B0KiErq3TUyj9rO_DyPdNW_dNxkgyttIleztf4x_mEEGWvgqpPvEorZffnNG8aug"
-          artTitle="An Upside-Down View. Capítulo del libro: People and Culture in Ice Age in the Americas: New Dimensions in Paleoamerican Archaeology."
-          artAbstract=""
-          artAuthors=" 2019 | Suárez Rafael y Ciprian Ardelean"
-          editorial="Editado por Rafael Suárez y C. Ardelean, pp. XIII-XVII. Utah University Press (USA)"
-        >
-        </book-chapter>
+      <book-chapter class="initialChapters"
+        artLink="https://www.researchgate.net/publication/332543600_An_Upside-Down_View?_sg%5B0%5D=09XoKpaaFXSVxqnlWEMtoBSRdRjvErOrNlGNWASn32w3-WbCZrLgwPQissijtIkjDPAce3gcnD5SvZy1FJZXrEaBG4Ttn4xpZByyez1F.0kRp2PRf1fYfYPdTE_Y-U3B0KiErq3TUyj9rO_DyPdNW_dNxkgyttIleztf4x_mEEGWvgqpPvEorZffnNG8aug"
+        artTitle="An Upside-Down View. Capítulo del libro: People and Culture in Ice Age in the Americas: New Dimensions in Paleoamerican Archaeology."
+        artAbstract="" artAuthors=" 2019 | Suárez Rafael y Ciprian Ardelean"
+        editorial="Editado por Rafael Suárez y C. Ardelean, pp. XIII-XVII. Utah University Press (USA)">
+      </book-chapter>
 
-        <book-chapter
-          artLink="https://www.researchgate.net/publication/323401679_The_Peopling_of_Southeastern_South_America_Cultural_Diversity_Paleoenvironmental_Conditions_and_Lithic_Technological_Organization_During_the_Late_Pleistocene_and_Early_Holocene?_sg%5B0%5D=09XoKpaaFXSVxqnlWEMtoBSRdRjvErOrNlGNWASn32w3-WbCZrLgwPQissijtIkjDPAce3gcnD5SvZy1FJZXrEaBG4Ttn4xpZByyez1F.0kRp2PRf1fYfYPdTE_Y-U3B0KiErq3TUyj9rO_DyPdNW_dNxkgyttIleztf4x_mEEGWvgqpPvEorZffnNG8aug"
-          artTitle="The Peopling of Southeastern South America: Cultural Diversity, Paleoenvironmental Conditions and Lithic Technology Organization during the Pleistocene-Holocene transition. Capítulo del libro: Lithic Technological Organization and Paleoenvironmental Change. Robinson E. y Sellet, F. editors."
-          artAbstract=""
-          artAuthors=" 2018 | Suárez Rafael"
-          editorial=" Studies in Human Adaptation 9, pág. 281-300. Editorial Springer. USA"
-        >
-        </book-chapter>
+      <book-chapter
+        artLink="https://www.researchgate.net/publication/323401679_The_Peopling_of_Southeastern_South_America_Cultural_Diversity_Paleoenvironmental_Conditions_and_Lithic_Technological_Organization_During_the_Late_Pleistocene_and_Early_Holocene?_sg%5B0%5D=09XoKpaaFXSVxqnlWEMtoBSRdRjvErOrNlGNWASn32w3-WbCZrLgwPQissijtIkjDPAce3gcnD5SvZy1FJZXrEaBG4Ttn4xpZByyez1F.0kRp2PRf1fYfYPdTE_Y-U3B0KiErq3TUyj9rO_DyPdNW_dNxkgyttIleztf4x_mEEGWvgqpPvEorZffnNG8aug"
+        artTitle="The Peopling of Southeastern South America: Cultural Diversity, Paleoenvironmental Conditions and Lithic Technology Organization during the Pleistocene-Holocene transition. Capítulo del libro: Lithic Technological Organization and Paleoenvironmental Change. Robinson E. y Sellet, F. editors."
+        artAbstract="" artAuthors=" 2018 | Suárez Rafael"
+        editorial=" Studies in Human Adaptation 9, pág. 281-300. Editorial Springer. USA">
+      </book-chapter>
 
-        <book-chapter
-          artLink="https://www.researchgate.net/publication/305933772_Adaptaciones_humanas_tempranas_y_dispersion_de_la_poblacion_durante_la_colonizacion_del_Rio_de_la_Plata_y_Rio_Uruguay?_sg%5B0%5D=09XoKpaaFXSVxqnlWEMtoBSRdRjvErOrNlGNWASn32w3-WbCZrLgwPQissijtIkjDPAce3gcnD5SvZy1FJZXrEaBG4Ttn4xpZByyez1F.0kRp2PRf1fYfYPdTE_Y-U3B0KiErq3TUyj9rO_DyPdNW_dNxkgyttIleztf4x_mEEGWvgqpPvEorZffnNG8aug"
-          artTitle="Adaptaciones humanas tempranas y dispersión de la población durante la colonización del Río de la Plata y Río Uruguay. Capítulo del libro: Human Origin Sites and the World Heritage Convention in the Americas, Vol. (1): 42. En: UNESCO (Ed.)"
-          artAbstract=""
-          artAuthors="2015 | Suárez, Rafael"
-          editorial="Editado por UNESCO, México, pág. 161-177"
-        >
-        </book-chapter>
+      <book-chapter
+        artLink="https://www.researchgate.net/publication/305933772_Adaptaciones_humanas_tempranas_y_dispersion_de_la_poblacion_durante_la_colonizacion_del_Rio_de_la_Plata_y_Rio_Uruguay?_sg%5B0%5D=09XoKpaaFXSVxqnlWEMtoBSRdRjvErOrNlGNWASn32w3-WbCZrLgwPQissijtIkjDPAce3gcnD5SvZy1FJZXrEaBG4Ttn4xpZByyez1F.0kRp2PRf1fYfYPdTE_Y-U3B0KiErq3TUyj9rO_DyPdNW_dNxkgyttIleztf4x_mEEGWvgqpPvEorZffnNG8aug"
+        artTitle="Adaptaciones humanas tempranas y dispersión de la población durante la colonización del Río de la Plata y Río Uruguay. Capítulo del libro: Human Origin Sites and the World Heritage Convention in the Americas, Vol. (1): 42. En: UNESCO (Ed.)"
+        artAbstract="" artAuthors="2015 | Suárez, Rafael" editorial="Editado por UNESCO, México, pág. 161-177">
+      </book-chapter>
 
-        <book-chapter
-          artLink="https://www.researchgate.net/publication/271442358_Pre-Fishtail_settlement_in_the_Southern_Cone_ca_15000-13100_yr_cal_BP_synthesis_evaluation_and_discussion_of_the_evidence?_sg%5B0%5D=09XoKpaaFXSVxqnlWEMtoBSRdRjvErOrNlGNWASn32w3-WbCZrLgwPQissijtIkjDPAce3gcnD5SvZy1FJZXrEaBG4Ttn4xpZByyez1F.0kRp2PRf1fYfYPdTE_Y-U3B0KiErq3TUyj9rO_DyPdNW_dNxkgyttIleztf4x_mEEGWvgqpPvEorZffnNG8aug"
-          artTitle="Pre-Fishtail settlement in the Southern Cone ca. 15,000-13,100 cal. BP: synthesis, evaluation, and discussion of the evidence. Capítulo del libro: Pre Clovis in Americas: International Science Conference Proceedings"
-          artAbstract=""
-          artAuthors="2014 | Suárez Rafael"
-          editorial="Editado por Dennis Stanford y Alison Stanger, pág.153-191. The Smithsonian Institution. Washington DC, USA."
-        >
-        </book-chapter>
+      <book-chapter
+        artLink="https://www.researchgate.net/publication/271442358_Pre-Fishtail_settlement_in_the_Southern_Cone_ca_15000-13100_yr_cal_BP_synthesis_evaluation_and_discussion_of_the_evidence?_sg%5B0%5D=09XoKpaaFXSVxqnlWEMtoBSRdRjvErOrNlGNWASn32w3-WbCZrLgwPQissijtIkjDPAce3gcnD5SvZy1FJZXrEaBG4Ttn4xpZByyez1F.0kRp2PRf1fYfYPdTE_Y-U3B0KiErq3TUyj9rO_DyPdNW_dNxkgyttIleztf4x_mEEGWvgqpPvEorZffnNG8aug"
+        artTitle="Pre-Fishtail settlement in the Southern Cone ca. 15,000-13,100 cal. BP: synthesis, evaluation, and discussion of the evidence. Capítulo del libro: Pre Clovis in Americas: International Science Conference Proceedings"
+        artAbstract="" artAuthors="2014 | Suárez Rafael"
+        editorial="Editado por Dennis Stanford y Alison Stanger, pág.153-191. The Smithsonian Institution. Washington DC, USA.">
+      </book-chapter>
 
-        <book-chapter
-          artLink="https://www.researchgate.net/publication/332864710_Investigaciones_arqueologicas_prehistoricas_en_Artigas_descubriendo_el_pasado_remoto_de_la_region?_sg%5B0%5D=09XoKpaaFXSVxqnlWEMtoBSRdRjvErOrNlGNWASn32w3-WbCZrLgwPQissijtIkjDPAce3gcnD5SvZy1FJZXrEaBG4Ttn4xpZByyez1F.0kRp2PRf1fYfYPdTE_Y-U3B0KiErq3TUyj9rO_DyPdNW_dNxkgyttIleztf4x_mEEGWvgqpPvEorZffnNG8aug"
-          artTitle="Investigaciones arqueológicas prehistóricas en Artigas: descubriendo el pasado remoto de la región.  Capítulo del libro: Lugares de la Memoria: Artigas y Bella Unión, compilado por M. Tafernaberry"
-          artAbstract=""
-          artAuthors="2014 | Suárez Rafael"
-          editorial="Editado por MEC - Comisión del Patrimonio Cultural de la Nación, pág. 48-52, Montevideo"
-        >
-        </book-chapter>
+      <book-chapter
+        artLink="https://www.researchgate.net/publication/332864710_Investigaciones_arqueologicas_prehistoricas_en_Artigas_descubriendo_el_pasado_remoto_de_la_region?_sg%5B0%5D=09XoKpaaFXSVxqnlWEMtoBSRdRjvErOrNlGNWASn32w3-WbCZrLgwPQissijtIkjDPAce3gcnD5SvZy1FJZXrEaBG4Ttn4xpZByyez1F.0kRp2PRf1fYfYPdTE_Y-U3B0KiErq3TUyj9rO_DyPdNW_dNxkgyttIleztf4x_mEEGWvgqpPvEorZffnNG8aug"
+        artTitle="Investigaciones arqueológicas prehistóricas en Artigas: descubriendo el pasado remoto de la región.  Capítulo del libro: Lugares de la Memoria: Artigas y Bella Unión, compilado por M. Tafernaberry"
+        artAbstract="" artAuthors="2014 | Suárez Rafael"
+        editorial="Editado por MEC - Comisión del Patrimonio Cultural de la Nación, pág. 48-52, Montevideo">
+      </book-chapter>
 
-        <book-chapter
-          artLink="https://www.researchgate.net/publication/332864825_El_periodo_Paleoindio_revision_del_concepto_en_la_prehistoria_americana?_sg%5B0%5D=09XoKpaaFXSVxqnlWEMtoBSRdRjvErOrNlGNWASn32w3-WbCZrLgwPQissijtIkjDPAce3gcnD5SvZy1FJZXrEaBG4Ttn4xpZByyez1F.0kRp2PRf1fYfYPdTE_Y-U3B0KiErq3TUyj9rO_DyPdNW_dNxkgyttIleztf4x_mEEGWvgqpPvEorZffnNG8aug"
-          artTitle="El Periodo Paleoindio: revisión del concepto en la prehistoria Americana."
-          artAbstract=""
-          artAuthors="2014 | Suárez Rafael"
-          editorial="Capítulo del libro: Museo de Arte Precolombino e Indígena, Catálogo de colecciones, compilado por C. Curbelo, pp. 21-24. Ed. MAPI e IMM. Montevideo"
-        >
-        </book-chapter>
+      <book-chapter
+        artLink="https://www.researchgate.net/publication/332864825_El_periodo_Paleoindio_revision_del_concepto_en_la_prehistoria_americana?_sg%5B0%5D=09XoKpaaFXSVxqnlWEMtoBSRdRjvErOrNlGNWASn32w3-WbCZrLgwPQissijtIkjDPAce3gcnD5SvZy1FJZXrEaBG4Ttn4xpZByyez1F.0kRp2PRf1fYfYPdTE_Y-U3B0KiErq3TUyj9rO_DyPdNW_dNxkgyttIleztf4x_mEEGWvgqpPvEorZffnNG8aug"
+        artTitle="El Periodo Paleoindio: revisión del concepto en la prehistoria Americana." artAbstract=""
+        artAuthors="2014 | Suárez Rafael"
+        editorial="Capítulo del libro: Museo de Arte Precolombino e Indígena, Catálogo de colecciones, compilado por C. Curbelo, pp. 21-24. Ed. MAPI e IMM. Montevideo">
+      </book-chapter>
 
-        <book-chapter
-          artLink="https://www.researchgate.net/publication/232250957_Excavaciones_en_Zanja_del_Tigre_Uruguay_Primeras_ocupaciones_humanas_de_America?_sg%5B0%5D=09XoKpaaFXSVxqnlWEMtoBSRdRjvErOrNlGNWASn32w3-WbCZrLgwPQissijtIkjDPAce3gcnD5SvZy1FJZXrEaBG4Ttn4xpZByyez1F.0kRp2PRf1fYfYPdTE_Y-U3B0KiErq3TUyj9rO_DyPdNW_dNxkgyttIleztf4x_mEEGWvgqpPvEorZffnNG8aug"
-          artTitle="Excavaciones en Zanja del Tigre (Uruguay). Primeras ocupaciones humanas de América, Capítulo del libro: Informes y Trabajos 7, pág. 372-384."
-          artAbstract=""
-          artAuthors="2012 Ana Mateos, Rafael Suárez, Jesús Rodríguez, Antonio Tarriño, Mario Trindade, Andrés Rinderknecht"
-          editorial="Editado por Ministerio de Educación, Cultura y Deporte (España)"
-        >
-        </book-chapter>
+      <book-chapter
+        artLink="https://www.researchgate.net/publication/232250957_Excavaciones_en_Zanja_del_Tigre_Uruguay_Primeras_ocupaciones_humanas_de_America?_sg%5B0%5D=09XoKpaaFXSVxqnlWEMtoBSRdRjvErOrNlGNWASn32w3-WbCZrLgwPQissijtIkjDPAce3gcnD5SvZy1FJZXrEaBG4Ttn4xpZByyez1F.0kRp2PRf1fYfYPdTE_Y-U3B0KiErq3TUyj9rO_DyPdNW_dNxkgyttIleztf4x_mEEGWvgqpPvEorZffnNG8aug"
+        artTitle="Excavaciones en Zanja del Tigre (Uruguay). Primeras ocupaciones humanas de América, Capítulo del libro: Informes y Trabajos 7, pág. 372-384."
+        artAbstract=""
+        artAuthors="2012 Ana Mateos, Rafael Suárez, Jesús Rodríguez, Antonio Tarriño, Mario Trindade, Andrés Rinderknecht"
+        editorial="Editado por Ministerio de Educación, Cultura y Deporte (España)">
+      </book-chapter>
 
-        <book-chapter
-          artLink="https://www.researchgate.net/publication/271442372_Supervivencia_de_fauna_del_Pleistoceno_en_el_Norte_de_Uruguay_Implicancias_arqueologicas_para_la_reconstruccion_de_los_cambios_climaticos_durante_la_transicion_Pleistoceno-Holoceno?_sg%5B0%5D=09XoKpaaFXSVxqnlWEMtoBSRdRjvErOrNlGNWASn32w3-WbCZrLgwPQissijtIkjDPAce3gcnD5SvZy1FJZXrEaBG4Ttn4xpZByyez1F.0kRp2PRf1fYfYPdTE_Y-U3B0KiErq3TUyj9rO_DyPdNW_dNxkgyttIleztf4x_mEEGWvgqpPvEorZffnNG8aug"
-          artTitle="Supervivencia de fauna del Pleistoceno en el Norte de Uruguay: Implicancias arqueológicas para la reconstrucción de los cambios climáticos durante la transición Pleistoceno-Holoceno"
-          artAbstract=""
-          artAuthors="2009 | Suárez Rafael"
-          editorial="Editado por Jorge Bossi y Alejandra Ortiz: pág. 63-76. Facultad de Agronomía, Udelar"
-        >
-        </book-chapter>
+      <book-chapter
+        artLink="https://www.researchgate.net/publication/271442372_Supervivencia_de_fauna_del_Pleistoceno_en_el_Norte_de_Uruguay_Implicancias_arqueologicas_para_la_reconstruccion_de_los_cambios_climaticos_durante_la_transicion_Pleistoceno-Holoceno?_sg%5B0%5D=09XoKpaaFXSVxqnlWEMtoBSRdRjvErOrNlGNWASn32w3-WbCZrLgwPQissijtIkjDPAce3gcnD5SvZy1FJZXrEaBG4Ttn4xpZByyez1F.0kRp2PRf1fYfYPdTE_Y-U3B0KiErq3TUyj9rO_DyPdNW_dNxkgyttIleztf4x_mEEGWvgqpPvEorZffnNG8aug"
+        artTitle="Supervivencia de fauna del Pleistoceno en el Norte de Uruguay: Implicancias arqueológicas para la reconstrucción de los cambios climáticos durante la transición Pleistoceno-Holoceno"
+        artAbstract="" artAuthors="2009 | Suárez Rafael"
+        editorial="Editado por Jorge Bossi y Alejandra Ortiz: pág. 63-76. Facultad de Agronomía, Udelar">
+      </book-chapter>
 
-        <book-chapter
-          artLink=" https://www.researchgate.net/publication/271442205_Paleoindian_Components_of_Northern_Uruguay_New_data_for_Early_Human_Occupations_of_the_Late_Pleistocene_and_Early_Holocene?_sg%5B0%5D=09XoKpaaFXSVxqnlWEMtoBSRdRjvErOrNlGNWASn32w3-WbCZrLgwPQissijtIkjDPAce3gcnD5SvZy1FJZXrEaBG4Ttn4xpZByyez1F.0kRp2PRf1fYfYPdTE_Y-U3B0KiErq3TUyj9rO_DyPdNW_dNxkgyttIleztf4x_mEEGWvgqpPvEorZffnNG8aug"
-          artTitle="Paleoindian Components of Northern Uruguay: New data for Early Human Occupations of the Late Pleistocene/Early Holocene. Capítulo del libro: Ancient Evidences From Paleo South Americans páginas 29-36."
-          artAbstract=""
-          artAuthors="2003 | Suárez Rafael"
-          editorial="Editado por Texas A&M University Press. Estados Unidos"
-        >
-        </book-chapter>
+      <book-chapter
+        artLink=" https://www.researchgate.net/publication/271442205_Paleoindian_Components_of_Northern_Uruguay_New_data_for_Early_Human_Occupations_of_the_Late_Pleistocene_and_Early_Holocene?_sg%5B0%5D=09XoKpaaFXSVxqnlWEMtoBSRdRjvErOrNlGNWASn32w3-WbCZrLgwPQissijtIkjDPAce3gcnD5SvZy1FJZXrEaBG4Ttn4xpZByyez1F.0kRp2PRf1fYfYPdTE_Y-U3B0KiErq3TUyj9rO_DyPdNW_dNxkgyttIleztf4x_mEEGWvgqpPvEorZffnNG8aug"
+        artTitle="Paleoindian Components of Northern Uruguay: New data for Early Human Occupations of the Late Pleistocene/Early Holocene. Capítulo del libro: Ancient Evidences From Paleo South Americans páginas 29-36."
+        artAbstract="" artAuthors="2003 | Suárez Rafael"
+        editorial="Editado por Texas A&M University Press. Estados Unidos">
+      </book-chapter>
 
-        <book-chapter
-          artLink="https://www.researchgate.net/publication/303720428_La_cantera_taller_del_arroyo_Catalan_Chico_nuevos_aportes_a_un_viejo_problema_de_la_arqueologia_uruguaya?_sg%5B0%5D=09XoKpaaFXSVxqnlWEMtoBSRdRjvErOrNlGNWASn32w3-WbCZrLgwPQissijtIkjDPAce3gcnD5SvZy1FJZXrEaBG4Ttn4xpZByyez1F.0kRp2PRf1fYfYPdTE_Y-U3B0KiErq3TUyj9rO_DyPdNW_dNxkgyttIleztf4x_mEEGWvgqpPvEorZffnNG8aug"
-          artTitle="La Cantera Taller del Aº Catalán Chico: Nuevos aportes a un viejo problema de la arqueología uruguaya.  Capítulo  del libro: Del Mar a los Salitrales, Diez mil años de Historia Pampeana en el Umbral del Tercer Milenio."
-          artAbstract=""
-          artAuthors="2002 | Suárez Rafael y Gustavo Piñeiro"
-          editorial="Editores Mazantti, Berón y Oliva: pág. 263-279. Mar del Plata, Argentina "
-        >
-        </book-chapter>
-      </bookchapters-container>
-    </section>
+      <book-chapter
+        artLink="https://www.researchgate.net/publication/303720428_La_cantera_taller_del_arroyo_Catalan_Chico_nuevos_aportes_a_un_viejo_problema_de_la_arqueologia_uruguaya?_sg%5B0%5D=09XoKpaaFXSVxqnlWEMtoBSRdRjvErOrNlGNWASn32w3-WbCZrLgwPQissijtIkjDPAce3gcnD5SvZy1FJZXrEaBG4Ttn4xpZByyez1F.0kRp2PRf1fYfYPdTE_Y-U3B0KiErq3TUyj9rO_DyPdNW_dNxkgyttIleztf4x_mEEGWvgqpPvEorZffnNG8aug"
+        artTitle="La Cantera Taller del Aº Catalán Chico: Nuevos aportes a un viejo problema de la arqueología uruguaya.  Capítulo  del libro: Del Mar a los Salitrales, Diez mil años de Historia Pampeana en el Umbral del Tercer Milenio."
+        artAbstract="" artAuthors="2002 | Suárez Rafael y Gustavo Piñeiro"
+        editorial="Editores Mazantti, Berón y Oliva: pág. 263-279. Mar del Plata, Argentina ">
+      </book-chapter>
+    </bookchapters-container>
+  </section>
 
-    <div id="press" class="subtitle">
-      <p>PRENSA</p>
-    </div>
+  <div id="press" class="subtitle">
+    <p>PRENSA</p>
+  </div>
 
-    <div class="press_content">
-      <press-item
-        class="item1"
-        imgPath="https://ladiaria.com.uy/media/photologue/photos/cache/ciencias-suarez_1200w.jpg"
-        link="https://ladiaria.com.uy/ciencia/articulo/2019/6/nuevas-puntas-para-reescribir-la-prehistoria-del-uruguay-y-sudamerica-el-trabajo-del-arqueologo-rafael-suarez-en-los-sitios-tigre-y-pay-paso-de-artigas/"
-        title="Nuevas puntas para reescribir la prehistoria del Uruguay (y Sudamérica): el trabajo del arqueólogo Rafael Suárez en los sitios Tigre y Pay Paso de Artigas"
-      >
-      </press-item>
-
-      <press-item
-        class="item2"
-        imgPath="https://i2.wp.com/diariouruguay.com.uy/wp-content/uploads/2020/03/pobladores-de-artigas-diario-uruguay-e1583420331170.jpg"
-        link="https://diariouruguay.com.uy/cultura/los-primeros-pobladores-de-artigas-y-uruguay-hace-13300-anos/"
-        title="Los primeros pobladores de Artigas y Uruguay hace 13,300 años"
-      >
-      </press-item>
-
-      <press-item
-        class="item4"
-        imgPath="https://www.teledoce.com/wp-content/uploads/2021/06/WhatsApp-Image-2021-06-15-at-21.10.26.jpeg"
-        link="https://www.teledoce.com/telemundo/ciencia-y-tecnologia/ultimos-hallazgos-arqueologicos-dan-una-idea-de-como-fueron-los-primeros-pobladores-de-uruguay/"
-        title="Últimos hallazgos arqueológicos dan una idea de cómo fueron los primeros pobladores
-      de
-      Uruguay"
-      >
-      </press-item>
-
-      <press-item
-        class="item5"
-        imgPath="./media/publications/SARANDÍ.jpg"
-        link="https://www.sarandi690.com.uy/2021/06/07/cuando-aparecieron-los-primeros-seres-humanos-en-el-territorio-que-hoy-es-uruguay/"
-        title="¿Cuando aparecieron los primeros seres humanos en el territorio que hoy es Uruguay?"
-      >
-      </press-item>
-
-      <press-item
-        class="item6"
-        imgPath="https://media.subrayado.com.uy/adjuntos/230/videos/002/267/0002267930.jpg"
-        link="https://www.subrayado.com.uy/arqueologos-encuentran-restos-ocupacion-humana-hace-mas-13-mil-anos-n528927"
-        title="Arqueólogos encuentran restos de ocupación humana de hace más de 13 mil años"
-      >
-      </press-item>
-
-      <press-item
-        class="item8"
-        imgPath="https://cdn.dl.uy//solimg/360x360/11/11880.jpg"
-        link="https://delsol.uy/quientedice/cachodecultura/el-uruguay-prehistorico"
-        title="El Uruguay prehistórico"
-      >
-      </press-item>
-
-      <press-item
-        class="item9"
-        imgPath="https://i1.sndcdn.com/artworks-OiyYTcFYa1zjBxHO-gqtgBQ-t500x500.jpg"
-        link="https://soundcloud.com/radio_rural/sin-vueltas-columna-german-curbelo-viernes-1607"
-        title="Los primeros cazadores de Uruguay"
-      >
-      </press-item>
-
-      <press-item
-        class="item10"
-        imgPath="media/gallery/prensa_en_la_mira.png"
-        link="https://www.youtube.com/watch?v=F8Wdfe2W_hM"
-        title="¿Quiénes fueron los primeros pobladores de Uruguay?"
-      >
-      </press-item>
-      <press-item
-      class="item11"
-      imgPath="https://ladiaria.com.uy/media/photologue/photos/cache/20240128_ER045_1200w.JPG"
-      link="https://ladiaria.com.uy/ciencia/articulo/2024/2/antepasados-nada-haraganes-indigenas-recorrian-minimo-179-km-para-obtener-su-roca-favorita-para-fabricar-puntas-cola-de-pescado/"
-      title="Antepasados nada haraganes: indígenas recorrían mínimo 179 km para obtener su roca favorita para fabricar puntas Cola de Pescado"
-    >
+  <div class="press_content">
+    <press-item class="item1" imgPath="https://ladiaria.com.uy/media/photologue/photos/cache/ciencias-suarez_1200w.jpg"
+      link="https://ladiaria.com.uy/ciencia/articulo/2019/6/nuevas-puntas-para-reescribir-la-prehistoria-del-uruguay-y-sudamerica-el-trabajo-del-arqueologo-rafael-suarez-en-los-sitios-tigre-y-pay-paso-de-artigas/"
+      title="Nuevas puntas para reescribir la prehistoria del Uruguay (y Sudamérica): el trabajo del arqueólogo Rafael Suárez en los sitios Tigre y Pay Paso de Artigas">
     </press-item>
+
+    <press-item class="item2"
+      imgPath="https://i2.wp.com/diariouruguay.com.uy/wp-content/uploads/2020/03/pobladores-de-artigas-diario-uruguay-e1583420331170.jpg"
+      link="https://diariouruguay.com.uy/cultura/los-primeros-pobladores-de-artigas-y-uruguay-hace-13300-anos/"
+      title="Los primeros pobladores de Artigas y Uruguay hace 13,300 años">
+    </press-item>
+
+    <press-item class="item4"
+      imgPath="https://www.teledoce.com/wp-content/uploads/2021/06/WhatsApp-Image-2021-06-15-at-21.10.26.jpeg"
+      link="https://www.teledoce.com/telemundo/ciencia-y-tecnologia/ultimos-hallazgos-arqueologicos-dan-una-idea-de-como-fueron-los-primeros-pobladores-de-uruguay/"
+      title="Últimos hallazgos arqueológicos dan una idea de cómo fueron los primeros pobladores
+      de
+      Uruguay">
+    </press-item>
+
+    <press-item class="item5" imgPath="./media/publications/SARANDÍ.jpg"
+      link="https://www.sarandi690.com.uy/2021/06/07/cuando-aparecieron-los-primeros-seres-humanos-en-el-territorio-que-hoy-es-uruguay/"
+      title="¿Cuando aparecieron los primeros seres humanos en el territorio que hoy es Uruguay?">
+    </press-item>
+
+    <press-item class="item6" imgPath="https://media.subrayado.com.uy/adjuntos/230/videos/002/267/0002267930.jpg"
+      link="https://www.subrayado.com.uy/arqueologos-encuentran-restos-ocupacion-humana-hace-mas-13-mil-anos-n528927"
+      title="Arqueólogos encuentran restos de ocupación humana de hace más de 13 mil años">
+    </press-item>
+
+    <press-item class="item8" imgPath="https://cdn.dl.uy//solimg/360x360/11/11880.jpg"
+      link="https://delsol.uy/quientedice/cachodecultura/el-uruguay-prehistorico" title="El Uruguay prehistórico">
+    </press-item>
+
+    <press-item class="item9" imgPath="https://i1.sndcdn.com/artworks-OiyYTcFYa1zjBxHO-gqtgBQ-t500x500.jpg"
+      link="https://soundcloud.com/radio_rural/sin-vueltas-columna-german-curbelo-viernes-1607"
+      title="Los primeros cazadores de Uruguay">
+    </press-item>
+
+    <press-item class="item10" imgPath="media/gallery/prensa_en_la_mira.png"
+      link="https://www.youtube.com/watch?v=F8Wdfe2W_hM" title="¿Quiénes fueron los primeros pobladores de Uruguay?">
+    </press-item>
+    <press-item class="item11" imgPath="https://ladiaria.com.uy/media/photologue/photos/cache/20240128_ER045_1200w.JPG"
+      link="https://ladiaria.com.uy/ciencia/articulo/2024/2/antepasados-nada-haraganes-indigenas-recorrian-minimo-179-km-para-obtener-su-roca-favorita-para-fabricar-puntas-cola-de-pescado/"
+      title="Antepasados nada haraganes: indígenas recorrían mínimo 179 km para obtener su roca favorita para fabricar puntas Cola de Pescado">
+    </press-item>
+  </div>
+
+  <div id="networks" class="subtitle">
+    <p>REDES SOCIALES</p>
+  </div>
+
+  <div id="network_list">
+    <div class="info_container">
+      <a href="https://www.instagram.com/paleoamericanos.uy/?hl=es" target="_blank"><img
+          src="media/difusion/instagram.png" alt="instagram" /></a>
     </div>
 
-    <div id="networks" class="subtitle">
-      <p>REDES SOCIALES</p>
+    <div id="gmail" class="info_container">
+      <a href="mailto:rafaelsuarez23@gmail.com" target="_blank"><img src="media/difusion/gmail.png" alt="gmail" /></a>
     </div>
 
-    <div id="network_list">
-      <div class="info_container">
-        <a
-          href="https://www.instagram.com/paleoamericanos.uy/?hl=es"
-          target="_blank"
-          ><img src="media/difusion/instagram.png" alt="instagram"
-        /></a>
-      </div>
-
-      <div id="gmail" class="info_container">
-        <a href="mailto:rafaelsuarez23@gmail.com" target="_blank"
-          ><img src="media/difusion/gmail.png" alt="gmail"
-        /></a>
-      </div>
-
-      <div id="youtube" class="info_container">
-        <a
-          href="https://www.youtube.com/channel/UCzVDzfPJh3oyTtDLSp2BCTg"
-          target="_blank"
-          ><img src="media/difusion/youtube.png" alt="youtube"
-        /></a>
-      </div>
+    <div id="youtube" class="info_container">
+      <a href="https://www.youtube.com/channel/UCzVDzfPJh3oyTtDLSp2BCTg" target="_blank"><img
+          src="media/difusion/youtube.png" alt="youtube" /></a>
     </div>
-  </body>
+  </div>
+</body>
 
-  <footer-data />
+<footer-data />
+
 </html>
