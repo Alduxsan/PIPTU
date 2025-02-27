@@ -1,5 +1,8 @@
 // import styles from "./css_components/SciArticle.css" assert { type: "css" };
 
+
+// TODO: Hay css cruzado que muestra y oculta elementos de la lista usando las clases show, initalist y hiddenlist. Debería reducirse la lógica para que se vean todos los artículos al presionar "ver mas" y que solo se vean unos al comienzo. 
+
 class SciArticles_container extends HTMLElement {
   constructor() {
     super();
