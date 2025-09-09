@@ -165,7 +165,7 @@ const news = [
     date: "2024-08-17",
     imgPath: "https://ladiaria.com.uy/media/photologue/photos/cache/1_IImQnuO_1200w.jpg",
     title: "Aquí también vivimos en cuevas: reportan ocupación humana continua por más de 11.000 años en alero rocoso de Cerro Largo",
-    content: 'Nos complace presentar el artículo periodístico publicado en LA DIARIA CIENCIA: “Aquí también vivimos en cuevas: reportan ocupación humana continua por más de 11.000 años en alero rocoso de Cerro Largo”, por el periodista Leo Lagos.',
+    content: 'Nos complace presentar el artículo periodístico publicado en LA DIARIA CIENCIA: “Aquí también vivimos en cuevas: reportan ocupación humana continua por más de 11.000 años en alero rocoso de Cerro Largo”, por el periodista Leo Lagos. </br></br> <a href="https://ladiaria.com.uy/ciencia/articulo/2024/8/aqui-tambien-vivimos-en-cuevas-reportan-ocupacion-humana-continua-por-mas-de-11000-anos-en-alero-rocoso-de-cerro-largo/">Link</a>',
     url: "https://ladiaria.com.uy/ciencia/articulo/2024/8/aqui-tambien-vivimos-en-cuevas-reportan-ocupacion-humana-continua-por-mas-de-11000-anos-en-alero-rocoso-de-cerro-largo/",
   },
   {
@@ -173,7 +173,7 @@ const news = [
     date: "2024-09-18",
     imgPath: "./media/news/sobrecienciauruguaymilenario.webp",
     title: 'Informe realizado por TV CIUDAD Sobre Ciencia "Uruguay milenario"',
-    content: 'Con gusto compartimos el informe realizado por TV CIUDAD Sobre Ciencia “Uruguay milenario: Investigaciones arqueológicas en Cerro Largo”, entrevistando al Dr. Rafael Suárez en relación con los hallazgos en el alero Tamanduá de Cerro Largo.',
+    content: 'Con gusto compartimos el informe realizado por TV CIUDAD Sobre Ciencia “Uruguay milenario: Investigaciones arqueológicas en Cerro Largo”, entrevistando al Dr. Rafael Suárez en relación con los hallazgos en el alero Tamanduá de Cerro Largo.</br></br> <a href="https://www.youtube.com/watch?v=y6DKBa9PiF4&t=2106s">Link</a>' ,
     url: "https://www.youtube.com/watch?v=y6DKBa9PiF4&t=2106s",
   },
 

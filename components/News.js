@@ -48,7 +48,7 @@ class News extends HTMLElement {
 
     infoContainer.appendChild(newsTitle);
     infoContainer.appendChild(newsContent);
-    infoContainer.appendChild(newsUrl);
+    // infoContainer.appendChild(newsUrl);
     news.appendChild(newsImgContainer);
     news.appendChild(infoContainer);
     return news;
