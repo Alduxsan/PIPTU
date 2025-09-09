@@ -115,6 +115,7 @@ header {
   color: #260e00;
 }
 
+
 .press_content {
   background: #c0a342 url("../media/radiant-gradient.svg");
   background-size: cover;
@@ -126,16 +127,8 @@ header {
   gap: 10px;
 }
 
-.item1 {
-  grid-column: 1 / 2;
-}
-.item2 {
-  grid-column: 2 / 3;
-}
 
-.item3{
-  grid-column: 3 / 4; 
-}
+
 
 
 #network_list {
