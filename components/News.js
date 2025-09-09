@@ -1,4 +1,4 @@
-import { dataRequest } from "../js/data_source.js";
+import { dataRequest } from "../js/data_source.js"; 
 // import styles from "./css_components/News.css" assert { type: "css" };
 
 class News extends HTMLElement {
@@ -12,7 +12,7 @@ class News extends HTMLElement {
     let attribute = (this.attribute = this.getAttribute(attr));
     return attribute;
   }
-  newCard(imgPath, title, date, content, id) {
+  newCard(imgPath, title, date, content, id, url) {
     let news = document.createElement("div");
     let infoContainer = document.createElement("div");
 
@@ -37,11 +37,18 @@ class News extends HTMLElement {
     newsContent.classList.add("newsContent");
     newsContent.innerHTML = `${content}`;
 
+    let newsUrl = document.createElement("a");
+    newsUrl.classList.add("newsUrlLink")
+    newsUrl.textContent = 'Link a la noticia';
+    newsUrl.href = `${url}`;
+
+
     newsImgContainer.appendChild(newsImg);
     infoContainer.appendChild(newsDate);
 
     infoContainer.appendChild(newsTitle);
     infoContainer.appendChild(newsContent);
+    infoContainer.appendChild(newsUrl);
     news.appendChild(newsImgContainer);
     news.appendChild(infoContainer);
     return news;
@@ -61,7 +68,8 @@ class News extends HTMLElement {
           news.title,
           new Date(news.date),
           news.content,
-          news.id
+          news.id,
+          news.url
         )
       );
     });
@@ -128,6 +136,12 @@ class News extends HTMLElement {
       font-family: oswald;
       margin: 0;
     }
+
+    .newsUrlLink {
+    font-family: oswald;
+      margin: 0;
+    }   
+
     
     </style>
     `;
