@@ -11,23 +11,23 @@ class ProjectNews extends HTMLElement {
     return attribute;
   }
 
-  showInfo() {
-    this.info = this.shadowRoot.getElementById("info");
-    this.info.classList.contains("hideInfo")
-      ? this.info.classList.replace("hideInfo", "showInfo")
-      : this.info.classList.replace("showInfo", "hideInfo");
-    this.info.scrollIntoView({ block: "end", behavior: "smooth" });
-  }
+  // showInfo() {
+  //   this.info = this.shadowRoot.getElementById("info");
+  //   this.info.classList.contains("hideInfo")
+  //     ? this.info.classList.replace("hideInfo", "showInfo")
+  //     : this.info.classList.replace("showInfo", "hideInfo");
+  //   this.info.scrollIntoView({ block: "end", behavior: "smooth" });
+  // }
 
-  handleEvent(event) {
-    console.log(event);
-    if (event.type === "click") this.showInfo();
-  }
+  // handleEvent(event) {
+  //   console.log(event);
+  //   if (event.type === "click") this.showInfo();
+  // }
 
   newCard(imgPath, title, date, content, id, url) {
     let newsCard = document.createElement("div");
     newsCard.classList.add("news-card");
-    newsCard.innerHTML = `<a href="../news.html#${id}" target="_blank" rel="noopener" class="news-card__card-link"></a>
+    newsCard.innerHTML = `<a href="${url}" target="_blank" rel="noopener" class="news-card__card-link"></a>
     <img src="${imgPath}" alt="${title}" class="news-card__image">
     <div class="news-card__text-wrapper">
       <h3 class="news-card__title">${title}</h3>
