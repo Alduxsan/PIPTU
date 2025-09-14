@@ -176,6 +176,7 @@ const news = [
     content: 'Con gusto compartimos el informe realizado por TV CIUDAD Sobre Ciencia “Uruguay milenario: Investigaciones arqueológicas en Cerro Largo”, entrevistando al Dr. Rafael Suárez en relación con los hallazgos en el alero Tamanduá de Cerro Largo.' ,
     url: "https://www.youtube.com/watch?v=y6DKBa9PiF4&t=2106s",
   },
+  
 
 ];
 

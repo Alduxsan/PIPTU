@@ -35,7 +35,7 @@ class ProjectNews extends HTMLElement {
       ${date.getDate()} / ${date.getMonth() + 1} / ${date.getFullYear()}</div>
       <div class="news-card__details-wrapper">
         <p class="news-card__excerpt">${content}&hellip;</p>
-        <a href= ${url} class="news-card__read-more">Link a la noticia <i class="fas fa-long-arrow-alt-right"></i></a>
+        
       </div>
     </div>`;
     return newsCard;

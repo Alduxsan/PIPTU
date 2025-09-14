@@ -37,12 +37,6 @@ class News extends HTMLElement {
     newsContent.classList.add("newsContent");
     newsContent.innerHTML = `${content}`;
 
-    let newsUrl = document.createElement("a");
-    newsUrl.classList.add("newsUrlLink")
-    newsUrl.textContent = 'Link a la noticia';
-    newsUrl.href = `${url}`;
-
-
     newsImgContainer.appendChild(newsImg);
     infoContainer.appendChild(newsDate);
 
